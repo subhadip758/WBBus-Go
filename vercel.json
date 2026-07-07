@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd wbsb_web && npm run build",
+  "outputDirectory": "wbsb_web/dist",
+  "installCommand": "cd wbsb_web && npm install"
+}
