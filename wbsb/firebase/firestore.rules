@@ -1,0 +1,43 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Bus schedule dataset is bundled with the app (assets/data/buses.json)
+    // and cached offline via Hive — it does not need to live in Firestore
+    // for the app to function. If you later choose to also mirror it here
+    // (e.g. to update timetables without shipping a new app build), keep
+    // it read-only from clients and write it only via the Firebase console
+    // or a trusted server context.
+    match /buses/{busId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Crowdsourced live tracking. Every document under
+    // ride_sessions/{busId}/active/{sessionId} represents one real
+    // passenger's currently-active GPS contribution.
+    //
+    // - Anyone can read (so the map works with zero sign-up friction).
+    // - A client may create/update/delete ONLY the document whose ID
+    //   matches their own Firebase Auth UID — this is what stops one
+    //   anonymous user from overwriting or deleting another rider's
+    //   contribution. It does NOT stop a malicious client from sending
+    //   fabricated GPS values under their own UID; that is an inherent
+    //   limitation of any crowdsourced-GPS system without verified,
+    //   vetted drivers, and should be disclosed to users as such.
+    match /ride_sessions/{busId}/active/{sessionId} {
+      allow read: if true;
+      allow create, update: if request.auth != null
+                              && request.auth.uid == sessionId
+                              && request.resource.data.latitude is number
+                              && request.resource.data.longitude is number
+                              && request.resource.data.accuracyMeters is number
+                              && request.resource.data.latitude >= -90
+                              && request.resource.data.latitude <= 90
+                              && request.resource.data.longitude >= -180
+                              && request.resource.data.longitude <= 180;
+      allow delete: if request.auth != null && request.auth.uid == sessionId;
+    }
+  }
+}

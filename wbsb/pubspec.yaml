@@ -1,0 +1,50 @@
+name: west_bengal_smart_bus
+description: "Real-time West Bengal inter-city bus search and live tracking app."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # Firebase (live bus location + anonymous auth)
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.4
+  firebase_auth: ^5.3.1
+
+  # Maps (OpenStreetMap, NOT Google Maps)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Passenger / driver location
+  geolocator: ^13.0.1
+  permission_handler: ^11.3.1
+
+  # Offline caching of dataset (production-grade, no SharedPreferences)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Utilities
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/buses.json
+    - assets/data/stops.json
+    - assets/data/routes.json
+    - assets/data/operators.json
+    - assets/data/agencies.json
+    - assets/data/timetable.json

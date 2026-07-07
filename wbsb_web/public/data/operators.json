@@ -1,0 +1,10 @@
+{
+  "operators": [
+    { "operator_id": "op_banerjee", "name": "BANERJEE" },
+    { "operator_id": "op_sbstc", "name": "SBSTC" },
+    { "operator_id": "op_rajdhani", "name": "RAJDHANI" },
+    { "operator_id": "op_putul", "name": "PUTUL" },
+    { "operator_id": "op_monalisha_travels", "name": "MONALISHA TRAVELS" },
+    { "operator_id": "op_asr_travels", "name": "ASR TRAVELS" }
+  ]
+}

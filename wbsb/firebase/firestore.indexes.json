@@ -1,0 +1,5 @@
+{
+  "indexes": [],
+  "fieldOverrides": [],
+  "_note": "This app's only Firestore reads are: (1) a full-collection snapshot listener on ride_sessions/{busId}/active (no filters, no orderBy — Firestore's automatic single-field indexes are sufficient), and (2) single-document reads/writes by ID for pushing/ending a ride. Neither requires a composite index. If you extend the app with queries that combine a where() filter and an orderBy() on a different field (e.g. querying active contributions ordered by accuracy across all buses at once), the Firebase CLI will print the exact composite index definition to add here when you run 'firebase deploy' and it fails — add it then rather than guessing one now."
+}

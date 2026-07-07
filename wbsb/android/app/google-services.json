@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "168565308327",
+    "project_id": "wbbus-go",
+    "storage_bucket": "wbbus-go.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168565308327:android:62bd36b555da8db0c05482",
+        "android_client_info": {
+          "package_name": "com.wbsmartbus.west_bengal_smart_bus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd-zdSHBj_BXmU7FEOJpyN6xqCYfcwT3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

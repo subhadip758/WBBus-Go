@@ -1,0 +1,92 @@
+{
+  "note": "estimated_distance_km and estimated_travel_time_min are null everywhere. Computing them correctly requires either (a) real coordinates for every intermediate stop, most of which are villages I do not have reliable coordinates for, or (b) a live routing API (OSRM/GraphHopper) call, which this environment has no network access to make. See README for how to populate these once you have connectivity.",
+  "routes": [
+    {
+      "route_id": "route_kolkata_purulia_banerjee",
+      "route_name": "Kolkata (Esplanade) - Purulia (BANERJEE)",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Purulia",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": ["stop_kolkata_esplanade","stop_shyambazar","stop_dunlop","stop_dakshineswar","stop_bally","stop_dankuni","stop_chanditala","stop_mosat","stop_siakhala","stop_champadanga","stop_mayapur","stop_arambagh","stop_bengai","stop_khatul","stop_kotulpur","stop_joypur","stop_bishnupur","stop_ramsagar","stop_onda","stop_dhaldanga","stop_bankura","stop_chhatna","stop_kharbona","stop_kamalpur","stop_bishpuria","stop_hura","stop_lalpur","stop_ladhurka","stop_purulia"],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_baghmundi_kolkata_sbstc",
+      "route_name": "Baghmundi - Kolkata (Esplanade) (SBSTC)",
+      "source": "Baghmundi",
+      "destination": "Kolkata (Esplanade)",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": ["stop_baghmundi","stop_balarampur","stop_urma","stop_purulia","stop_ladhurka","stop_lakshanpur","stop_lalpur","stop_hura","stop_bishpuria","stop_kamalpur","stop_kharbona","stop_chhatna","stop_bankura","stop_beliatore","stop_barjora","stop_durgapur_station","stop_durgapur_city_center","stop_durgapur_muchipara","stop_panagarh","stop_bardhaman","stop_saktigarh","stop_dankuni","stop_salap","stop_kona_expressway_more","stop_santragachi","stop_kolkata_esplanade"],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_purulia_kolkata_sbstc_vadu",
+      "route_name": "Purulia - Kolkata (Esplanade) (SBSTC, VADU EXPRESS)",
+      "source": "Purulia",
+      "destination": "Kolkata (Esplanade)",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": ["stop_purulia","stop_ladhurka","stop_hura","stop_kamalpur","stop_kharbona","stop_chhatna","stop_bankura","stop_makurgram","stop_beliatore","stop_barjora","stop_durgapur_station","stop_durgapur_city_center","stop_durgapur_muchipara","stop_panagarh","stop_bardhaman","stop_saktigarh","stop_dankuni","stop_salap","stop_kona_expressway_more","stop_santragachi","stop_kolkata_esplanade"],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_purulia_kolkata_sbstc_jhumur",
+      "route_name": "Purulia - Kolkata (Esplanade) (SBSTC, Jhumur Express)",
+      "source": "Purulia",
+      "destination": "Kolkata (Esplanade)",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": ["stop_purulia","stop_ladhurka","stop_hura","stop_puabagan","stop_bankura","stop_makurgram","stop_beliatore","stop_barjora","stop_durgapur_station","stop_durgapur_city_center","stop_durgapur_muchipara","stop_panagarh","stop_bardhaman","stop_saktigarh","stop_dankuni","stop_salap","stop_kona_expressway_more","stop_kolkata_esplanade"],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_kolkata_rajdhani",
+      "route_name": "Bankura - Kolkata (Esplanade) (RAJDHANI)",
+      "source": "Bankura",
+      "destination": "Kolkata (Esplanade)",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": ["stop_bankura","stop_dhaldanga","stop_onda","stop_ramsagar","stop_bishnupur","stop_joypur","stop_kotulpur","stop_khatul","stop_bengai", null, "stop_mayapur","stop_champadanga","stop_siakhala","stop_mosat","stop_chanditala","stop_dankuni","stop_bally","stop_dakshineswar","stop_dunlop","stop_shyambazar","stop_kolkata_esplanade"],
+      "data_quality_notes": [
+        "Stop #10 in the source scan was illegible (page-scroll boundary landed exactly on it) — recorded as null rather than guessed. All other sequence numbers are exact.",
+        "Final stop's up_time was OCR-garbled as '29:30 AM'; the '2' is very likely a bleed from the row-number column. Recorded as 09:30 based on it being the only value consistent with the surrounding AM timestamps, but flagged here as inferred, not directly read."
+      ]
+    },
+    {
+      "route_id": "route_jamtoria_kolkata_putul",
+      "route_name": "Jamtoria - Kolkata (Esplanade) (PUTUL)",
+      "source": "Jamtoria",
+      "destination": "Kolkata (Esplanade)",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": ["stop_jamtoria","stop_rudra","stop_ambika_nagar","stop_mukutmanipur","stop_khatra","stop_hatirampur","stop_bangla","stop_indpur","stop_sunukpahari","stop_puabagan","stop_dhaldanga","stop_bankura","stop_makurgram","stop_beliatore","stop_barjora","stop_durgapur_station","stop_panagarh","stop_budbud","stop_galsi","stop_bardhaman","stop_saktigarh","stop_dankuni","stop_salap","stop_kona_expressway_more","stop_santragachi","stop_kolkata_esplanade"],
+      "data_quality_notes": [
+        "Stop #10 (Puabagan) was not clearly legible in this route's own scan; it is inferred from the identical Sunukpahari->Puabagan->Dhaldanga sequence that appears, clearly legible, in the MONALISHA route which shares this exact stretch of road. Medium-high confidence, but flagged as inferred rather than directly read."
+      ]
+    },
+    {
+      "route_id": "route_barabazar_kolkata_monalisha",
+      "route_name": "Barabazar - Kolkata (Esplanade) (MONALISHA)",
+      "source": "Barabazar",
+      "destination": "Kolkata (Esplanade)",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": ["stop_barabazar","stop_sindri","stop_manbazar","stop_puncha","stop_saldiha","stop_bangla","stop_indpur","stop_sunukpahari","stop_puabagan","stop_dhaldanga","stop_bankura","stop_makurgram","stop_beliatore","stop_barjora","stop_durgapur_station","stop_durgapur_muchipara","stop_panagarh","stop_budbud","stop_galsi","stop_bardhaman","stop_saktigarh","stop_dankuni","stop_salap","stop_kona_expressway_more","stop_santragachi","stop_kolkata_esplanade"],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_haludkanali_kolkata_asr",
+      "route_name": "Haludkanali - Kolkata (Esplanade) (ASR TRAVELS)",
+      "source": "Haludkanali",
+      "destination": "Kolkata (Esplanade)",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": ["stop_haludkanali","stop_khatra","stop_hatirampur","stop_bangla","stop_indpur","stop_sunukpahari","stop_puabagan","stop_dhaldanga","stop_bankura","stop_makurgram","stop_beliatore","stop_barjora","stop_durgapur_station","stop_durgapur_muchipara","stop_panagarh","stop_budbud","stop_galsi","stop_bardhaman","stop_saktigarh","stop_dankuni","stop_salap","stop_kona_expressway_more","stop_santragachi","stop_kolkata_esplanade"],
+      "data_quality_notes": [
+        "Stop 'Beliatore' between Makurgram and Barjora was not cleanly separated by OCR on this route's own pages; it is inferred from the identical Makurgram->Beliatore->Barjora sequence that is clearly legible on the PUTUL and SBSTC-VADU routes, which share this stretch. The final row-count (24) matches this inference, supporting it, but it is flagged as inferred rather than directly read."
+      ]
+    }
+  ]
+}
