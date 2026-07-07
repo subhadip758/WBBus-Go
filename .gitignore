@@ -16,3 +16,6 @@
 *.sln
 *.sw?
 .DS_Store
+
+.vercel
+.env*

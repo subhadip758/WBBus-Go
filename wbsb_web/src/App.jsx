@@ -1726,8 +1726,9 @@ function App() {
                 </div>
               </div>
               
-              {/* Crowdsourcing GPS activation panel */}
-              <div className="tracking-card">
+              <div className="details-scrollable-content" style={{ flex: 1, overflowY: 'auto', paddingBottom: '2.5rem' }}>
+                {/* Crowdsourcing GPS activation panel */}
+                <div className="tracking-card">
                 <div className="tracking-title">
                   <Users size={16} />
                   <span>Interactive Passenger Simulation</span>
@@ -2079,6 +2080,7 @@ function App() {
                   );
                 })}
               </div>
+              </div> {/* Close details-scrollable-content */}
             </div>
           )}
         </div>
