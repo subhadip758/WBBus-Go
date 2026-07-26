@@ -1,10 +1,464 @@
 {
   "operators": [
-    { "operator_id": "op_banerjee", "name": "BANERJEE" },
-    { "operator_id": "op_sbstc", "name": "SBSTC" },
-    { "operator_id": "op_rajdhani", "name": "RAJDHANI" },
-    { "operator_id": "op_putul", "name": "PUTUL" },
-    { "operator_id": "op_monalisha_travels", "name": "MONALISHA TRAVELS" },
-    { "operator_id": "op_asr_travels", "name": "ASR TRAVELS" }
+    {
+      "operator_id": "op_1",
+      "name": "(SRI RAM"
+    },
+    {
+      "operator_id": "op_2",
+      "name": "786 Nosib"
+    },
+    {
+      "operator_id": "op_3",
+      "name": "AAYAN"
+    },
+    {
+      "operator_id": "op_4",
+      "name": "AKASHBRISTI"
+    },
+    {
+      "operator_id": "op_5",
+      "name": "ANANYA"
+    },
+    {
+      "operator_id": "op_6",
+      "name": "ARYA TRAVELS"
+    },
+    {
+      "operator_id": "op_7",
+      "name": "ASANSOL-SALAR EXPRESS"
+    },
+    {
+      "operator_id": "op_8",
+      "name": "ASR TRAVELS"
+    },
+    {
+      "operator_id": "op_9",
+      "name": "ATITHIPARIBAHAN (AC"
+    },
+    {
+      "operator_id": "op_10",
+      "name": "Abha"
+    },
+    {
+      "operator_id": "op_11",
+      "name": "Ambika"
+    },
+    {
+      "operator_id": "op_12",
+      "name": "Azad"
+    },
+    {
+      "operator_id": "op_13",
+      "name": "BAKKHALI-HOWRAH EXPRESS"
+    },
+    {
+      "operator_id": "op_14",
+      "name": "BANERJEE"
+    },
+    {
+      "operator_id": "op_15",
+      "name": "BARNALI"
+    },
+    {
+      "operator_id": "op_16",
+      "name": "BULLET"
+    },
+    {
+      "operator_id": "op_17",
+      "name": "BURA BABA"
+    },
+    {
+      "operator_id": "op_18",
+      "name": "Bhagyalaxmi"
+    },
+    {
+      "operator_id": "op_19",
+      "name": "CHALLENGER"
+    },
+    {
+      "operator_id": "op_20",
+      "name": "Charubala"
+    },
+    {
+      "operator_id": "op_21",
+      "name": "DAKSHAYANIRIA SUPER"
+    },
+    {
+      "operator_id": "op_22",
+      "name": "DARSHAN"
+    },
+    {
+      "operator_id": "op_23",
+      "name": "DEVI DURGA"
+    },
+    {
+      "operator_id": "op_24",
+      "name": "Datababa Sakil Travels"
+    },
+    {
+      "operator_id": "op_25",
+      "name": "Debi Kamakhya Tara Ma Travels (Trip 1"
+    },
+    {
+      "operator_id": "op_26",
+      "name": "Debibala Travels"
+    },
+    {
+      "operator_id": "op_27",
+      "name": "Devi Durga"
+    },
+    {
+      "operator_id": "op_28",
+      "name": "Dharmaraj Travels"
+    },
+    {
+      "operator_id": "op_29",
+      "name": "Esplanade"
+    },
+    {
+      "operator_id": "op_30",
+      "name": "GARIB NAWAZ ROYAL"
+    },
+    {
+      "operator_id": "op_31",
+      "name": "GITANJALI TRAVELS"
+    },
+    {
+      "operator_id": "op_32",
+      "name": "GOBINDA (MAJESTIC"
+    },
+    {
+      "operator_id": "op_33",
+      "name": "Gobinda"
+    },
+    {
+      "operator_id": "op_34",
+      "name": "HETIYA - KOTULPUR - BURDWAN"
+    },
+    {
+      "operator_id": "op_35",
+      "name": "ISHIKA"
+    },
+    {
+      "operator_id": "op_36",
+      "name": "ISHIKA (Trip 2"
+    },
+    {
+      "operator_id": "op_37",
+      "name": "ISHIKA TRADERS"
+    },
+    {
+      "operator_id": "op_38",
+      "name": "JASHODA"
+    },
+    {
+      "operator_id": "op_39",
+      "name": "JINIA"
+    },
+    {
+      "operator_id": "op_40",
+      "name": "JOY BABA KHETRAPAL"
+    },
+    {
+      "operator_id": "op_41",
+      "name": "JOY BHARAT MATA"
+    },
+    {
+      "operator_id": "op_42",
+      "name": "Jai Maa Durga"
+    },
+    {
+      "operator_id": "op_43",
+      "name": "Jupiter Express"
+    },
+    {
+      "operator_id": "op_44",
+      "name": "Kolkata"
+    },
+    {
+      "operator_id": "op_45",
+      "name": "LALGARH-TARAKESWAR SERVICE"
+    },
+    {
+      "operator_id": "op_46",
+      "name": "LALPARUL"
+    },
+    {
+      "operator_id": "op_47",
+      "name": "LAXMI NARAYAN"
+    },
+    {
+      "operator_id": "op_48",
+      "name": "Lalkamal"
+    },
+    {
+      "operator_id": "op_49",
+      "name": "Lokenath Bus Service"
+    },
+    {
+      "operator_id": "op_50",
+      "name": "MA BABAR ASHIRBAD"
+    },
+    {
+      "operator_id": "op_51",
+      "name": "MA TARA / MA RUDRAYANI (AC"
+    },
+    {
+      "operator_id": "op_52",
+      "name": "MAA BAGALA"
+    },
+    {
+      "operator_id": "op_53",
+      "name": "MAA BHABANI"
+    },
+    {
+      "operator_id": "op_54",
+      "name": "MAA TARA (ALAKA TRAVELS"
+    },
+    {
+      "operator_id": "op_55",
+      "name": "MAA TULSI"
+    },
+    {
+      "operator_id": "op_56",
+      "name": "MAHAMAYA"
+    },
+    {
+      "operator_id": "op_57",
+      "name": "MANGROL-DIGHA SERVICE"
+    },
+    {
+      "operator_id": "op_58",
+      "name": "MAYER ASHIRWAD DADABHAI TRAVELS"
+    },
+    {
+      "operator_id": "op_59",
+      "name": "MONALISHA TRAVELS"
+    },
+    {
+      "operator_id": "op_60",
+      "name": "MONIRAJ"
+    },
+    {
+      "operator_id": "op_61",
+      "name": "MOUSUMI DISHA TRAVELS"
+    },
+    {
+      "operator_id": "op_62",
+      "name": "Maa Kamala Nandan Travels"
+    },
+    {
+      "operator_id": "op_63",
+      "name": "Maa Saradamoyi"
+    },
+    {
+      "operator_id": "op_64",
+      "name": "Maa Tulsi"
+    },
+    {
+      "operator_id": "op_65",
+      "name": "Madan Mohan (Trip 1"
+    },
+    {
+      "operator_id": "op_66",
+      "name": "Monikanchan"
+    },
+    {
+      "operator_id": "op_67",
+      "name": "Moonlight"
+    },
+    {
+      "operator_id": "op_68",
+      "name": "NABARAJ (MAIL"
+    },
+    {
+      "operator_id": "op_69",
+      "name": "NBSTC COOCHBEHAR DEPOT"
+    },
+    {
+      "operator_id": "op_70",
+      "name": "NEW NABARUPA"
+    },
+    {
+      "operator_id": "op_71",
+      "name": "NILACHAL"
+    },
+    {
+      "operator_id": "op_72",
+      "name": "P Travels"
+    },
+    {
+      "operator_id": "op_73",
+      "name": "PALKI (ROUTE 45"
+    },
+    {
+      "operator_id": "op_74",
+      "name": "PARTHSARATHI (DUTTA MOTORS"
+    },
+    {
+      "operator_id": "op_75",
+      "name": "PHULKUSMA-MECHEDA EXPRESS"
+    },
+    {
+      "operator_id": "op_76",
+      "name": "PRASHANNA"
+    },
+    {
+      "operator_id": "op_77",
+      "name": "PUSHPASHREE"
+    },
+    {
+      "operator_id": "op_78",
+      "name": "PUTUL"
+    },
+    {
+      "operator_id": "op_79",
+      "name": "PUTUL TRAVELS"
+    },
+    {
+      "operator_id": "op_80",
+      "name": "RAJDHANI"
+    },
+    {
+      "operator_id": "op_81",
+      "name": "RATUL BABU"
+    },
+    {
+      "operator_id": "op_82",
+      "name": "RBN TRAVELS"
+    },
+    {
+      "operator_id": "op_83",
+      "name": "ROF ROF"
+    },
+    {
+      "operator_id": "op_84",
+      "name": "Rahul Travels"
+    },
+    {
+      "operator_id": "op_85",
+      "name": "Ramkrishna"
+    },
+    {
+      "operator_id": "op_86",
+      "name": "Ramkrishna Ashirwad"
+    },
+    {
+      "operator_id": "op_87",
+      "name": "SAHIL TRAVELS"
+    },
+    {
+      "operator_id": "op_88",
+      "name": "SARKAR TRAVELS"
+    },
+    {
+      "operator_id": "op_89",
+      "name": "SBSTC"
+    },
+    {
+      "operator_id": "op_90",
+      "name": "SBSTC BOLPUR-DIGHA"
+    },
+    {
+      "operator_id": "op_91",
+      "name": "SHAKTIMAN TRAVELS"
+    },
+    {
+      "operator_id": "op_92",
+      "name": "SHANKAR PARWATI"
+    },
+    {
+      "operator_id": "op_93",
+      "name": "SHEFALI"
+    },
+    {
+      "operator_id": "op_94",
+      "name": "SHIKA TRADERS ISHIKA"
+    },
+    {
+      "operator_id": "op_95",
+      "name": "SHREE RAM"
+    },
+    {
+      "operator_id": "op_96",
+      "name": "SHUBHASREE TRAVELS (MA PARBATI"
+    },
+    {
+      "operator_id": "op_97",
+      "name": "SHYAMALI"
+    },
+    {
+      "operator_id": "op_98",
+      "name": "SONALI (MA DURGA"
+    },
+    {
+      "operator_id": "op_99",
+      "name": "SUPA - HOWRAH STATION"
+    },
+    {
+      "operator_id": "op_100",
+      "name": "SUPARNA"
+    },
+    {
+      "operator_id": "op_101",
+      "name": "Santoshi Mata"
+    },
+    {
+      "operator_id": "op_102",
+      "name": "Shahin Super"
+    },
+    {
+      "operator_id": "op_103",
+      "name": "Shreedhar"
+    },
+    {
+      "operator_id": "op_104",
+      "name": "Soumen Travels"
+    },
+    {
+      "operator_id": "op_105",
+      "name": "Subarna Paribahan"
+    },
+    {
+      "operator_id": "op_106",
+      "name": "TANUSHREE"
+    },
+    {
+      "operator_id": "op_107",
+      "name": "TARA MA AC"
+    },
+    {
+      "operator_id": "op_108",
+      "name": "TARA MAA"
+    },
+    {
+      "operator_id": "op_109",
+      "name": "TIRUMALA (BIBEK"
+    },
+    {
+      "operator_id": "op_110",
+      "name": "TIRUPATI"
+    },
+    {
+      "operator_id": "op_111",
+      "name": "Tarakripa"
+    },
+    {
+      "operator_id": "op_112",
+      "name": "Tirupati"
+    },
+    {
+      "operator_id": "op_113",
+      "name": "VINAYAK"
+    },
+    {
+      "operator_id": "op_114",
+      "name": "Wasif Super Fast"
+    },
+    {
+      "operator_id": "op_115",
+      "name": "\u099c\u09af\u09bc \u09ac\u09be\u09ac\u09be \u09b2\u09cb\u0995\u09a8\u09be\u09a5"
+    }
   ]
 }

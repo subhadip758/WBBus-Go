@@ -1,0 +1,4082 @@
+{
+  "buses": [
+    {
+      "bus_id": "bus_joy_baba_khetrapal_amlashuli_bankura_bus_stand",
+      "bus_name": "JOY",
+      "alternate_name": "JOY BABA KHETRAPAL",
+      "registration_number": null,
+      "agency": null,
+      "operator": "JOY BABA KHETRAPAL",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Amlashuli",
+      "destination": "Bankura Bus Stand",
+      "route_id": "route_amlashuli_bankura_bus_stand_joy_baba_khetrapal",
+      "url": "https://wbbustime.in/bus-timetable/bankura-bus-stand-to-amlashuli/"
+    },
+    {
+      "bus_id": "bus_asansolsalar_express_asansol_salar",
+      "bus_name": "ASANSOL-SALAR",
+      "alternate_name": "ASANSOL-SALAR EXPRESS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "ASANSOL-SALAR EXPRESS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Asansol",
+      "destination": "Salar",
+      "route_id": "route_asansol_salar_asansolsalar_express",
+      "url": "https://wbbustime.in/bus-timetable/salar-to-asansol/"
+    },
+    {
+      "bus_id": "bus_jinia_asansol_digha_border",
+      "bus_name": "JINIA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "JINIA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Asansol",
+      "destination": "Digha Border",
+      "route_id": "route_asansol_digha_border_jinia",
+      "url": "https://wbbustime.in/bus-timetable/digha-border-to-asansol/"
+    },
+    {
+      "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
+      "bus_name": "JOY",
+      "alternate_name": "JOY BHARAT MATA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "JOY BHARAT MATA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Balarampur",
+      "destination": "Khatra",
+      "route_id": "route_balarampur_khatra_joy_bharat_mata",
+      "url": "https://wbbustime.in/bus-timetable/khatra-to-balarampur/"
+    },
+    {
+      "bus_id": "bus_esplanade_bandar_kolkata",
+      "bus_name": "ESPLANADE",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Esplanade",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bandar",
+      "destination": "Kolkata",
+      "route_id": "route_bandar_kolkata_esplanade",
+      "url": "https://wbbustime.in/bus-timetable/kolkata-esplanade-to-bandar/"
+    },
+    {
+      "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
+      "bus_name": "JAI",
+      "alternate_name": "Jai Maa Durga",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Jai Maa Durga",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bandwan",
+      "destination": "Siliguri",
+      "route_id": "route_bandwan_siliguri_jai_maa_durga",
+      "url": "https://wbbustime.in/bus-timetable/siliguri-to-bandwan/"
+    },
+    {
+      "bus_id": "bus_debi_kamakhya_tara_ma_travels_trip_1_bandwan_bankura_bus_stand",
+      "bus_name": "DEBI",
+      "alternate_name": "Debi Kamakhya Tara Ma Travels (Trip 1",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Debi Kamakhya Tara Ma Travels (Trip 1",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bandwan",
+      "destination": "Bankura Bus Stand",
+      "route_id": "route_bandwan_bankura_bus_stand_debi_kamakhya_tara_ma_travels_trip_1",
+      "url": "https://wbbustime.in/bus-timetable/bankura-bus-stand-to-bandwan/"
+    },
+    {
+      "bus_id": "bus_aayan_bankura_ramchandrapur",
+      "bus_name": "AAYAN",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "AAYAN",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bankura",
+      "destination": "Ramchandrapur",
+      "route_id": "route_bankura_ramchandrapur_aayan",
+      "url": "https://wbbustime.in/bus-timetable/ramchandrapur-to-bankura/"
+    },
+    {
+      "bus_id": "bus_maa_tulsi_bankura_bhutshahar",
+      "bus_name": "MAA",
+      "alternate_name": "MAA TULSI",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MAA TULSI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bankura",
+      "destination": "Bhutshahar",
+      "route_id": "route_bankura_bhutshahar_maa_tulsi",
+      "url": "https://wbbustime.in/bus-timetable/bhutshahar-to-bankura/"
+    },
+    {
+      "bus_id": "bus_shubhasree_travels_ma_parbati_bankura_kashipur",
+      "bus_name": "SHUBHASREE",
+      "alternate_name": "SHUBHASREE TRAVELS (MA PARBATI",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SHUBHASREE TRAVELS (MA PARBATI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bankura",
+      "destination": "Kashipur",
+      "route_id": "route_bankura_kashipur_shubhasree_travels_ma_parbati",
+      "url": "https://wbbustime.in/bus-timetable/kashipur-to-bankura/"
+    },
+    {
+      "bus_id": "bus_tirumala_bibek_bankura_asansol",
+      "bus_name": "TIRUMALA",
+      "alternate_name": "TIRUMALA (BIBEK",
+      "registration_number": null,
+      "agency": null,
+      "operator": "TIRUMALA (BIBEK",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bankura",
+      "destination": "Asansol",
+      "route_id": "route_bankura_asansol_tirumala_bibek",
+      "url": "https://wbbustime.in/bus-timetable/asansol-to-bankura/"
+    },
+    {
+      "bus_id": "bus_madan_mohan_trip_1_bankura_bus_stand_durgapur_bus_stand",
+      "bus_name": "MADAN",
+      "alternate_name": "Madan Mohan (Trip 1",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Madan Mohan (Trip 1",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bankura Bus Stand",
+      "destination": "Durgapur Bus Stand",
+      "route_id": "route_bankura_bus_stand_durgapur_bus_stand_madan_mohan_trip_1",
+      "url": "https://wbbustime.in/bus-timetable/durgapur-bus-stand-to-bankura-bus-stand/"
+    },
+    {
+      "bus_id": "bus_tirupati_bankura_bus_stand_dhaldanga",
+      "bus_name": "TIRUPATI",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "TIRUPATI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bankura Bus Stand",
+      "destination": "Dhaldanga",
+      "route_id": "route_bankura_bus_stand_dhaldanga_tirupati",
+      "url": "https://wbbustime.in/bus-timetable/dhaldanga-to-bankura-bus-stand/"
+    },
+    {
+      "bus_id": "bus_lalparul_bankura_bus_stand_durgapur",
+      "bus_name": "LALPARUL",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "LALPARUL",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bankura Bus Stand",
+      "destination": "Durgapur",
+      "route_id": "route_bankura_bus_stand_durgapur_lalparul",
+      "url": "https://wbbustime.in/bus-timetable/durgapur-to-bankura-bus-stand/"
+    },
+    {
+      "bus_id": "bus_tirupati_bankura_bus_stand_barakar",
+      "bus_name": "TIRUPATI",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Tirupati",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bankura Bus Stand",
+      "destination": "Barakar",
+      "route_id": "route_bankura_bus_stand_barakar_tirupati",
+      "url": "https://wbbustime.in/bus-timetable/barakar-to-bankura-bus-stand/"
+    },
+    {
+      "bus_id": "bus_vinayak_barabazar_durgapur_station",
+      "bus_name": "VINAYAK",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "VINAYAK",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Barabazar",
+      "destination": "Durgapur Station",
+      "route_id": "route_barabazar_durgapur_station_vinayak",
+      "url": "https://wbbustime.in/bus-timetable/durgapur-station-to-barabazar/"
+    },
+    {
+      "bus_id": "bus_bhagyalaxmi_barabazar_bankura",
+      "bus_name": "BHAGYALAXMI",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Bhagyalaxmi",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Barabazar",
+      "destination": "Bankura",
+      "route_id": "route_barabazar_bankura_bhagyalaxmi",
+      "url": "https://wbbustime.in/bus-timetable/bankura-to-barabazar/"
+    },
+    {
+      "bus_id": "bus_debibala_travels_barakar_arambagh",
+      "bus_name": "DEBIBALA",
+      "alternate_name": "Debibala Travels",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Debibala Travels",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Barakar",
+      "destination": "Arambagh",
+      "route_id": "route_barakar_arambagh_debibala_travels",
+      "url": "https://wbbustime.in/bus-timetable/arambagh-to-barakar/"
+    },
+    {
+      "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
+      "bus_name": "SARKAR",
+      "alternate_name": "SARKAR TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SARKAR TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Barasat",
+      "destination": "Digha Border Udaipur",
+      "route_id": "route_barasat_digha_border_udaipur_sarkar_travels",
+      "url": "https://wbbustime.in/bus-timetable/digha-border-udaipur-to-barasat/"
+    },
+    {
+      "bus_id": "bus_shika_traders_ishika_bardhaman_mecheda",
+      "bus_name": "SHIKA",
+      "alternate_name": "SHIKA TRADERS ISHIKA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SHIKA TRADERS ISHIKA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bardhaman",
+      "destination": "Mecheda",
+      "route_id": "route_bardhaman_mecheda_shika_traders_ishika",
+      "url": "https://wbbustime.in/bus-timetable/mecheda-to-bardhaman/"
+    },
+    {
+      "bus_id": "bus_new_nabarupa_bardhaman_berhampore",
+      "bus_name": "NEW",
+      "alternate_name": "NEW NABARUPA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "NEW NABARUPA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bardhaman",
+      "destination": "Berhampore",
+      "route_id": "route_bardhaman_berhampore_new_nabarupa",
+      "url": "https://wbbustime.in/bus-timetable/berhampore-to-bardhaman/"
+    },
+    {
+      "bus_id": "bus_nabaraj_mail_bardhaman_suri",
+      "bus_name": "NABARAJ",
+      "alternate_name": "NABARAJ (MAIL",
+      "registration_number": null,
+      "agency": null,
+      "operator": "NABARAJ (MAIL",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bardhaman",
+      "destination": "Suri",
+      "route_id": "route_bardhaman_suri_nabaraj_mail",
+      "url": "https://wbbustime.in/bus-timetable/suri-to-bardhaman/"
+    },
+    {
+      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
+      "bus_name": "ISHIKA",
+      "alternate_name": "ISHIKA TRADERS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "ISHIKA TRADERS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bardhaman Alisha",
+      "destination": "Kharagpur",
+      "route_id": "route_bardhaman_alisha_kharagpur_ishika_traders",
+      "url": "https://wbbustime.in/bus-timetable/kharagpur-to-bardhaman-alisha/"
+    },
+    {
+      "bus_id": "bus_rbn_travels_berada_badanganj",
+      "bus_name": "RBN",
+      "alternate_name": "RBN TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "RBN TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Berada",
+      "destination": "Badanganj",
+      "route_id": "route_berada_badanganj_rbn_travels",
+      "url": "https://wbbustime.in/bus-timetable/badanganj-to-berada/"
+    },
+    {
+      "bus_id": "bus_devi_durga_bishnupur_taldangra",
+      "bus_name": "DEVI",
+      "alternate_name": "Devi Durga",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Devi Durga",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bishnupur",
+      "destination": "Taldangra",
+      "route_id": "route_bishnupur_taldangra_devi_durga",
+      "url": "https://wbbustime.in/bus-timetable/taldangra-to-bishnupur/"
+    },
+    {
+      "bus_id": "bus_mahamaya_bishnupur_asansol",
+      "bus_name": "MAHAMAYA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "MAHAMAYA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bishnupur",
+      "destination": "Asansol",
+      "route_id": "route_bishnupur_asansol_mahamaya",
+      "url": "https://wbbustime.in/bus-timetable/asansol-to-bishnupur/"
+    },
+    {
+      "bus_id": "bus_dakshayaniria_super_bishnupur_old_digha",
+      "bus_name": "DAKSHAYANIRIA",
+      "alternate_name": "DAKSHAYANIRIA SUPER",
+      "registration_number": null,
+      "agency": null,
+      "operator": "DAKSHAYANIRIA SUPER",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bishnupur",
+      "destination": "Old Digha",
+      "route_id": "route_bishnupur_old_digha_dakshayaniria_super",
+      "url": "https://wbbustime.in/bus-timetable/old-digha-to-bishnupur/"
+    },
+    {
+      "bus_id": "bus_maa_tara_alaka_travels_bishnupur_digha_border",
+      "bus_name": "MAA",
+      "alternate_name": "MAA TARA (ALAKA TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MAA TARA (ALAKA TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bishnupur",
+      "destination": "Digha Border",
+      "route_id": "route_bishnupur_digha_border_maa_tara_alaka_travels",
+      "url": "https://wbbustime.in/bus-timetable/digha-border-to-bishnupur/"
+    },
+    {
+      "bus_id": "bus_ishika_trip_2_bishnupur_durgapur_station",
+      "bus_name": "ISHIKA",
+      "alternate_name": "ISHIKA (Trip 2",
+      "registration_number": null,
+      "agency": null,
+      "operator": "ISHIKA (Trip 2",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bishnupur",
+      "destination": "Durgapur Station",
+      "route_id": "route_bishnupur_durgapur_station_ishika_trip_2",
+      "url": "https://wbbustime.in/bus-timetable/durgapur-station-to-bishnupur/"
+    },
+    {
+      "bus_id": "bus_rof_rof_bishnupur_township",
+      "bus_name": "ROF",
+      "alternate_name": "ROF ROF",
+      "registration_number": null,
+      "agency": null,
+      "operator": "ROF ROF",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bishnupur",
+      "destination": "Township",
+      "route_id": "route_bishnupur_township_rof_rof",
+      "url": "https://wbbustime.in/bus-timetable/township-to-bishnupur/"
+    },
+    {
+      "bus_id": "bus_devi_durga_bishnupur_manbazar",
+      "bus_name": "DEVI",
+      "alternate_name": "DEVI DURGA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "DEVI DURGA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bishnupur",
+      "destination": "Manbazar",
+      "route_id": "route_bishnupur_manbazar_devi_durga",
+      "url": "https://wbbustime.in/bus-timetable/manbazar-to-bishnupur/"
+    },
+    {
+      "bus_id": "bus_sbstc_bolpurdigha_bolpur_new_digha",
+      "bus_name": "SBSTC",
+      "alternate_name": "SBSTC BOLPUR-DIGHA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SBSTC BOLPUR-DIGHA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bolpur",
+      "destination": "New Digha",
+      "route_id": "route_bolpur_new_digha_sbstc_bolpurdigha",
+      "url": "https://wbbustime.in/bus-timetable/new-digha-to-bolpur/"
+    },
+    {
+      "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
+      "bus_name": "\u099c\u09af\u09bc",
+      "alternate_name": "\u099c\u09af\u09bc \u09ac\u09be\u09ac\u09be \u09b2\u09cb\u0995\u09a8\u09be\u09a5",
+      "registration_number": null,
+      "agency": null,
+      "operator": "\u099c\u09af\u09bc \u09ac\u09be\u09ac\u09be \u09b2\u09cb\u0995\u09a8\u09be\u09a5",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Bolpur",
+      "destination": "Panchthupi",
+      "route_id": "route_bolpur_panchthupi_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5",
+      "url": "https://wbbustime.in/bus-timetable/panchthupi-to-bolpur/"
+    },
+    {
+      "bus_id": "bus_ambika_burdwan_itaberia",
+      "bus_name": "AMBIKA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Ambika",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Burdwan",
+      "destination": "Itaberia",
+      "route_id": "route_burdwan_itaberia_ambika",
+      "url": "https://wbbustime.in/bus-timetable/itaberia-to-burdwan/"
+    },
+    {
+      "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
+      "bus_name": "GITANJALI",
+      "alternate_name": "GITANJALI TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "GITANJALI TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Burdwan Alisha",
+      "destination": "Panskura",
+      "route_id": "route_burdwan_alisha_panskura_gitanjali_travels",
+      "url": "https://wbbustime.in/bus-timetable/panskura-to-burdwan-alisha/"
+    },
+    {
+      "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
+      "bus_name": "ISHIKA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "ISHIKA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Burdwan Alisha",
+      "destination": "Mecheda Station",
+      "route_id": "route_burdwan_alisha_mecheda_station_ishika",
+      "url": "https://wbbustime.in/bus-timetable/mecheda-station-to-burdwan-alisha/"
+    },
+    {
+      "bus_id": "bus_ishika_traders_burdwan_raj_college_old_digha",
+      "bus_name": "ISHIKA",
+      "alternate_name": "ISHIKA TRADERS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "ISHIKA TRADERS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Burdwan Raj College",
+      "destination": "Old Digha",
+      "route_id": "route_burdwan_raj_college_old_digha_ishika_traders",
+      "url": "https://wbbustime.in/bus-timetable/old-digha-to-burdwan-raj-college/"
+    },
+    {
+      "bus_id": "bus_tirupati_chandrakona_road_durgapur_station",
+      "bus_name": "TIRUPATI",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "TIRUPATI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Chandrakona Road",
+      "destination": "Durgapur Station",
+      "route_id": "route_chandrakona_road_durgapur_station_tirupati",
+      "url": "https://wbbustime.in/bus-timetable/durgapur-station-to-chandrakona-road/"
+    },
+    {
+      "bus_id": "bus_laxmi_narayan_chandrakona_road_silda",
+      "bus_name": "LAXMI",
+      "alternate_name": "LAXMI NARAYAN",
+      "registration_number": null,
+      "agency": null,
+      "operator": "LAXMI NARAYAN",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Chandrakona Road",
+      "destination": "Silda",
+      "route_id": "route_chandrakona_road_silda_laxmi_narayan",
+      "url": "https://wbbustime.in/bus-timetable/silda-to-chandrakona-road/"
+    },
+    {
+      "bus_id": "bus_shreedhar_chandrakona_road_central_bus_stand_howrah",
+      "bus_name": "SHREEDHAR",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Shreedhar",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Chandrakona Road Central Bus Stand",
+      "destination": "Howrah",
+      "route_id": "route_chandrakona_road_central_bus_stand_howrah_shreedhar",
+      "url": "https://wbbustime.in/bus-timetable/howrah-to-chandrakona-road-central-bus-stand/"
+    },
+    {
+      "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
+      "bus_name": "MAA",
+      "alternate_name": "MAA BAGALA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MAA BAGALA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Contai Central",
+      "destination": "Medinipur Central",
+      "route_id": "route_contai_central_medinipur_central_maa_bagala",
+      "url": "https://wbbustime.in/bus-timetable/medinipur-central-to-contai-central/"
+    },
+    {
+      "bus_id": "bus_nbstc_coochbehar_depot_coochbehar_bus_stand_dharmatala_government_bus",
+      "bus_name": "NBSTC",
+      "alternate_name": "NBSTC COOCHBEHAR DEPOT",
+      "registration_number": null,
+      "agency": null,
+      "operator": "NBSTC COOCHBEHAR DEPOT",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Coochbehar Bus Stand",
+      "destination": "Dharmatala Government Bus",
+      "route_id": "route_coochbehar_bus_stand_dharmatala_government_bus_nbstc_coochbehar_depot",
+      "url": "https://wbbustime.in/bus-timetable/dharmatala-government-bus-to-coochbehar-bus-stand/"
+    },
+    {
+      "bus_id": "bus_kolkata_dantan_dharmatala",
+      "bus_name": "KOLKATA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Kolkata",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Dantan",
+      "destination": "Dharmatala",
+      "route_id": "route_dantan_dharmatala_kolkata",
+      "url": "https://wbbustime.in/bus-timetable/dharmatala-kolkata-to-dantan/"
+    },
+    {
+      "bus_id": "bus_sahil_travels_dhuliyan_nababhat_bus_stand",
+      "bus_name": "SAHIL",
+      "alternate_name": "SAHIL TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SAHIL TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Dhuliyan",
+      "destination": "Nababhat Bus Stand",
+      "route_id": "route_dhuliyan_nababhat_bus_stand_sahil_travels",
+      "url": "https://wbbustime.in/bus-timetable/nababhat-bus-stand-to-dhuliyan/"
+    },
+    {
+      "bus_id": "bus_nilachal_digha_medinipur",
+      "bus_name": "NILACHAL",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "NILACHAL",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Digha",
+      "destination": "Medinipur",
+      "route_id": "route_digha_medinipur_nilachal",
+      "url": "https://wbbustime.in/bus-timetable/medinipur-to-digha/"
+    },
+    {
+      "bus_id": "bus_shree_ram_digha_border_kukrahati_ferry_ghat",
+      "bus_name": "SHREE",
+      "alternate_name": "SHREE RAM",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SHREE RAM",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Digha Border",
+      "destination": "Kukrahati Ferry Ghat",
+      "route_id": "route_digha_border_kukrahati_ferry_ghat_shree_ram",
+      "url": "https://wbbustime.in/bus-timetable/kukrahati-ferry-ghat-to-digha-border/"
+    },
+    {
+      "bus_id": "bus_sri_ram_digha_border_jairambati",
+      "bus_name": "(SRI",
+      "alternate_name": "(SRI RAM",
+      "registration_number": null,
+      "agency": null,
+      "operator": "(SRI RAM",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Digha Border",
+      "destination": "Jairambati",
+      "route_id": "route_digha_border_jairambati_sri_ram",
+      "url": "https://wbbustime.in/bus-timetable/jairambati-to-digha-border/"
+    },
+    {
+      "bus_id": "bus_monikanchan_digha_border_amp_bus_stand_midnapore_central_bus_stand",
+      "bus_name": "MONIKANCHAN",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Monikanchan",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Digha Border &amp; Bus Stand",
+      "destination": "Midnapore Central Bus Stand",
+      "route_id": "route_digha_border_amp_bus_stand_midnapore_central_bus_stand_monikanchan",
+      "url": "https://wbbustime.in/bus-timetable/midnapore-central-bus-stand-to-digha-border-bus-stand/"
+    },
+    {
+      "bus_id": "bus_bura_baba_durgapur_dishergarh",
+      "bus_name": "BURA",
+      "alternate_name": "BURA BABA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "BURA BABA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Durgapur",
+      "destination": "Dishergarh",
+      "route_id": "route_durgapur_dishergarh_bura_baba",
+      "url": "https://wbbustime.in/bus-timetable/dishergarh-to-durgapur/"
+    },
+    {
+      "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
+      "bus_name": "RATUL",
+      "alternate_name": "RATUL BABU",
+      "registration_number": null,
+      "agency": null,
+      "operator": "RATUL BABU",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Durgapur St.",
+      "destination": "Arambagh",
+      "route_id": "route_durgapur_st_arambagh_ratul_babu",
+      "url": "https://wbbustime.in/bus-timetable/arambagh-to-durgapur-st/"
+    },
+    {
+      "bus_id": "bus_shyamali_durgapur_station_suri",
+      "bus_name": "SHYAMALI",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "SHYAMALI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Durgapur Station",
+      "destination": "Suri",
+      "route_id": "route_durgapur_station_suri_shyamali",
+      "url": "https://wbbustime.in/bus-timetable/suri-to-durgapur-station/"
+    },
+    {
+      "bus_id": "bus_wasif_super_fast_durgapur_station_purulia",
+      "bus_name": "WASIF",
+      "alternate_name": "Wasif Super Fast",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Wasif Super Fast",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Durgapur Station",
+      "destination": "Purulia",
+      "route_id": "route_durgapur_station_purulia_wasif_super_fast",
+      "url": "https://wbbustime.in/bus-timetable/purulia-to-durgapur-station/"
+    },
+    {
+      "bus_id": "bus_bakkhalihowrah_express_esplanade_howrah_station",
+      "bus_name": "BAKKHALI-HOWRAH",
+      "alternate_name": "BAKKHALI-HOWRAH EXPRESS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "BAKKHALI-HOWRAH EXPRESS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Esplanade",
+      "destination": "Howrah Station",
+      "route_id": "route_esplanade_howrah_station_bakkhalihowrah_express",
+      "url": "https://wbbustime.in/bus-timetable/howrah-station-to-esplanade/"
+    },
+    {
+      "bus_id": "bus_atithiparibahan_ac_esplanade_digha_border",
+      "bus_name": "ATITHIPARIBAHAN",
+      "alternate_name": "ATITHIPARIBAHAN (AC",
+      "registration_number": null,
+      "agency": null,
+      "operator": "ATITHIPARIBAHAN (AC",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Esplanade",
+      "destination": "Digha Border",
+      "route_id": "route_esplanade_digha_border_atithiparibahan_ac",
+      "url": "https://wbbustime.in/bus-timetable/digha-border-to-esplanade/"
+    },
+    {
+      "bus_id": "bus_lokenath_bus_service_esplanade_kolkata_siliguri_junction",
+      "bus_name": "LOKENATH",
+      "alternate_name": "Lokenath Bus Service",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Lokenath Bus Service",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Esplanade (Kolkata)",
+      "destination": "Siliguri Junction",
+      "route_id": "route_esplanade_kolkata_siliguri_junction_lokenath_bus_service",
+      "url": "https://wbbustime.in/bus-timetable/siliguri-junction-to-esplanade-kolkata/"
+    },
+    {
+      "bus_id": "bus_p_travels_haldia_tarakeswar",
+      "bus_name": "P",
+      "alternate_name": "P Travels",
+      "registration_number": null,
+      "agency": null,
+      "operator": "P Travels",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Haldia",
+      "destination": "Tarakeswar",
+      "route_id": "route_haldia_tarakeswar_p_travels",
+      "url": "https://wbbustime.in/bus-timetable/tarakeswar-to-haldia/"
+    },
+    {
+      "bus_id": "bus_ananya_haldia_belpahari",
+      "bus_name": "ANANYA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "ANANYA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Haldia",
+      "destination": "Belpahari",
+      "route_id": "route_haldia_belpahari_ananya",
+      "url": "https://wbbustime.in/bus-timetable/belpahari-to-haldia/"
+    },
+    {
+      "bus_id": "bus_darshan_haldia_bankura",
+      "bus_name": "DARSHAN",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "DARSHAN",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Haldia",
+      "destination": "Bankura",
+      "route_id": "route_haldia_bankura_darshan",
+      "url": "https://wbbustime.in/bus-timetable/bankura-to-haldia/"
+    },
+    {
+      "bus_id": "bus_rahul_travels_hetia_burdwan",
+      "bus_name": "RAHUL",
+      "alternate_name": "Rahul Travels",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Rahul Travels",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Hetia",
+      "destination": "Burdwan",
+      "route_id": "route_hetia_burdwan_rahul_travels",
+      "url": "https://wbbustime.in/bus-timetable/burdwan-to-hetia/"
+    },
+    {
+      "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
+      "bus_name": "HETIYA",
+      "alternate_name": "HETIYA - KOTULPUR - BURDWAN",
+      "registration_number": null,
+      "agency": null,
+      "operator": "HETIYA - KOTULPUR - BURDWAN",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Hetiya",
+      "destination": "Alisa Bus Stand",
+      "route_id": "route_hetiya_alisa_bus_stand_hetiya_kotulpur_burdwan",
+      "url": "https://wbbustime.in/bus-timetable/alisa-bus-stand-to-hetiya/"
+    },
+    {
+      "bus_id": "bus_suparna_itaberia_tarakeswar",
+      "bus_name": "SUPARNA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "SUPARNA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Itaberia",
+      "destination": "Tarakeswar",
+      "route_id": "route_itaberia_tarakeswar_suparna",
+      "url": "https://wbbustime.in/bus-timetable/tarakeswar-to-itaberia/"
+    },
+    {
+      "bus_id": "bus_abha_jajigram_asansol",
+      "bus_name": "ABHA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Abha",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Jajigram",
+      "destination": "Asansol",
+      "route_id": "route_jajigram_asansol_abha",
+      "url": "https://wbbustime.in/bus-timetable/asansol-to-jajigram/"
+    },
+    {
+      "bus_id": "bus_azad_jangipur_asansol_bus_stand",
+      "bus_name": "AZAD",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Azad",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Jangipur",
+      "destination": "Asansol Bus Stand",
+      "route_id": "route_jangipur_asansol_bus_stand_azad",
+      "url": "https://wbbustime.in/bus-timetable/asansol-bus-stand-to-jangipur/"
+    },
+    {
+      "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
+      "bus_name": "SHAHIN",
+      "alternate_name": "Shahin Super",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Shahin Super",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kalyani (Ishwargupta Setu)",
+      "destination": "Asansol",
+      "route_id": "route_kalyani_ishwargupta_setu_asansol_shahin_super",
+      "url": "https://wbbustime.in/bus-timetable/asansol-to-kalyani-ishwargupta-setu/"
+    },
+    {
+      "bus_id": "bus_shubhasree_travels_ma_parbati_kashipur_bankura",
+      "bus_name": "SHUBHASREE",
+      "alternate_name": "SHUBHASREE TRAVELS (MA PARBATI",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SHUBHASREE TRAVELS (MA PARBATI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kashipur",
+      "destination": "Bankura",
+      "route_id": "route_kashipur_bankura_shubhasree_travels_ma_parbati",
+      "url": "https://wbbustime.in/bus-timetable/bankura-to-kashipur/"
+    },
+    {
+      "bus_id": "bus_maa_bhabani_kharagpur_burdwan",
+      "bus_name": "MAA",
+      "alternate_name": "MAA BHABANI",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MAA BHABANI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kharagpur",
+      "destination": "Burdwan",
+      "route_id": "route_kharagpur_burdwan_maa_bhabani",
+      "url": "https://wbbustime.in/bus-timetable/burdwan-to-kharagpur/"
+    },
+    {
+      "bus_id": "bus_786_nosib_kharagpur_bus_stand_burdwan_alisha_bus_stand",
+      "bus_name": "786",
+      "alternate_name": "786 Nosib",
+      "registration_number": null,
+      "agency": null,
+      "operator": "786 Nosib",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kharagpur Bus Stand",
+      "destination": "Burdwan Alisha Bus Stand",
+      "route_id": "route_kharagpur_bus_stand_burdwan_alisha_bus_stand_786_nosib",
+      "url": "https://wbbustime.in/bus-timetable/burdwan-alisha-bus-stand-to-kharagpur-bus-stand/"
+    },
+    {
+      "bus_id": "bus_mousumi_disha_travels_khatra_raniganj",
+      "bus_name": "MOUSUMI",
+      "alternate_name": "MOUSUMI DISHA TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MOUSUMI DISHA TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Khatra",
+      "destination": "Raniganj",
+      "route_id": "route_khatra_raniganj_mousumi_disha_travels",
+      "url": "https://wbbustime.in/bus-timetable/raniganj-to-khatra/"
+    },
+    {
+      "bus_id": "bus_maa_tulsi_khatra_tarakeswar",
+      "bus_name": "MAA",
+      "alternate_name": "Maa Tulsi",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Maa Tulsi",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Khatra",
+      "destination": "Tarakeswar",
+      "route_id": "route_khatra_tarakeswar_maa_tulsi",
+      "url": "https://wbbustime.in/bus-timetable/tarakeswar-to-khatra/"
+    },
+    {
+      "bus_id": "bus_tara_maa_khatra_arambagh",
+      "bus_name": "TARA",
+      "alternate_name": "TARA MAA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "TARA MAA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Khatra",
+      "destination": "Arambagh",
+      "route_id": "route_khatra_arambagh_tara_maa",
+      "url": "https://wbbustime.in/bus-timetable/arambagh-to-khatra/"
+    },
+    {
+      "bus_id": "bus_jupiter_express_khetua_kolkata_station",
+      "bus_name": "JUPITER",
+      "alternate_name": "Jupiter Express",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Jupiter Express",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Khetua",
+      "destination": "Kolkata Station",
+      "route_id": "route_khetua_kolkata_station_jupiter_express",
+      "url": "https://wbbustime.in/bus-timetable/kolkata-station-to-khetua/"
+    },
+    {
+      "bus_id": "bus_tanushree_kirnahar_binodia",
+      "bus_name": "TANUSHREE",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "TANUSHREE",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kirnahar",
+      "destination": "Binodia",
+      "route_id": "route_kirnahar_binodia_tanushree",
+      "url": "https://wbbustime.in/bus-timetable/binodia-to-kirnahar/"
+    },
+    {
+      "bus_id": "bus_mayer_ashirwad_dadabhai_travels_kirnahar_bardhaman",
+      "bus_name": "MAYER",
+      "alternate_name": "MAYER ASHIRWAD DADABHAI TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MAYER ASHIRWAD DADABHAI TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kirnahar",
+      "destination": "Bardhaman",
+      "route_id": "route_kirnahar_bardhaman_mayer_ashirwad_dadabhai_travels",
+      "url": "https://wbbustime.in/bus-timetable/bardhaman-to-kirnahar/"
+    },
+    {
+      "bus_id": "bus_ma_babar_ashirbad_kirnahar_sainthia",
+      "bus_name": "MA",
+      "alternate_name": "MA BABAR ASHIRBAD",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MA BABAR ASHIRBAD",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kirnahar",
+      "destination": "Sainthia",
+      "route_id": "route_kirnahar_sainthia_ma_babar_ashirbad",
+      "url": "https://wbbustime.in/bus-timetable/sainthia-to-kirnahar/"
+    },
+    {
+      "bus_id": "bus_maa_saradamoyi_kolkata_station_kolaghat",
+      "bus_name": "MAA",
+      "alternate_name": "Maa Saradamoyi",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Maa Saradamoyi",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kolkata Station",
+      "destination": "Kolaghat",
+      "route_id": "route_kolkata_station_kolaghat_maa_saradamoyi",
+      "url": "https://wbbustime.in/bus-timetable/kolaghat-to-kolkata-station/"
+    },
+    {
+      "bus_id": "bus_prashanna_kukrahati_bardhaman",
+      "bus_name": "PRASHANNA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "PRASHANNA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Kukrahati",
+      "destination": "Bardhaman",
+      "route_id": "route_kukrahati_bardhaman_prashanna",
+      "url": "https://wbbustime.in/bus-timetable/bardhaman-to-kukrahati/"
+    },
+    {
+      "bus_id": "bus_lalgarhtarakeswar_service_lalgarh_tarakeswar",
+      "bus_name": "LALGARH-TARAKESWAR",
+      "alternate_name": "LALGARH-TARAKESWAR SERVICE",
+      "registration_number": null,
+      "agency": null,
+      "operator": "LALGARH-TARAKESWAR SERVICE",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Lalgarh",
+      "destination": "Tarakeswar",
+      "route_id": "route_lalgarh_tarakeswar_lalgarhtarakeswar_service",
+      "url": "https://wbbustime.in/bus-timetable/tarakeswar-to-lalgarh/"
+    },
+    {
+      "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
+      "bus_name": "SHAKTIMAN",
+      "alternate_name": "SHAKTIMAN TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SHAKTIMAN TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Langalhata",
+      "destination": "Nababhat Mor",
+      "route_id": "route_langalhata_nababhat_mor_shaktiman_travels",
+      "url": "https://wbbustime.in/bus-timetable/nababhat-mor-to-langalhata/"
+    },
+    {
+      "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
+      "bus_name": "SONALI",
+      "alternate_name": "SONALI (MA DURGA",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SONALI (MA DURGA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Manbazar",
+      "destination": "Medinipur",
+      "route_id": "route_manbazar_medinipur_sonali_ma_durga",
+      "url": "https://wbbustime.in/bus-timetable/medinipur-to-manbazar/"
+    },
+    {
+      "bus_id": "bus_mangroldigha_service_mangrol_digha",
+      "bus_name": "MANGROL-DIGHA",
+      "alternate_name": "MANGROL-DIGHA SERVICE",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MANGROL-DIGHA SERVICE",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Mangrol",
+      "destination": "Digha",
+      "route_id": "route_mangrol_digha_mangroldigha_service",
+      "url": "https://wbbustime.in/bus-timetable/digha-to-mangrol/"
+    },
+    {
+      "bus_id": "bus_barnali_medinipur_garhbeta",
+      "bus_name": "BARNALI",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "BARNALI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Medinipur",
+      "destination": "Garhbeta",
+      "route_id": "route_medinipur_garhbeta_barnali",
+      "url": "https://wbbustime.in/bus-timetable/garhbeta-to-medinipur/"
+    },
+    {
+      "bus_id": "bus_gobinda_majestic_medinipur_digha",
+      "bus_name": "GOBINDA",
+      "alternate_name": "GOBINDA (MAJESTIC",
+      "registration_number": null,
+      "agency": null,
+      "operator": "GOBINDA (MAJESTIC",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Medinipur",
+      "destination": "Digha",
+      "route_id": "route_medinipur_digha_gobinda_majestic",
+      "url": "https://wbbustime.in/bus-timetable/digha-to-medinipur/"
+    },
+    {
+      "bus_id": "bus_rbn_travels_medinipur_tatanagar",
+      "bus_name": "RBN",
+      "alternate_name": "RBN TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "RBN TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Medinipur",
+      "destination": "Tatanagar",
+      "route_id": "route_medinipur_tatanagar_rbn_travels",
+      "url": "https://wbbustime.in/bus-timetable/tatanagar-to-medinipur/"
+    },
+    {
+      "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
+      "bus_name": "MA",
+      "alternate_name": "MA TARA / MA RUDRAYANI (AC",
+      "registration_number": null,
+      "agency": null,
+      "operator": "MA TARA / MA RUDRAYANI (AC",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Medinipur",
+      "destination": "Mayapur ISKCON",
+      "route_id": "route_medinipur_mayapur_iskcon_ma_tara_ma_rudrayani_ac",
+      "url": "https://wbbustime.in/bus-timetable/mayapur-iskcon-to-medinipur/"
+    },
+    {
+      "bus_id": "bus_maa_kamala_nandan_travels_midnapore_central_bus_stand_durgachak_central_bus_stand",
+      "bus_name": "MAA",
+      "alternate_name": "Maa Kamala Nandan Travels",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Maa Kamala Nandan Travels",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Durgachak Central Bus Stand",
+      "route_id": "route_midnapore_central_bus_stand_durgachak_central_bus_stand_maa_kamala_nandan_travels",
+      "url": "https://wbbustime.in/bus-timetable/durgachak-central-bus-stand-to-midnapore-central-bus-stand/"
+    },
+    {
+      "bus_id": "bus_tarakripa_midnapore_central_bus_stand_digha",
+      "bus_name": "TARAKRIPA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Tarakripa",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Digha",
+      "route_id": "route_midnapore_central_bus_stand_digha_tarakripa",
+      "url": "https://wbbustime.in/bus-timetable/digha-to-midnapore-central-bus-stand/"
+    },
+    {
+      "bus_id": "bus_gobinda_midnapore_central_bus_stand_kanthi_central_bus_stand",
+      "bus_name": "GOBINDA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Gobinda",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Kanthi Central Bus Stand",
+      "route_id": "route_midnapore_central_bus_stand_kanthi_central_bus_stand_gobinda",
+      "url": "https://wbbustime.in/bus-timetable/kanthi-central-bus-stand-to-midnapore-central-bus-stand/"
+    },
+    {
+      "bus_id": "bus_charubala_nawpara_kolkata",
+      "bus_name": "CHARUBALA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Charubala",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Nawpara",
+      "destination": "Kolkata",
+      "route_id": "route_nawpara_kolkata_charubala",
+      "url": "https://wbbustime.in/bus-timetable/kolkata-to-nawpara/"
+    },
+    {
+      "bus_id": "bus_palki_route_45_padmashree_airport_1_no",
+      "bus_name": "PALKI",
+      "alternate_name": "PALKI (ROUTE 45",
+      "registration_number": null,
+      "agency": null,
+      "operator": "PALKI (ROUTE 45",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Padmashree",
+      "destination": "Airport 1 No",
+      "route_id": "route_padmashree_airport_1_no_palki_route_45",
+      "url": "https://wbbustime.in/bus-timetable/airport-1-no-to-padmashree/"
+    },
+    {
+      "bus_id": "bus_ramkrishna_panskura_station_burdwan",
+      "bus_name": "RAMKRISHNA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Ramkrishna",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Panskura Station",
+      "destination": "Burdwan",
+      "route_id": "route_panskura_station_burdwan_ramkrishna",
+      "url": "https://wbbustime.in/bus-timetable/burdwan-to-panskura-station/"
+    },
+    {
+      "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
+      "bus_name": "SHEFALI",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "SHEFALI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Phulberia",
+      "destination": "Bankura Bus Stand",
+      "route_id": "route_phulberia_bankura_bus_stand_shefali",
+      "url": "https://wbbustime.in/bus-timetable/bankura-bus-stand-to-phulberia/"
+    },
+    {
+      "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
+      "bus_name": "PARTHSARATHI",
+      "alternate_name": "PARTHSARATHI (DUTTA MOTORS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "PARTHSARATHI (DUTTA MOTORS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Phulkusma",
+      "destination": "Tarakeswar",
+      "route_id": "route_phulkusma_tarakeswar_parthsarathi_dutta_motors",
+      "url": "https://wbbustime.in/bus-timetable/tarakeswar-to-phulkusma/"
+    },
+    {
+      "bus_id": "bus_arya_travels_phulkusma_mecheda_railway_station",
+      "bus_name": "ARYA",
+      "alternate_name": "ARYA TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "ARYA TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Phulkusma",
+      "destination": "Mecheda Railway Station",
+      "route_id": "route_phulkusma_mecheda_railway_station_arya_travels",
+      "url": "https://wbbustime.in/bus-timetable/mecheda-railway-station-to-phulkusma/"
+    },
+    {
+      "bus_id": "bus_phulkusmamecheda_express_phulkusma_mecheda",
+      "bus_name": "PHULKUSMA-MECHEDA",
+      "alternate_name": "PHULKUSMA-MECHEDA EXPRESS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "PHULKUSMA-MECHEDA EXPRESS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Phulkusma",
+      "destination": "Mecheda",
+      "route_id": "route_phulkusma_mecheda_phulkusmamecheda_express",
+      "url": "https://wbbustime.in/bus-timetable/mecheda-to-phulkusma/"
+    },
+    {
+      "bus_id": "bus_bullet_purulia_chandrakona_road",
+      "bus_name": "BULLET",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "BULLET",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Purulia",
+      "destination": "Chandrakona Road",
+      "route_id": "route_purulia_chandrakona_road_bullet",
+      "url": "https://wbbustime.in/bus-timetable/chandrakona-road-to-purulia/"
+    },
+    {
+      "bus_id": "bus_pushpashree_purulia_bankura",
+      "bus_name": "PUSHPASHREE",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "PUSHPASHREE",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Purulia",
+      "destination": "Bankura",
+      "route_id": "route_purulia_bankura_pushpashree",
+      "url": "https://wbbustime.in/bus-timetable/bankura-to-purulia/"
+    },
+    {
+      "bus_id": "bus_challenger_purulia_asansol",
+      "bus_name": "CHALLENGER",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "CHALLENGER",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Purulia",
+      "destination": "Asansol",
+      "route_id": "route_purulia_asansol_challenger",
+      "url": "https://wbbustime.in/bus-timetable/asansol-to-purulia/"
+    },
+    {
+      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
+      "bus_name": "MONIRAJ",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "MONIRAJ",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Ramgarh",
+      "destination": "Ramjibanpur",
+      "route_id": "route_ramgarh_ramjibanpur_moniraj",
+      "url": "https://wbbustime.in/bus-timetable/ramjibanpur-to-ramgarh/"
+    },
+    {
+      "bus_id": "bus_shreedhar_ramjibanpur_central_bus_stand_howrah",
+      "bus_name": "SHREEDHAR",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Shreedhar",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Ramjibanpur Central Bus Stand",
+      "destination": "Howrah",
+      "route_id": "route_ramjibanpur_central_bus_stand_howrah_shreedhar",
+      "url": "https://wbbustime.in/bus-timetable/howrah-to-ramjibanpur-central-bus-stand/"
+    },
+    {
+      "bus_id": "bus_moonlight_rampurhat_salar",
+      "bus_name": "MOONLIGHT",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Moonlight",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Rampurhat",
+      "destination": "Salar",
+      "route_id": "route_rampurhat_salar_moonlight",
+      "url": "https://wbbustime.in/bus-timetable/salar-to-rampurhat/"
+    },
+    {
+      "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
+      "bus_name": "SUBARNA",
+      "alternate_name": "Subarna Paribahan",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Subarna Paribahan",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Ranibandh",
+      "destination": "Siliguri",
+      "route_id": "route_ranibandh_siliguri_subarna_paribahan",
+      "url": "https://wbbustime.in/bus-timetable/siliguri-to-ranibandh/"
+    },
+    {
+      "bus_id": "bus_ishika_sabrakone_durgapur_station",
+      "bus_name": "ISHIKA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "ISHIKA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Sabrakone",
+      "destination": "Durgapur Station",
+      "route_id": "route_sabrakone_durgapur_station_ishika",
+      "url": "https://wbbustime.in/bus-timetable/durgapur-station-to-sabrakone/"
+    },
+    {
+      "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
+      "bus_name": "DHARMARAJ",
+      "alternate_name": "Dharmaraj Travels",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Dharmaraj Travels",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Seharabazar",
+      "destination": "Bankura Bus Stand",
+      "route_id": "route_seharabazar_bankura_bus_stand_dharmaraj_travels",
+      "url": "https://wbbustime.in/bus-timetable/bankura-bus-stand-to-seharabazar/"
+    },
+    {
+      "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
+      "bus_name": "SOUMEN",
+      "alternate_name": "Soumen Travels",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Soumen Travels",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Shambazar",
+      "destination": "Durgapur City Centre",
+      "route_id": "route_shambazar_durgapur_city_centre_soumen_travels",
+      "url": "https://wbbustime.in/bus-timetable/durgapur-city-centre-to-shambazar/"
+    },
+    {
+      "bus_id": "bus_putul_travels_sonathali_saltora",
+      "bus_name": "PUTUL",
+      "alternate_name": "PUTUL TRAVELS",
+      "registration_number": null,
+      "agency": null,
+      "operator": "PUTUL TRAVELS",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Sonathali",
+      "destination": "Saltora",
+      "route_id": "route_sonathali_saltora_putul_travels",
+      "url": "https://wbbustime.in/bus-timetable/saltora-to-sonathali/"
+    },
+    {
+      "bus_id": "bus_garib_nawaz_royal_sonathali_ladhurka",
+      "bus_name": "GARIB",
+      "alternate_name": "GARIB NAWAZ ROYAL",
+      "registration_number": null,
+      "agency": null,
+      "operator": "GARIB NAWAZ ROYAL",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Sonathali",
+      "destination": "Ladhurka",
+      "route_id": "route_sonathali_ladhurka_garib_nawaz_royal",
+      "url": "https://wbbustime.in/bus-timetable/ladhurka-to-sonathali/"
+    },
+    {
+      "bus_id": "bus_supa_howrah_station_supa_howrah_station",
+      "bus_name": "SUPA",
+      "alternate_name": "SUPA - HOWRAH STATION",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SUPA - HOWRAH STATION",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Supa",
+      "destination": "Howrah Station",
+      "route_id": "route_supa_howrah_station_supa_howrah_station",
+      "url": "https://wbbustime.in/bus-timetable/howrah-station-to-supa/"
+    },
+    {
+      "bus_id": "bus_kolkata_taldangra_dharmatala",
+      "bus_name": "KOLKATA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "Kolkata",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Taldangra",
+      "destination": "Dharmatala",
+      "route_id": "route_taldangra_dharmatala_kolkata",
+      "url": "https://wbbustime.in/bus-timetable/dharmatala-kolkata-to-taldangra/"
+    },
+    {
+      "bus_id": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
+      "bus_name": "RAMKRISHNA",
+      "alternate_name": "Ramkrishna Ashirwad",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Ramkrishna Ashirwad",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Tamluk",
+      "destination": "Alisha Bus Stand",
+      "route_id": "route_tamluk_alisha_bus_stand_ramkrishna_ashirwad",
+      "url": "https://wbbustime.in/bus-timetable/alisha-bus-stand-to-tamluk/"
+    },
+    {
+      "bus_id": "bus_akashbristi_tarakeshwar_haldia",
+      "bus_name": "AKASHBRISTI",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "AKASHBRISTI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Tarakeshwar",
+      "destination": "Haldia",
+      "route_id": "route_tarakeshwar_haldia_akashbristi",
+      "url": "https://wbbustime.in/bus-timetable/haldia-to-tarakeshwar/"
+    },
+    {
+      "bus_id": "bus_santoshi_mata_tarakeswar_bankura",
+      "bus_name": "SANTOSHI",
+      "alternate_name": "Santoshi Mata",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Santoshi Mata",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Tarakeswar",
+      "destination": "Bankura",
+      "route_id": "route_tarakeswar_bankura_santoshi_mata",
+      "url": "https://wbbustime.in/bus-timetable/bankura-to-tarakeswar/"
+    },
+    {
+      "bus_id": "bus_datababa_sakil_travels_tarakeswar_mecheda_station",
+      "bus_name": "DATABABA",
+      "alternate_name": "Datababa Sakil Travels",
+      "registration_number": null,
+      "agency": null,
+      "operator": "Datababa Sakil Travels",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Tarakeswar",
+      "destination": "Mecheda Station",
+      "route_id": "route_tarakeswar_mecheda_station_datababa_sakil_travels",
+      "url": "https://wbbustime.in/bus-timetable/mecheda-station-to-tarakeswar/"
+    },
+    {
+      "bus_id": "bus_tara_ma_ac_tarakeswar_digha",
+      "bus_name": "TARA",
+      "alternate_name": "TARA MA AC",
+      "registration_number": null,
+      "agency": null,
+      "operator": "TARA MA AC",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Tarakeswar",
+      "destination": "Digha",
+      "route_id": "route_tarakeswar_digha_tara_ma_ac",
+      "url": "https://wbbustime.in/bus-timetable/digha-to-tarakeswar/"
+    },
+    {
+      "bus_id": "bus_shankar_parwati_tatanagar_dharmatala",
+      "bus_name": "SHANKAR",
+      "alternate_name": "SHANKAR PARWATI",
+      "registration_number": null,
+      "agency": null,
+      "operator": "SHANKAR PARWATI",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Tatanagar",
+      "destination": "Dharmatala",
+      "route_id": "route_tatanagar_dharmatala_shankar_parwati",
+      "url": "https://wbbustime.in/bus-timetable/dharmatala-to-tatanagar/"
+    },
+    {
+      "bus_id": "bus_jashoda_telami_howrah_station",
+      "bus_name": "JASHODA",
+      "alternate_name": null,
+      "registration_number": null,
+      "agency": null,
+      "operator": "JASHODA",
+      "bus_type": "Private - NON AC",
+      "contact_number": null,
+      "alternate_number": null,
+      "source": "Telami",
+      "destination": "Howrah Station",
+      "route_id": "route_telami_howrah_station_jashoda",
+      "url": "https://wbbustime.in/bus-timetable/howrah-station-to-telami/"
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "route_amlashuli_bankura_bus_stand_joy_baba_khetrapal",
+      "route_name": "Amlashuli - Bankura Bus Stand (JOY BABA KHETRAPAL)",
+      "source": "Amlashuli",
+      "destination": "Bankura Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Amlashuli",
+        "Bankura Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_asansol_salar_asansolsalar_express",
+      "route_name": "Asansol - Salar (ASANSOL-SALAR EXPRESS)",
+      "source": "Asansol",
+      "destination": "Salar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Asansol",
+        "Salar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_asansol_digha_border_jinia",
+      "route_name": "Asansol - Digha Border (JINIA)",
+      "source": "Asansol",
+      "destination": "Digha Border",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Asansol",
+        "Digha Border"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_balarampur_khatra_joy_bharat_mata",
+      "route_name": "Balarampur - Khatra (JOY BHARAT MATA)",
+      "source": "Balarampur",
+      "destination": "Khatra",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Balarampur",
+        "Khatra"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bandar_kolkata_esplanade",
+      "route_name": "Bandar - Kolkata (Esplanade)",
+      "source": "Bandar",
+      "destination": "Kolkata",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bandar",
+        "Kolkata"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bandwan_siliguri_jai_maa_durga",
+      "route_name": "Bandwan - Siliguri (Jai Maa Durga)",
+      "source": "Bandwan",
+      "destination": "Siliguri",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bandwan",
+        "Siliguri"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bandwan_bankura_bus_stand_debi_kamakhya_tara_ma_travels_trip_1",
+      "route_name": "Bandwan - Bankura Bus Stand (Debi Kamakhya Tara Ma Travels (Trip 1)",
+      "source": "Bandwan",
+      "destination": "Bankura Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bandwan",
+        "Bankura Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_ramchandrapur_aayan",
+      "route_name": "Bankura - Ramchandrapur (AAYAN)",
+      "source": "Bankura",
+      "destination": "Ramchandrapur",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bankura",
+        "Ramchandrapur"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_bhutshahar_maa_tulsi",
+      "route_name": "Bankura - Bhutshahar (MAA TULSI)",
+      "source": "Bankura",
+      "destination": "Bhutshahar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bankura",
+        "Bhutshahar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_kashipur_shubhasree_travels_ma_parbati",
+      "route_name": "Bankura - Kashipur (SHUBHASREE TRAVELS (MA PARBATI)",
+      "source": "Bankura",
+      "destination": "Kashipur",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bankura",
+        "Kashipur"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_asansol_tirumala_bibek",
+      "route_name": "Bankura - Asansol (TIRUMALA (BIBEK)",
+      "source": "Bankura",
+      "destination": "Asansol",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bankura",
+        "Asansol"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_bus_stand_durgapur_bus_stand_madan_mohan_trip_1",
+      "route_name": "Bankura Bus Stand - Durgapur Bus Stand (Madan Mohan (Trip 1)",
+      "source": "Bankura Bus Stand",
+      "destination": "Durgapur Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bankura Bus Stand",
+        "Durgapur Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_bus_stand_dhaldanga_tirupati",
+      "route_name": "Bankura Bus Stand - Dhaldanga (TIRUPATI)",
+      "source": "Bankura Bus Stand",
+      "destination": "Dhaldanga",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bankura Bus Stand",
+        "Dhaldanga"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_bus_stand_durgapur_lalparul",
+      "route_name": "Bankura Bus Stand - Durgapur (LALPARUL)",
+      "source": "Bankura Bus Stand",
+      "destination": "Durgapur",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bankura Bus Stand",
+        "Durgapur"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bankura_bus_stand_barakar_tirupati",
+      "route_name": "Bankura Bus Stand - Barakar (Tirupati)",
+      "source": "Bankura Bus Stand",
+      "destination": "Barakar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bankura Bus Stand",
+        "Barakar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_barabazar_durgapur_station_vinayak",
+      "route_name": "Barabazar - Durgapur Station (VINAYAK)",
+      "source": "Barabazar",
+      "destination": "Durgapur Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Barabazar",
+        "Durgapur Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_barabazar_bankura_bhagyalaxmi",
+      "route_name": "Barabazar - Bankura (Bhagyalaxmi)",
+      "source": "Barabazar",
+      "destination": "Bankura",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Barabazar",
+        "Bankura"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_barakar_arambagh_debibala_travels",
+      "route_name": "Barakar - Arambagh (Debibala Travels)",
+      "source": "Barakar",
+      "destination": "Arambagh",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Barakar",
+        "Arambagh"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_barasat_digha_border_udaipur_sarkar_travels",
+      "route_name": "Barasat - Digha Border Udaipur (SARKAR TRAVELS)",
+      "source": "Barasat",
+      "destination": "Digha Border Udaipur",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Barasat",
+        "Digha Border Udaipur"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bardhaman_mecheda_shika_traders_ishika",
+      "route_name": "Bardhaman - Mecheda (SHIKA TRADERS ISHIKA)",
+      "source": "Bardhaman",
+      "destination": "Mecheda",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bardhaman",
+        "Mecheda"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bardhaman_berhampore_new_nabarupa",
+      "route_name": "Bardhaman - Berhampore (NEW NABARUPA)",
+      "source": "Bardhaman",
+      "destination": "Berhampore",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bardhaman",
+        "Berhampore"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bardhaman_suri_nabaraj_mail",
+      "route_name": "Bardhaman - Suri (NABARAJ (MAIL)",
+      "source": "Bardhaman",
+      "destination": "Suri",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bardhaman",
+        "Suri"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bardhaman_alisha_kharagpur_ishika_traders",
+      "route_name": "Bardhaman Alisha - Kharagpur (ISHIKA TRADERS)",
+      "source": "Bardhaman Alisha",
+      "destination": "Kharagpur",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bardhaman Alisha",
+        "Kharagpur"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_berada_badanganj_rbn_travels",
+      "route_name": "Berada - Badanganj (RBN TRAVELS)",
+      "source": "Berada",
+      "destination": "Badanganj",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Berada",
+        "Badanganj"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bishnupur_taldangra_devi_durga",
+      "route_name": "Bishnupur - Taldangra (Devi Durga)",
+      "source": "Bishnupur",
+      "destination": "Taldangra",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bishnupur",
+        "Taldangra"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bishnupur_asansol_mahamaya",
+      "route_name": "Bishnupur - Asansol (MAHAMAYA)",
+      "source": "Bishnupur",
+      "destination": "Asansol",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bishnupur",
+        "Asansol"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bishnupur_old_digha_dakshayaniria_super",
+      "route_name": "Bishnupur - Old Digha (DAKSHAYANIRIA SUPER)",
+      "source": "Bishnupur",
+      "destination": "Old Digha",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bishnupur",
+        "Old Digha"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bishnupur_digha_border_maa_tara_alaka_travels",
+      "route_name": "Bishnupur - Digha Border (MAA TARA (ALAKA TRAVELS)",
+      "source": "Bishnupur",
+      "destination": "Digha Border",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bishnupur",
+        "Digha Border"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bishnupur_durgapur_station_ishika_trip_2",
+      "route_name": "Bishnupur - Durgapur Station (ISHIKA (Trip 2)",
+      "source": "Bishnupur",
+      "destination": "Durgapur Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bishnupur",
+        "Durgapur Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bishnupur_township_rof_rof",
+      "route_name": "Bishnupur - Township (ROF ROF)",
+      "source": "Bishnupur",
+      "destination": "Township",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bishnupur",
+        "Township"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bishnupur_manbazar_devi_durga",
+      "route_name": "Bishnupur - Manbazar (DEVI DURGA)",
+      "source": "Bishnupur",
+      "destination": "Manbazar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bishnupur",
+        "Manbazar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bolpur_new_digha_sbstc_bolpurdigha",
+      "route_name": "Bolpur - New Digha (SBSTC BOLPUR-DIGHA)",
+      "source": "Bolpur",
+      "destination": "New Digha",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bolpur",
+        "New Digha"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_bolpur_panchthupi_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5",
+      "route_name": "Bolpur - Panchthupi (\u099c\u09af\u09bc \u09ac\u09be\u09ac\u09be \u09b2\u09cb\u0995\u09a8\u09be\u09a5)",
+      "source": "Bolpur",
+      "destination": "Panchthupi",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Bolpur",
+        "Panchthupi"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_burdwan_itaberia_ambika",
+      "route_name": "Burdwan - Itaberia (Ambika)",
+      "source": "Burdwan",
+      "destination": "Itaberia",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Burdwan",
+        "Itaberia"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_burdwan_alisha_panskura_gitanjali_travels",
+      "route_name": "Burdwan Alisha - Panskura (GITANJALI TRAVELS)",
+      "source": "Burdwan Alisha",
+      "destination": "Panskura",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Burdwan Alisha",
+        "Panskura"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_burdwan_alisha_mecheda_station_ishika",
+      "route_name": "Burdwan Alisha - Mecheda Station (ISHIKA)",
+      "source": "Burdwan Alisha",
+      "destination": "Mecheda Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Burdwan Alisha",
+        "Mecheda Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_burdwan_raj_college_old_digha_ishika_traders",
+      "route_name": "Burdwan Raj College - Old Digha (ISHIKA TRADERS)",
+      "source": "Burdwan Raj College",
+      "destination": "Old Digha",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Burdwan Raj College",
+        "Old Digha"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_chandrakona_road_durgapur_station_tirupati",
+      "route_name": "Chandrakona Road - Durgapur Station (TIRUPATI)",
+      "source": "Chandrakona Road",
+      "destination": "Durgapur Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Chandrakona Road",
+        "Durgapur Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_chandrakona_road_silda_laxmi_narayan",
+      "route_name": "Chandrakona Road - Silda (LAXMI NARAYAN)",
+      "source": "Chandrakona Road",
+      "destination": "Silda",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Chandrakona Road",
+        "Silda"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_chandrakona_road_central_bus_stand_howrah_shreedhar",
+      "route_name": "Chandrakona Road Central Bus Stand - Howrah (Shreedhar)",
+      "source": "Chandrakona Road Central Bus Stand",
+      "destination": "Howrah",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Chandrakona Road Central Bus Stand",
+        "Howrah"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_contai_central_medinipur_central_maa_bagala",
+      "route_name": "Contai Central - Medinipur Central (MAA BAGALA)",
+      "source": "Contai Central",
+      "destination": "Medinipur Central",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Contai Central",
+        "Medinipur Central"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_coochbehar_bus_stand_dharmatala_government_bus_nbstc_coochbehar_depot",
+      "route_name": "Coochbehar Bus Stand - Dharmatala Government Bus (NBSTC COOCHBEHAR DEPOT)",
+      "source": "Coochbehar Bus Stand",
+      "destination": "Dharmatala Government Bus",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Coochbehar Bus Stand",
+        "Dharmatala Government Bus"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_dantan_dharmatala_kolkata",
+      "route_name": "Dantan - Dharmatala (Kolkata)",
+      "source": "Dantan",
+      "destination": "Dharmatala",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Dantan",
+        "Dharmatala"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_dhuliyan_nababhat_bus_stand_sahil_travels",
+      "route_name": "Dhuliyan - Nababhat Bus Stand (SAHIL TRAVELS)",
+      "source": "Dhuliyan",
+      "destination": "Nababhat Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Dhuliyan",
+        "Nababhat Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_digha_medinipur_nilachal",
+      "route_name": "Digha - Medinipur (NILACHAL)",
+      "source": "Digha",
+      "destination": "Medinipur",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Digha",
+        "Medinipur"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_digha_border_kukrahati_ferry_ghat_shree_ram",
+      "route_name": "Digha Border - Kukrahati Ferry Ghat (SHREE RAM)",
+      "source": "Digha Border",
+      "destination": "Kukrahati Ferry Ghat",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Digha Border",
+        "Kukrahati Ferry Ghat"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_digha_border_jairambati_sri_ram",
+      "route_name": "Digha Border - Jairambati ((SRI RAM)",
+      "source": "Digha Border",
+      "destination": "Jairambati",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Digha Border",
+        "Jairambati"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_digha_border_amp_bus_stand_midnapore_central_bus_stand_monikanchan",
+      "route_name": "Digha Border &amp; Bus Stand - Midnapore Central Bus Stand (Monikanchan)",
+      "source": "Digha Border &amp; Bus Stand",
+      "destination": "Midnapore Central Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Digha Border &amp; Bus Stand",
+        "Midnapore Central Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_durgapur_dishergarh_bura_baba",
+      "route_name": "Durgapur - Dishergarh (BURA BABA)",
+      "source": "Durgapur",
+      "destination": "Dishergarh",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Durgapur",
+        "Dishergarh"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_durgapur_st_arambagh_ratul_babu",
+      "route_name": "Durgapur St. - Arambagh (RATUL BABU)",
+      "source": "Durgapur St.",
+      "destination": "Arambagh",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Durgapur St.",
+        "Arambagh"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_durgapur_station_suri_shyamali",
+      "route_name": "Durgapur Station - Suri (SHYAMALI)",
+      "source": "Durgapur Station",
+      "destination": "Suri",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Durgapur Station",
+        "Suri"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_durgapur_station_purulia_wasif_super_fast",
+      "route_name": "Durgapur Station - Purulia (Wasif Super Fast)",
+      "source": "Durgapur Station",
+      "destination": "Purulia",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Durgapur Station",
+        "Purulia"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_esplanade_howrah_station_bakkhalihowrah_express",
+      "route_name": "Esplanade - Howrah Station (BAKKHALI-HOWRAH EXPRESS)",
+      "source": "Esplanade",
+      "destination": "Howrah Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Esplanade",
+        "Howrah Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_esplanade_digha_border_atithiparibahan_ac",
+      "route_name": "Esplanade - Digha Border (ATITHIPARIBAHAN (AC)",
+      "source": "Esplanade",
+      "destination": "Digha Border",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Esplanade",
+        "Digha Border"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_esplanade_kolkata_siliguri_junction_lokenath_bus_service",
+      "route_name": "Esplanade (Kolkata) - Siliguri Junction (Lokenath Bus Service)",
+      "source": "Esplanade (Kolkata)",
+      "destination": "Siliguri Junction",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Esplanade (Kolkata)",
+        "Siliguri Junction"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_haldia_tarakeswar_p_travels",
+      "route_name": "Haldia - Tarakeswar (P Travels)",
+      "source": "Haldia",
+      "destination": "Tarakeswar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Haldia",
+        "Tarakeswar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_haldia_belpahari_ananya",
+      "route_name": "Haldia - Belpahari (ANANYA)",
+      "source": "Haldia",
+      "destination": "Belpahari",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Haldia",
+        "Belpahari"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_haldia_bankura_darshan",
+      "route_name": "Haldia - Bankura (DARSHAN)",
+      "source": "Haldia",
+      "destination": "Bankura",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Haldia",
+        "Bankura"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_hetia_burdwan_rahul_travels",
+      "route_name": "Hetia - Burdwan (Rahul Travels)",
+      "source": "Hetia",
+      "destination": "Burdwan",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Hetia",
+        "Burdwan"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_hetiya_alisa_bus_stand_hetiya_kotulpur_burdwan",
+      "route_name": "Hetiya - Alisa Bus Stand (HETIYA - KOTULPUR - BURDWAN)",
+      "source": "Hetiya",
+      "destination": "Alisa Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Hetiya",
+        "Alisa Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_itaberia_tarakeswar_suparna",
+      "route_name": "Itaberia - Tarakeswar (SUPARNA)",
+      "source": "Itaberia",
+      "destination": "Tarakeswar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Itaberia",
+        "Tarakeswar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_jajigram_asansol_abha",
+      "route_name": "Jajigram - Asansol (Abha)",
+      "source": "Jajigram",
+      "destination": "Asansol",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Jajigram",
+        "Asansol"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_jangipur_asansol_bus_stand_azad",
+      "route_name": "Jangipur - Asansol Bus Stand (Azad)",
+      "source": "Jangipur",
+      "destination": "Asansol Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Jangipur",
+        "Asansol Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kalyani_ishwargupta_setu_asansol_shahin_super",
+      "route_name": "Kalyani (Ishwargupta Setu) - Asansol (Shahin Super)",
+      "source": "Kalyani (Ishwargupta Setu)",
+      "destination": "Asansol",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kalyani (Ishwargupta Setu)",
+        "Asansol"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kashipur_bankura_shubhasree_travels_ma_parbati",
+      "route_name": "Kashipur - Bankura (SHUBHASREE TRAVELS (MA PARBATI)",
+      "source": "Kashipur",
+      "destination": "Bankura",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kashipur",
+        "Bankura"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kharagpur_burdwan_maa_bhabani",
+      "route_name": "Kharagpur - Burdwan (MAA BHABANI)",
+      "source": "Kharagpur",
+      "destination": "Burdwan",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kharagpur",
+        "Burdwan"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kharagpur_bus_stand_burdwan_alisha_bus_stand_786_nosib",
+      "route_name": "Kharagpur Bus Stand - Burdwan Alisha Bus Stand (786 Nosib)",
+      "source": "Kharagpur Bus Stand",
+      "destination": "Burdwan Alisha Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kharagpur Bus Stand",
+        "Burdwan Alisha Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_khatra_raniganj_mousumi_disha_travels",
+      "route_name": "Khatra - Raniganj (MOUSUMI DISHA TRAVELS)",
+      "source": "Khatra",
+      "destination": "Raniganj",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Khatra",
+        "Raniganj"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_khatra_tarakeswar_maa_tulsi",
+      "route_name": "Khatra - Tarakeswar (Maa Tulsi)",
+      "source": "Khatra",
+      "destination": "Tarakeswar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Khatra",
+        "Tarakeswar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_khatra_arambagh_tara_maa",
+      "route_name": "Khatra - Arambagh (TARA MAA)",
+      "source": "Khatra",
+      "destination": "Arambagh",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Khatra",
+        "Arambagh"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_khetua_kolkata_station_jupiter_express",
+      "route_name": "Khetua - Kolkata Station (Jupiter Express)",
+      "source": "Khetua",
+      "destination": "Kolkata Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Khetua",
+        "Kolkata Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kirnahar_binodia_tanushree",
+      "route_name": "Kirnahar - Binodia (TANUSHREE)",
+      "source": "Kirnahar",
+      "destination": "Binodia",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kirnahar",
+        "Binodia"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kirnahar_bardhaman_mayer_ashirwad_dadabhai_travels",
+      "route_name": "Kirnahar - Bardhaman (MAYER ASHIRWAD DADABHAI TRAVELS)",
+      "source": "Kirnahar",
+      "destination": "Bardhaman",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kirnahar",
+        "Bardhaman"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kirnahar_sainthia_ma_babar_ashirbad",
+      "route_name": "Kirnahar - Sainthia (MA BABAR ASHIRBAD)",
+      "source": "Kirnahar",
+      "destination": "Sainthia",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kirnahar",
+        "Sainthia"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kolkata_station_kolaghat_maa_saradamoyi",
+      "route_name": "Kolkata Station - Kolaghat (Maa Saradamoyi)",
+      "source": "Kolkata Station",
+      "destination": "Kolaghat",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kolkata Station",
+        "Kolaghat"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_kukrahati_bardhaman_prashanna",
+      "route_name": "Kukrahati - Bardhaman (PRASHANNA)",
+      "source": "Kukrahati",
+      "destination": "Bardhaman",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Kukrahati",
+        "Bardhaman"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_lalgarh_tarakeswar_lalgarhtarakeswar_service",
+      "route_name": "Lalgarh - Tarakeswar (LALGARH-TARAKESWAR SERVICE)",
+      "source": "Lalgarh",
+      "destination": "Tarakeswar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Lalgarh",
+        "Tarakeswar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_langalhata_nababhat_mor_shaktiman_travels",
+      "route_name": "Langalhata - Nababhat Mor (SHAKTIMAN TRAVELS)",
+      "source": "Langalhata",
+      "destination": "Nababhat Mor",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Langalhata",
+        "Nababhat Mor"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_manbazar_medinipur_sonali_ma_durga",
+      "route_name": "Manbazar - Medinipur (SONALI (MA DURGA)",
+      "source": "Manbazar",
+      "destination": "Medinipur",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Manbazar",
+        "Medinipur"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_mangrol_digha_mangroldigha_service",
+      "route_name": "Mangrol - Digha (MANGROL-DIGHA SERVICE)",
+      "source": "Mangrol",
+      "destination": "Digha",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Mangrol",
+        "Digha"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_medinipur_garhbeta_barnali",
+      "route_name": "Medinipur - Garhbeta (BARNALI)",
+      "source": "Medinipur",
+      "destination": "Garhbeta",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Medinipur",
+        "Garhbeta"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_medinipur_digha_gobinda_majestic",
+      "route_name": "Medinipur - Digha (GOBINDA (MAJESTIC)",
+      "source": "Medinipur",
+      "destination": "Digha",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Medinipur",
+        "Digha"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_medinipur_tatanagar_rbn_travels",
+      "route_name": "Medinipur - Tatanagar (RBN TRAVELS)",
+      "source": "Medinipur",
+      "destination": "Tatanagar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Medinipur",
+        "Tatanagar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_medinipur_mayapur_iskcon_ma_tara_ma_rudrayani_ac",
+      "route_name": "Medinipur - Mayapur ISKCON (MA TARA / MA RUDRAYANI (AC)",
+      "source": "Medinipur",
+      "destination": "Mayapur ISKCON",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Medinipur",
+        "Mayapur ISKCON"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_midnapore_central_bus_stand_durgachak_central_bus_stand_maa_kamala_nandan_travels",
+      "route_name": "Midnapore Central Bus Stand - Durgachak Central Bus Stand (Maa Kamala Nandan Travels)",
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Durgachak Central Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Midnapore Central Bus Stand",
+        "Durgachak Central Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_midnapore_central_bus_stand_digha_tarakripa",
+      "route_name": "Midnapore Central Bus Stand - Digha (Tarakripa)",
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Digha",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Midnapore Central Bus Stand",
+        "Digha"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_midnapore_central_bus_stand_kanthi_central_bus_stand_gobinda",
+      "route_name": "Midnapore Central Bus Stand - Kanthi Central Bus Stand (Gobinda)",
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Kanthi Central Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Midnapore Central Bus Stand",
+        "Kanthi Central Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_nawpara_kolkata_charubala",
+      "route_name": "Nawpara - Kolkata (Charubala)",
+      "source": "Nawpara",
+      "destination": "Kolkata",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Nawpara",
+        "Kolkata"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_padmashree_airport_1_no_palki_route_45",
+      "route_name": "Padmashree - Airport 1 No (PALKI (ROUTE 45)",
+      "source": "Padmashree",
+      "destination": "Airport 1 No",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Padmashree",
+        "Airport 1 No"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_panskura_station_burdwan_ramkrishna",
+      "route_name": "Panskura Station - Burdwan (Ramkrishna)",
+      "source": "Panskura Station",
+      "destination": "Burdwan",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Panskura Station",
+        "Burdwan"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_phulberia_bankura_bus_stand_shefali",
+      "route_name": "Phulberia - Bankura Bus Stand (SHEFALI)",
+      "source": "Phulberia",
+      "destination": "Bankura Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Phulberia",
+        "Bankura Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_phulkusma_tarakeswar_parthsarathi_dutta_motors",
+      "route_name": "Phulkusma - Tarakeswar (PARTHSARATHI (DUTTA MOTORS)",
+      "source": "Phulkusma",
+      "destination": "Tarakeswar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Phulkusma",
+        "Tarakeswar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_phulkusma_mecheda_railway_station_arya_travels",
+      "route_name": "Phulkusma - Mecheda Railway Station (ARYA TRAVELS)",
+      "source": "Phulkusma",
+      "destination": "Mecheda Railway Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Phulkusma",
+        "Mecheda Railway Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_phulkusma_mecheda_phulkusmamecheda_express",
+      "route_name": "Phulkusma - Mecheda (PHULKUSMA-MECHEDA EXPRESS)",
+      "source": "Phulkusma",
+      "destination": "Mecheda",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Phulkusma",
+        "Mecheda"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_purulia_chandrakona_road_bullet",
+      "route_name": "Purulia - Chandrakona Road (BULLET)",
+      "source": "Purulia",
+      "destination": "Chandrakona Road",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Purulia",
+        "Chandrakona Road"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_purulia_bankura_pushpashree",
+      "route_name": "Purulia - Bankura (PUSHPASHREE)",
+      "source": "Purulia",
+      "destination": "Bankura",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Purulia",
+        "Bankura"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_purulia_asansol_challenger",
+      "route_name": "Purulia - Asansol (CHALLENGER)",
+      "source": "Purulia",
+      "destination": "Asansol",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Purulia",
+        "Asansol"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_ramgarh_ramjibanpur_moniraj",
+      "route_name": "Ramgarh - Ramjibanpur (MONIRAJ)",
+      "source": "Ramgarh",
+      "destination": "Ramjibanpur",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Ramgarh",
+        "Ramjibanpur"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_ramjibanpur_central_bus_stand_howrah_shreedhar",
+      "route_name": "Ramjibanpur Central Bus Stand - Howrah (Shreedhar)",
+      "source": "Ramjibanpur Central Bus Stand",
+      "destination": "Howrah",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Ramjibanpur Central Bus Stand",
+        "Howrah"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_rampurhat_salar_moonlight",
+      "route_name": "Rampurhat - Salar (Moonlight)",
+      "source": "Rampurhat",
+      "destination": "Salar",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Rampurhat",
+        "Salar"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_ranibandh_siliguri_subarna_paribahan",
+      "route_name": "Ranibandh - Siliguri (Subarna Paribahan)",
+      "source": "Ranibandh",
+      "destination": "Siliguri",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Ranibandh",
+        "Siliguri"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_sabrakone_durgapur_station_ishika",
+      "route_name": "Sabrakone - Durgapur Station (ISHIKA)",
+      "source": "Sabrakone",
+      "destination": "Durgapur Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Sabrakone",
+        "Durgapur Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_seharabazar_bankura_bus_stand_dharmaraj_travels",
+      "route_name": "Seharabazar - Bankura Bus Stand (Dharmaraj Travels)",
+      "source": "Seharabazar",
+      "destination": "Bankura Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Seharabazar",
+        "Bankura Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_shambazar_durgapur_city_centre_soumen_travels",
+      "route_name": "Shambazar - Durgapur City Centre (Soumen Travels)",
+      "source": "Shambazar",
+      "destination": "Durgapur City Centre",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Shambazar",
+        "Durgapur City Centre"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_sonathali_saltora_putul_travels",
+      "route_name": "Sonathali - Saltora (PUTUL TRAVELS)",
+      "source": "Sonathali",
+      "destination": "Saltora",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Sonathali",
+        "Saltora"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_sonathali_ladhurka_garib_nawaz_royal",
+      "route_name": "Sonathali - Ladhurka (GARIB NAWAZ ROYAL)",
+      "source": "Sonathali",
+      "destination": "Ladhurka",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Sonathali",
+        "Ladhurka"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_supa_howrah_station_supa_howrah_station",
+      "route_name": "Supa - Howrah Station (SUPA - HOWRAH STATION)",
+      "source": "Supa",
+      "destination": "Howrah Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Supa",
+        "Howrah Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_taldangra_dharmatala_kolkata",
+      "route_name": "Taldangra - Dharmatala (Kolkata)",
+      "source": "Taldangra",
+      "destination": "Dharmatala",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Taldangra",
+        "Dharmatala"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_tamluk_alisha_bus_stand_ramkrishna_ashirwad",
+      "route_name": "Tamluk - Alisha Bus Stand (Ramkrishna Ashirwad)",
+      "source": "Tamluk",
+      "destination": "Alisha Bus Stand",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Tamluk",
+        "Alisha Bus Stand"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_tarakeshwar_haldia_akashbristi",
+      "route_name": "Tarakeshwar - Haldia (AKASHBRISTI)",
+      "source": "Tarakeshwar",
+      "destination": "Haldia",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Tarakeshwar",
+        "Haldia"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_tarakeswar_bankura_santoshi_mata",
+      "route_name": "Tarakeswar - Bankura (Santoshi Mata)",
+      "source": "Tarakeswar",
+      "destination": "Bankura",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Tarakeswar",
+        "Bankura"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_tarakeswar_mecheda_station_datababa_sakil_travels",
+      "route_name": "Tarakeswar - Mecheda Station (Datababa Sakil Travels)",
+      "source": "Tarakeswar",
+      "destination": "Mecheda Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Tarakeswar",
+        "Mecheda Station"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_tarakeswar_digha_tara_ma_ac",
+      "route_name": "Tarakeswar - Digha (TARA MA AC)",
+      "source": "Tarakeswar",
+      "destination": "Digha",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Tarakeswar",
+        "Digha"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_tatanagar_dharmatala_shankar_parwati",
+      "route_name": "Tatanagar - Dharmatala (SHANKAR PARWATI)",
+      "source": "Tatanagar",
+      "destination": "Dharmatala",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Tatanagar",
+        "Dharmatala"
+      ],
+      "data_quality_notes": []
+    },
+    {
+      "route_id": "route_telami_howrah_station_jashoda",
+      "route_name": "Telami - Howrah Station (JASHODA)",
+      "source": "Telami",
+      "destination": "Howrah Station",
+      "estimated_distance_km": null,
+      "estimated_travel_time_min": null,
+      "stop_sequence": [
+        "Telami",
+        "Howrah Station"
+      ],
+      "data_quality_notes": []
+    }
+  ],
+  "operators": [
+    "(SRI RAM",
+    "786 Nosib",
+    "AAYAN",
+    "AKASHBRISTI",
+    "ANANYA",
+    "ARYA TRAVELS",
+    "ASANSOL-SALAR EXPRESS",
+    "ATITHIPARIBAHAN (AC",
+    "Abha",
+    "Ambika",
+    "Azad",
+    "BAKKHALI-HOWRAH EXPRESS",
+    "BARNALI",
+    "BULLET",
+    "BURA BABA",
+    "Bhagyalaxmi",
+    "CHALLENGER",
+    "Charubala",
+    "DAKSHAYANIRIA SUPER",
+    "DARSHAN",
+    "DEVI DURGA",
+    "Datababa Sakil Travels",
+    "Debi Kamakhya Tara Ma Travels (Trip 1",
+    "Debibala Travels",
+    "Devi Durga",
+    "Dharmaraj Travels",
+    "Esplanade",
+    "GARIB NAWAZ ROYAL",
+    "GITANJALI TRAVELS",
+    "GOBINDA (MAJESTIC",
+    "Gobinda",
+    "HETIYA - KOTULPUR - BURDWAN",
+    "ISHIKA",
+    "ISHIKA (Trip 2",
+    "ISHIKA TRADERS",
+    "JASHODA",
+    "JINIA",
+    "JOY BABA KHETRAPAL",
+    "JOY BHARAT MATA",
+    "Jai Maa Durga",
+    "Jupiter Express",
+    "Kolkata",
+    "LALGARH-TARAKESWAR SERVICE",
+    "LALPARUL",
+    "LAXMI NARAYAN",
+    "Lokenath Bus Service",
+    "MA BABAR ASHIRBAD",
+    "MA TARA / MA RUDRAYANI (AC",
+    "MAA BAGALA",
+    "MAA BHABANI",
+    "MAA TARA (ALAKA TRAVELS",
+    "MAA TULSI",
+    "MAHAMAYA",
+    "MANGROL-DIGHA SERVICE",
+    "MAYER ASHIRWAD DADABHAI TRAVELS",
+    "MONIRAJ",
+    "MOUSUMI DISHA TRAVELS",
+    "Maa Kamala Nandan Travels",
+    "Maa Saradamoyi",
+    "Maa Tulsi",
+    "Madan Mohan (Trip 1",
+    "Monikanchan",
+    "Moonlight",
+    "NABARAJ (MAIL",
+    "NBSTC COOCHBEHAR DEPOT",
+    "NEW NABARUPA",
+    "NILACHAL",
+    "P Travels",
+    "PALKI (ROUTE 45",
+    "PARTHSARATHI (DUTTA MOTORS",
+    "PHULKUSMA-MECHEDA EXPRESS",
+    "PRASHANNA",
+    "PUSHPASHREE",
+    "PUTUL TRAVELS",
+    "RATUL BABU",
+    "RBN TRAVELS",
+    "ROF ROF",
+    "Rahul Travels",
+    "Ramkrishna",
+    "Ramkrishna Ashirwad",
+    "SAHIL TRAVELS",
+    "SARKAR TRAVELS",
+    "SBSTC BOLPUR-DIGHA",
+    "SHAKTIMAN TRAVELS",
+    "SHANKAR PARWATI",
+    "SHEFALI",
+    "SHIKA TRADERS ISHIKA",
+    "SHREE RAM",
+    "SHUBHASREE TRAVELS (MA PARBATI",
+    "SHYAMALI",
+    "SONALI (MA DURGA",
+    "SUPA - HOWRAH STATION",
+    "SUPARNA",
+    "Santoshi Mata",
+    "Shahin Super",
+    "Shreedhar",
+    "Soumen Travels",
+    "Subarna Paribahan",
+    "TANUSHREE",
+    "TARA MA AC",
+    "TARA MAA",
+    "TIRUMALA (BIBEK",
+    "TIRUPATI",
+    "Tarakripa",
+    "Tirupati",
+    "VINAYAK",
+    "Wasif Super Fast",
+    "\u099c\u09af\u09bc \u09ac\u09be\u09ac\u09be \u09b2\u09cb\u0995\u09a8\u09be\u09a5"
+  ],
+  "stops": [
+    {
+      "stop_id": "stop_airport_1_no",
+      "stop_name": "Airport 1 No",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_alisa_bus_stand",
+      "stop_name": "Alisa Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_alisha_bus_stand",
+      "stop_name": "Alisha Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_amlashuli",
+      "stop_name": "Amlashuli",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_arambagh",
+      "stop_name": "Arambagh",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_asansol",
+      "stop_name": "Asansol",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_asansol_bus_stand",
+      "stop_name": "Asansol Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_badanganj",
+      "stop_name": "Badanganj",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_balarampur",
+      "stop_name": "Balarampur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bandar",
+      "stop_name": "Bandar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bandwan",
+      "stop_name": "Bandwan",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bankura",
+      "stop_name": "Bankura",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bankura_bus_stand",
+      "stop_name": "Bankura Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_barabazar",
+      "stop_name": "Barabazar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_barakar",
+      "stop_name": "Barakar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_barasat",
+      "stop_name": "Barasat",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bardhaman",
+      "stop_name": "Bardhaman",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bardhaman_alisha",
+      "stop_name": "Bardhaman Alisha",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_belpahari",
+      "stop_name": "Belpahari",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_berada",
+      "stop_name": "Berada",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_berhampore",
+      "stop_name": "Berhampore",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bhutshahar",
+      "stop_name": "Bhutshahar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_binodia",
+      "stop_name": "Binodia",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bishnupur",
+      "stop_name": "Bishnupur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_bolpur",
+      "stop_name": "Bolpur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_burdwan",
+      "stop_name": "Burdwan",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_burdwan_alisha",
+      "stop_name": "Burdwan Alisha",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_burdwan_alisha_bus_stand",
+      "stop_name": "Burdwan Alisha Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_burdwan_raj_college",
+      "stop_name": "Burdwan Raj College",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_chandrakona_road",
+      "stop_name": "Chandrakona Road",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_chandrakona_road_central_bus_stand",
+      "stop_name": "Chandrakona Road Central Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_contai_central",
+      "stop_name": "Contai Central",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_coochbehar_bus_stand",
+      "stop_name": "Coochbehar Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_dantan",
+      "stop_name": "Dantan",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_dhaldanga",
+      "stop_name": "Dhaldanga",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_dharmatala",
+      "stop_name": "Dharmatala",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_dharmatala_government_bus",
+      "stop_name": "Dharmatala Government Bus",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_dhuliyan",
+      "stop_name": "Dhuliyan",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_digha",
+      "stop_name": "Digha",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_digha_border",
+      "stop_name": "Digha Border",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_digha_border_amp_bus_stand",
+      "stop_name": "Digha Border &amp; Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_digha_border_udaipur",
+      "stop_name": "Digha Border Udaipur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_dishergarh",
+      "stop_name": "Dishergarh",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_durgachak_central_bus_stand",
+      "stop_name": "Durgachak Central Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_durgapur",
+      "stop_name": "Durgapur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_durgapur_bus_stand",
+      "stop_name": "Durgapur Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_durgapur_city_centre",
+      "stop_name": "Durgapur City Centre",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_durgapur_st",
+      "stop_name": "Durgapur St.",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_durgapur_station",
+      "stop_name": "Durgapur Station",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_esplanade",
+      "stop_name": "Esplanade",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_esplanade_kolkata",
+      "stop_name": "Esplanade (Kolkata)",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_garhbeta",
+      "stop_name": "Garhbeta",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_haldia",
+      "stop_name": "Haldia",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_hetia",
+      "stop_name": "Hetia",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_hetiya",
+      "stop_name": "Hetiya",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_howrah",
+      "stop_name": "Howrah",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_howrah_station",
+      "stop_name": "Howrah Station",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_itaberia",
+      "stop_name": "Itaberia",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_jairambati",
+      "stop_name": "Jairambati",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_jajigram",
+      "stop_name": "Jajigram",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_jangipur",
+      "stop_name": "Jangipur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kalyani_ishwargupta_setu",
+      "stop_name": "Kalyani (Ishwargupta Setu)",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kanthi_central_bus_stand",
+      "stop_name": "Kanthi Central Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kashipur",
+      "stop_name": "Kashipur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kharagpur",
+      "stop_name": "Kharagpur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kharagpur_bus_stand",
+      "stop_name": "Kharagpur Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_khatra",
+      "stop_name": "Khatra",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_khetua",
+      "stop_name": "Khetua",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kirnahar",
+      "stop_name": "Kirnahar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kolaghat",
+      "stop_name": "Kolaghat",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kolkata",
+      "stop_name": "Kolkata",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kolkata_station",
+      "stop_name": "Kolkata Station",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kukrahati",
+      "stop_name": "Kukrahati",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_kukrahati_ferry_ghat",
+      "stop_name": "Kukrahati Ferry Ghat",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_ladhurka",
+      "stop_name": "Ladhurka",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_lalgarh",
+      "stop_name": "Lalgarh",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_langalhata",
+      "stop_name": "Langalhata",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_manbazar",
+      "stop_name": "Manbazar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_mangrol",
+      "stop_name": "Mangrol",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_mayapur_iskcon",
+      "stop_name": "Mayapur ISKCON",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_mecheda",
+      "stop_name": "Mecheda",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_mecheda_railway_station",
+      "stop_name": "Mecheda Railway Station",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_mecheda_station",
+      "stop_name": "Mecheda Station",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_medinipur",
+      "stop_name": "Medinipur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_medinipur_central",
+      "stop_name": "Medinipur Central",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_midnapore_central_bus_stand",
+      "stop_name": "Midnapore Central Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_nababhat_bus_stand",
+      "stop_name": "Nababhat Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_nababhat_mor",
+      "stop_name": "Nababhat Mor",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_nawpara",
+      "stop_name": "Nawpara",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_new_digha",
+      "stop_name": "New Digha",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_old_digha",
+      "stop_name": "Old Digha",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_padmashree",
+      "stop_name": "Padmashree",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_panchthupi",
+      "stop_name": "Panchthupi",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_panskura",
+      "stop_name": "Panskura",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_panskura_station",
+      "stop_name": "Panskura Station",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_phulberia",
+      "stop_name": "Phulberia",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_phulkusma",
+      "stop_name": "Phulkusma",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_purulia",
+      "stop_name": "Purulia",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_ramchandrapur",
+      "stop_name": "Ramchandrapur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_ramgarh",
+      "stop_name": "Ramgarh",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_ramjibanpur",
+      "stop_name": "Ramjibanpur",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_ramjibanpur_central_bus_stand",
+      "stop_name": "Ramjibanpur Central Bus Stand",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_rampurhat",
+      "stop_name": "Rampurhat",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_ranibandh",
+      "stop_name": "Ranibandh",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_raniganj",
+      "stop_name": "Raniganj",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_sabrakone",
+      "stop_name": "Sabrakone",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_sainthia",
+      "stop_name": "Sainthia",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_salar",
+      "stop_name": "Salar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_saltora",
+      "stop_name": "Saltora",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_seharabazar",
+      "stop_name": "Seharabazar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_shambazar",
+      "stop_name": "Shambazar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_silda",
+      "stop_name": "Silda",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_siliguri",
+      "stop_name": "Siliguri",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_siliguri_junction",
+      "stop_name": "Siliguri Junction",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_sonathali",
+      "stop_name": "Sonathali",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_supa",
+      "stop_name": "Supa",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_suri",
+      "stop_name": "Suri",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_taldangra",
+      "stop_name": "Taldangra",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_tamluk",
+      "stop_name": "Tamluk",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_tarakeshwar",
+      "stop_name": "Tarakeshwar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_tarakeswar",
+      "stop_name": "Tarakeswar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_tatanagar",
+      "stop_name": "Tatanagar",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_telami",
+      "stop_name": "Telami",
+      "latitude": null,
+      "longitude": null
+    },
+    {
+      "stop_id": "stop_township",
+      "stop_name": "Township",
+      "latitude": null,
+      "longitude": null
+    }
+  ]
+}

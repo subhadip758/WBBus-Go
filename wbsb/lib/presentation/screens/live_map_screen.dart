@@ -26,23 +26,128 @@ class LiveMapScreen extends StatelessWidget {
   }
 }
 
-class _LiveMapBody extends StatelessWidget {
+class _LiveMapBody extends StatefulWidget {
   final Bus bus;
   const _LiveMapBody({required this.bus});
+
+  @override
+  State<_LiveMapBody> createState() => _LiveMapBodyState();
+}
+
+class _LiveMapBodyState extends State<_LiveMapBody> with TickerProviderStateMixin {
+  late final MapController _mapController;
+  LiveLocationProvider? _lastProvider;
+
+  LatLng? _animatedBusLatLng;
+  double _animatedHeading = 0.0;
+
+  AnimationController? _markerPositionController;
+  LatLng? _startLatLng;
+  LatLng? _targetLatLng;
+
+  @override
+  void initState() {
+    super.initState();
+    _mapController = MapController();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final provider = Provider.of<LiveLocationProvider>(context);
+    if (_lastProvider != provider) {
+      _lastProvider?.removeListener(_onProviderUpdate);
+      _lastProvider = provider;
+      _lastProvider?.addListener(_onProviderUpdate);
+    }
+  }
+
+  void _onProviderUpdate() {
+    final loc = _lastProvider?.resolvedLocation;
+    if (loc == null) {
+      if (_animatedBusLatLng != null) {
+        setState(() {
+          _animatedBusLatLng = null;
+          _animatedHeading = 0.0;
+          _targetLatLng = null;
+        });
+      }
+      return;
+    }
+
+    final newTarget = LatLng(loc.latitude, loc.longitude);
+    final newHeading = (loc.headingDegrees ?? 0.0) * (3.141592653589793 / 180.0);
+
+    if (_targetLatLng == null) {
+      setState(() {
+        _animatedBusLatLng = newTarget;
+        _animatedHeading = newHeading;
+        _targetLatLng = newTarget;
+      });
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          _mapController.move(newTarget, _mapController.camera.zoom);
+        }
+      });
+    } else if (newTarget.latitude != _targetLatLng!.latitude ||
+               newTarget.longitude != _targetLatLng!.longitude) {
+      _startLatLng = _animatedBusLatLng ?? _targetLatLng;
+      _targetLatLng = newTarget;
+
+      _markerPositionController?.dispose();
+      _markerPositionController = AnimationController(
+        vsync: this,
+        duration: const Duration(milliseconds: 1000),
+      );
+
+      final startHeading = _animatedHeading;
+      double endHeading = newHeading;
+      double diff = endHeading - startHeading;
+      while (diff < -3.141592653589793) {
+        diff += 2 * 3.141592653589793;
+      }
+      while (diff > 3.141592653589793) {
+        diff -= 2 * 3.141592653589793;
+      }
+      final targetHeadingFinal = startHeading + diff;
+
+      _markerPositionController!.addListener(() {
+        final t = _markerPositionController!.value;
+        final lat = _startLatLng!.latitude + (_targetLatLng!.latitude - _startLatLng!.latitude) * t;
+        final lng = _startLatLng!.longitude + (_targetLatLng!.longitude - _startLatLng!.longitude) * t;
+        final heading = startHeading + (targetHeadingFinal - startHeading) * t;
+
+        if (mounted) {
+          setState(() {
+            _animatedBusLatLng = LatLng(lat, lng);
+            _animatedHeading = heading;
+          });
+          _mapController.move(_animatedBusLatLng!, _mapController.camera.zoom);
+        }
+      });
+
+      _markerPositionController!.forward();
+    }
+  }
+
+  @override
+  void dispose() {
+    _lastProvider?.removeListener(_onProviderUpdate);
+    _markerPositionController?.dispose();
+    _mapController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     final liveProvider = context.watch<LiveLocationProvider>();
     final rideProvider = context.watch<RideSessionProvider>();
 
-    final firstCoordStop =
-        bus.routeStops.where((s) => s.hasCoordinates).isEmpty
-            ? null
-            : bus.routeStops.where((s) => s.hasCoordinates).first;
-    final lastCoordStop =
-        bus.routeStops.where((s) => s.hasCoordinates).isEmpty
-            ? null
-            : bus.routeStops.where((s) => s.hasCoordinates).last;
+    final coordStops = widget.bus.routeStops.where((s) => s.hasCoordinates).toList();
+
+    final firstCoordStop = coordStops.isEmpty ? null : coordStops.first;
+    final lastCoordStop = coordStops.isEmpty ? null : coordStops.last;
+    
     final sourceLatLng = firstCoordStop != null
         ? LatLng(firstCoordStop.latitude!, firstCoordStop.longitude!)
         : null;
@@ -50,10 +155,7 @@ class _LiveMapBody extends StatelessWidget {
         ? LatLng(lastCoordStop.latitude!, lastCoordStop.longitude!)
         : null;
 
-    final busLatLng = liveProvider.resolvedLocation != null
-        ? LatLng(liveProvider.resolvedLocation!.latitude,
-            liveProvider.resolvedLocation!.longitude)
-        : null;
+    final busLatLng = _animatedBusLatLng;
     final viewerLatLng = liveProvider.viewerPosition != null
         ? LatLng(liveProvider.viewerPosition!.latitude,
             liveProvider.viewerPosition!.longitude)
@@ -63,13 +165,13 @@ class _LiveMapBody extends StatelessWidget {
         busLatLng ?? viewerLatLng ?? sourceLatLng ?? const LatLng(22.9, 87.5);
 
     final isRidingThisBus =
-        rideProvider.isActive && rideProvider.activeBusId == bus.id;
+        rideProvider.isActive && rideProvider.activeBusId == widget.bus.id;
     final isRidingAnotherBus =
-        rideProvider.isActive && rideProvider.activeBusId != bus.id;
+        rideProvider.isActive && rideProvider.activeBusId != widget.bus.id;
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('${bus.name} — Live Map'),
+        title: Text('${widget.bus.name} — Live Map'),
         backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
       ),
@@ -89,47 +191,154 @@ class _LiveMapBody extends StatelessWidget {
                     final confirmed = await _confirmSwitchRide(context);
                     if (confirmed != true) return;
                   }
-                  await rideProvider.startRide(bus.id);
+                  await rideProvider.startRide(widget.bus.id);
                 }
               },
       ),
       body: Stack(
         children: [
           FlutterMap(
+            mapController: _mapController,
             options: MapOptions(initialCenter: center, initialZoom: 8),
             children: [
               TileLayer(
-                urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                urlTemplate: 'https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
                 userAgentPackageName: 'com.wbsmartbus.app',
               ),
               PolylineLayer(
                 polylines: [
-                  if (sourceLatLng != null && destLatLng != null)
-                    Polyline(
-                      points: [sourceLatLng, destLatLng],
-                      strokeWidth: 3,
-                      color: AppColors.primary.withOpacity(0.5),
-                    ),
+                  // Background outline for Google Maps style path
+                  Polyline(
+                    points: liveProvider.roadRoutePoints.isNotEmpty
+                        ? liveProvider.roadRoutePoints
+                        : coordStops.map((s) => LatLng(s.latitude!, s.longitude!)).toList(),
+                    strokeWidth: 7.5,
+                    color: const Color(0xff1558b0),
+                    strokeCap: StrokeCap.round,
+                    strokeJoin: StrokeJoin.round,
+                  ),
+                  // Foreground main road path
+                  Polyline(
+                    points: liveProvider.roadRoutePoints.isNotEmpty
+                        ? liveProvider.roadRoutePoints
+                        : coordStops.map((s) => LatLng(s.latitude!, s.longitude!)).toList(),
+                    strokeWidth: 4.5,
+                    color: const Color(0xff1a73e8), // Google Maps route blue
+                    strokeCap: StrokeCap.round,
+                    strokeJoin: StrokeJoin.round,
+                  ),
                 ],
               ),
               MarkerLayer(
                 markers: [
-                  if (sourceLatLng != null)
-                    Marker(
-                      point: sourceLatLng,
-                      width: 40,
-                      height: 40,
-                      child: const Icon(Icons.trip_origin,
-                          color: Colors.grey, size: 28),
-                    ),
-                  if (destLatLng != null)
-                    Marker(
-                      point: destLatLng,
-                      width: 40,
-                      height: 40,
-                      child:
-                          const Icon(Icons.flag, color: Colors.black87, size: 28),
-                    ),
+                  // Draw markers and labels for all stops on the route
+                  ...coordStops.asMap().entries.map((entry) {
+                    final index = entry.key;
+                    final stop = entry.value;
+                    final letterLabel = String.fromCharCode(65 + (index % 26)) + (index >= 26 ? '${(index / 26).floor()}' : '');
+
+                    return Marker(
+                      point: LatLng(stop.latitude!, stop.longitude!),
+                      width: 150,
+                      height: 32,
+                      alignment: Alignment.centerLeft,
+                      child: GestureDetector(
+                        onTap: () {
+                          ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                '[${letterLabel}] ${stop.stopName} (Stop #${stop.sequence})'
+                                '${stop.upTime != null ? ' - Scheduled: ${stop.upTime}' : ''}'
+                              ),
+                              duration: const Duration(seconds: 3),
+                              behavior: SnackBarBehavior.floating,
+                            ),
+                          );
+                        },
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Container(
+                              width: 14,
+                              height: 14,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                shape: BoxShape.circle,
+                                border: Border.all(color: const Color(0xff0f172a), width: 2.5),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color: Colors.black26,
+                                    blurRadius: 3,
+                                    offset: Offset(0, 1.5),
+                                  )
+                                ],
+                              ),
+                              child: Center(
+                                child: Container(
+                                  width: 4,
+                                  height: 4,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xff0f172a),
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                              decoration: BoxDecoration(
+                                color: const Color(0xeb0f172a),
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border.all(color: Colors.white24, width: 1),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color: Colors.black26,
+                                    blurRadius: 2,
+                                    offset: Offset(0, 1),
+                                  )
+                                ],
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 1),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xfff59e0b),
+                                      borderRadius: BorderRadius.circular(3),
+                                    ),
+                                    child: Text(
+                                      letterLabel,
+                                      style: const TextStyle(
+                                        fontSize: 9,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xff0f172a),
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 4),
+                                  Flexible(
+                                    child: Text(
+                                      stop.stopName ?? '',
+                                      style: const TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                      ),
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  }).toList(),
+                  
                   if (viewerLatLng != null)
                     Marker(
                       point: viewerLatLng,
@@ -143,12 +352,15 @@ class _LiveMapBody extends StatelessWidget {
                       point: busLatLng,
                       width: 46,
                       height: 46,
-                      child: Icon(
-                        Icons.directions_bus,
-                        color: liveProvider.resolvedLocation!.isStale
-                            ? AppColors.staleRed
-                            : AppColors.liveGreen,
-                        size: 34,
+                      child: Transform.rotate(
+                        angle: _animatedHeading,
+                        child: Icon(
+                          Icons.navigation,
+                          color: liveProvider.resolvedLocation!.isStale
+                              ? AppColors.staleRed
+                              : AppColors.liveGreen,
+                          size: 34,
+                        ),
                       ),
                     ),
                 ],
@@ -165,7 +377,7 @@ class _LiveMapBody extends StatelessWidget {
                   RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
               child: Padding(
                 padding: const EdgeInsets.all(14),
-                child: _statusContent(liveProvider, rideProvider, bus.id),
+                child: _statusContent(liveProvider, rideProvider, widget.bus.id),
               ),
             ),
           ),

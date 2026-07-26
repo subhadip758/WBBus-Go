@@ -26,14 +26,41 @@ class BusRepositoryImpl implements BusRepository {
   @override
   Future<List<Bus>> search({String? from, String? to}) async {
     final all = await getAllBuses();
+    final fQuery = from?.trim() ?? '';
+    final tQuery = to?.trim() ?? '';
+    
+    if (fQuery.isEmpty && tQuery.isEmpty) return all;
+    
     return all.where((bus) {
-      if (from != null && from.trim().isNotEmpty) {
-        if (!TextMatch.fuzzyContains(bus.source, from)) return false;
+      bool matchesSource = fQuery.isEmpty;
+      bool matchesDest = tQuery.isEmpty;
+      
+      final sourceStops = bus.routeStops.where((stop) => 
+        TextMatch.fuzzyContains(stop.stopName ?? '', fQuery) || 
+        TextMatch.fuzzyContains(bus.source, fQuery)
+      ).toList();
+      
+      final destStops = bus.routeStops.where((stop) => 
+        TextMatch.fuzzyContains(stop.stopName ?? '', tQuery) || 
+        TextMatch.fuzzyContains(bus.destination, tQuery)
+      ).toList();
+      
+      if (fQuery.isNotEmpty && tQuery.isNotEmpty) {
+        if (sourceStops.isNotEmpty && destStops.isNotEmpty) {
+          final minSourceSeq = sourceStops.map((s) => s.sequence).reduce((a, b) => a < b ? a : b);
+          final maxDestSeq = destStops.map((s) => s.sequence).reduce((a, b) => a > b ? a : b);
+          if (minSourceSeq < maxDestSeq) {
+            matchesSource = true;
+            matchesDest = true;
+          }
+        }
+      } else if (fQuery.isNotEmpty) {
+        matchesSource = sourceStops.isNotEmpty;
+      } else if (tQuery.isNotEmpty) {
+        matchesDest = destStops.isNotEmpty;
       }
-      if (to != null && to.trim().isNotEmpty) {
-        if (!TextMatch.fuzzyContains(bus.destination, to)) return false;
-      }
-      return true;
+      
+      return matchesSource && matchesDest;
     }).toList();
   }
 

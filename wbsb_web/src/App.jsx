@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { db, auth, isFirebaseConfigured } from './firebase';
 import { signInAnonymously } from 'firebase/auth';
 import { collection, doc, onSnapshot, setDoc, deleteDoc, serverTimestamp } from 'firebase/firestore';
@@ -18,8 +18,429 @@ import {
   Info,
   Compass,
   FileText,
-  SlidersHorizontal
+  SlidersHorizontal,
+  Bus
 } from 'lucide-react';
+
+// --- MAPLIBRE GL JS COMPATIBILITY SHIM FOR LEAFLET ---
+function createGeoJSONCircle(center, radiusInMeters, points = 64) {
+  const [lat, lng] = center;
+  const km = radiusInMeters / 1000;
+  const ret = [];
+  const distanceX = km / (111.32 * Math.cos(lat * Math.PI / 180));
+  const distanceY = km / 110.57;
+
+  for (let i = 0; i < points; i++) {
+    const theta = (i / points) * (2 * Math.PI);
+    const x = distanceX * Math.cos(theta);
+    const y = distanceY * Math.sin(theta);
+    ret.push([lng + x, lat + y]);
+  }
+  ret.push(ret[0]); // Close the polygon
+
+  return {
+    type: 'Feature',
+    geometry: {
+      type: 'Polygon',
+      coordinates: [ret]
+    }
+  };
+}
+
+class MapLibreMarkerWrapper {
+  constructor(latlng, options) {
+    this.latlng = latlng;
+    this.options = options || {};
+    this.id = 'marker-' + Math.random().toString(36).substr(2, 9);
+    
+    // Create HTML container for marker content
+    this.element = document.createElement('div');
+    this.element.style.position = 'relative';
+    
+    let htmlContent = null;
+    let iconSize = null;
+    let iconAnchor = null;
+    let className = '';
+    
+    if (this.options.icon && this.options.icon.options) {
+      htmlContent = this.options.icon.options.html;
+      iconSize = this.options.icon.options.iconSize;
+      iconAnchor = this.options.icon.options.iconAnchor;
+      className = this.options.icon.options.className || '';
+    }
+    
+    if (className) {
+      this.element.className = className;
+    }
+    
+    if (iconSize) {
+      this.element.style.width = iconSize[0] + 'px';
+      this.element.style.height = iconSize[1] + 'px';
+    }
+    
+    if (htmlContent) {
+      if (typeof htmlContent === 'string') {
+        this.element.innerHTML = htmlContent;
+      } else if (htmlContent instanceof HTMLElement) {
+        this.element.appendChild(htmlContent);
+      }
+    }
+    
+    // Determine the anchor and offset for MapLibre Marker to avoid shifting/drifting on zoom
+    // Determine the anchor and offset for MapLibre Marker to avoid shifting/drifting on zoom
+    let anchor = 'center';
+    let offset = [0, 0];
+    
+    if (iconSize && iconAnchor) {
+      anchor = 'center';
+      const w = iconSize[0];
+      const h = iconSize[1];
+      const anchorX = iconAnchor[0];
+      const anchorY = iconAnchor[1];
+      // Offset relative to element center so center of marker is locked to LngLat
+      offset = [w / 2 - anchorX, h / 2 - anchorY];
+    } else if (iconSize) {
+      anchor = 'center';
+      offset = [0, 0];
+    } else if (iconAnchor) {
+      anchor = 'center';
+      offset = [0, 0];
+    }
+    
+    this.marker = new window.maplibregl.Marker({
+      element: this.element,
+      anchor: anchor,
+      offset: offset
+    });
+  }
+
+  addTo(mapWrapper) {
+    this.mapWrapper = mapWrapper;
+    const map = mapWrapper._nativeMap || mapWrapper;
+    this.marker.setLngLat([this.latlng[1], this.latlng[0]]).addTo(map);
+    
+    // Add popups/tooltips if bound before addTo
+    if (this.popupText) {
+      this.bindPopup(this.popupText);
+    }
+    if (this.tooltipText) {
+      this.bindTooltip(this.tooltipText, this.tooltipOptions);
+    }
+    return this;
+  }
+
+  setLatLng(latlng) {
+    this.latlng = latlng;
+    this.marker.setLngLat([latlng[1], latlng[0]]);
+    return this;
+  }
+
+  bindPopup(html) {
+    this.popupText = html;
+    const popup = new window.maplibregl.Popup({ offset: 15, closeButton: false })
+      .setHTML(html);
+    this.marker.setPopup(popup);
+    return this;
+  }
+
+  bindTooltip(content, options) {
+    this.tooltipText = content;
+    this.tooltipOptions = options;
+    
+    const tooltipPopup = new window.maplibregl.Popup({
+      offset: 15,
+      closeButton: false,
+      closeOnClick: false,
+      className: 'custom-stop-tooltip-popup'
+    }).setText(content);
+
+    const el = this.marker.getElement();
+    
+    // Hover event listener
+    const onMouseEnter = () => {
+      const map = this.mapWrapper ? (this.mapWrapper._nativeMap || this.mapWrapper) : window.mapInstance?.current?._nativeMap;
+      if (map) {
+        tooltipPopup.setLngLat(this.marker.getLngLat()).addTo(map);
+      }
+    };
+    const onMouseLeave = () => {
+      tooltipPopup.remove();
+    };
+
+    el.addEventListener('mouseenter', onMouseEnter);
+    el.addEventListener('mouseleave', onMouseLeave);
+    
+    if (options && options.permanent) {
+      // If permanent, add it immediately after map is loaded
+      setTimeout(() => {
+        const map = this.mapWrapper ? (this.mapWrapper._nativeMap || this.mapWrapper) : window.mapInstance?.current?._nativeMap;
+        if (map) {
+          tooltipPopup.setLngLat(this.marker.getLngLat()).addTo(map);
+        }
+      }, 300);
+    }
+    
+    // Save listeners to clean up
+    this._cleanupTooltip = () => {
+      el.removeEventListener('mouseenter', onMouseEnter);
+      el.removeEventListener('mouseleave', onMouseLeave);
+      tooltipPopup.remove();
+    };
+    return this;
+  }
+
+  remove() {
+    if (this._cleanupTooltip) {
+      this._cleanupTooltip();
+    }
+    this.marker.remove();
+    return this;
+  }
+}
+
+class MapLibrePolylineWrapper {
+  constructor(latlngs, options) {
+    this.latlngs = latlngs;
+    this.options = options || {};
+    this.id = 'polyline-' + Math.random().toString(36).substr(2, 9);
+    this.added = false;
+  }
+
+  addTo(mapWrapper) {
+    this.mapWrapper = mapWrapper;
+    const map = mapWrapper._nativeMap || mapWrapper;
+    const coordinates = this.latlngs.map(pt => [pt[1], pt[0]]);
+    
+    map.addSource(this.id, {
+      type: 'geojson',
+      data: {
+        type: 'Feature',
+        geometry: {
+          type: 'LineString',
+          coordinates: coordinates
+        }
+      }
+    });
+
+    map.addLayer({
+      id: this.id + '-layer',
+      type: 'line',
+      source: this.id,
+      layout: {
+        'line-join': 'round',
+        'line-cap': this.options.lineCap || 'round'
+      },
+      paint: {
+        'line-color': this.options.color || '#1a73e8',
+        'line-width': this.options.weight || 5,
+        'line-opacity': this.options.opacity || 0.95,
+        ...(this.options.dashArray ? { 'line-dasharray': [2, 4] } : {})
+      }
+    });
+
+    this.added = true;
+    return this;
+  }
+
+  remove() {
+    if (this.added && this.mapWrapper) {
+      const map = this.mapWrapper._nativeMap || this.mapWrapper;
+      try {
+        if (map.getLayer(this.id + '-layer')) map.removeLayer(this.id + '-layer');
+        if (map.getSource(this.id)) map.removeSource(this.id);
+      } catch (e) {
+        console.warn("Error removing polyline layer:", e);
+      }
+      this.added = false;
+    }
+    return this;
+  }
+}
+
+class MapLibreCircleWrapper {
+  constructor(latlng, options) {
+    this.latlng = latlng;
+    this.radius = options.radius || 0;
+    this.options = options || {};
+    this.id = 'circle-' + Math.random().toString(36).substr(2, 9);
+    this.added = false;
+  }
+
+  addTo(mapWrapper) {
+    this.mapWrapper = mapWrapper;
+    const map = mapWrapper._nativeMap || mapWrapper;
+    const geojson = createGeoJSONCircle(this.latlng, this.radius);
+    
+    map.addSource(this.id, {
+      type: 'geojson',
+      data: geojson
+    });
+
+    map.addLayer({
+      id: this.id + '-fill',
+      type: 'fill',
+      source: this.id,
+      paint: {
+        'fill-color': this.options.fillColor || '#1a73e8',
+        'fill-opacity': this.options.fillOpacity || 0.15
+      }
+    });
+
+    map.addLayer({
+      id: this.id + '-stroke',
+      type: 'line',
+      source: this.id,
+      paint: {
+        'line-color': this.options.color || '#1a73e8',
+        'line-width': this.options.weight || 1
+      }
+    });
+
+    this.added = true;
+    return this;
+  }
+
+  setLatLng(latlng) {
+    this.latlng = latlng;
+    if (this.added && this.mapWrapper) {
+      const map = this.mapWrapper._nativeMap || this.mapWrapper;
+      const geojson = createGeoJSONCircle(this.latlng, this.radius);
+      const source = map.getSource(this.id);
+      if (source) source.setData(geojson);
+    }
+    return this;
+  }
+
+  setRadius(radius) {
+    this.radius = radius;
+    if (this.added && this.mapWrapper) {
+      const map = this.mapWrapper._nativeMap || this.mapWrapper;
+      const geojson = createGeoJSONCircle(this.latlng, this.radius);
+      const source = map.getSource(this.id);
+      if (source) source.setData(geojson);
+    }
+    return this;
+  }
+
+  remove() {
+    if (this.added && this.mapWrapper) {
+      const map = this.mapWrapper._nativeMap || this.mapWrapper;
+      try {
+        if (map.getLayer(this.id + '-fill')) map.removeLayer(this.id + '-fill');
+        if (map.getLayer(this.id + '-stroke')) map.removeLayer(this.id + '-stroke');
+        if (map.getSource(this.id)) map.removeSource(this.id);
+      } catch (e) {
+        console.warn("Error removing circle layers:", e);
+      }
+      this.added = false;
+    }
+    return this;
+  }
+}
+
+const L = {
+  map: function(el, options) {
+    const map = new window.maplibregl.Map({
+      container: el,
+      style: {
+        version: 8,
+        sources: {
+          'google-tiles': {
+            type: 'raster',
+            tiles: [
+              'https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}'
+            ],
+            tileSize: 256,
+            attribution: '&copy; Google Maps'
+          }
+        },
+        layers: [
+          {
+            id: 'google-tiles-layer',
+            type: 'raster',
+            source: 'google-tiles',
+            minzoom: 0,
+            maxzoom: 20
+          }
+        ]
+      },
+      center: [88.3529, 22.5626], // [longitude, latitude]
+      zoom: 8,
+      attributionControl: false
+    });
+    
+    // Add Google Maps style navigation controls
+    map.addControl(new window.maplibregl.NavigationControl(), 'top-right');
+    
+    const mapWrapper = {
+      _nativeMap: map,
+      setView: function(latlng, zoom) {
+        this._nativeMap.jumpTo({
+          center: [latlng[1], latlng[0]],
+          zoom: zoom
+        });
+        return this;
+      },
+      panTo: function(latlng) {
+        this._nativeMap.panTo([latlng[1], latlng[0]]);
+        return this;
+      },
+      fitBounds: function(bounds, options) {
+        const paddingVal = options && options.padding ? (Array.isArray(options.padding) ? options.padding[0] : options.padding) : 50;
+        this._nativeMap.fitBounds(bounds, { padding: paddingVal, duration: 1200 });
+        return this;
+      },
+      on: function(event, callback) {
+        if (event === 'click') {
+          this._nativeMap.on('click', (e) => {
+            callback({
+              latlng: {
+                lat: e.lngLat.lat,
+                lng: e.lngLat.lng
+              }
+            });
+          });
+        } else {
+          this._nativeMap.on(event, callback);
+        }
+        return this;
+      }
+    };
+    
+    return mapWrapper;
+  },
+  tileLayer: function() {
+    return {
+      addTo: function() { return this; }
+    };
+  },
+  control: {
+    attribution: function() {
+      return {
+        addTo: function() { return this; }
+      };
+    }
+  },
+  divIcon: function(options) {
+    return { options };
+  },
+  marker: function(latlng, options) {
+    return new MapLibreMarkerWrapper(latlng, options);
+  },
+  polyline: function(latlngs, options) {
+    return new MapLibrePolylineWrapper(latlngs, options);
+  },
+  circle: function(latlng, options) {
+    return new MapLibreCircleWrapper(latlng, options);
+  },
+  latLngBounds: function(latlngs) {
+    const bounds = new window.maplibregl.LngLatBounds();
+    latlngs.forEach(coord => {
+      bounds.extend([coord[1], coord[0]]);
+    });
+    return bounds;
+  }
+};
 
 // --- GEOGRAPHIC UTILITIES ---
 const EARTH_RADIUS_KM = 6371.0;
@@ -39,6 +460,50 @@ function haversineKm(lat1, lon1, lat2, lon2) {
       Math.sin(dLon / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return EARTH_RADIUS_KM * c;
+}
+
+// Snaps a 2D lat/lng point onto the closest segment of a polyline line string.
+// Guarantees stop circle marker center is 100% attached to the road curve line.
+function snapPointToPolyline(lat, lng, polyline) {
+  if (!polyline || polyline.length === 0) return [lat, lng];
+  if (polyline.length === 1) return polyline[0];
+
+  let minDist = Infinity;
+  let snapped = [lat, lng];
+
+  for (let i = 0; i < polyline.length - 1; i++) {
+    const a = polyline[i];
+    const b = polyline[i + 1];
+
+    const latA = a[0], lngA = a[1];
+    const latB = b[0], lngB = b[1];
+
+    const dLat = latB - latA;
+    const dLng = lngB - lngA;
+
+    if (dLat === 0 && dLng === 0) {
+      const d = haversineKm(lat, lng, latA, lngA);
+      if (d < minDist) {
+        minDist = d;
+        snapped = [latA, lngA];
+      }
+      continue;
+    }
+
+    let t = ((lat - latA) * dLat + (lng - lngA) * dLng) / (dLat * dLat + dLng * dLng);
+    t = Math.max(0, Math.min(1, t));
+
+    const projLat = latA + t * dLat;
+    const projLng = lngA + t * dLng;
+
+    const d = haversineKm(lat, lng, projLat, projLng);
+    if (d < minDist) {
+      minDist = d;
+      snapped = [projLat, projLng];
+    }
+  }
+
+  return snapped;
 }
 
 function estimatePositionFromHistory(historyData, elapsedSeconds, coordStops, selectedBus) {
@@ -273,6 +738,11 @@ function fuzzyContains(haystack, needle) {
   if (n === '') return true;
   if (h.includes(n)) return true;
 
+  // Alphanumeric clean match for registration numbers (e.g. WB34A1234 matches WB-34-A-1234)
+  const hClean = h.replace(/[^a-z0-9]/g, '');
+  const nClean = n.replace(/[^a-z0-9]/g, '');
+  if (nClean !== '' && hClean.includes(nClean)) return true;
+
   // Typo tolerance: compare needle against each token
   const words = h.split(/[\s,()]+/).filter(Boolean);
   const maxAllowedDistance = n.length <= 4 ? 1 : 2;
@@ -476,6 +946,79 @@ function computeDelayMinutes(nearest, observedAt) {
   return actualMinutes - scheduledMinutes;
 }
 
+// Robust road-following router using OSRM through ALL consecutive bus stops
+async function fetchRoadRoute(coordStops) {
+  if (!coordStops || coordStops.length < 2) return [];
+
+  // Deduplicate nearby coordinates (rounding to 5 decimal places is ~1.1 meters)
+  const uniqueStops = [];
+  const seenCoords = new Set();
+  coordStops.forEach(stop => {
+    const latKey = parseFloat(stop.latitude).toFixed(5);
+    const lngKey = parseFloat(stop.longitude).toFixed(5);
+    const key = `${latKey},${lngKey}`;
+    if (!seenCoords.has(key)) {
+      seenCoords.add(key);
+      uniqueStops.push(stop);
+    }
+  });
+
+  if (uniqueStops.length < 2) return [];
+
+  // Helper to query OSRM for a list of waypoints
+  const queryOSRM = async (stops) => {
+    const coordsString = stops.map(s => `${s.longitude},${s.latitude}`).join(';');
+    const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`OSRM HTTP error ${res.status}`);
+    const data = await res.json();
+    if (data.code !== 'Ok' || !data.routes || data.routes.length === 0) {
+      throw new Error(`OSRM routing failed with code ${data.code}`);
+    }
+    return data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]); // [lat, lng]
+  };
+
+  // Route sequentially through ALL stops in chunks of max 15 waypoints to follow the exact roads connecting every bus stop
+  try {
+    const chunkSize = 15;
+    const allRoadPoints = [];
+
+    for (let i = 0; i < uniqueStops.length - 1; i += (chunkSize - 1)) {
+      const chunk = uniqueStops.slice(i, i + chunkSize);
+      if (chunk.length < 2) break;
+
+      try {
+        const path = await queryOSRM(chunk);
+        if (path && path.length > 0) {
+          if (allRoadPoints.length > 0 && path[0][0] === allRoadPoints[allRoadPoints.length - 1][0] && path[0][1] === allRoadPoints[allRoadPoints.length - 1][1]) {
+            allRoadPoints.pop();
+          }
+          allRoadPoints.push(...path);
+        }
+      } catch (chunkErr) {
+        console.warn(`Chunk routing ${i} failed, routing segment by segment:`, chunkErr);
+        // Fallback for this chunk: segment by segment
+        for (let j = 0; j < chunk.length - 1; j++) {
+          try {
+            const segPath = await queryOSRM([chunk[j], chunk[j + 1]]);
+            if (allRoadPoints.length > 0 && segPath[0][0] === allRoadPoints[allRoadPoints.length - 1][0] && segPath[0][1] === allRoadPoints[allRoadPoints.length - 1][1]) {
+              allRoadPoints.pop();
+            }
+            allRoadPoints.push(...segPath);
+          } catch (e) {
+            allRoadPoints.push([chunk[j].latitude, chunk[j].longitude], [chunk[j + 1].latitude, chunk[j + 1].longitude]);
+          }
+        }
+      }
+    }
+
+    return allRoadPoints;
+  } catch (err) {
+    console.warn("Failed full route generation:", err);
+    return uniqueStops.map(s => [s.latitude, s.longitude]);
+  }
+}
+
 // --- MAIN REACT COMPONENT ---
 function App() {
   const [busesData, setBusesData] = useState([]);
@@ -505,13 +1048,13 @@ function App() {
   
   // Crowdsourcing simulated states
   const [isTracking, setIsTracking] = useState(false);
-  const [useSimulation, setUseSimulation] = useState(true); // default to simulation mode for smooth local testing
+  const [useSimulation, setUseSimulation] = useState(false); // only live data, no simulation
   const [realCoords, setRealCoords] = useState(null); // holds real device GPS coordinates
   const [myLocationIndex, setMyLocationIndex] = useState(0); // Index along the coordinates array of route stops
   const [myLocationOffset, setMyLocationOffset] = useState(0); // Interpolation factor (0 to 1) between current and next stop
   const [simSpeedMultiplier, setSimSpeedMultiplier] = useState(1); // 1x, 2x, 5x, 10x
   const [myAccuracy, setMyAccuracy] = useState(25); // 10m to 100m
-  const [addRiders, setAddRiders] = useState(true); // simulate virtual riders
+  const [addRiders, setAddRiders] = useState(false); // disable simulated virtual riders by default
   const [ridersAccuracy, setRidersAccuracy] = useState(40); // virtual riders error
   
   // Resolved dynamic values
@@ -532,6 +1075,9 @@ function App() {
   const mapInstance = useRef(null);
   const mapMarkers = useRef({});
   const routePolyline = useRef(null);
+  const routePolylineBorder = useRef(null);
+  const roadRoutePointsRef = useRef([]);
+  const resolvedBusAnimRef = useRef(null);
   
   // Startup Geolocation Permission Request
   const requestStartupLocation = () => {
@@ -586,13 +1132,14 @@ function App() {
   useEffect(() => {
     async function loadDatasets() {
       try {
+        const v = Date.now();
         const [busesRes, routesRes, stopsRes, timetableRes, operatorsRes, agenciesRes] = await Promise.all([
-          fetch('/data/buses.json').then(r => r.json()),
-          fetch('/data/routes.json').then(r => r.json()),
-          fetch('/data/stops.json').then(r => r.json()),
-          fetch('/data/timetable.json').then(r => r.json()),
-          fetch('/data/operators.json').then(r => r.json()),
-          fetch('/data/agencies.json').then(r => r.json())
+          fetch(`/data/buses.json?v=${v}`).then(r => r.json()),
+          fetch(`/data/routes.json?v=${v}`).then(r => r.json()),
+          fetch(`/data/stops.json?v=${v}`).then(r => r.json()),
+          fetch(`/data/timetable.json?v=${v}`).then(r => r.json()),
+          fetch(`/data/operators.json?v=${v}`).then(r => r.json()),
+          fetch(`/data/agencies.json?v=${v}`).then(r => r.json())
         ]);
         
         // Parse into mapping dictionaries
@@ -656,6 +1203,7 @@ function App() {
   
   // Leaflet Map Initialization
   useEffect(() => {
+    let resizeObserver = null;
     if (!loading && mapRef.current && !mapInstance.current) {
       // Centered on West Bengal (Kolkata region)
       mapInstance.current = L.map(mapRef.current, {
@@ -663,12 +1211,29 @@ function App() {
         attributionControl: false
       }).setView([22.5626, 88.3529], 8);
       
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         maxZoom: 19
       }).addTo(mapInstance.current);
       
       L.control.attribution({ prefix: false }).addTo(mapInstance.current);
+
+      // Add ResizeObserver to handle container resizing automatically.
+      // This solves the issue of lines (polylines) and markers shifting/drifting on zoom
+      // due to canvas size mismatches with its CSS container dimensions.
+      const nativeMap = mapInstance.current._nativeMap;
+      if (nativeMap) {
+        resizeObserver = new ResizeObserver(() => {
+          nativeMap.resize();
+        });
+        resizeObserver.observe(mapRef.current);
+      }
     }
+
+    return () => {
+      if (resizeObserver) {
+        resizeObserver.disconnect();
+      }
+    };
   }, [loading]);
   
   // Firebase Anonymous Auth Setup
@@ -746,53 +1311,189 @@ function App() {
   
   // Handle Bus Selection Change - update map viewport and markers
   useEffect(() => {
-    if (!mapInstance.current || !selectedBus) return;
+    if (!mapInstance.current) return;
+    const nativeMap = mapInstance.current._nativeMap || mapInstance.current;
     
-    // Clear old map layers
+    let isCurrent = true;
+    
+    // Clear old WebGL layers if present
+    try {
+      if (nativeMap.getLayer('wbsb-stops-label')) nativeMap.removeLayer('wbsb-stops-label');
+      if (nativeMap.getLayer('wbsb-stops-inner')) nativeMap.removeLayer('wbsb-stops-inner');
+      if (nativeMap.getLayer('wbsb-stops-outer')) nativeMap.removeLayer('wbsb-stops-outer');
+      if (nativeMap.getSource('wbsb-stops-source')) nativeMap.removeSource('wbsb-stops-source');
+    } catch (e) {
+      console.warn("WebGL layer cleanup:", e);
+    }
+    
+    // Clear old map markers
     Object.values(mapMarkers.current).forEach(m => m.remove());
     mapMarkers.current = {};
     if (routePolyline.current) {
       routePolyline.current.remove();
       routePolyline.current = null;
     }
+    if (routePolylineBorder.current) {
+      routePolylineBorder.current.remove();
+      routePolylineBorder.current = null;
+    }
+    
+    if (!selectedBus) return;
     
     // Filter stops on route that have coordinates
     const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
     
     if (coordStops.length > 0) {
-      // Draw stop markers
-      coordStops.forEach(stop => {
-        const el = document.createElement('div');
-        el.style.width = '16px';
-        el.style.height = '16px';
-        el.style.background = '#ffffff';
-        el.style.border = '3px solid #0f172a';
-        el.style.borderRadius = '50%';
-        el.style.boxShadow = '0 2px 4px rgba(0,0,0,0.3)';
-        
-        const stopIcon = L.divIcon({
-          className: 'custom-stop-icon',
-          html: el,
-          iconSize: [16, 16],
-          iconAnchor: [8, 8]
-        });
-        
-        const marker = L.marker([stop.latitude, stop.longitude], { icon: stopIcon })
-          .addTo(mapInstance.current)
-          .bindPopup(`<strong>${stop.stopName}</strong><br/>Sequence: ${stop.sequence}${stop.upTime ? `<br/>Scheduled Time: ${stop.upTime}` : ''}`);
-          
-        mapMarkers.current[`stop_${stop.stopId}`] = marker;
-      });
-      
-      // Draw Route Polyline
       const latlngs = coordStops.map(s => [s.latitude, s.longitude]);
+
+      // WebGL native renderer: renders small circles directly inside WebGL pass locked on the curve line
+      const renderWebGLStops = (currentPolyline) => {
+        // Clear previous stop label markers
+        Object.values(mapMarkers.current).forEach(m => m.remove());
+        mapMarkers.current = {};
+
+        const features = coordStops.map((stop, index) => {
+          const snapped = snapPointToPolyline(stop.latitude, stop.longitude, currentPolyline);
+          const letterLabel = String.fromCharCode(65 + (index % 26)) + (index >= 26 ? Math.floor(index / 26) : '');
+          
+          // Add stop name label badge right beside the circle node
+          const labelDiv = document.createElement('div');
+          labelDiv.className = 'custom-stop-label-badge';
+          labelDiv.style.display = 'inline-flex';
+          labelDiv.style.alignItems = 'center';
+          labelDiv.style.gap = '4px';
+          labelDiv.style.background = 'rgba(15, 23, 42, 0.9)';
+          labelDiv.style.color = '#ffffff';
+          labelDiv.style.padding = '2px 6px';
+          labelDiv.style.borderRadius = '6px';
+          labelDiv.style.fontSize = '11px';
+          labelDiv.style.fontWeight = '600';
+          labelDiv.style.fontFamily = 'Inter, system-ui, sans-serif';
+          labelDiv.style.whiteSpace = 'nowrap';
+          labelDiv.style.boxShadow = '0 2px 6px rgba(0,0,0,0.3)';
+          labelDiv.style.border = '1px solid rgba(255,255,255,0.2)';
+          labelDiv.style.pointerEvents = 'auto';
+
+          labelDiv.innerHTML = `<span style="background: #f59e0b; color: #0f172a; padding: 0 4px; border-radius: 3px; font-weight: 800; font-size: 10px;">${letterLabel}</span> <span>${stop.stopName}</span>`;
+
+          const labelIcon = L.divIcon({
+            className: 'custom-stop-label-wrapper',
+            html: labelDiv,
+            iconSize: [0, 0],
+            iconAnchor: [-10, 8] // Positioned right beside the small circle node
+          });
+
+          const marker = L.marker(snapped, { icon: labelIcon })
+            .addTo(mapInstance.current)
+            .bindPopup(`<strong>Stop ${letterLabel}: ${stop.stopName}</strong><br/>Sequence: ${stop.sequence}${stop.upTime ? `<br/>Scheduled: ${stop.upTime}` : ''}`);
+
+          mapMarkers.current[`stop_${stop.stopId}`] = marker;
+
+          return {
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [snapped[1], snapped[0]] // [lng, lat]
+            },
+            properties: {
+              stopId: stop.stopId,
+              stopName: stop.stopName,
+              label: letterLabel,
+              sequence: stop.sequence,
+              upTime: stop.upTime || ''
+            }
+          };
+        });
+
+        const geojson = {
+          type: 'FeatureCollection',
+          features: features
+        };
+
+        const source = nativeMap.getSource('wbsb-stops-source');
+        if (source) {
+          source.setData(geojson);
+        } else {
+          nativeMap.addSource('wbsb-stops-source', {
+            type: 'geojson',
+            data: geojson
+          });
+
+          // Outer circle (white background with dark border centered on curve line)
+          nativeMap.addLayer({
+            id: 'wbsb-stops-outer',
+            type: 'circle',
+            source: 'wbsb-stops-source',
+            paint: {
+              'circle-radius': 7,
+              'circle-color': '#ffffff',
+              'circle-stroke-color': '#0f172a',
+              'circle-stroke-width': 2.5
+            }
+          });
+
+          // Inner solid circle dot
+          nativeMap.addLayer({
+            id: 'wbsb-stops-inner',
+            type: 'circle',
+            source: 'wbsb-stops-source',
+            paint: {
+              'circle-radius': 2.5,
+              'circle-color': '#0f172a'
+            }
+          });
+        }
+      };
+
+      // Draw initial fallback polyline and WebGL stop circles
       routePolyline.current = L.polyline(latlngs, {
-        color: '#d97706', // Terracotta amber
+        color: '#d97706',
         weight: 4,
         dashArray: '5, 10',
         opacity: 0.85
       }).addTo(mapInstance.current);
-      
+
+      renderWebGLStops(latlngs);
+
+      // Reset roadRoutePointsRef
+      roadRoutePointsRef.current = [];
+
+      // Fetch exact road geometry from OSRM and update WebGL line & stop circles
+      fetchRoadRoute(coordStops)
+        .then(roadLatLngs => {
+          if (!isCurrent) return;
+
+          if (roadLatLngs && roadLatLngs.length > 0) {
+            roadRoutePointsRef.current = roadLatLngs;
+
+            if (routePolyline.current) routePolyline.current.remove();
+            if (routePolylineBorder.current) routePolylineBorder.current.remove();
+
+            // Outline border and main blue road path
+            routePolylineBorder.current = L.polyline(roadLatLngs, {
+              color: '#1558b0',
+              weight: 8,
+              opacity: 0.65,
+              lineCap: 'round',
+              lineJoin: 'round'
+            }).addTo(mapInstance.current);
+
+            routePolyline.current = L.polyline(roadLatLngs, {
+              color: '#1a73e8',
+              weight: 5,
+              opacity: 0.95,
+              lineCap: 'round',
+              lineJoin: 'round'
+            }).addTo(mapInstance.current);
+
+            // Re-render WebGL stop circles snapped 100% on top of exact road curve line
+            renderWebGLStops(roadLatLngs);
+          }
+        })
+        .catch(err => {
+          console.warn("OSRM routing service failed:", err);
+        });
+
       // Fit bounds to route
       const bounds = L.latLngBounds(latlngs);
       mapInstance.current.fitBounds(bounds, { padding: [50, 50] });
@@ -821,6 +1522,10 @@ function App() {
     } else {
       setHasHistoryData(false);
     }
+    
+    return () => {
+      isCurrent = false;
+    };
   }, [selectedBus]);
   
   // Real GPS Device Watcher Effect
@@ -1057,10 +1762,61 @@ function App() {
     const defaultHeading = ((Math.atan2(y, x) * 180 / Math.PI) + 360) % 360;
 
     if (useSimulation) {
-      // Linearly interpolate between the two stops
-      userLat = currentStop.latitude + (nextStop.latitude - currentStop.latitude) * myLocationOffset;
-      userLng = currentStop.longitude + (nextStop.longitude - currentStop.longitude) * myLocationOffset;
-      userHeading = defaultHeading;
+      // Find road points for this leg if roadRoutePointsRef.current is populated
+      const roadPoints = roadRoutePointsRef.current;
+      if (roadPoints && roadPoints.length > 0) {
+        // Find indices in roadPoints closest to currentStop and nextStop
+        const findClosestIndex = (stop) => {
+          let minD = Infinity;
+          let idx = 0;
+          for (let i = 0; i < roadPoints.length; i++) {
+            const dy = roadPoints[i][0] - stop.latitude;
+            const dx = roadPoints[i][1] - stop.longitude;
+            const d = dy * dy + dx * dx;
+            if (d < minD) {
+              minD = d;
+              idx = i;
+            }
+          }
+          return idx;
+        };
+
+        const idxA = findClosestIndex(currentStop);
+        const idxB = findClosestIndex(nextStop);
+
+        if (idxA !== idxB) {
+          // Calculate overall offset along the road subset
+          const totalPointsInLeg = Math.abs(idxB - idxA);
+          const rawOffset = totalPointsInLeg * myLocationOffset;
+          const pointOffset = Math.floor(rawOffset);
+          const remainder = rawOffset - pointOffset;
+
+          const step = idxA < idxB ? 1 : -1;
+          const currentPointIdx = idxA + pointOffset * step;
+          const nextPointIdx = Math.max(0, Math.min(roadPoints.length - 1, currentPointIdx + step));
+
+          const ptA = roadPoints[currentPointIdx];
+          const ptB = roadPoints[nextPointIdx];
+
+          userLat = ptA[0] + (ptB[0] - ptA[0]) * remainder;
+          userLng = ptA[1] + (ptB[1] - ptA[1]) * remainder;
+
+          // Heading along road curve
+          const dL = degToRad(ptB[1] - ptA[1]);
+          const yH = Math.sin(dL) * Math.cos(degToRad(ptB[0]));
+          const xH = Math.cos(degToRad(ptA[0])) * Math.sin(degToRad(ptB[0])) -
+                    Math.sin(degToRad(ptA[0])) * Math.cos(degToRad(ptB[0])) * Math.cos(dL);
+          userHeading = ((Math.atan2(yH, xH) * 180 / Math.PI) + 360) % 360;
+        } else {
+          userLat = currentStop.latitude + (nextStop.latitude - currentStop.latitude) * myLocationOffset;
+          userLng = currentStop.longitude + (nextStop.longitude - currentStop.longitude) * myLocationOffset;
+          userHeading = defaultHeading;
+        }
+      } else {
+        userLat = currentStop.latitude + (nextStop.latitude - currentStop.latitude) * myLocationOffset;
+        userLng = currentStop.longitude + (nextStop.longitude - currentStop.longitude) * myLocationOffset;
+        userHeading = defaultHeading;
+      }
       userAccuracy = myAccuracy;
       userSpeed = 35;
     } else {
@@ -1390,40 +2146,191 @@ function App() {
     
     // Draw Resolved Bus Location
     if (resolvedLoc) {
-      const busEl = document.createElement('div');
-      busEl.className = 'pulse-marker';
+      const targetLat = resolvedLoc.latitude;
+      const targetLng = resolvedLoc.longitude;
+      const targetHead = resolvedLoc.headingDegrees || 0;
       
-      const busDivIcon = L.divIcon({
-        className: 'custom-div-icon',
-        html: busEl,
-        iconSize: [24, 24],
-        iconAnchor: [12, 12]
-      });
+      const anim = resolvedBusAnimRef.current;
       
-      if (mapMarkers.current['resolved_bus']) {
-        mapMarkers.current['resolved_bus'].setLatLng([resolvedLoc.latitude, resolvedLoc.longitude]);
-      } else {
-        mapMarkers.current['resolved_bus'] = L.marker([resolvedLoc.latitude, resolvedLoc.longitude], { icon: busDivIcon })
+      if (!anim || anim.selectedBusId !== selectedBus.id) {
+        // Initialize animation state
+        if (anim && anim.frameId) {
+          cancelAnimationFrame(anim.frameId);
+        }
+        
+        // Custom DOM chevron element
+        const busEl = document.createElement('div');
+        busEl.className = 'custom-bus-chevron';
+        busEl.innerHTML = `<svg viewBox="0 0 24 24" width="32" height="32" style="transform: rotate(${targetHead}deg); transition: transform 0.1s ease-out; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.35));"><path d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z" fill="${resolvedLoc.isStale ? '#ef4444' : '#22c55e'}" stroke="#ffffff" stroke-width="1.5"/></svg>`;
+        
+        const busDivIcon = L.divIcon({
+          className: 'custom-div-icon',
+          html: busEl,
+          iconSize: [32, 32],
+          iconAnchor: [16, 16]
+        });
+        
+        if (mapMarkers.current['resolved_bus']) {
+          mapMarkers.current['resolved_bus'].remove();
+        }
+        
+        const marker = L.marker([targetLat, targetLng], { icon: busDivIcon })
           .addTo(mapInstance.current)
           .bindPopup(`<strong>Resolved Bus Location</strong><br/>Confidence: ${Math.round(resolvedLoc.confidenceScore * 100)}%<br/>Contributors: ${resolvedLoc.clusteredContributorCount}/${resolvedLoc.contributorCount}`);
-      }
-      
-      // Keep map centered on resolved bus location during active tracking
-      if (isTracking && isPlaying) {
-        mapInstance.current.panTo([resolvedLoc.latitude, resolvedLoc.longitude]);
+        
+        mapMarkers.current['resolved_bus'] = marker;
+        
+        resolvedBusAnimRef.current = {
+          lat: targetLat,
+          lng: targetLng,
+          head: targetHead,
+          selectedBusId: selectedBus.id,
+          element: busEl.firstElementChild,
+          frameId: null
+        };
+        
+        if (isTracking && isPlaying) {
+          mapInstance.current.panTo([targetLat, targetLng]);
+        }
+      } else {
+        // Run LERP animation to target coords
+        const duration = 1000; // 1s lerp transition
+        const startTime = performance.now();
+        
+        const startLat = anim.lat;
+        const startLng = anim.lng;
+        const startHead = anim.head;
+        
+        // Handle heading interpolation across 0/360 boundary
+        let diff = targetHead - startHead;
+        while (diff < -180) diff += 360;
+        while (diff > 180) diff -= 360;
+        const targetHeadAdjusted = startHead + diff;
+        
+        if (anim.frameId) {
+          cancelAnimationFrame(anim.frameId);
+        }
+        
+        const animate = (now) => {
+          const elapsed = now - startTime;
+          const t = Math.min(1, elapsed / duration);
+          
+          const currentLat = startLat + (targetLat - startLat) * t;
+          const currentLng = startLng + (targetLng - startLng) * t;
+          const currentHead = (startHead + (targetHeadAdjusted - startHead) * t + 360) % 360;
+          
+          anim.lat = currentLat;
+          anim.lng = currentLng;
+          anim.head = currentHead;
+          
+          if (mapMarkers.current['resolved_bus']) {
+            mapMarkers.current['resolved_bus'].setLatLng([currentLat, currentLng]);
+          }
+          if (anim.element) {
+            anim.element.style.transform = `rotate(${currentHead}deg)`;
+            anim.element.querySelector('path').setAttribute('fill', resolvedLoc.isStale ? '#ef4444' : '#22c55e');
+          }
+          
+          // Camera follow
+          if (isTracking && isPlaying) {
+            mapInstance.current.panTo([currentLat, currentLng]);
+          }
+          
+          if (t < 1) {
+            anim.frameId = requestAnimationFrame(animate);
+          } else {
+            anim.frameId = null;
+          }
+        };
+        
+        anim.frameId = requestAnimationFrame(animate);
       }
     } else {
       if (mapMarkers.current['resolved_bus']) {
         mapMarkers.current['resolved_bus'].remove();
         delete mapMarkers.current['resolved_bus'];
       }
+      if (resolvedBusAnimRef.current) {
+        if (resolvedBusAnimRef.current.frameId) {
+          cancelAnimationFrame(resolvedBusAnimRef.current.frameId);
+        }
+        resolvedBusAnimRef.current = null;
+      }
     }
+
+    return () => {
+      if (resolvedBusAnimRef.current && resolvedBusAnimRef.current.frameId) {
+        cancelAnimationFrame(resolvedBusAnimRef.current.frameId);
+      }
+    };
   }, [resolvedLoc, isTracking, contributions, addRiders, mySessionId, useSimulation, isPlaying, selectedBus]);
   
+  const popularSearches = [
+    { label: "Kolkata ↔ Digha", source: "Kolkata", dest: "Digha" },
+    { label: "Asansol ↔ Digha", source: "Asansol", dest: "Digha" },
+    { label: "Bankura ↔ Kolkata", source: "Bankura", dest: "Kolkata" },
+    { label: "Siliguri ↔ Kolkata", source: "Siliguri", dest: "Kolkata" },
+    { label: "Bardhaman ↔ Kharagpur", source: "Bardhaman", dest: "Kharagpur" },
+    { label: "Purulia ↔ Bankura", source: "Purulia", dest: "Bankura" }
+  ];
+
+  const isSearching = searchQuery.trim() !== '' || sourceFilter.trim() !== '' || destFilter.trim() !== '';
+
+  // Parse general query for route indicators (like source to destination)
+  const parsedQueryRoute = useMemo(() => {
+    const q = searchQuery.trim();
+    if (!q) return null;
+    const splitters = [/\s+to\s+/i, /\s*->\s*/, /\s*-\s*/, /\s*↔\s*/];
+    for (const regex of splitters) {
+      if (regex.test(q)) {
+        const parts = q.split(regex);
+        if (parts.length === 2 && parts[0].trim() && parts[1].trim()) {
+          return { source: parts[0].trim(), dest: parts[1].trim() };
+        }
+      }
+    }
+    const words = q.split(/\s+/).filter(Boolean);
+    if (words.length === 2) {
+      return { source: words[0], dest: words[1] };
+    }
+    return null;
+  }, [searchQuery]);
+
+  const effectiveSource = sourceFilter.trim() !== '' ? sourceFilter : (parsedQueryRoute ? parsedQueryRoute.source : '');
+  const effectiveDest = destFilter.trim() !== '' ? destFilter : (parsedQueryRoute ? parsedQueryRoute.dest : '');
+
   // Filtering logic for list of buses
-  const filteredBuses = busesData.filter(bus => {
-    // 1. General search query
-    const matchesQuery = searchQuery === '' || 
+  const filteredBuses = !isSearching ? [] : busesData.filter(bus => {
+    if (effectiveSource !== '' || effectiveDest !== '') {
+      let matchesSource = effectiveSource === '';
+      let matchesDest = effectiveDest === '';
+      
+      const sourceStops = bus.routeStops.filter(stop => fuzzyContains(stop.stopName, effectiveSource) || fuzzyContains(bus.source, effectiveSource));
+      const destStops = bus.routeStops.filter(stop => fuzzyContains(stop.stopName, effectiveDest) || fuzzyContains(bus.destination, effectiveDest));
+      
+      if (effectiveSource !== '' && effectiveDest !== '') {
+        const sourceMatch = sourceStops.length > 0;
+        const destMatch = destStops.length > 0;
+        
+        if (sourceMatch && destMatch) {
+          const minSourceSeq = Math.min(...sourceStops.map(s => s.sequence));
+          const maxDestSeq = Math.max(...destStops.map(s => s.sequence));
+          if (minSourceSeq < maxDestSeq) {
+            matchesSource = true;
+            matchesDest = true;
+          }
+        }
+      } else if (effectiveSource !== '') {
+        matchesSource = sourceStops.length > 0;
+      } else if (effectiveDest !== '') {
+        matchesDest = destStops.length > 0;
+      }
+      
+      return matchesSource && matchesDest;
+    }
+
+    // 1. General search query fallback
+    return searchQuery === '' || 
       fuzzyContains(bus.bus_name, searchQuery) ||
       fuzzyContains(bus.alternate_name || '', searchQuery) ||
       fuzzyContains(bus.registration_number || '', searchQuery) ||
@@ -1432,20 +2339,66 @@ function App() {
       fuzzyContains(bus.source, searchQuery) ||
       fuzzyContains(bus.destination, searchQuery) ||
       bus.routeStops.some(stop => fuzzyContains(stop.stopName, searchQuery));
-      
-    // 2. Source & Destination specific tab filters
-    const matchesSource = sourceFilter === '' || fuzzyContains(bus.source, sourceFilter) || 
-      bus.routeStops.some(stop => stop.sequence < bus.routeStops.length / 2 && fuzzyContains(stop.stopName, sourceFilter));
-    const matchesDest = destFilter === '' || fuzzyContains(bus.destination, destFilter) ||
-      bus.routeStops.some(stop => stop.sequence >= bus.routeStops.length / 2 && fuzzyContains(stop.stopName, destFilter));
-      
-    return matchesQuery && matchesSource && matchesDest;
   });
   
+  const connectingRoutes = useMemo(() => {
+    if (!isSearching || effectiveSource.trim() === '' || effectiveDest.trim() === '' || filteredBuses.length > 0) {
+      return [];
+    }
+
+    const results = [];
+    const maxRoutes = 5;
+
+    // Find all starting buses matching effectiveSource
+    const startBuses = busesData.map(bus => {
+      const sourceStops = bus.routeStops.filter(stop => fuzzyContains(stop.stopName, effectiveSource) || fuzzyContains(bus.source, effectiveSource));
+      if (sourceStops.length === 0) return null;
+      const minSeq = Math.min(...sourceStops.map(s => s.sequence));
+      return { bus, minSeq, stops: bus.routeStops.filter(s => s.sequence > minSeq) };
+    }).filter(Boolean);
+
+    // Find all ending buses matching effectiveDest
+    const endBuses = busesData.map(bus => {
+      const destStops = bus.routeStops.filter(stop => fuzzyContains(stop.stopName, effectiveDest) || fuzzyContains(bus.destination, effectiveDest));
+      if (destStops.length === 0) return null;
+      const maxSeq = Math.max(...destStops.map(s => s.sequence));
+      return { bus, maxSeq, stops: bus.routeStops.filter(s => s.sequence < maxSeq) };
+    }).filter(Boolean);
+
+    // Intersection
+    for (const b1 of startBuses) {
+      for (const b2 of endBuses) {
+        if (b1.bus.bus_id === b2.bus.bus_id) continue;
+
+        for (const stop1 of b1.stops) {
+          for (const stop2 of b2.stops) {
+            if (stop1.stopName.toLowerCase().trim() === stop2.stopName.toLowerCase().trim()) {
+              results.push({
+                bus1: b1.bus,
+                bus2: b2.bus,
+                connectionStop: stop1.stopName,
+                key: `${b1.bus.bus_id}_${b2.bus.bus_id}_${stop1.stopName}`
+              });
+              if (results.length >= maxRoutes) return results;
+            }
+          }
+        }
+      }
+    }
+    return results;
+  }, [busesData, effectiveSource, effectiveDest, filteredBuses, isSearching]);
+
   const swapSourceDest = () => {
     const temp = sourceFilter;
     setSourceFilter(destFilter);
     setDestFilter(temp);
+  };
+
+  const clearSearch = () => {
+    setSearchQuery('');
+    setSourceFilter('');
+    setDestFilter('');
+    setShowFilters(false);
   };
   
   // Confidence styling helpers
@@ -1512,15 +2465,38 @@ function App() {
                   <span>Find Your Bus Route</span>
                 </div>
                 
-                <div className="search-input-wrapper">
-                  <Search size={16} className="search-icon" />
-                  <input 
-                    type="text" 
-                    className="input-field" 
-                    placeholder="Search by bus name, reg no, stop town..." 
-                    value={searchQuery}
-                    onChange={e => setSearchQuery(e.target.value)}
-                  />
+                <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', width: '100%' }}>
+                  {isSearching && (
+                    <button 
+                      onClick={clearSearch}
+                      style={{
+                        background: 'var(--secondary-bg)',
+                        border: '1px solid var(--border)',
+                        color: 'var(--accent)',
+                        cursor: 'pointer',
+                        padding: '0.45rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        borderRadius: '50%',
+                        transition: 'all 0.2s ease',
+                        boxShadow: 'var(--shadow-sm)'
+                      }}
+                      title="Back to Home"
+                    >
+                      <ChevronLeft size={18} />
+                    </button>
+                  )}
+                  <div className="search-input-wrapper" style={{ flex: 1, margin: 0 }}>
+                    <Search size={16} className="search-icon" />
+                    <input 
+                      type="text" 
+                      className="input-field" 
+                      placeholder="Search by bus name, reg no, stop town..." 
+                      value={searchQuery}
+                      onChange={e => setSearchQuery(e.target.value)}
+                    />
+                  </div>
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'flex-start', margin: '0.25rem 0 0.5rem' }}>
@@ -1621,68 +2597,189 @@ function App() {
               </div>
               
               <div className="list-container">
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
-                  <span>FOUND {filteredBuses.length} SERVICES</span>
-                  <span>OCR VERIFIED DATASET</span>
-                </div>
-                
-                <div className="bus-list">
-                  {filteredBuses.map(bus => (
-                    <div 
-                      key={bus.bus_id} 
-                      className="bus-card"
-                      onClick={() => setSelectedBus(bus)}
-                    >
-                      <div className="bus-card-header">
-                        <div className="bus-name-group">
-                          <span className="bus-name">
-                            {bus.bus_name} 
-                            {bus.alternate_name && <span className="bus-alternate">({bus.alternate_name})</span>}
-                          </span>
-                          <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                            Operator: {bus.operator}
-                          </span>
+                {!isSearching ? (
+                  <div className="search-guide-panel" style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    textAlign: 'center',
+                    padding: '2rem 1.25rem',
+                    gap: '1.25rem',
+                    background: 'var(--secondary-bg)',
+                    borderRadius: 'var(--radius-lg)',
+                    border: '1px dashed var(--border)',
+                    marginTop: '0.5rem'
+                  }}>
+                    <div style={{
+                      width: '56px',
+                      height: '56px',
+                      borderRadius: '50%',
+                      background: 'rgba(37, 99, 235, 0.1)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'var(--accent)'
+                    }}>
+                      <Bus size={28} />
+                    </div>
+                    <div>
+                      <h3 style={{ fontSize: '1.05rem', fontWeight: 700, margin: '0 0 0.4rem 0', color: 'var(--text-title)' }}>
+                        Find Your Bus
+                      </h3>
+                      <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.45 }}>
+                        Search by bus name, operator, boarding stop, or tap "Filter by Boarding & Destination" above to view live schedules.
+                      </p>
+                    </div>
+                    
+                    <div style={{ width: '100%', textAlign: 'left', borderTop: '1px solid var(--border)', paddingTop: '1rem', marginTop: '0.25rem' }}>
+                      <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                        Popular Route Searches
+                      </span>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '0.6rem' }}>
+                        {popularSearches.map((route, i) => (
+                          <button
+                            key={i}
+                            onClick={() => {
+                              setSourceFilter(route.source);
+                              setDestFilter(route.dest);
+                              setShowFilters(true);
+                            }}
+                            className="popular-route-tag"
+                            style={{
+                              padding: '0.35rem 0.7rem',
+                              fontSize: '0.75rem',
+                              background: 'var(--card-bg)',
+                              border: '1px solid var(--border)',
+                              borderRadius: '16px',
+                              color: 'var(--text-title)',
+                              cursor: 'pointer',
+                              fontWeight: 500,
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '0.25rem',
+                              transition: 'all 0.15s ease'
+                            }}
+                          >
+                            <Compass size={11} className="text-accent" />
+                            <span>{route.label}</span>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
+                      <span>FOUND {filteredBuses.length} SERVICES</span>
+                      <span>OCR VERIFIED DATASET</span>
+                    </div>
+                    
+                    <div className="bus-list">
+                      {filteredBuses.map(bus => (
+                        <div 
+                          key={bus.bus_id} 
+                          className="bus-card"
+                          onClick={() => setSelectedBus(bus)}
+                        >
+                          <div className="bus-card-header">
+                            <div className="bus-name-group">
+                              <span className="bus-name">
+                                {bus.bus_name} 
+                                {bus.alternate_name && <span className="bus-alternate">({bus.alternate_name})</span>}
+                              </span>
+                              <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                                Operator: {bus.operator}
+                              </span>
+                            </div>
+                            {bus.registration_number && (
+                              <span className="bus-reg">{bus.registration_number}</span>
+                            )}
+                          </div>
+                          
+                          <div className="bus-meta">
+                            <span className={`badge ${bus.bus_type.includes('Government') ? 'badge-gov' : 'badge-pvt'}`}>
+                              {bus.bus_type}
+                            </span>
+                            {bus.agency && (
+                              <span style={{ color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                                {bus.agency}
+                              </span>
+                            )}
+                          </div>
+                          
+                          <div className="bus-route">
+                            <MapPin size={14} className="text-accent" />
+                            <span>{bus.source}</span>
+                            <span style={{ color: 'var(--text-muted)' }}>→</span>
+                            <span>{bus.destination}</span>
+                          </div>
+                          
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', borderTop: '1px solid var(--border)', paddingTop: '0.5rem', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                            <span>Stops: {bus.routeStops.length}</span>
+                            {bus.routeStops[0]?.upTime && (
+                              <span>Starts: {bus.routeStops[0].upTime}</span>
+                            )}
+                          </div>
                         </div>
-                        {bus.registration_number && (
-                          <span className="bus-reg">{bus.registration_number}</span>
-                        )}
-                      </div>
+                      ))}
                       
-                      <div className="bus-meta">
-                        <span className={`badge ${bus.bus_type.includes('Government') ? 'badge-gov' : 'badge-pvt'}`}>
-                          {bus.bus_type}
-                        </span>
-                        {bus.agency && (
-                          <span style={{ color: 'var(--text-muted)', fontStyle: 'italic' }}>
-                            {bus.agency}
-                          </span>
-                        )}
-                      </div>
+                      {filteredBuses.length === 0 && connectingRoutes.length > 0 && (
+                        <div className="connecting-routes-container">
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem', color: 'var(--text-accent)' }}>
+                            <Compass size={16} />
+                            <h4 style={{ margin: 0, fontSize: '0.8rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                              Connecting Services Found
+                            </h4>
+                          </div>
+                          {connectingRoutes.map(conn => (
+                            <div 
+                              key={conn.key} 
+                              className="bus-card"
+                              style={{ borderLeft: '3px solid var(--text-accent)' }}
+                            >
+                              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.7rem', fontWeight: 600, color: 'var(--text-accent)', marginBottom: '0.4rem' }}>
+                                <span>1-STOP TRANSFER</span>
+                                <span style={{ padding: '2px 6px', background: 'rgba(37, 99, 235, 0.1)', borderRadius: '4px' }}>VIA {conn.connectionStop.toUpperCase()}</span>
+                              </div>
+                              
+                              <div 
+                                style={{ cursor: 'pointer', padding: '0.25rem 0', borderBottom: '1px dashed var(--border)' }}
+                                onClick={() => setSelectedBus(conn.bus1)}
+                              >
+                                <div style={{ fontWeight: 600, fontSize: '0.75rem', color: 'var(--text)' }}>
+                                  1. {conn.bus1.bus_name} <span style={{ fontWeight: 400, color: 'var(--text-muted)' }}>({conn.bus1.operator})</span>
+                                </div>
+                                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                                  {conn.bus1.source} &rarr; {conn.bus1.destination}
+                                </div>
+                              </div>
+
+                              <div 
+                                style={{ cursor: 'pointer', padding: '0.25rem 0' }}
+                                onClick={() => setSelectedBus(conn.bus2)}
+                              >
+                                <div style={{ fontWeight: 600, fontSize: '0.75rem', color: 'var(--text)', marginTop: '0.25rem' }}>
+                                  2. {conn.bus2.bus_name} <span style={{ fontWeight: 400, color: 'var(--text-muted)' }}>({conn.bus2.operator})</span>
+                                </div>
+                                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                                  {conn.bus2.source} &rarr; {conn.bus2.destination}
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                       
-                      <div className="bus-route">
-                        <MapPin size={14} className="text-accent" />
-                        <span>{bus.source}</span>
-                        <span style={{ color: 'var(--text-muted)' }}>→</span>
-                        <span>{bus.destination}</span>
-                      </div>
-                      
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', borderTop: '1px solid var(--border)', paddingTop: '0.5rem', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                        <span>Stops: {bus.routeStops.length}</span>
-                        {bus.routeStops[0]?.upTime && (
-                          <span>Starts: {bus.routeStops[0].upTime}</span>
-                        )}
-                      </div>
+                      {filteredBuses.length === 0 && connectingRoutes.length === 0 && (
+                        <div className="no-results">
+                          <AlertTriangle style={{ margin: '0 auto 0.75rem' }} size={24} className="text-muted" />
+                          <p style={{ fontWeight: 600 }}>No Buses Match Filters</p>
+                          <p style={{ fontSize: '0.8rem' }}>Try clearing spelling variations or stop keywords.</p>
+                        </div>
+                      )}
                     </div>
-                  ))}
-                  
-                  {filteredBuses.length === 0 && (
-                    <div className="no-results">
-                      <AlertTriangle style={{ margin: '0 auto 0.75rem' }} size={24} className="text-muted" />
-                      <p style={{ fontWeight: 600 }}>No Buses Match Filters</p>
-                      <p style={{ fontSize: '0.8rem' }}>Try clearing spelling variations or stop keywords.</p>
-                    </div>
-                  )}
-                </div>
+                  </>
+                )}
               </div>
             </>
           ) : (
@@ -1729,47 +2826,77 @@ function App() {
               <div className="details-scrollable-content" style={{ flex: 1, overflowY: 'auto', paddingBottom: '2.5rem' }}>
                 {/* Crowdsourcing GPS activation panel */}
                 <div className="tracking-card">
-                <div className="tracking-title">
-                  <Users size={16} />
-                  <span>Interactive Passenger Simulation</span>
-                </div>
-                
-                <p style={{ fontSize: '0.78rem', color: 'var(--text-main)' }}>
-                  A passenger riding the bus streams their device coordinates. Tap "I'm On This Bus" to simulate live passenger crowdsourcing!
-                </p>
-                
-                {isTracking ? (
-                  <button 
-                    className="tracking-button btn-stop-tracking"
-                    onClick={() => setIsTracking(false)}
-                  >
-                    <Pause size={16} />
-                    <span>End Ride (Stop Stream)</span>
-                  </button>
-                ) : (
-                  <button 
-                    className="tracking-button btn-start-tracking"
-                    onClick={() => {
-                      setIsTracking(true);
-                      setUseSimulation(true);
-                      setMyLocationIndex(0);
-                      setMyLocationOffset(0);
-                      setIsPlaying(true);
-                      setTripElapsedSeconds(0);
-                      setLoseGpsSignal(false);
-                      
-                      const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
-                      if (coordStops.length > 0) {
-                        setStopArrivalTimes({ [coordStops[0].sequence]: 0 });
-                      } else {
-                        setStopArrivalTimes({});
-                      }
-                    }}
-                  >
-                    <Play size={16} />
-                    <span>I'm On This Bus</span>
-                  </button>
-                )}
+                  <div className="tracking-title">
+                    <Navigation size={16} className="text-accent" />
+                    <span>Commuter GPS Broadcast</span>
+                  </div>
+                  
+                  <p style={{ fontSize: '0.78rem', color: 'var(--text-main)' }}>
+                    Riding this bus? Tap "I'm On This Bus" to broadcast your real-time device coordinates. Your location will help other commuters track this service live.
+                  </p>
+                  
+                  {isTracking ? (
+                    <button 
+                      className="tracking-button btn-stop-tracking"
+                      onClick={() => setIsTracking(false)}
+                      style={{
+                        backgroundColor: 'var(--danger)',
+                        color: 'white',
+                        border: 'none',
+                        cursor: 'pointer',
+                        padding: '0.6rem 1rem',
+                        borderRadius: 'var(--radius-md)',
+                        fontWeight: 600,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.5rem',
+                        width: '100%',
+                        transition: 'background 0.2s'
+                      }}
+                    >
+                      <Pause size={16} />
+                      <span>Stop Broadcast (End Ride)</span>
+                    </button>
+                  ) : (
+                    <button 
+                      className="tracking-button btn-start-tracking"
+                      onClick={() => {
+                        setIsTracking(true);
+                        setUseSimulation(false);
+                        setMyLocationIndex(0);
+                        setMyLocationOffset(0);
+                        setIsPlaying(false);
+                        setTripElapsedSeconds(0);
+                        setLoseGpsSignal(false);
+                        
+                        const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
+                        if (coordStops.length > 0) {
+                          setStopArrivalTimes({ [coordStops[0].sequence]: 0 });
+                        } else {
+                          setStopArrivalTimes({});
+                        }
+                      }}
+                      style={{
+                        backgroundColor: 'var(--accent)',
+                        color: 'white',
+                        border: 'none',
+                        cursor: 'pointer',
+                        padding: '0.6rem 1rem',
+                        borderRadius: 'var(--radius-md)',
+                        fontWeight: 600,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.5rem',
+                        width: '100%',
+                        transition: 'background 0.2s'
+                      }}
+                    >
+                      <Play size={16} />
+                      <span>I'm On This Bus</span>
+                    </button>
+                  )}
 
                 {/* Firebase Status Badge */}
                 <div className="firebase-status-bar" style={{
@@ -1902,60 +3029,18 @@ function App() {
                 )}
 
                 {isTracking && (
-                  <div className="mobile-simulator-cardText">
+                  <div className="mobile-simulator-cardText" style={{ marginTop: '0.75rem' }}>
                     <div className="mobile-card-title">
                       <Compass size={14} className="text-secondary" />
-                      <span>Passenger Device Controls</span>
+                      <span>Commuter GPS Broadcast</span>
                     </div>
-                    <div className="checkbox-group" style={{ marginBottom: '0.25rem' }}>
-                      <input 
-                        type="checkbox" 
-                        id="useSimulationCheckMobile" 
-                        checked={useSimulation} 
-                        onChange={e => setUseSimulation(e.target.checked)} 
-                        style={{ cursor: 'pointer' }}
-                      />
-                      <label htmlFor="useSimulationCheckMobile" style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--accent)' }}>
-                        Enable Simulation Route Mode
-                      </label>
-                    </div>
-                    <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', margin: '0.25rem 0' }}>
-                      Route History: {hasHistoryData ? (
-                        <span style={{ color: '#22c55e', fontWeight: 600 }}>Available (Remembered)</span>
-                      ) : (
-                        <span style={{ color: '#ef4444' }}>No data (Will remember first run)</span>
-                      )}
-                    </div>
-                    <div className="checkbox-group" style={{ marginBottom: '0.25rem', borderTop: '1px solid var(--border)', paddingTop: '0.4rem' }}>
-                      <input 
-                        type="checkbox" 
-                        id="simulateGpsOutageCheckMobile" 
-                        checked={simulateGpsOutage} 
-                        disabled={!hasHistoryData}
-                        onChange={e => setSimulateGpsOutage(e.target.checked)} 
-                        style={{ cursor: hasHistoryData ? 'pointer' : 'not-allowed' }}
-                      />
-                      <label htmlFor="simulateGpsOutageCheckMobile" style={{ cursor: hasHistoryData ? 'pointer' : 'not-allowed', fontWeight: 600, color: simulateGpsOutage ? 'var(--danger)' : 'var(--text-title)' }}>
-                        Simulate GPS Outage / Signal Loss
-                      </label>
-                    </div>
-                    {loseGpsSignal && (
-                      <div className="gps-lost-banner" style={{ margin: '0.25rem 0 0', padding: '0.5rem' }}>
-                        <AlertTriangle size={12} style={{ flexShrink: 0, marginTop: '1px' }} />
-                        <span>GPS Signal Lost! System automatically connected to fallback.</span>
-                      </div>
-                    )}
 
                     {/* Unified Coordinates & Status Card (Mobile) */}
                     <div style={{ 
-                      background: loseGpsSignal 
-                        ? 'rgba(217, 119, 6, 0.08)' 
-                        : 'var(--secondary-bg)', 
+                      background: 'var(--secondary-bg)', 
                       padding: '0.75rem', 
                       borderRadius: 'var(--radius-md)', 
-                      border: loseGpsSignal 
-                        ? '1px solid rgba(217, 119, 6, 0.2)' 
-                        : '1px solid rgba(37, 99, 235, 0.2)', 
+                      border: '1px solid rgba(37, 99, 235, 0.2)', 
                       fontSize: '0.85rem', 
                       marginTop: '0.5rem',
                       boxShadow: 'var(--shadow-sm)'
@@ -1965,59 +3050,26 @@ function App() {
                         alignItems: 'center', 
                         gap: '0.4rem', 
                         fontWeight: 700, 
-                        color: loseGpsSignal ? 'var(--accent)' : 'var(--secondary)', 
+                        color: 'var(--secondary)', 
                         marginBottom: '0.35rem' 
                       }}>
                         <CheckCircle size={14} />
-                        <span>
-                          {loseGpsSignal 
-                            ? "Using Offline Fallback GPS" 
-                            : (useSimulation ? "Using Simulated Route GPS" : "Using Real Device GPS")}
-                        </span>
+                        <span>Broadcasting Live Device GPS</span>
                       </div>
                       {userCoords ? (
                         <div style={{ fontSize: '0.8rem', color: 'var(--text-main)', display: 'flex', flexDirection: 'column', gap: '0.2rem', fontFamily: 'monospace' }}>
                           <div>Lat: {userCoords.latitude.toFixed(5)}</div>
                           <div>Lng: {userCoords.longitude.toFixed(5)}</div>
                           <div style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-sans)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
-                            Accuracy: {Math.round(userCoords.accuracyMeters)}m {loseGpsSignal && '(Estimated)'}
+                            Accuracy: {Math.round(userCoords.accuracyMeters)}m
                           </div>
                         </div>
                       ) : (
                         <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                          {useSimulation ? "Initializing simulation coordinates..." : "Waiting for browser GPS lock..."}
+                          Waiting for device GPS lock...
                         </div>
                       )}
                     </div>
-
-                    {/* Simulation Specific Settings (Mobile) */}
-                    {useSimulation && (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.5rem', borderTop: '1px solid var(--border)', paddingTop: '0.5rem' }}>
-                        <div>
-                          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '0.1rem' }}>
-                            <span>Simulation Speed</span>
-                            <span style={{ fontWeight: 600 }}>{simSpeedMultiplier}x speed</span>
-                          </div>
-                          <input 
-                            type="range" 
-                            min="1" 
-                            max="10" 
-                            value={simSpeedMultiplier} 
-                            onChange={e => setSimSpeedMultiplier(parseInt(e.target.value))}
-                            className="range-slider" 
-                            style={{ margin: 0 }}
-                          />
-                        </div>
-                        <button 
-                          className="btn-mock-rider" 
-                          style={{ width: '100%', padding: '0.4rem', backgroundColor: isPlaying ? 'var(--text-muted)' : 'var(--success)', fontSize: '0.75rem' }}
-                          onClick={() => setIsPlaying(!isPlaying)}
-                        >
-                          {isPlaying ? <Pause size={10} /> : <Play size={10} />}
-                          <span>{isPlaying ? 'Pause Movement' : 'Resume Movement'}</span>
-                        </button>
-                      </div>
-                    )}
                   </div>
                 )}
               </div>
@@ -2176,183 +3228,7 @@ function App() {
             </div>
           )}
           
-          {/* Simulator Controls panel overlay */}
-          {isTracking && (
-            <div className="simulator-panel">
-              <div className="simulator-title">
-                <Compass className="text-secondary" size={16} />
-                <span>Passenger Device Controls</span>
-              </div>
-              
-              <div className="simulator-controls">
-                <div className="checkbox-group" style={{ marginBottom: '0.25rem' }}>
-                  <input 
-                    type="checkbox" 
-                    id="useSimulationCheck" 
-                    checked={useSimulation} 
-                    onChange={e => setUseSimulation(e.target.checked)} 
-                  />
-                  <label htmlFor="useSimulationCheck" style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--accent)' }}>
-                    Enable Simulation Route Mode
-                  </label>
-                </div>
 
-                {/* Historical data status indicator */}
-                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', margin: '0.35rem 0' }}>
-                  Route History: {hasHistoryData ? (
-                    <span style={{ color: '#22c55e', fontWeight: 600 }}>Available (Remembered)</span>
-                  ) : (
-                    <span style={{ color: '#ef4444' }}>No data (Will remember first run)</span>
-                  )}
-                </div>
-
-                <div className="checkbox-group" style={{ marginBottom: '0.5rem', borderTop: '1px solid var(--border)', paddingTop: '0.4rem' }}>
-                  <input 
-                    type="checkbox" 
-                    id="simulateGpsOutageCheck" 
-                    checked={simulateGpsOutage} 
-                    disabled={!hasHistoryData}
-                    onChange={e => setSimulateGpsOutage(e.target.checked)} 
-                    style={{ cursor: hasHistoryData ? 'pointer' : 'not-allowed' }}
-                  />
-                  <label htmlFor="simulateGpsOutageCheck" style={{ cursor: hasHistoryData ? 'pointer' : 'not-allowed', fontWeight: 600, color: simulateGpsOutage ? 'var(--danger)' : 'var(--text-title)' }}>
-                    Simulate GPS Outage / Signal Loss
-                  </label>
-                </div>
-
-                {loseGpsSignal && (
-                  <div className="gps-lost-banner">
-                    <AlertTriangle size={14} style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span>GPS Signal Lost! System automatically connected to historical fallback.</span>
-                  </div>
-                )}
-
-                {/* Unified Coordinates & Status Card */}
-                <div style={{ 
-                  background: loseGpsSignal 
-                    ? 'rgba(217, 119, 6, 0.08)' 
-                    : 'var(--secondary-bg)', 
-                  padding: '0.75rem', 
-                  borderRadius: 'var(--radius-md)', 
-                  border: loseGpsSignal 
-                    ? '1px solid rgba(217, 119, 6, 0.2)' 
-                    : '1px solid rgba(37, 99, 235, 0.2)', 
-                  fontSize: '0.85rem', 
-                  marginBottom: '0.75rem',
-                  boxShadow: 'var(--shadow-sm)'
-                }}>
-                  <div style={{ 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    gap: '0.4rem', 
-                    fontWeight: 700, 
-                    color: loseGpsSignal ? 'var(--accent)' : 'var(--secondary)', 
-                    marginBottom: '0.35rem' 
-                  }}>
-                    <CheckCircle size={14} />
-                    <span>
-                      {loseGpsSignal 
-                        ? "Using Offline Fallback GPS" 
-                        : (useSimulation ? "Using Simulated Route Coordinates" : "Using Real Device GPS")}
-                    </span>
-                  </div>
-                  {userCoords ? (
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-main)', display: 'flex', flexDirection: 'column', gap: '0.2rem', fontFamily: 'monospace' }}>
-                      <div>Lat: {userCoords.latitude.toFixed(5)}</div>
-                      <div>Lng: {userCoords.longitude.toFixed(5)}</div>
-                      <div style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-sans)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
-                        Accuracy: {Math.round(userCoords.accuracyMeters)}m {loseGpsSignal && '(Estimated)'}
-                      </div>
-                    </div>
-                  ) : (
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                      {useSimulation ? "Initializing simulation coordinates..." : "Waiting for browser GPS lock..."}
-                    </div>
-                  )}
-                </div>
-
-                {/* Simulation Specific Settings (Only show when simulation mode is active) */}
-                {useSimulation && (
-                  <>
-                    <div>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '0.2rem' }}>
-                        <span>Your GPS Accuracy</span>
-                        <span style={{ fontWeight: 600 }}>{myAccuracy} meters</span>
-                      </div>
-                      <input 
-                        type="range" 
-                        min="10" 
-                        max="100" 
-                        value={myAccuracy} 
-                        onChange={e => setMyAccuracy(parseInt(e.target.value))}
-                        className="range-slider" 
-                      />
-                    </div>
-
-                    <div>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '0.2rem' }}>
-                        <span>Simulation Speed</span>
-                        <span style={{ fontWeight: 600 }}>{simSpeedMultiplier}x speed</span>
-                      </div>
-                      <input 
-                        type="range" 
-                        min="1" 
-                        max="10" 
-                        value={simSpeedMultiplier} 
-                        onChange={e => setSimSpeedMultiplier(parseInt(e.target.value))}
-                        className="range-slider" 
-                      />
-                    </div>
-                    
-                    <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.1rem' }}>
-                      <button 
-                        className="btn-mock-rider" 
-                        style={{ flex: 1, backgroundColor: isPlaying ? 'var(--text-muted)' : 'var(--success)' }}
-                        onClick={() => setIsPlaying(!isPlaying)}
-                      >
-                        {isPlaying ? <Pause size={12} /> : <Play size={12} />}
-                        <span>{isPlaying ? 'Pause Movement' : 'Resume Movement'}</span>
-                      </button>
-                    </div>
-                  </>
-                )}
-                
-                <div className="checkbox-group" style={{ borderTop: '1px solid var(--border)', paddingTop: '0.5rem', marginTop: '0.25rem' }}>
-                  <input 
-                    type="checkbox" 
-                    id="addRidersCheck" 
-                    checked={addRiders} 
-                    onChange={e => setAddRiders(e.target.checked)} 
-                  />
-                  <label htmlFor="addRidersCheck" style={{ cursor: 'pointer', fontWeight: 500 }}>
-                    Simulate multiple riders (crowdsourcing)
-                  </label>
-                </div>
-                
-                {addRiders && (
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '0.2rem' }}>
-                      <span>Virtual Riders Accuracy</span>
-                      <span style={{ fontWeight: 600 }}>{ridersAccuracy} meters</span>
-                    </div>
-                    <input 
-                      type="range" 
-                      min="15" 
-                      max="100" 
-                      value={ridersAccuracy} 
-                      onChange={e => setRidersAccuracy(parseInt(e.target.value))}
-                      className="range-slider" 
-                    />
-                  </div>
-                )}
-                
-                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', borderTop: '1px solid var(--border)', paddingTop: '0.5rem', marginTop: '0.25rem' }}>
-                  <Info size={10} style={{ marginRight: '0.2rem', verticalAlign: 'middle' }} />
-                  <span>The system runs inverse-variance weighting on all active riders in a 250m radius.</span>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
         
       </main>

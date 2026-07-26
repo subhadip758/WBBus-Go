@@ -12,6 +12,11 @@ class TextMatch {
     if (n.isEmpty) return true;
     if (h.contains(n)) return true;
 
+    // Alphanumeric clean match for registration numbers (e.g. WB34A1234 matches WB-34-A-1234)
+    final hClean = h.replaceAll(RegExp(r'[^a-z0-9]'), '');
+    final nClean = n.replaceAll(RegExp(r'[^a-z0-9]'), '');
+    if (nClean.isNotEmpty && hClean.contains(nClean)) return true;
+
     // Typo tolerance: compare needle against each word/token in haystack.
     final words = h.split(RegExp(r'[\s,()]+')).where((w) => w.isNotEmpty);
     final maxAllowedDistance = n.length <= 4 ? 1 : 2;
