@@ -756,6 +756,33 @@ function fuzzyContains(haystack, needle) {
   return false;
 }
 
+// Given a bus and a source/destination search term, return only the slice of
+// routeStops between the matched boarding stop and matched alighting stop.
+// Falls back to the full route if there's no source/dest context or no valid match.
+function getTripStops(bus, source, dest) {
+  if (!bus) return [];
+  const stops = bus.routeStops;
+  const src = (source || '').trim();
+  const dst = (dest || '').trim();
+  if (!src && !dst) return stops;
+
+  const sourceStops = src
+    ? stops.filter(s => fuzzyContains(s.stopName, src) || fuzzyContains(bus.source, src))
+    : [];
+  const destStops = dst
+    ? stops.filter(s => fuzzyContains(s.stopName, dst) || fuzzyContains(bus.destination, dst))
+    : [];
+
+  if (sourceStops.length > 0 && destStops.length > 0) {
+    const minSourceSeq = Math.min(...sourceStops.map(s => s.sequence));
+    const maxDestSeq = Math.max(...destStops.map(s => s.sequence));
+    if (minSourceSeq < maxDestSeq) {
+      return stops.filter(s => s.sequence >= minSourceSeq && s.sequence <= maxDestSeq);
+    }
+  }
+  return stops;
+}
+
 // --- CORE CROWDSOURCING & RESOLUTION LOGIC ---
 const MIN_ACCEPTABLE_ACCURACY = 75; // meters
 const MAX_PLAUSIBLE_SPEED_KMH = 130;
@@ -965,7 +992,8 @@ async function fetchRoadRoute(coordStops) {
 
   if (uniqueStops.length < 2) return [];
 
-  // Helper to query OSRM for a list of waypoints
+  // Helper to query OSRM for a single leg (two waypoints) and return both the
+  // road geometry and the road distance, so we can sanity-check it below.
   const queryOSRM = async (stops) => {
     const coordsString = stops.map(s => `${s.longitude},${s.latitude}`).join(';');
     const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson`;
@@ -975,48 +1003,53 @@ async function fetchRoadRoute(coordStops) {
     if (data.code !== 'Ok' || !data.routes || data.routes.length === 0) {
       throw new Error(`OSRM routing failed with code ${data.code}`);
     }
-    return data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]); // [lat, lng]
+    return {
+      coords: data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]), // [lat, lng]
+      distanceKm: data.routes[0].distance / 1000
+    };
   };
 
-  // Route sequentially through ALL stops in chunks of max 15 waypoints to follow the exact roads connecting every bus stop
-  try {
-    const chunkSize = 15;
-    const allRoadPoints = [];
+  // In rural/sparse-OSM areas, OSRM's public demo server occasionally returns a
+  // road path that loops far out of the way instead of the direct route (e.g. a
+  // mistagged one-way road). Route leg-by-leg (one stop pair at a time) so a bad
+  // leg can be detected and swapped for a straight line, instead of corrupting
+  // the whole multi-stop route the way batched routing would.
+  const MAX_DETOUR_RATIO = 2.5; // road distance > 2.5x straight-line distance = treat as a bad/looping result
+  const allRoadPoints = [];
 
-    for (let i = 0; i < uniqueStops.length - 1; i += (chunkSize - 1)) {
-      const chunk = uniqueStops.slice(i, i + chunkSize);
-      if (chunk.length < 2) break;
+  for (let i = 0; i < uniqueStops.length - 1; i++) {
+    const a = uniqueStops[i];
+    const b = uniqueStops[i + 1];
+    const straightKm = haversineKm(a.latitude, a.longitude, b.latitude, b.longitude);
 
-      try {
-        const path = await queryOSRM(chunk);
-        if (path && path.length > 0) {
-          if (allRoadPoints.length > 0 && path[0][0] === allRoadPoints[allRoadPoints.length - 1][0] && path[0][1] === allRoadPoints[allRoadPoints.length - 1][1]) {
-            allRoadPoints.pop();
-          }
-          allRoadPoints.push(...path);
-        }
-      } catch (chunkErr) {
-        console.warn(`Chunk routing ${i} failed, routing segment by segment:`, chunkErr);
-        // Fallback for this chunk: segment by segment
-        for (let j = 0; j < chunk.length - 1; j++) {
-          try {
-            const segPath = await queryOSRM([chunk[j], chunk[j + 1]]);
-            if (allRoadPoints.length > 0 && segPath[0][0] === allRoadPoints[allRoadPoints.length - 1][0] && segPath[0][1] === allRoadPoints[allRoadPoints.length - 1][1]) {
-              allRoadPoints.pop();
-            }
-            allRoadPoints.push(...segPath);
-          } catch (e) {
-            allRoadPoints.push([chunk[j].latitude, chunk[j].longitude], [chunk[j + 1].latitude, chunk[j + 1].longitude]);
-          }
-        }
+    let legPoints = null;
+    try {
+      const { coords, distanceKm } = await queryOSRM([a, b]);
+      const isSuspiciousDetour = straightKm > 0.05 && distanceKm > straightKm * MAX_DETOUR_RATIO;
+      if (isSuspiciousDetour) {
+        console.warn(`Discarding looping OSRM leg ${a.stopName} -> ${b.stopName}: road ${distanceKm.toFixed(1)}km vs straight-line ${straightKm.toFixed(1)}km`);
+      } else if (coords && coords.length > 0) {
+        legPoints = coords;
       }
+    } catch (err) {
+      console.warn(`Leg routing ${a.stopName} -> ${b.stopName} failed, using straight line fallback:`, err);
     }
 
-    return allRoadPoints;
-  } catch (err) {
-    console.warn("Failed full route generation:", err);
-    return uniqueStops.map(s => [s.latitude, s.longitude]);
+    if (!legPoints) {
+      // Fallback: a plain straight line between the two stops. Not as pretty as a
+      // road-snapped line, but it never produces a wild loop.
+      legPoints = [[a.latitude, a.longitude], [b.latitude, b.longitude]];
+    }
+
+    if (allRoadPoints.length > 0 &&
+        legPoints[0][0] === allRoadPoints[allRoadPoints.length - 1][0] &&
+        legPoints[0][1] === allRoadPoints[allRoadPoints.length - 1][1]) {
+      legPoints = legPoints.slice(1);
+    }
+    allRoadPoints.push(...legPoints);
   }
+
+  return allRoadPoints.length > 0 ? allRoadPoints : uniqueStops.map(s => [s.latitude, s.longitude]);
 }
 
 // --- MAIN REACT COMPONENT ---
@@ -1035,6 +1068,36 @@ function App() {
   const [showFilters, setShowFilters] = useState(false);
   
   const [selectedBus, setSelectedBus] = useState(null);
+
+  // Parse general query for route indicators (like source to destination)
+  const parsedQueryRoute = useMemo(() => {
+    const q = searchQuery.trim();
+    if (!q) return null;
+    const splitters = [/\s+to\s+/i, /\s*->\s*/, /\s*-\s*/, /\s*↔\s*/];
+    for (const regex of splitters) {
+      if (regex.test(q)) {
+        const parts = q.split(regex);
+        if (parts.length === 2 && parts[0].trim() && parts[1].trim()) {
+          return { source: parts[0].trim(), dest: parts[1].trim() };
+        }
+      }
+    }
+    const words = q.split(/\s+/).filter(Boolean);
+    if (words.length === 2) {
+      return { source: words[0], dest: words[1] };
+    }
+    return null;
+  }, [searchQuery]);
+
+  const effectiveSource = sourceFilter.trim() !== '' ? sourceFilter : (parsedQueryRoute ? parsedQueryRoute.source : '');
+  const effectiveDest = destFilter.trim() !== '' ? destFilter : (parsedQueryRoute ? parsedQueryRoute.dest : '');
+
+  // The stops between YOUR searched source and destination for the selected bus
+  // (trimmed from the bus's full end-to-end route) — used for the timeline & map display.
+  const tripStops = useMemo(
+    () => getTripStops(selectedBus, effectiveSource, effectiveDest),
+    [selectedBus, effectiveSource, effectiveDest]
+  );
   
   // Startup Geolocation & Navigation State
   const [userStartupCoords, setUserStartupCoords] = useState(null);
@@ -1340,8 +1403,8 @@ function App() {
     
     if (!selectedBus) return;
     
-    // Filter stops on route that have coordinates
-    const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
+    // Filter stops on route that have coordinates (trimmed to the searched source→destination segment)
+    const coordStops = tripStops.filter(s => s.latitude !== null && s.longitude !== null);
     
     if (coordStops.length > 0) {
       const latlngs = coordStops.map(s => [s.latitude, s.longitude]);
@@ -1526,7 +1589,7 @@ function App() {
     return () => {
       isCurrent = false;
     };
-  }, [selectedBus]);
+  }, [selectedBus, tripStops]);
   
   // Real GPS Device Watcher Effect
   useEffect(() => {
@@ -2276,29 +2339,6 @@ function App() {
 
   const isSearching = searchQuery.trim() !== '' || sourceFilter.trim() !== '' || destFilter.trim() !== '';
 
-  // Parse general query for route indicators (like source to destination)
-  const parsedQueryRoute = useMemo(() => {
-    const q = searchQuery.trim();
-    if (!q) return null;
-    const splitters = [/\s+to\s+/i, /\s*->\s*/, /\s*-\s*/, /\s*↔\s*/];
-    for (const regex of splitters) {
-      if (regex.test(q)) {
-        const parts = q.split(regex);
-        if (parts.length === 2 && parts[0].trim() && parts[1].trim()) {
-          return { source: parts[0].trim(), dest: parts[1].trim() };
-        }
-      }
-    }
-    const words = q.split(/\s+/).filter(Boolean);
-    if (words.length === 2) {
-      return { source: words[0], dest: words[1] };
-    }
-    return null;
-  }, [searchQuery]);
-
-  const effectiveSource = sourceFilter.trim() !== '' ? sourceFilter : (parsedQueryRoute ? parsedQueryRoute.source : '');
-  const effectiveDest = destFilter.trim() !== '' ? destFilter : (parsedQueryRoute ? parsedQueryRoute.dest : '');
-
   // Filtering logic for list of buses
   const filteredBuses = !isSearching ? [] : busesData.filter(bus => {
     if (effectiveSource !== '' || effectiveDest !== '') {
@@ -2813,12 +2853,12 @@ function App() {
                 
                 <div className="details-route-flow">
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-title)', fontWeight: 600 }}>
-                    <span>{selectedBus.source}</span>
-                    <span>{selectedBus.destination}</span>
+                    <span>{tripStops[0]?.stopName ?? selectedBus.source}</span>
+                    <span>{tripStops[tripStops.length - 1]?.stopName ?? selectedBus.destination}</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                    <span>Origin Stop</span>
-                    <span>Terminus</span>
+                    <span>Your Boarding Stop</span>
+                    <span>Your Alighting Stop</span>
                   </div>
                 </div>
               </div>
@@ -3080,7 +3120,7 @@ function App() {
               </div>
               
               <div className="timeline">
-                {selectedBus.routeStops.map((stop, index) => {
+                {tripStops.map((stop, index) => {
                   const hasCoords = stop.latitude !== null && stop.longitude !== null;
                   
                   // Compute timeline class based on tracking index
