@@ -1394,14 +1394,18 @@ function App() {
     
     let isCurrent = true;
     
-    // Clear old WebGL layers if present
+    // Clear old WebGL layers & route line layers
     try {
       if (nativeMap.getLayer('wbsb-stops-label')) nativeMap.removeLayer('wbsb-stops-label');
       if (nativeMap.getLayer('wbsb-stops-inner')) nativeMap.removeLayer('wbsb-stops-inner');
       if (nativeMap.getLayer('wbsb-stops-outer')) nativeMap.removeLayer('wbsb-stops-outer');
       if (nativeMap.getSource('wbsb-stops-source')) nativeMap.removeSource('wbsb-stops-source');
+
+      if (nativeMap.getLayer('wbsb-route-line-main')) nativeMap.removeLayer('wbsb-route-line-main');
+      if (nativeMap.getLayer('wbsb-route-line-border')) nativeMap.removeLayer('wbsb-route-line-border');
+      if (nativeMap.getSource('wbsb-route-line-source')) nativeMap.removeSource('wbsb-route-line-source');
     } catch (e) {
-      console.warn("WebGL layer cleanup:", e);
+      console.warn("Map layer cleanup error:", e);
     }
     
     // Clear old map markers
@@ -1418,15 +1422,68 @@ function App() {
     
     if (!selectedBus) return;
     
-    // Filter stops on route that have coordinates (trimmed to the searched source→destination segment)
+    // Filter stops on route that have coordinates
     const coordStops = tripStops.filter(s => s.latitude !== null && s.longitude !== null);
     
     if (coordStops.length > 0) {
       const latlngs = coordStops.map(s => [s.latitude, s.longitude]);
 
-      // WebGL native renderer: renders small circles directly inside WebGL pass locked on the curve line
+      // Native MapLibre single route line renderer: guarantees ONLY ONE single route line on map
+      const drawSingleRouteLine = (currentPolyline) => {
+        const coordinates = currentPolyline.map(pt => [pt[1], pt[0]]);
+        const geojson = {
+          type: 'Feature',
+          geometry: {
+            type: 'LineString',
+            coordinates: coordinates
+          }
+        };
+
+        const source = nativeMap.getSource('wbsb-route-line-source');
+        if (source) {
+          source.setData(geojson);
+        } else {
+          nativeMap.addSource('wbsb-route-line-source', {
+            type: 'geojson',
+            data: geojson
+          });
+
+          // Outer border glow line
+          nativeMap.addLayer({
+            id: 'wbsb-route-line-border',
+            type: 'line',
+            source: 'wbsb-route-line-source',
+            layout: {
+              'line-join': 'round',
+              'line-cap': 'round'
+            },
+            paint: {
+              'line-color': '#1558b0',
+              'line-width': 8,
+              'line-opacity': 0.5
+            }
+          });
+
+          // Single main vibrant blue road line
+          nativeMap.addLayer({
+            id: 'wbsb-route-line-main',
+            type: 'line',
+            source: 'wbsb-route-line-source',
+            layout: {
+              'line-join': 'round',
+              'line-cap': 'round'
+            },
+            paint: {
+              'line-color': '#1a73e8',
+              'line-width': 5,
+              'line-opacity': 0.95
+            }
+          });
+        }
+      };
+
+      // WebGL native renderer for stop circle markers
       const renderWebGLStops = (currentPolyline) => {
-        // Clear previous stop label markers
         Object.values(mapMarkers.current).forEach(m => m.remove());
         mapMarkers.current = {};
 
@@ -1434,7 +1491,6 @@ function App() {
           const snapped = snapPointToPolyline(stop.latitude, stop.longitude, currentPolyline);
           const letterLabel = String.fromCharCode(65 + (index % 26)) + (index >= 26 ? Math.floor(index / 26) : '');
           
-          // Add stop name label badge right beside the circle node
           const labelDiv = document.createElement('div');
           labelDiv.className = 'custom-stop-label-badge';
           labelDiv.style.display = 'inline-flex';
@@ -1458,7 +1514,7 @@ function App() {
             className: 'custom-stop-label-wrapper',
             html: labelDiv,
             iconSize: [0, 0],
-            iconAnchor: [-10, 8] // Positioned right beside the small circle node
+            iconAnchor: [-10, 8]
           });
 
           const marker = L.marker(snapped, { icon: labelIcon })
@@ -1471,7 +1527,7 @@ function App() {
             type: 'Feature',
             geometry: {
               type: 'Point',
-              coordinates: [snapped[1], snapped[0]] // [lng, lat]
+              coordinates: [snapped[1], snapped[0]]
             },
             properties: {
               stopId: stop.stopId,
@@ -1497,7 +1553,6 @@ function App() {
             data: geojson
           });
 
-          // Outer circle (white background with dark border centered on curve line)
           nativeMap.addLayer({
             id: 'wbsb-stops-outer',
             type: 'circle',
@@ -1510,7 +1565,6 @@ function App() {
             }
           });
 
-          // Inner solid circle dot
           nativeMap.addLayer({
             id: 'wbsb-stops-inner',
             type: 'circle',
@@ -1523,48 +1577,20 @@ function App() {
         }
       };
 
-      // Draw initial fallback polyline and WebGL stop circles
-      routePolyline.current = L.polyline(latlngs, {
-        color: '#d97706',
-        weight: 4,
-        dashArray: '5, 10',
-        opacity: 0.85
-      }).addTo(mapInstance.current);
-
+      // Draw initial single route line and stop circles
+      drawSingleRouteLine(latlngs);
       renderWebGLStops(latlngs);
 
-      // Reset roadRoutePointsRef
       roadRoutePointsRef.current = [];
 
-      // Fetch exact road geometry from OSRM and update WebGL line & stop circles
+      // Fetch exact road geometry from OSRM and update single route line & stop circles
       fetchRoadRoute(coordStops)
         .then(roadLatLngs => {
           if (!isCurrent) return;
 
           if (roadLatLngs && roadLatLngs.length > 0) {
             roadRoutePointsRef.current = roadLatLngs;
-
-            if (routePolyline.current) routePolyline.current.remove();
-            if (routePolylineBorder.current) routePolylineBorder.current.remove();
-
-            // Outline border and main blue road path
-            routePolylineBorder.current = L.polyline(roadLatLngs, {
-              color: '#1558b0',
-              weight: 8,
-              opacity: 0.65,
-              lineCap: 'round',
-              lineJoin: 'round'
-            }).addTo(mapInstance.current);
-
-            routePolyline.current = L.polyline(roadLatLngs, {
-              color: '#1a73e8',
-              weight: 5,
-              opacity: 0.95,
-              lineCap: 'round',
-              lineJoin: 'round'
-            }).addTo(mapInstance.current);
-
-            // Re-render WebGL stop circles snapped 100% on top of exact road curve line
+            drawSingleRouteLine(roadLatLngs);
             renderWebGLStops(roadLatLngs);
           }
         })

@@ -431,7 +431,7 @@
       "route_id": "route_bandar_kolkata_esplanade",
       "route_name": "Bandar - Kolkata (Esplanade)",
       "source": "Bandar",
-      "destination": "Kolkata",
+      "destination": "Kolkata (Esplanade)",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -554,17 +554,7 @@
         "stop_rangamati",
         "stop_rajra",
         "stop_talajuri",
-        "stop_kashipur",
-        "stop_kashipur",
-        "stop_talajuri",
-        "stop_rajra",
-        "stop_rangamati",
-        "stop_arra",
-        "stop_jhatipahari",
-        "stop_kharbona",
-        "stop_lohagarh",
-        "stop_chhatna",
-        "stop_bankura"
+        "stop_kashipur"
       ],
       "data_quality_notes": []
     },
@@ -682,8 +672,8 @@
     {
       "route_id": "route_barabazar_durgapur_station_vinayak",
       "route_name": "Barabazar - Durgapur Station (VINAYAK)",
-      "source": "Barabazar",
-      "destination": "Durgapur Station",
+      "source": "\u09ac\u09b0\u09be\u09ac\u09be\u099c\u09be\u09b0",
+      "destination": "\u09a6\u09c1\u09b0\u09cd\u0997\u09be\u09aa\u09c1\u09b0 \u09b8\u09cd\u099f\u09c7\u09b6\u09a8",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -932,7 +922,7 @@
       "route_id": "route_berada_badanganj_rbn_travels",
       "route_name": "Berada - Badanganj (RBN TRAVELS)",
       "source": "Berada",
-      "destination": "Badanganj",
+      "destination": "Dadhika",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -1073,7 +1063,7 @@
       "route_id": "route_bishnupur_durgapur_station_ishika_trip_2",
       "route_name": "Bishnupur - Durgapur Station (ISHIKA (Trip 2)",
       "source": "Bishnupur",
-      "destination": "Durgapur Station",
+      "destination": "Durgapur (Station)",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -1353,7 +1343,7 @@
       "route_id": "route_chandrakona_road_durgapur_station_tirupati",
       "route_name": "Chandrakona Road - Durgapur Station (TIRUPATI)",
       "source": "Chandrakona Road",
-      "destination": "Durgapur Station",
+      "destination": "Durgapur (Station)",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -1454,8 +1444,8 @@
     {
       "route_id": "route_coochbehar_bus_stand_dharmatala_government_bus_nbstc_coochbehar_depot",
       "route_name": "Coochbehar Bus Stand - Dharmatala Government Bus (NBSTC COOCHBEHAR DEPOT)",
-      "source": "Coochbehar Bus Stand",
-      "destination": "Dharmatala Government Bus",
+      "source": "\u0995\u09cb\u099a\u09ac\u09bf\u09b9\u09be\u09b0 \u09ac\u09be\u09b8\u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1",
+      "destination": "\u09a7\u09b0\u09cd\u09ae\u09a4\u09b2\u09be \u09b8\u09b0\u0995\u09be\u09b0\u09bf \u09ac\u09be\u09b8\u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -1505,7 +1495,7 @@
       "route_id": "route_dantan_dharmatala_kolkata",
       "route_name": "Dantan - Dharmatala (Kolkata)",
       "source": "Dantan",
-      "destination": "Dharmatala",
+      "destination": "Dharmatala (Kolkata)",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -1525,8 +1515,8 @@
     {
       "route_id": "route_dhuliyan_nababhat_bus_stand_sahil_travels",
       "route_name": "Dhuliyan - Nababhat Bus Stand (SAHIL TRAVELS)",
-      "source": "Dhuliyan",
-      "destination": "Nababhat Bus Stand",
+      "source": "\u09a7\u09c1\u09b2\u09bf\u09af\u09bc\u09be\u09a8",
+      "destination": "\u09a8\u09ac\u09be\u09ac\u09b9\u09be\u099f \u09ac\u09be\u09b8 \u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1(\u09ac\u09b0\u09cd\u09a7\u09ae\u09be\u09a8)",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -1601,33 +1591,7 @@
         "stop_makrampur",
         "stop_kharagpur",
         "stop_mohanpur",
-        "stop_medinipur",
-        "stop_medinipur",
-        "stop_keranichati",
-        "stop_amtala",
-        "stop_mohanpur",
-        "stop_kharagpur_chaurangee",
-        "stop_makrampur",
-        "stop_narayangarh",
-        "stop_bakhrabad",
-        "stop_belda",
-        "stop_khakurda",
-        "stop_sauri",
-        "stop_lalat",
-        "stop_jahalda",
-        "stop_egra",
-        "stop_digha_more",
-        "stop_kudi",
-        "stop_mirzapur",
-        "stop_negua",
-        "stop_chorpalia",
-        "stop_paniparul",
-        "stop_depal",
-        "stop_ramnagar",
-        "stop_thikra",
-        "stop_fatepur",
-        "stop_alankarpur",
-        "stop_digha"
+        "stop_medinipur"
       ],
       "data_quality_notes": []
     },
@@ -1696,8 +1660,8 @@
     {
       "route_id": "route_durgapur_dishergarh_bura_baba",
       "route_name": "Durgapur - Dishergarh (BURA BABA)",
-      "source": "Durgapur",
-      "destination": "Dishergarh",
+      "source": "\u09a6\u09c2\u09b0\u09cd\u0997\u09be\u09aa\u09c1\u09b0",
+      "destination": "\u09a1\u09bf\u09b8\u09c7\u09b0\u0997\u09a1\u09bc",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -1749,7 +1713,7 @@
     {
       "route_id": "route_durgapur_station_suri_shyamali",
       "route_name": "Durgapur Station - Suri (SHYAMALI)",
-      "source": "Durgapur Station",
+      "source": "Durgapur (Station)",
       "destination": "Suri",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
@@ -1782,7 +1746,7 @@
     {
       "route_id": "route_durgapur_station_purulia_wasif_super_fast",
       "route_name": "Durgapur Station - Purulia (Wasif Super Fast)",
-      "source": "Durgapur Station",
+      "source": "Durgapur (Station)",
       "destination": "Purulia",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
@@ -2158,17 +2122,7 @@
         "stop_kharbona",
         "stop_lohagarh",
         "stop_chhatna",
-        "stop_bankura",
-        "stop_bankura",
-        "stop_chhatna",
-        "stop_lohagarh",
-        "stop_kharbona",
-        "stop_jhatipahari",
-        "stop_arra",
-        "stop_rangamati",
-        "stop_rajra",
-        "stop_talajuri",
-        "stop_kashipur"
+        "stop_bankura"
       ],
       "data_quality_notes": []
     },
@@ -2322,8 +2276,8 @@
     {
       "route_id": "route_kirnahar_binodia_tanushree",
       "route_name": "Kirnahar - Binodia (TANUSHREE)",
-      "source": "Kirnahar",
-      "destination": "Binodia",
+      "source": "\u0995\u09c0\u09b0\u09cd\u09a3\u09be\u09b9\u09be\u09b0",
+      "destination": "\u09ac\u09bf\u09a8\u09cb\u09a6\u09bf\u09af\u09bc\u09be",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -2601,30 +2555,7 @@
         "stop_thikra",
         "stop_fatepur",
         "stop_alankarpur",
-        "stop_digha",
-        "stop_digha",
-        "stop_alankarpur",
-        "stop_fatepur",
-        "stop_thikra_more",
-        "stop_ramnagar",
-        "stop_depal",
-        "stop_paniparul",
-        "stop_negua",
-        "stop_mirzapur",
-        "stop_kudi",
-        "stop_egra",
-        "stop_jahalda",
-        "stop_kashmuli",
-        "stop_lalat",
-        "stop_khakurda",
-        "stop_thakur_chak",
-        "stop_belda",
-        "stop_bakhrabad",
-        "stop_narayangarh",
-        "stop_makrampur",
-        "stop_kharagpur",
-        "stop_mohanpur",
-        "stop_medinipur"
+        "stop_digha"
       ],
       "data_quality_notes": []
     },
@@ -3136,7 +3067,7 @@
       "route_id": "route_sabrakone_durgapur_station_ishika",
       "route_name": "Sabrakone - Durgapur Station (ISHIKA)",
       "source": "Sabrakone",
-      "destination": "Durgapur Station",
+      "destination": "Durgapur (Station)",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -3288,7 +3219,7 @@
       "route_id": "route_taldangra_dharmatala_kolkata",
       "route_name": "Taldangra - Dharmatala (Kolkata)",
       "source": "Taldangra",
-      "destination": "Dharmatala",
+      "destination": "Dharmatala (Kolkata)",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -3435,8 +3366,8 @@
     {
       "route_id": "route_tatanagar_dharmatala_shankar_parwati",
       "route_name": "Tatanagar - Dharmatala (SHANKAR PARWATI)",
-      "source": "Tatanagar",
-      "destination": "Dharmatala",
+      "source": "\u099f\u09be\u099f\u09be\u09a8\u0997\u09b0",
+      "destination": "\u09a7\u09b0\u09cd\u09ae\u09a4\u09b2\u09be",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [
@@ -3518,8 +3449,8 @@
     {
       "route_id": "route_silda_medinipur_lalkamal",
       "route_name": "Silda - Medinipur (Lalkamal)",
-      "source": "Silda",
-      "destination": "Medinipur",
+      "source": "Shilda",
+      "destination": "Midnapore",
       "estimated_distance_km": null,
       "estimated_travel_time_min": null,
       "stop_sequence": [

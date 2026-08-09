@@ -179,7 +179,7 @@
       "contact_number": null,
       "alternate_number": null,
       "source": "Bandar",
-      "destination": "Kolkata",
+      "destination": "Kolkata (Esplanade)",
       "route_id": "route_bandar_kolkata_esplanade"
     },
     {
@@ -332,8 +332,8 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Barabazar",
-      "destination": "Durgapur Station",
+      "source": "\u09ac\u09b0\u09be\u09ac\u09be\u099c\u09be\u09b0",
+      "destination": "\u09a6\u09c1\u09b0\u09cd\u0997\u09be\u09aa\u09c1\u09b0 \u09b8\u09cd\u099f\u09c7\u09b6\u09a8",
       "route_id": "route_barabazar_durgapur_station_vinayak"
     },
     {
@@ -445,7 +445,7 @@
       "contact_number": null,
       "alternate_number": null,
       "source": "Berada",
-      "destination": "Badanganj",
+      "destination": "Dadhika",
       "route_id": "route_berada_badanganj_rbn_travels"
     },
     {
@@ -515,7 +515,7 @@
       "contact_number": null,
       "alternate_number": null,
       "source": "Bishnupur",
-      "destination": "Durgapur Station",
+      "destination": "Durgapur (Station)",
       "route_id": "route_bishnupur_durgapur_station_ishika_trip_2"
     },
     {
@@ -641,7 +641,7 @@
       "contact_number": null,
       "alternate_number": null,
       "source": "Chandrakona Road",
-      "destination": "Durgapur Station",
+      "destination": "Durgapur (Station)",
       "route_id": "route_chandrakona_road_durgapur_station_tirupati"
     },
     {
@@ -696,8 +696,8 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Coochbehar Bus Stand",
-      "destination": "Dharmatala Government Bus",
+      "source": "\u0995\u09cb\u099a\u09ac\u09bf\u09b9\u09be\u09b0 \u09ac\u09be\u09b8\u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1",
+      "destination": "\u09a7\u09b0\u09cd\u09ae\u09a4\u09b2\u09be \u09b8\u09b0\u0995\u09be\u09b0\u09bf \u09ac\u09be\u09b8\u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1",
       "route_id": "route_coochbehar_bus_stand_dharmatala_government_bus_nbstc_coochbehar_depot"
     },
     {
@@ -711,7 +711,7 @@
       "contact_number": null,
       "alternate_number": null,
       "source": "Dantan",
-      "destination": "Dharmatala",
+      "destination": "Dharmatala (Kolkata)",
       "route_id": "route_dantan_dharmatala_kolkata"
     },
     {
@@ -724,8 +724,8 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Dhuliyan",
-      "destination": "Nababhat Bus Stand",
+      "source": "\u09a7\u09c1\u09b2\u09bf\u09af\u09bc\u09be\u09a8",
+      "destination": "\u09a8\u09ac\u09be\u09ac\u09b9\u09be\u099f \u09ac\u09be\u09b8 \u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1(\u09ac\u09b0\u09cd\u09a7\u09ae\u09be\u09a8)",
       "route_id": "route_dhuliyan_nababhat_bus_stand_sahil_travels"
     },
     {
@@ -794,8 +794,8 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Durgapur",
-      "destination": "Dishergarh",
+      "source": "\u09a6\u09c2\u09b0\u09cd\u0997\u09be\u09aa\u09c1\u09b0",
+      "destination": "\u09a1\u09bf\u09b8\u09c7\u09b0\u0997\u09a1\u09bc",
       "route_id": "route_durgapur_dishergarh_bura_baba"
     },
     {
@@ -822,7 +822,7 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Durgapur Station",
+      "source": "Durgapur (Station)",
       "destination": "Suri",
       "route_id": "route_durgapur_station_suri_shyamali"
     },
@@ -836,7 +836,7 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Durgapur Station",
+      "source": "Durgapur (Station)",
       "destination": "Purulia",
       "route_id": "route_durgapur_station_purulia_wasif_super_fast"
     },
@@ -1116,8 +1116,8 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Kirnahar",
-      "destination": "Binodia",
+      "source": "\u0995\u09c0\u09b0\u09cd\u09a3\u09be\u09b9\u09be\u09b0",
+      "destination": "\u09ac\u09bf\u09a8\u09cb\u09a6\u09bf\u09af\u09bc\u09be",
       "route_id": "route_kirnahar_binodia_tanushree"
     },
     {
@@ -1537,7 +1537,7 @@
       "contact_number": null,
       "alternate_number": null,
       "source": "Sabrakone",
-      "destination": "Durgapur Station",
+      "destination": "Durgapur (Station)",
       "route_id": "route_sabrakone_durgapur_station_ishika"
     },
     {
@@ -1621,7 +1621,7 @@
       "contact_number": null,
       "alternate_number": null,
       "source": "Taldangra",
-      "destination": "Dharmatala",
+      "destination": "Dharmatala (Kolkata)",
       "route_id": "route_taldangra_dharmatala_kolkata"
     },
     {
@@ -1704,8 +1704,8 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Tatanagar",
-      "destination": "Dharmatala",
+      "source": "\u099f\u09be\u099f\u09be\u09a8\u0997\u09b0",
+      "destination": "\u09a7\u09b0\u09cd\u09ae\u09a4\u09b2\u09be",
       "route_id": "route_tatanagar_dharmatala_shankar_parwati"
     },
     {
@@ -1732,8 +1732,8 @@
       "bus_type": "Private - NON AC",
       "contact_number": null,
       "alternate_number": null,
-      "source": "Silda",
-      "destination": "Medinipur",
+      "source": "Shilda",
+      "destination": "Midnapore",
       "route_id": "route_silda_medinipur_lalkamal"
     }
   ]
