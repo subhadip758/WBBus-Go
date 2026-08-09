@@ -910,7 +910,7 @@
       "stop_id": "stop_bankura_more",
       "stop_name": "Bankura More",
       "latitude": 23.2324,
-      "longitude": 87.0785
+      "longitude": 87.85
     },
     {
       "stop_id": "stop_bankura_pump_more",
@@ -963,8 +963,8 @@
     {
       "stop_id": "stop_barda_chowkan",
       "stop_name": "Barda Chowkan",
-      "latitude": 22.35952365,
-      "longitude": 87.58564375
+      "latitude": 22.65,
+      "longitude": 87.68
     },
     {
       "stop_id": "stop_bardhaman_alisha",
@@ -2331,8 +2331,8 @@
     {
       "stop_id": "stop_hajipur",
       "stop_name": "Hajipur",
-      "latitude": 22.671489649999998,
-      "longitude": 88.059645
+      "latitude": 22.89,
+      "longitude": 87.77
     },
     {
       "stop_id": "stop_haldi",
@@ -2349,8 +2349,8 @@
     {
       "stop_id": "stop_haldia_more",
       "stop_name": "Haldia More",
-      "latitude": 22.062,
-      "longitude": 88.0698
+      "latitude": 22.4,
+      "longitude": 87.86
     },
     {
       "stop_id": "stop_haldiram",
@@ -3873,14 +3873,14 @@
     {
       "stop_id": "stop_pallishree",
       "stop_name": "Pallishree",
-      "latitude": 22.8893645,
-      "longitude": 87.7800091
+      "latitude": 22.8893,
+      "longitude": 87.78
     },
     {
       "stop_id": "stop_pallisree",
       "stop_name": "Pallisree",
-      "latitude": 22.6352125,
-      "longitude": 88.07916714999999
+      "latitude": 22.8893,
+      "longitude": 87.78
     },
     {
       "stop_id": "stop_panagarh_bypass",
@@ -4317,8 +4317,8 @@
     {
       "stop_id": "stop_sabrakone",
       "stop_name": "Sabrakone",
-      "latitude": 22.32275,
-      "longitude": 87.30975000000001
+      "latitude": 23.05,
+      "longitude": 87.35
     },
     {
       "stop_id": "stop_sadarghat",

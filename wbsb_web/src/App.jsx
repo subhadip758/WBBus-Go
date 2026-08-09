@@ -1428,7 +1428,7 @@ function App() {
     if (coordStops.length > 0) {
       const latlngs = coordStops.map(s => [s.latitude, s.longitude]);
 
-      // Native MapLibre single route line renderer: guarantees ONLY ONE single route line on map
+      // Native MapLibre single route line renderer: renders ONE SINGLE SOLID DEEP VIOLET line matching Google Maps directions
       const drawSingleRouteLine = (currentPolyline) => {
         const coordinates = currentPolyline.map(pt => [pt[1], pt[0]]);
         const geojson = {
@@ -1448,23 +1448,7 @@ function App() {
             data: geojson
           });
 
-          // Outer border glow line
-          nativeMap.addLayer({
-            id: 'wbsb-route-line-border',
-            type: 'line',
-            source: 'wbsb-route-line-source',
-            layout: {
-              'line-join': 'round',
-              'line-cap': 'round'
-            },
-            paint: {
-              'line-color': '#1558b0',
-              'line-width': 8,
-              'line-opacity': 0.5
-            }
-          });
-
-          // Single main vibrant blue road line
+          // Single solid deep violet road line (Google Maps deep violet style)
           nativeMap.addLayer({
             id: 'wbsb-route-line-main',
             type: 'line',
@@ -1474,9 +1458,9 @@ function App() {
               'line-cap': 'round'
             },
             paint: {
-              'line-color': '#1a73e8',
-              'line-width': 5,
-              'line-opacity': 0.95
+              'line-color': '#2563eb', // Deep vibrant royal violet / indigo
+              'line-width': 6.5,
+              'line-opacity': 1.0
             }
           });
         }

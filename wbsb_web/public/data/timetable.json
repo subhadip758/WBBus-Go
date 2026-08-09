@@ -723,85 +723,78 @@
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
-      "stop_id": null,
+      "stop_id": "stop_mayapur",
       "sequence": 10,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
-      "stop_id": "stop_mayapur",
-      "sequence": 11,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_champadanga",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "07:40",
       "down_time": "16:30"
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_siakhala",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_mosat",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_chanditala",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_dankuni",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": null,
       "down_time": "15:25"
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_bally",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_dakshineswar",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_dunlop",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": null,
       "down_time": "15:05"
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_shyambazar",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": null,
       "down_time": "14:30"
     },
     {
       "bus_id": "bus_rajdhani_bankura_kol",
       "stop_id": "stop_kolkata_esplanade",
-      "sequence": 21,
+      "sequence": 20,
       "up_time": "09:30",
       "down_time": null
     },
@@ -1451,141 +1444,134 @@
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
-      "stop_id": "stop_11_mile",
-      "sequence": 11,
-      "up_time": "07:00",
-      "down_time": "14:20"
-    },
-    {
-      "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_ilambazar",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "07:15",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_bonvila",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "07:30",
       "down_time": "13:50"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_shibtala",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "07:40",
       "down_time": "13:40"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_kamarpara",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": "07:50",
       "down_time": "13:30"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_raipur",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": "07:55",
       "down_time": "13:25"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_bolpur",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": "08:05",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_sian_hospital",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": "08:20",
       "down_time": "13:50"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_beluti",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": "08:35",
       "down_time": "13:35"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_saota",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": "08:45",
       "down_time": "13:25"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_nanur",
-      "sequence": 21,
+      "sequence": 20,
       "up_time": "09:00",
       "down_time": "13:10"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_kirnahar",
-      "sequence": 22,
+      "sequence": 21,
       "up_time": "09:20",
       "down_time": "12:50"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_daskalgram",
-      "sequence": 23,
+      "sequence": 22,
       "up_time": "09:40",
       "down_time": "12:30"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_futisanko",
-      "sequence": 24,
+      "sequence": 23,
       "up_time": "09:55",
       "down_time": "12:15"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_kandra",
-      "sequence": 25,
+      "sequence": 24,
       "up_time": "10:10",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_komarpur",
-      "sequence": 26,
+      "sequence": 25,
       "up_time": "10:20",
       "down_time": null
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_nirol",
-      "sequence": 27,
+      "sequence": 26,
       "up_time": "10:35",
       "down_time": null
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_pachundi",
-      "sequence": 28,
+      "sequence": 27,
       "up_time": "10:50",
       "down_time": null
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_sonarundi",
-      "sequence": 29,
+      "sequence": 28,
       "up_time": "11:05",
       "down_time": null
     },
     {
       "bus_id": "bus_asansolsalar_express_asansol_salar",
       "stop_id": "stop_salar",
-      "sequence": 30,
+      "sequence": 29,
       "up_time": "11:20",
       "down_time": null
     },
@@ -1955,64 +1941,50 @@
     },
     {
       "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
-      "stop_id": "stop_liki",
-      "sequence": 6,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
       "stop_id": "stop_bandwan",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "08:10",
       "down_time": "15:05"
     },
     {
       "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
       "stop_id": "stop_chila",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
       "stop_id": "stop_ankro",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
       "stop_id": "stop_boro",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "08:40",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
-      "stop_id": "stop_dharampur",
-      "sequence": 11,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
       "stop_id": "stop_buribandh",
-      "sequence": 12,
+      "sequence": 10,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
       "stop_id": "stop_mukutmanipur",
-      "sequence": 13,
+      "sequence": 11,
       "up_time": "09:50",
       "down_time": "13:00"
     },
     {
       "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
       "stop_id": "stop_khatra",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": "10:20",
       "down_time": "12:20"
     },
@@ -2039,183 +2011,162 @@
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
-      "stop_id": "stop_bora",
-      "sequence": 2,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_manbazar",
-      "sequence": 3,
+      "sequence": 2,
       "up_time": "16:05",
       "down_time": "07:20"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_hatirampur",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_bangla",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "17:00",
       "down_time": "06:00"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_puabagan",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_bankura_pump_more",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "17:45",
       "down_time": "05:30"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_beliatore",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_barjora",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_durgapur_city_centre",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "19:25",
       "down_time": "04:00"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_ilambazar",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_bolpur",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "20:50",
       "down_time": "02:20"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_suri",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "21:40",
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_mohammad_bazar",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_rampurhat",
-      "sequence": 15,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
-      "stop_id": "stop_moregram",
-      "sequence": 16,
-      "up_time": "23:40",
-      "down_time": "23:10"
-    },
-    {
-      "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
-      "stop_id": "stop_omarpur",
-      "sequence": 17,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_dhuliyan",
-      "sequence": 18,
+      "sequence": 15,
       "up_time": null,
       "down_time": "22:30"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_farakka",
-      "sequence": 19,
+      "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_malda",
-      "sequence": 20,
+      "sequence": 17,
       "up_time": "01:40",
       "down_time": "21:20"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_gazole",
-      "sequence": 21,
+      "sequence": 18,
       "up_time": null,
       "down_time": "20:30"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_itahar",
-      "sequence": 22,
+      "sequence": 19,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_raiganj",
-      "sequence": 23,
+      "sequence": 20,
       "up_time": "03:40",
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_dalkhola",
-      "sequence": 24,
+      "sequence": 21,
       "up_time": "04:25",
       "down_time": "18:20"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_kishanganj",
-      "sequence": 25,
+      "sequence": 22,
       "up_time": "05:25",
       "down_time": null
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_islampur",
-      "sequence": 26,
+      "sequence": 23,
       "up_time": null,
       "down_time": "16:15"
     },
     {
       "bus_id": "bus_jai_maa_durga_bandwan_siliguri",
       "stop_id": "stop_siliguri",
-      "sequence": 27,
+      "sequence": 24,
       "up_time": "07:00",
       "down_time": "15:05"
     },
@@ -2655,50 +2606,36 @@
     },
     {
       "bus_id": "bus_tirupati_bankura_bus_stand_dhaldanga",
-      "stop_id": "stop_boga",
-      "sequence": 4,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_tirupati_bankura_bus_stand_dhaldanga",
       "stop_id": "stop_bangla",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "00:00",
       "down_time": "09:10"
     },
     {
       "bus_id": "bus_tirupati_bankura_bus_stand_dhaldanga",
       "stop_id": "stop_puyabagan",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_tirupati_bankura_bus_stand_dhaldanga",
       "stop_id": "stop_makurgram",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_tirupati_bankura_bus_stand_dhaldanga",
       "stop_id": "stop_beliatore",
-      "sequence": 8,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_tirupati_bankura_bus_stand_dhaldanga",
-      "stop_id": "stop_barjora",
-      "sequence": 9,
+      "sequence": 7,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_tirupati_bankura_bus_stand_dhaldanga",
       "stop_id": "stop_dhaldanga",
-      "sequence": 10,
+      "sequence": 8,
       "up_time": "00:00",
       "down_time": "08:45"
     },
@@ -3432,85 +3369,78 @@
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_digha_bypass",
+      "stop_id": "stop_ghatua",
       "sequence": 34,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_ghatua",
+      "stop_id": "stop_pichaboni",
       "sequence": 35,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_pichaboni",
+      "stop_id": "stop_chaulkhola_mandarmani",
       "sequence": 36,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_chaulkhola_mandarmani",
+      "stop_id": "stop_balisai_tajpur",
       "sequence": 37,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_balisai_tajpur",
+      "stop_id": "stop_choddomile_shankarpur",
       "sequence": 38,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_choddomile_shankarpur",
+      "stop_id": "stop_ramnagar",
       "sequence": 39,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_ramnagar",
+      "stop_id": "stop_thikra_more",
       "sequence": 40,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_thikra_more",
+      "stop_id": "stop_alankarpur",
       "sequence": 41,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_alankarpur",
+      "stop_id": "stop_old_digha",
       "sequence": 42,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_old_digha",
+      "stop_id": "stop_new_digha",
       "sequence": 43,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
-      "stop_id": "stop_new_digha",
-      "sequence": 44,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_sarkar_travels_barasat_digha_border_udaipur",
       "stop_id": "stop_digha_border_udaipur",
-      "sequence": 45,
+      "sequence": 44,
       "up_time": null,
       "down_time": null
     },
@@ -3698,106 +3628,85 @@
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
-      "stop_id": "stop_mehedi_bagan",
-      "sequence": 2,
-      "up_time": "07:20",
-      "down_time": "16:55"
-    },
-    {
-      "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_dewandighi",
-      "sequence": 3,
+      "sequence": 2,
       "up_time": "07:35",
       "down_time": "16:40"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_khetia",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": "07:45",
       "down_time": "16:30"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
-      "stop_id": "stop_alinagar",
-      "sequence": 5,
-      "up_time": "08:10",
-      "down_time": "16:05"
-    },
-    {
-      "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_badshahi_road",
-      "sequence": 6,
+      "sequence": 4,
       "up_time": "08:30",
       "down_time": "15:45"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_muratipur",
-      "sequence": 7,
+      "sequence": 5,
       "up_time": "08:50",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_natunhat",
-      "sequence": 8,
+      "sequence": 6,
       "up_time": "09:05",
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_basapara",
-      "sequence": 9,
+      "sequence": 7,
       "up_time": "09:20",
       "down_time": "15:00"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_khujutipara",
-      "sequence": 10,
+      "sequence": 8,
       "up_time": "09:35",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_nanur",
-      "sequence": 11,
+      "sequence": 9,
       "up_time": "09:45",
       "down_time": "14:35"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_kirnahar",
-      "sequence": 12,
+      "sequence": 10,
       "up_time": "09:55",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_labhpur",
-      "sequence": 13,
+      "sequence": 11,
       "up_time": "10:15",
       "down_time": "14:00"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_ahmedpur",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": "10:45",
       "down_time": "13:30"
     },
     {
       "bus_id": "bus_nabaraj_mail_bardhaman_suri",
-      "stop_id": "stop_purandarpur",
-      "sequence": 15,
-      "up_time": "11:05",
-      "down_time": "13:10"
-    },
-    {
-      "bus_id": "bus_nabaraj_mail_bardhaman_suri",
       "stop_id": "stop_suri",
-      "sequence": 16,
+      "sequence": 13,
       "up_time": "11:30",
       "down_time": "12:25"
     },
@@ -4055,29 +3964,22 @@
     },
     {
       "bus_id": "bus_rbn_travels_berada_badanganj",
-      "stop_id": "stop_panchmura",
+      "stop_id": "stop_sabrakone",
       "sequence": 10,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_rbn_travels_berada_badanganj",
-      "stop_id": "stop_sabrakone",
-      "sequence": 11,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_rbn_travels_berada_badanganj",
       "stop_id": "stop_bankadah",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "11:00",
       "down_time": "13:00"
     },
     {
       "bus_id": "bus_rbn_travels_berada_badanganj",
       "stop_id": "stop_dadhika",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "00:00",
       "down_time": "12:50"
     },
@@ -4090,36 +3992,22 @@
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_taldangra",
-      "stop_id": "stop_panchmura",
-      "sequence": 2,
-      "up_time": "07:15",
-      "down_time": "16:20"
-    },
-    {
-      "bus_id": "bus_devi_durga_bishnupur_taldangra",
       "stop_id": "stop_simlapal",
-      "sequence": 3,
+      "sequence": 2,
       "up_time": "08:10",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_taldangra",
       "stop_id": "stop_khatra",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": "09:15",
       "down_time": "14:35"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_taldangra",
-      "stop_id": "stop_manbazar",
-      "sequence": 5,
-      "up_time": "10:45",
-      "down_time": "12:25"
-    },
-    {
-      "bus_id": "bus_devi_durga_bishnupur_taldangra",
       "stop_id": "stop_taldangra",
-      "sequence": 6,
+      "sequence": 4,
       "up_time": null,
       "down_time": "15:50"
     },
@@ -4160,120 +4048,92 @@
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
-      "stop_id": "stop_kakilla",
-      "sequence": 6,
-      "up_time": "06:10",
-      "down_time": "17:40"
-    },
-    {
-      "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_radhanagar",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "06:15",
       "down_time": "17:35"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_joyrampur",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "06:20",
       "down_time": "17:32"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_patharmora",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "06:25",
       "down_time": "17:28"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
-      "stop_id": "stop_sonamukhi",
-      "sequence": 10,
-      "up_time": "06:35",
-      "down_time": "17:20"
-    },
-    {
-      "bus_id": "bus_mahamaya_bishnupur_asansol",
-      "stop_id": "stop_rangamati",
-      "sequence": 11,
-      "up_time": "06:50",
-      "down_time": "17:05"
-    },
-    {
-      "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_pokhonna",
-      "sequence": 12,
+      "sequence": 9,
       "up_time": "07:05",
       "down_time": "16:50"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_hat_ashuria",
-      "sequence": 13,
+      "sequence": 10,
       "up_time": "07:15",
       "down_time": "16:40"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
-      "stop_id": "stop_ashuria_more",
-      "sequence": 14,
-      "up_time": "07:25",
-      "down_time": "16:30"
-    },
-    {
-      "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_barjora",
-      "sequence": 15,
+      "sequence": 11,
       "up_time": "07:45",
       "down_time": "16:10"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_durgapur_station",
-      "sequence": 16,
+      "sequence": 12,
       "up_time": "08:10",
       "down_time": "15:50"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_city_centre",
-      "sequence": 17,
+      "sequence": 13,
       "up_time": "08:25",
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_bhiringi_more",
-      "sequence": 18,
+      "sequence": 14,
       "up_time": "08:35",
       "down_time": "15:05"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_gopalmath",
-      "sequence": 19,
+      "sequence": 15,
       "up_time": "08:45",
       "down_time": "14:58"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_andal_more",
-      "sequence": 20,
+      "sequence": 16,
       "up_time": "09:00",
       "down_time": "14:54"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_raniganj_punjabi_more",
-      "sequence": 21,
+      "sequence": 17,
       "up_time": "09:10",
       "down_time": "14:50"
     },
     {
       "bus_id": "bus_mahamaya_bishnupur_asansol",
       "stop_id": "stop_asansol",
-      "sequence": 22,
+      "sequence": 18,
       "up_time": "09:25",
       "down_time": "14:15"
     },
@@ -4447,50 +4307,29 @@
     },
     {
       "bus_id": "bus_dakshayaniria_super_bishnupur_old_digha",
-      "stop_id": "stop_mirzapur",
-      "sequence": 25,
-      "up_time": "10:35",
-      "down_time": "13:00"
-    },
-    {
-      "bus_id": "bus_dakshayaniria_super_bishnupur_old_digha",
-      "stop_id": "stop_negua",
-      "sequence": 26,
-      "up_time": "10:45",
-      "down_time": "12:50"
-    },
-    {
-      "bus_id": "bus_dakshayaniria_super_bishnupur_old_digha",
       "stop_id": "stop_paniparul",
-      "sequence": 27,
+      "sequence": 25,
       "up_time": "10:55",
       "down_time": "12:40"
     },
     {
       "bus_id": "bus_dakshayaniria_super_bishnupur_old_digha",
-      "stop_id": "stop_ramnagar",
-      "sequence": 28,
-      "up_time": "11:00",
-      "down_time": "12:30"
-    },
-    {
-      "bus_id": "bus_dakshayaniria_super_bishnupur_old_digha",
       "stop_id": "stop_thikra",
-      "sequence": 29,
+      "sequence": 26,
       "up_time": "11:10",
       "down_time": "12:20"
     },
     {
       "bus_id": "bus_dakshayaniria_super_bishnupur_old_digha",
       "stop_id": "stop_alankarpur",
-      "sequence": 30,
+      "sequence": 27,
       "up_time": "11:15",
       "down_time": "12:10"
     },
     {
       "bus_id": "bus_dakshayaniria_super_bishnupur_old_digha",
       "stop_id": "stop_old_digha",
-      "sequence": 31,
+      "sequence": 28,
       "up_time": "11:20",
       "down_time": "12:00"
     },
@@ -4755,106 +4594,99 @@
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
-      "stop_id": "stop_sultan_nagar",
+      "stop_id": "stop_gaura",
       "sequence": 18,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
-      "stop_id": "stop_gaura",
+      "stop_id": "stop_khukurdah",
       "sequence": 19,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
-      "stop_id": "stop_khukurdah",
+      "stop_id": "stop_keshapat",
       "sequence": 20,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
-      "stop_id": "stop_keshapat",
+      "stop_id": "stop_mechogram",
       "sequence": 21,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
-      "stop_id": "stop_mechogram",
-      "sequence": 22,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_mecheda_station",
-      "sequence": 23,
+      "sequence": 22,
       "up_time": "11:20",
       "down_time": "16:10"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_maniktala",
-      "sequence": 24,
+      "sequence": 23,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_tamluk",
-      "sequence": 25,
+      "sequence": 24,
       "up_time": "11:45",
       "down_time": "15:40"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_nandakumar_bazar",
-      "sequence": 26,
+      "sequence": 25,
       "up_time": "12:00",
       "down_time": "15:20"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_mahishadal",
-      "sequence": 27,
+      "sequence": 26,
       "up_time": "12:20",
       "down_time": "15:10"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_chaitanyapur",
-      "sequence": 28,
+      "sequence": 27,
       "up_time": "12:40",
       "down_time": "14:50"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_manjushree_more",
-      "sequence": 29,
+      "sequence": 28,
       "up_time": "12:45",
       "down_time": "14:40"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_durgachak",
-      "sequence": 30,
+      "sequence": 29,
       "up_time": "12:55",
       "down_time": "14:25"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_ranichak",
-      "sequence": 31,
+      "sequence": 30,
       "up_time": "13:05",
       "down_time": "14:15"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_township",
-      "sequence": 32,
+      "sequence": 31,
       "up_time": "13:15",
       "down_time": "14:00"
     },
@@ -4881,78 +4713,64 @@
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
-      "stop_id": "stop_panchmura",
-      "sequence": 4,
-      "up_time": "07:15",
-      "down_time": "16:20"
-    },
-    {
-      "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_taldangra",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "07:45",
       "down_time": "15:50"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_simlapal",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "08:10",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_lakshmisagar",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "08:35",
       "down_time": "15:10"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_pukhuria",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "08:55",
       "down_time": "14:50"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_khatra",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "09:15",
       "down_time": "14:35"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_supur",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "09:40",
       "down_time": "14:10"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_hatirampur",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "10:00",
       "down_time": "13:45"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_ranga",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "10:15",
       "down_time": "13:20"
     },
     {
       "bus_id": "bus_devi_durga_bishnupur_manbazar",
-      "stop_id": "stop_payrachali",
-      "sequence": 13,
-      "up_time": "10:30",
-      "down_time": "12:55"
-    },
-    {
-      "bus_id": "bus_devi_durga_bishnupur_manbazar",
       "stop_id": "stop_manbazar",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": "10:45",
       "down_time": "12:25"
     },
@@ -5308,134 +5126,120 @@
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
-      "stop_id": "stop_mohanpur",
-      "sequence": 3,
-      "up_time": "06:20",
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_beluti",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": "06:30",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_datina",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "06:35",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_saota",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "06:40",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_nanur",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "06:45",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_kirnahar",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "07:05",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_jubutia",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "07:12",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_daskalgram",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "07:18",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_futisanko",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "07:25",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_katadighi",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "07:35",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
-      "stop_id": "stop_morgram",
-      "sequence": 13,
-      "up_time": "07:45",
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_marut",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": "07:55",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_majlispur",
-      "sequence": 15,
+      "sequence": 13,
       "up_time": "08:00",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_mamodpur",
-      "sequence": 16,
+      "sequence": 14,
       "up_time": "08:05",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_baidyanathpur",
-      "sequence": 17,
+      "sequence": 15,
       "up_time": "08:10",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_sundarpur",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": "08:15",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_bahadurpur",
-      "sequence": 19,
+      "sequence": 17,
       "up_time": "08:20",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_dakbangla",
-      "sequence": 20,
+      "sequence": 18,
       "up_time": "08:25",
       "down_time": null
     },
     {
       "bus_id": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
       "stop_id": "stop_panchthupi",
-      "sequence": 21,
+      "sequence": 19,
       "up_time": "08:35",
       "down_time": null
     },
@@ -5462,85 +5266,78 @@
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
-      "stop_id": "stop_uchalan",
+      "stop_id": "stop_arambagh",
       "sequence": 4,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
-      "stop_id": "stop_arambagh",
+      "stop_id": "stop_goghat",
       "sequence": 5,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
-      "stop_id": "stop_goghat",
+      "stop_id": "stop_khirpai",
       "sequence": 6,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
-      "stop_id": "stop_khirpai",
+      "stop_id": "stop_radhanagar",
       "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
-      "stop_id": "stop_radhanagar",
-      "sequence": 8,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_ambika_burdwan_itaberia",
       "stop_id": "stop_ghatal",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "17:50",
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
       "stop_id": "stop_daspur",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
       "stop_id": "stop_mecheda_station",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": null,
       "down_time": "08:25"
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
       "stop_id": "stop_radhamoni",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
       "stop_id": "stop_nandakumar",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
       "stop_id": "stop_makhakhali",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ambika_burdwan_itaberia",
       "stop_id": "stop_itaberia",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": null,
       "down_time": "06:10"
     },
@@ -5553,78 +5350,71 @@
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
-      "stop_id": "stop_sehara_bazar",
-      "sequence": 2,
-      "up_time": "06:30",
-      "down_time": "14:30"
-    },
-    {
-      "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_uchalan",
-      "sequence": 3,
+      "sequence": 2,
       "up_time": "06:40",
       "down_time": "14:10"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_bulchandrapur",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": "06:50",
       "down_time": "14:00"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_arambagh",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "07:05",
       "down_time": "13:30"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_kamarpukur_chati",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "07:35",
       "down_time": "13:10"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_ramjibanpur",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "07:55",
       "down_time": "12:55"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_khirpai",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "08:30",
       "down_time": "12:15"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_ghatal_cbs",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "08:55",
       "down_time": "11:50"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_gaura",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "09:40",
       "down_time": "11:15"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_mechogram",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "09:50",
       "down_time": "11:05"
     },
     {
       "bus_id": "bus_gitanjali_travels_burdwan_alisha_panskura",
       "stop_id": "stop_panskura",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "10:05",
       "down_time": "10:50"
     },
@@ -5651,176 +5441,141 @@
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
-      "stop_id": "stop_sagrai",
+      "stop_id": "stop_seherabazar",
       "sequence": 4,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
-      "stop_id": "stop_seherabazar",
+      "stop_id": "stop_naisharai",
       "sequence": 5,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
-      "stop_id": "stop_moghalmari",
+      "stop_id": "stop_pallishree",
       "sequence": 6,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
-      "stop_id": "stop_uchalan",
-      "sequence": 7,
-      "up_time": "00:00",
-      "down_time": "12:00"
-    },
-    {
-      "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
-      "stop_id": "stop_bulchandpur",
-      "sequence": 8,
-      "up_time": "00:00",
-      "down_time": "12:00"
-    },
-    {
-      "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
-      "stop_id": "stop_naisharai",
-      "sequence": 9,
-      "up_time": "00:00",
-      "down_time": "12:00"
-    },
-    {
-      "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
-      "stop_id": "stop_pallishree",
-      "sequence": 10,
-      "up_time": "00:00",
-      "down_time": "12:00"
-    },
-    {
-      "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_arambagh",
-      "sequence": 11,
+      "sequence": 7,
       "up_time": "05:55",
       "down_time": "14:40"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_kalipur",
-      "sequence": 12,
+      "sequence": 8,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_goghat",
-      "sequence": 13,
-      "up_time": "00:00",
-      "down_time": "12:00"
-    },
-    {
-      "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
-      "stop_id": "stop_kamarpukur",
-      "sequence": 14,
+      "sequence": 9,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_ramjibanpur",
-      "sequence": 15,
+      "sequence": 10,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_khirpai",
-      "sequence": 16,
+      "sequence": 11,
       "up_time": "07:15",
       "down_time": "13:20"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_radhanagar",
-      "sequence": 17,
+      "sequence": 12,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_barda_chowkan",
-      "sequence": 18,
+      "sequence": 13,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_ghatal",
-      "sequence": 19,
+      "sequence": 14,
       "up_time": "07:50",
       "down_time": "12:55"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_daspur",
-      "sequence": 20,
+      "sequence": 15,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_sultannagar",
-      "sequence": 21,
+      "sequence": 16,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_gaura",
-      "sequence": 22,
+      "sequence": 17,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_sonamui",
-      "sequence": 23,
+      "sequence": 18,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_khukurdah",
-      "sequence": 24,
+      "sequence": 19,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_keshpat",
-      "sequence": 25,
+      "sequence": 20,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_mechogram",
-      "sequence": 26,
+      "sequence": 21,
       "up_time": "00:00",
       "down_time": "11:50"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_haldia_more",
-      "sequence": 27,
+      "sequence": 22,
       "up_time": "00:00",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_ishika_burdwan_alisha_mecheda_station",
       "stop_id": "stop_mecheda_station",
-      "sequence": 28,
+      "sequence": 23,
       "up_time": "08:50",
       "down_time": "11:30"
     },
@@ -6071,22 +5826,15 @@
     },
     {
       "bus_id": "bus_laxmi_narayan_chandrakona_road_silda",
-      "stop_id": "stop_jhilimili",
-      "sequence": 13,
-      "up_time": "10:40",
-      "down_time": "14:30"
-    },
-    {
-      "bus_id": "bus_laxmi_narayan_chandrakona_road_silda",
       "stop_id": "stop_belpahari",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "11:30",
       "down_time": "13:40"
     },
     {
       "bus_id": "bus_laxmi_narayan_chandrakona_road_silda",
       "stop_id": "stop_silda",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": "12:00",
       "down_time": "13:00"
     },
@@ -6162,106 +5910,99 @@
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
-      "stop_id": "stop_balighai",
-      "sequence": 4,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_egra",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "08:30",
       "down_time": "18:20"
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_jahalda",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_lalat",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_sauri",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_khakurdah",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_thakur_chowk",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_belda",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "09:00",
       "down_time": "17:50"
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_bakhrabad",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_narayangarh",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_mokrampur",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_kharagpur_station",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_kharagpur_chaurangi",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_mohanpur",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_maa_bagala_contai_central_medinipur_central",
       "stop_id": "stop_medinipur_central",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": "10:00",
       "down_time": "16:10"
     },
@@ -6554,57 +6295,50 @@
     },
     {
       "bus_id": "bus_kolkata_dantan_dharmatala",
-      "stop_id": "stop_mohanpur",
-      "sequence": 3,
-      "up_time": "06:55",
-      "down_time": "19:00"
-    },
-    {
-      "bus_id": "bus_kolkata_dantan_dharmatala",
       "stop_id": "stop_egra",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": "07:15",
       "down_time": "18:40"
     },
     {
       "bus_id": "bus_kolkata_dantan_dharmatala",
       "stop_id": "stop_satmile",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "07:55",
       "down_time": "18:00"
     },
     {
       "bus_id": "bus_kolkata_dantan_dharmatala",
       "stop_id": "stop_contai_kanthi",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "08:35",
       "down_time": "17:20"
     },
     {
       "bus_id": "bus_kolkata_dantan_dharmatala",
       "stop_id": "stop_nandakumar",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "10:05",
       "down_time": "15:50"
     },
     {
       "bus_id": "bus_kolkata_dantan_dharmatala",
       "stop_id": "stop_kolaghat",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "10:45",
       "down_time": "15:10"
     },
     {
       "bus_id": "bus_kolkata_dantan_dharmatala",
       "stop_id": "stop_santragachi",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "11:35",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_kolkata_dantan_dharmatala",
       "stop_id": "stop_dharmatala_kolkata",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "11:55",
       "down_time": "14:00"
     },
@@ -6890,148 +6624,134 @@
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_fatepur",
+      "stop_id": "stop_thikra_more",
       "sequence": 3,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_thikra_more",
+      "stop_id": "stop_ramnagar",
       "sequence": 4,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_ramnagar",
+      "stop_id": "stop_depal",
       "sequence": 5,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_depal",
+      "stop_id": "stop_paniparul",
       "sequence": 6,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_paniparul",
+      "stop_id": "stop_negua",
       "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_negua",
+      "stop_id": "stop_kudi",
       "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_mirzapur",
+      "stop_id": "stop_egra",
       "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_kudi",
+      "stop_id": "stop_jahalda",
       "sequence": 10,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_egra",
+      "stop_id": "stop_kashmuli",
       "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_jahalda",
+      "stop_id": "stop_lalat",
       "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_kashmuli",
+      "stop_id": "stop_khakurda",
       "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_lalat",
+      "stop_id": "stop_thakur_chak",
       "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_khakurda",
+      "stop_id": "stop_belda",
       "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_thakur_chak",
+      "stop_id": "stop_bakhrabad",
       "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_belda",
+      "stop_id": "stop_narayangarh",
       "sequence": 17,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_bakhrabad",
+      "stop_id": "stop_makrampur",
       "sequence": 18,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_narayangarh",
+      "stop_id": "stop_kharagpur",
       "sequence": 19,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_makrampur",
+      "stop_id": "stop_mohanpur",
       "sequence": 20,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_kharagpur",
-      "sequence": 21,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_nilachal_digha_medinipur",
-      "stop_id": "stop_mohanpur",
-      "sequence": 22,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_nilachal_digha_medinipur",
       "stop_id": "stop_medinipur",
-      "sequence": 23,
+      "sequence": 21,
       "up_time": null,
       "down_time": null
     },
@@ -7086,141 +6806,134 @@
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
-      "stop_id": "stop_chaulkola",
-      "sequence": 6,
-      "up_time": "05:35",
-      "down_time": "17:25"
-    },
-    {
-      "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_pichaboni",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "05:40",
       "down_time": "17:20"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_contai",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "05:50",
       "down_time": "17:10"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_heria",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_bajkul",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_chandipur",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_nandakumar",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": null,
       "down_time": "17:00"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_nimtouri",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_radhamoni",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_mecheda",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_mechogram",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_daspur",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": "09:15",
       "down_time": "15:20"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_ghatal",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": "09:30",
       "down_time": "15:05"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_barda_chowkan",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": "09:45",
       "down_time": "14:50"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_khirpai",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": "10:00",
       "down_time": "14:35"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_srinagar",
-      "sequence": 21,
+      "sequence": 20,
       "up_time": "10:15",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_ramjibanpur",
-      "sequence": 22,
+      "sequence": 21,
       "up_time": "10:30",
       "down_time": "14:10"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_hajipur",
-      "sequence": 23,
+      "sequence": 22,
       "up_time": "10:45",
       "down_time": "13:55"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_kamarpukur",
-      "sequence": 24,
+      "sequence": 23,
       "up_time": "11:00",
       "down_time": "13:40"
     },
     {
       "bus_id": "bus_sri_ram_digha_border_jairambati",
       "stop_id": "stop_jairambati",
-      "sequence": 25,
+      "sequence": 24,
       "up_time": "11:15",
       "down_time": "13:15"
     },
@@ -7401,57 +7114,43 @@
     },
     {
       "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
-      "stop_id": "stop_gelia",
-      "sequence": 12,
-      "up_time": "11:15",
-      "down_time": "14:40"
-    },
-    {
-      "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
-      "stop_id": "stop_gogra",
-      "sequence": 13,
-      "up_time": "11:25",
-      "down_time": "14:35"
-    },
-    {
-      "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
       "stop_id": "stop_kotulpur",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": "11:40",
       "down_time": "14:30"
     },
     {
       "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
       "stop_id": "stop_koalpara",
-      "sequence": 15,
+      "sequence": 13,
       "up_time": "11:45",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
       "stop_id": "stop_deshra",
-      "sequence": 16,
+      "sequence": 14,
       "up_time": "11:50",
       "down_time": "14:15"
     },
     {
       "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
       "stop_id": "stop_joyrambati",
-      "sequence": 17,
+      "sequence": 15,
       "up_time": "11:55",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
       "stop_id": "stop_kamarpukur",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": "12:05",
       "down_time": "13:50"
     },
     {
       "bus_id": "bus_ratul_babu_durgapur_st_arambagh",
       "stop_id": "stop_arambagh",
-      "sequence": 19,
+      "sequence": 17,
       "up_time": null,
       "down_time": "13:20"
     },
@@ -7506,106 +7205,99 @@
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
-      "stop_id": "stop_11_mile",
-      "sequence": 8,
-      "up_time": "08:15",
-      "down_time": "15:20"
-    },
-    {
-      "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_illambazar",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "08:35",
       "down_time": "15:05"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_bonvilla",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "08:42",
       "down_time": "14:58"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_kamarpara",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "08:48",
       "down_time": "14:54"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_shibtala",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "08:52",
       "down_time": "14:51"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_kashipur",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "08:56",
       "down_time": "14:49"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_jilipitola",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "09:00",
       "down_time": "14:47"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_bolpur_jamboni",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": "09:05",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_sriniketan",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": "09:15",
       "down_time": "14:30"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_debgram",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": "09:25",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_parui",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": "09:40",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_purandarpur",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": "09:50",
       "down_time": "13:55"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_ekdala",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": "10:00",
       "down_time": "13:45"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_suri_railgate",
-      "sequence": 21,
+      "sequence": 20,
       "up_time": "10:10",
       "down_time": "13:25"
     },
     {
       "bus_id": "bus_shyamali_durgapur_station_suri",
       "stop_id": "stop_suri",
-      "sequence": 22,
+      "sequence": 21,
       "up_time": "10:15",
       "down_time": "13:20"
     },
@@ -7660,22 +7352,15 @@
     },
     {
       "bus_id": "bus_wasif_super_fast_durgapur_station_purulia",
-      "stop_id": "stop_ladhurka",
-      "sequence": 8,
-      "up_time": "11:50",
-      "down_time": "13:40"
-    },
-    {
-      "bus_id": "bus_wasif_super_fast_durgapur_station_purulia",
       "stop_id": "stop_bishpuria",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": null,
       "down_time": "14:10"
     },
     {
       "bus_id": "bus_wasif_super_fast_durgapur_station_purulia",
       "stop_id": "stop_purulia",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "12:20",
       "down_time": "13:05"
     },
@@ -7702,15 +7387,8 @@
     },
     {
       "bus_id": "bus_bakkhalihowrah_express_esplanade_howrah_station",
-      "stop_id": "stop_bakkhali",
-      "sequence": 4,
-      "up_time": "10:00",
-      "down_time": "15:00"
-    },
-    {
-      "bus_id": "bus_bakkhalihowrah_express_esplanade_howrah_station",
       "stop_id": "stop_howrah_station",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": null,
       "down_time": "20:00"
     },
@@ -8073,134 +7751,127 @@
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
-      "stop_id": "stop_barada_chaukan",
-      "sequence": 16,
-      "up_time": "07:05",
-      "down_time": "16:30"
-    },
-    {
-      "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_radhanagar",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": "07:15",
       "down_time": "16:15"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_khirpai",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": "07:30",
       "down_time": "16:00"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_kalikapur",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": "07:45",
       "down_time": "15:45"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_chandrakona_town",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": "08:00",
       "down_time": "15:35"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_baharasole",
-      "sequence": 21,
+      "sequence": 20,
       "up_time": "08:10",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_adhar_nayan",
-      "sequence": 22,
+      "sequence": 21,
       "up_time": "08:15",
       "down_time": "15:25"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_dabcha",
-      "sequence": 23,
+      "sequence": 22,
       "up_time": "08:20",
       "down_time": "15:20"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_chandrakona_road",
-      "sequence": 24,
+      "sequence": 23,
       "up_time": "08:30",
       "down_time": "15:25"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_kadamdiha",
-      "sequence": 25,
+      "sequence": 24,
       "up_time": "08:35",
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_kiyaboni",
-      "sequence": 26,
+      "sequence": 25,
       "up_time": "08:45",
       "down_time": "15:05"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_garhbeta",
-      "sequence": 27,
+      "sequence": 26,
       "up_time": "08:50",
       "down_time": "15:00"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_dhadika",
-      "sequence": 28,
+      "sequence": 27,
       "up_time": "09:10",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_bankadaha",
-      "sequence": 29,
+      "sequence": 28,
       "up_time": "09:20",
       "down_time": "14:30"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_bishnupur",
-      "sequence": 30,
+      "sequence": 29,
       "up_time": "09:40",
       "down_time": "14:10"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_ramsagar",
-      "sequence": 31,
+      "sequence": 30,
       "up_time": "09:55",
       "down_time": "13:55"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_onda",
-      "sequence": 32,
+      "sequence": 31,
       "up_time": "10:15",
       "down_time": "13:35"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_dhaldanga",
-      "sequence": 33,
+      "sequence": 32,
       "up_time": "10:30",
       "down_time": "13:20"
     },
     {
       "bus_id": "bus_darshan_haldia_bankura",
       "stop_id": "stop_bankura",
-      "sequence": 34,
+      "sequence": 33,
       "up_time": "10:45",
       "down_time": "12:55"
     },
@@ -8332,190 +8003,148 @@
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_fatepur",
+      "stop_id": "stop_bandher_par",
       "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_bandher_par",
+      "stop_id": "stop_govindpur",
       "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_govindpur",
+      "stop_id": "stop_jinkara",
       "sequence": 17,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_jinkara",
+      "stop_id": "stop_khoshbag",
       "sequence": 18,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_indas",
+      "stop_id": "stop_bieur",
       "sequence": 19,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_khoshbag",
+      "stop_id": "stop_kumrul",
       "sequence": 20,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_bieur",
+      "stop_id": "stop_telur",
       "sequence": 21,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_kumrul",
+      "stop_id": "stop_naldanga",
       "sequence": 22,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_telur",
+      "stop_id": "stop_checkpost",
       "sequence": 23,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_rasulpur",
+      "stop_id": "stop_metedanga",
       "sequence": 24,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_naldanga",
+      "stop_id": "stop_khejurihati",
       "sequence": 25,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_checkpost",
+      "stop_id": "stop_nischintapur",
       "sequence": 26,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_metedanga",
+      "stop_id": "stop_molla_road",
       "sequence": 27,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_khandaghosh",
+      "stop_id": "stop_shalun",
       "sequence": 28,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_khejurihati",
+      "stop_id": "stop_padua",
       "sequence": 29,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_nischintapur",
+      "stop_id": "stop_keshabpur",
       "sequence": 30,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_molla_road",
+      "stop_id": "stop_doichanda",
       "sequence": 31,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_shalun",
+      "stop_id": "stop_bankura_more",
       "sequence": 32,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_padua",
+      "stop_id": "stop_sadarghat",
       "sequence": 33,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_keshabpur",
+      "stop_id": "stop_telipukur",
       "sequence": 34,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_doichanda",
-      "sequence": 35,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_bankura_more",
-      "sequence": 36,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_khaler_pole",
-      "sequence": 37,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_polempur",
-      "sequence": 38,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_sadarghat",
-      "sequence": 39,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
-      "stop_id": "stop_telipukur",
-      "sequence": 40,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
       "stop_id": "stop_alisa_bus_stand",
-      "sequence": 41,
+      "sequence": 35,
       "up_time": null,
       "down_time": null
     },
@@ -8542,246 +8171,225 @@
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
-      "stop_id": "stop_madhakhali",
-      "sequence": 4,
-      "up_time": "05:30",
-      "down_time": "18:00"
-    },
-    {
-      "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_heria",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "05:45",
       "down_time": "17:50"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_bajkul",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "06:00",
       "down_time": "17:40"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_chandipur",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "06:10",
       "down_time": "17:30"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_norghat",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "06:20",
       "down_time": "17:25"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_nandakumar",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "06:30",
       "down_time": "17:15"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_nimtouri",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "06:35",
       "down_time": "17:10"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_radhamoni",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "06:40",
       "down_time": "17:00"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_mecheda_station",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "06:50",
       "down_time": "16:50"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_deulia_bazar",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "07:00",
       "down_time": "16:40"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_siddha",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "07:05",
       "down_time": "16:35"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_mechogram",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": "07:15",
       "down_time": "16:25"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_keshapat",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": "07:25",
       "down_time": "16:15"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_khukurdaha",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": "07:35",
       "down_time": "16:05"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_sonamui",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": "07:45",
       "down_time": "15:55"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_gaura",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": "07:55",
       "down_time": "15:45"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_sultannagar",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": "08:05",
       "down_time": "15:40"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_bakultala",
-      "sequence": 21,
+      "sequence": 20,
       "up_time": "08:15",
       "down_time": "15:35"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_daspur",
-      "sequence": 22,
+      "sequence": 21,
       "up_time": "08:20",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_ghatal",
-      "sequence": 23,
+      "sequence": 22,
       "up_time": "08:25",
       "down_time": "17:30"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
-      "stop_id": "stop_barada_chaukan",
-      "sequence": 24,
-      "up_time": "08:45",
-      "down_time": "15:10"
-    },
-    {
-      "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_radhanagar",
-      "sequence": 25,
+      "sequence": 23,
       "up_time": "08:55",
       "down_time": "15:00"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_khirpai",
-      "sequence": 26,
+      "sequence": 24,
       "up_time": "09:10",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_jara",
-      "sequence": 27,
+      "sequence": 25,
       "up_time": "09:20",
       "down_time": "14:35"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_srinagar",
-      "sequence": 28,
+      "sequence": 26,
       "up_time": "09:30",
       "down_time": "14:25"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_ramjibanpur",
-      "sequence": 29,
+      "sequence": 27,
       "up_time": "09:40",
       "down_time": "14:15"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_hajipur",
-      "sequence": 30,
+      "sequence": 28,
       "up_time": "09:50",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_kamarpukur",
-      "sequence": 31,
+      "sequence": 29,
       "up_time": "10:00",
       "down_time": "13:55"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_goghat",
-      "sequence": 32,
+      "sequence": 30,
       "up_time": "10:15",
       "down_time": "13:40"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_arambagh",
-      "sequence": 33,
+      "sequence": 31,
       "up_time": "10:30",
       "down_time": "15:25"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_mayapur",
-      "sequence": 34,
+      "sequence": 32,
       "up_time": "10:45",
       "down_time": "13:10"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_kable",
-      "sequence": 35,
+      "sequence": 33,
       "up_time": "10:55",
       "down_time": "13:00"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
-      "stop_id": "stop_sodepur",
-      "sequence": 36,
-      "up_time": "11:05",
-      "down_time": "12:50"
-    },
-    {
-      "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_champadanga",
-      "sequence": 37,
+      "sequence": 34,
       "up_time": "11:15",
       "down_time": "12:40"
     },
     {
       "bus_id": "bus_suparna_itaberia_tarakeswar",
       "stop_id": "stop_tarakeswar",
-      "sequence": 38,
+      "sequence": 35,
       "up_time": "11:30",
       "down_time": "14:15"
     },
@@ -8815,120 +8423,71 @@
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_atghara",
+      "stop_id": "stop_guskara",
       "sequence": 5,
-      "up_time": null,
-      "down_time": null
+      "up_time": "06:15",
+      "down_time": "15:45"
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_jalpara",
+      "stop_id": "stop_budbud",
       "sequence": 6,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_kasemnagar",
+      "stop_id": "stop_panagarh",
       "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_guskara",
-      "sequence": 8,
-      "up_time": "06:15",
-      "down_time": "15:45"
-    },
-    {
-      "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_abhirampur",
-      "sequence": 9,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_mankar",
-      "sequence": 10,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_mankar_rail_gate",
-      "sequence": 11,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_budbud",
-      "sequence": 12,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_panagarh",
-      "sequence": 13,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_abha_jajigram_asansol",
       "stop_id": "stop_rajbandh",
-      "sequence": 14,
+      "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
       "stop_id": "stop_muchipara",
-      "sequence": 15,
+      "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
       "stop_id": "stop_durgapur_city_centre",
-      "sequence": 16,
+      "sequence": 10,
       "up_time": "08:05",
       "down_time": "13:25"
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
       "stop_id": "stop_bhiringi_more",
-      "sequence": 17,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
       "stop_id": "stop_andal",
-      "sequence": 18,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
       "stop_id": "stop_raniganj",
-      "sequence": 19,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_abha_jajigram_asansol",
-      "stop_id": "stop_panjabi_more",
-      "sequence": 20,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_abha_jajigram_asansol",
       "stop_id": "stop_asansol",
-      "sequence": 21,
+      "sequence": 14,
       "up_time": "09:10",
       "down_time": "12:20"
     },
@@ -9046,99 +8605,85 @@
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
-      "stop_id": "stop_rasulpur",
+      "stop_id": "stop_shaktigarh",
       "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
-      "stop_id": "stop_shaktigarh",
+      "stop_id": "stop_burdwan_bypass",
       "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
-      "stop_id": "stop_burdwan_bypass",
-      "sequence": 10,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_burdwan_nababhat_bus_stand",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "07:45",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_galsi",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_budbud",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_panagarh",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "08:45",
       "down_time": "14:15"
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_muchipara",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_durgapur_city_centre",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": "09:10",
       "down_time": "13:45"
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_bhiringi_more",
-      "sequence": 17,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
-      "stop_id": "stop_raniganj",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_panjabi_more",
-      "sequence": 19,
+      "sequence": 17,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_kalipahari_more",
-      "sequence": 20,
+      "sequence": 18,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
       "stop_id": "stop_asansol",
-      "sequence": 21,
+      "sequence": 19,
       "up_time": null,
       "down_time": "12:40"
     },
@@ -9382,29 +8927,22 @@
     },
     {
       "bus_id": "bus_mousumi_disha_travels_khatra_raniganj",
-      "stop_id": "stop_gghati",
+      "stop_id": "stop_durlabhpur",
       "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_mousumi_disha_travels_khatra_raniganj",
-      "stop_id": "stop_durlabhpur",
+      "stop_id": "stop_mejia",
       "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_mousumi_disha_travels_khatra_raniganj",
-      "stop_id": "stop_mejia",
-      "sequence": 13,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_mousumi_disha_travels_khatra_raniganj",
       "stop_id": "stop_raniganj",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "10:00",
       "down_time": "11:40"
     },
@@ -9550,64 +9088,50 @@
     },
     {
       "bus_id": "bus_tara_maa_khatra_arambagh",
-      "stop_id": "stop_gopinathpur",
-      "sequence": 16,
-      "up_time": "09:05",
-      "down_time": "13:00"
-    },
-    {
-      "bus_id": "bus_tara_maa_khatra_arambagh",
-      "stop_id": "stop_patpur",
-      "sequence": 17,
-      "up_time": "09:20",
-      "down_time": "12:45"
-    },
-    {
-      "bus_id": "bus_tara_maa_khatra_arambagh",
       "stop_id": "stop_sihar",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": "09:30",
       "down_time": "12:30"
     },
     {
       "bus_id": "bus_tara_maa_khatra_arambagh",
       "stop_id": "stop_joyrambati",
-      "sequence": 19,
+      "sequence": 17,
       "up_time": "09:40",
       "down_time": "12:15"
     },
     {
       "bus_id": "bus_tara_maa_khatra_arambagh",
       "stop_id": "stop_kamarpukur",
-      "sequence": 20,
+      "sequence": 18,
       "up_time": "09:50",
       "down_time": "12:00"
     },
     {
       "bus_id": "bus_tara_maa_khatra_arambagh",
       "stop_id": "stop_pachakhali",
-      "sequence": 21,
+      "sequence": 19,
       "up_time": "10:00",
       "down_time": null
     },
     {
       "bus_id": "bus_tara_maa_khatra_arambagh",
       "stop_id": "stop_goghat",
-      "sequence": 22,
+      "sequence": 20,
       "up_time": "10:15",
       "down_time": null
     },
     {
       "bus_id": "bus_tara_maa_khatra_arambagh",
       "stop_id": "stop_kalipur",
-      "sequence": 23,
+      "sequence": 21,
       "up_time": "10:30",
       "down_time": null
     },
     {
       "bus_id": "bus_tara_maa_khatra_arambagh",
       "stop_id": "stop_arambagh",
-      "sequence": 24,
+      "sequence": 22,
       "up_time": "10:45",
       "down_time": null
     },
@@ -9641,141 +9165,127 @@
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_jayantipur",
-      "sequence": 5,
-      "up_time": "08:30",
-      "down_time": "16:35"
-    },
-    {
-      "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_kalikapur",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "09:00",
       "down_time": "17:35"
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_khirpai",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "09:15",
       "down_time": "18:05"
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_radhanagar",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "09:30",
       "down_time": "18:35"
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_barda_choukan",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "10:00",
       "down_time": "18:50"
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_ghatal",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": null,
       "down_time": "19:00"
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_daspur",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_bakultala",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_sultannagar",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_gaura",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_khukurdaha",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_mechogram",
-      "sequence": 16,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_deulia",
-      "sequence": 17,
+      "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_haldia_more",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_kona_expressway",
-      "sequence": 19,
+      "sequence": 17,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_bally_halt",
-      "sequence": 20,
+      "sequence": 18,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_dakshineswar",
-      "sequence": 21,
+      "sequence": 19,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_dunlop",
-      "sequence": 22,
+      "sequence": 20,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_sinthir_more",
-      "sequence": 23,
+      "sequence": 21,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_kolkata_station",
-      "sequence": 24,
+      "sequence": 22,
       "up_time": null,
       "down_time": null
     },
@@ -10404,134 +9914,120 @@
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
-      "stop_id": "stop_baliara",
-      "sequence": 9,
-      "up_time": "06:35",
-      "down_time": "12:45"
-    },
-    {
-      "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_nanur",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "06:45",
       "down_time": "12:35"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_baliguni",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "06:55",
       "down_time": "12:25"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_bandar",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "07:05",
       "down_time": "12:15"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_khujutipara",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "07:10",
       "down_time": "12:10"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_basapara",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "07:15",
       "down_time": "12:05"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_palitpur_mor",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": "07:18",
       "down_time": "12:02"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_natunhat",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": "07:20",
       "down_time": "11:40"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_mangalkot",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": "07:40",
       "down_time": "11:20"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_muratipur_mor",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": "08:00",
       "down_time": "11:00"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_bamshor",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": "08:20",
       "down_time": "10:40"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_alinagar",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": "08:40",
       "down_time": "10:20"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_narja_mor",
-      "sequence": 21,
+      "sequence": 20,
       "up_time": "09:00",
       "down_time": "10:00"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_dewandighi_mor",
-      "sequence": 22,
+      "sequence": 21,
       "up_time": "09:20",
       "down_time": "09:40"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
-      "stop_id": "stop_bardhaman_station_mor",
-      "sequence": 23,
-      "up_time": "09:40",
-      "down_time": "09:20"
-    },
-    {
-      "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_college_mor",
-      "sequence": 24,
+      "sequence": 22,
       "up_time": "09:50",
       "down_time": "09:10"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_city_hotel",
-      "sequence": 25,
+      "sequence": 23,
       "up_time": "10:00",
       "down_time": "09:00"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_golapbag",
-      "sequence": 26,
+      "sequence": 24,
       "up_time": "10:05",
       "down_time": "08:55"
     },
     {
       "bus_id": "bus_shaktiman_travels_langalhata_nababhat_mor",
       "stop_id": "stop_nababhat_mor",
-      "sequence": 27,
+      "sequence": 25,
       "up_time": "10:10",
       "down_time": "10:10"
     },
@@ -10579,92 +10075,78 @@
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
-      "stop_id": "stop_nadighat",
+      "stop_id": "stop_bikrampur",
       "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
-      "stop_id": "stop_bikrampur",
+      "stop_id": "stop_p_more",
       "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
-      "stop_id": "stop_p_more",
+      "stop_id": "stop_pingboni",
       "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
-      "stop_id": "stop_sarenga",
-      "sequence": 10,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
-      "stop_id": "stop_pingboni",
-      "sequence": 11,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
       "stop_id": "stop_goaltore",
-      "sequence": 12,
+      "sequence": 10,
       "up_time": null,
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
       "stop_id": "stop_pirakata",
-      "sequence": 13,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
       "stop_id": "stop_satpati",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
       "stop_id": "stop_maupal",
-      "sequence": 15,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
       "stop_id": "stop_patharkumkumi",
-      "sequence": 16,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
       "stop_id": "stop_bhadutala",
-      "sequence": 17,
+      "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
       "stop_id": "stop_keranichati",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_sonali_ma_durga_manbazar_medinipur",
       "stop_id": "stop_medinipur",
-      "sequence": 19,
+      "sequence": 17,
       "up_time": null,
       "down_time": "13:50"
     },
@@ -10866,71 +10348,43 @@
     },
     {
       "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_mirzapur",
+      "stop_id": "stop_paniparul",
       "sequence": 17,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_negua",
+      "stop_id": "stop_depal",
       "sequence": 18,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_chorpalia",
+      "stop_id": "stop_thikra",
       "sequence": 19,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_paniparul",
+      "stop_id": "stop_fatepur",
       "sequence": 20,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_depal",
+      "stop_id": "stop_alankarpur",
       "sequence": 21,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_ramnagar",
-      "sequence": 22,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_thikra",
-      "sequence": 23,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_fatepur",
-      "sequence": 24,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_gobinda_majestic_medinipur_digha",
-      "stop_id": "stop_alankarpur",
-      "sequence": 25,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_gobinda_majestic_medinipur_digha",
       "stop_id": "stop_digha",
-      "sequence": 26,
+      "sequence": 22,
       "up_time": null,
       "down_time": "14:20"
     },
@@ -10957,22 +10411,15 @@
     },
     {
       "bus_id": "bus_rbn_travels_medinipur_tatanagar",
-      "stop_id": "stop_belpahari",
-      "sequence": 4,
-      "up_time": "07:40",
-      "down_time": "16:45"
-    },
-    {
-      "bus_id": "bus_rbn_travels_medinipur_tatanagar",
       "stop_id": "stop_banduan",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "09:15",
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_rbn_travels_medinipur_tatanagar",
       "stop_id": "stop_tatanagar",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "10:40",
       "down_time": "13:40"
     },
@@ -10992,232 +10439,211 @@
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
-      "stop_id": "stop_madpur",
-      "sequence": 3,
-      "up_time": "07:40",
-      "down_time": "19:05"
-    },
-    {
-      "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
-      "stop_id": "stop_basantapur",
-      "sequence": 4,
-      "up_time": "07:50",
-      "down_time": "18:55"
-    },
-    {
-      "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_debra",
-      "sequence": 5,
+      "sequence": 3,
       "up_time": "08:00",
       "down_time": "18:45"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_ashari",
-      "sequence": 6,
+      "sequence": 4,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_ratulia",
-      "sequence": 7,
+      "sequence": 5,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_mechogram",
-      "sequence": 8,
+      "sequence": 6,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_siddha_bazar",
-      "sequence": 9,
+      "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_deulia_bazar",
-      "sequence": 10,
+      "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_haldia_more",
-      "sequence": 11,
+      "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_kolaghat",
-      "sequence": 12,
+      "sequence": 10,
       "up_time": "08:40",
       "down_time": "17:20"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_bagnan",
-      "sequence": 13,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_uluberia",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_dhulagarh",
-      "sequence": 15,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
-      "stop_id": "stop_alampur",
-      "sequence": 16,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_kona_expressway",
-      "sequence": 17,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_balihalt",
-      "sequence": 18,
+      "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_dakshineswar",
-      "sequence": 19,
+      "sequence": 16,
       "up_time": "10:00",
       "down_time": "16:45"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_dunlop",
-      "sequence": 20,
+      "sequence": 17,
       "up_time": "10:10",
       "down_time": "16:35"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_sodepur",
-      "sequence": 21,
+      "sequence": 18,
       "up_time": "10:25",
       "down_time": "16:20"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_barrackpore",
-      "sequence": 22,
+      "sequence": 19,
       "up_time": "10:40",
       "down_time": "16:05"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_naihati",
-      "sequence": 23,
+      "sequence": 20,
       "up_time": "10:55",
       "down_time": "15:50"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_kanchrapara_jonpur_more",
-      "sequence": 24,
+      "sequence": 21,
       "up_time": "11:15",
       "down_time": "15:40"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_kalyani_aiims",
-      "sequence": 25,
+      "sequence": 22,
       "up_time": "11:35",
       "down_time": "15:25"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_kalyani_more",
-      "sequence": 26,
+      "sequence": 23,
       "up_time": "11:45",
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_chakdaha",
-      "sequence": 27,
+      "sequence": 24,
       "up_time": "11:55",
       "down_time": "15:05"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_ranaghat",
-      "sequence": 28,
+      "sequence": 25,
       "up_time": "12:05",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_phulia",
-      "sequence": 29,
+      "sequence": 26,
       "up_time": "12:15",
       "down_time": "14:35"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_shantipur_bypass",
-      "sequence": 30,
+      "sequence": 27,
       "up_time": "12:25",
       "down_time": "14:30"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_krishnanagar_highroad",
-      "sequence": 31,
+      "sequence": 28,
       "up_time": "12:40",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_chaugacha",
-      "sequence": 32,
+      "sequence": 29,
       "up_time": "12:45",
       "down_time": "14:10"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_shondanga",
-      "sequence": 33,
+      "sequence": 30,
       "up_time": "12:50",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_bamanpukur",
-      "sequence": 34,
+      "sequence": 31,
       "up_time": "12:55",
       "down_time": "14:00"
     },
     {
       "bus_id": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
       "stop_id": "stop_mayapur_iskcon",
-      "sequence": 35,
+      "sequence": 32,
       "up_time": "13:00",
       "down_time": "13:45"
     },
@@ -11629,106 +11055,78 @@
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
-      "stop_id": "stop_birbhanpur",
-      "sequence": 10,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_p_more",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "05:20",
       "down_time": "10:25"
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
-      "stop_id": "stop_hetyagora",
-      "sequence": 12,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_bikrampur",
-      "sequence": 13,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_simlapal",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": "05:45",
       "down_time": "10:05"
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_palkra",
-      "sequence": 15,
+      "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_kanali",
-      "sequence": 16,
+      "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_taldangra",
-      "sequence": 17,
+      "sequence": 15,
       "up_time": "06:10",
       "down_time": "09:40"
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_shibdanga_more",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_ratanpur",
-      "sequence": 19,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
-      "stop_id": "stop_natungram",
-      "sequence": 20,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
-      "stop_id": "stop_dhaldaunga",
-      "sequence": 21,
+      "sequence": 17,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_bankura_bypass",
-      "sequence": 22,
+      "sequence": 18,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_lalbazar",
-      "sequence": 23,
+      "sequence": 19,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_shefali_phulberia_bankura_bus_stand",
       "stop_id": "stop_bankura_bus_stand",
-      "sequence": 24,
+      "sequence": 20,
       "up_time": "07:20",
       "down_time": "08:30"
     },
@@ -11762,162 +11160,120 @@
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
-      "stop_id": "stop_sarenga",
-      "sequence": 5,
-      "up_time": "07:35",
-      "down_time": "16:40"
-    },
-    {
-      "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_pingboni",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "07:55",
       "down_time": "16:25"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
-      "stop_id": "stop_goaltore",
-      "sequence": 7,
-      "up_time": "08:30",
-      "down_time": "15:40"
-    },
-    {
-      "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_chandrakona_road",
-      "sequence": 8,
+      "sequence": 6,
       "up_time": "09:15",
       "down_time": "16:20"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_guadah",
-      "sequence": 9,
+      "sequence": 7,
       "up_time": "09:30",
       "down_time": "15:55"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_baharasole",
-      "sequence": 10,
+      "sequence": 8,
       "up_time": "09:40",
       "down_time": "15:45"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_chandrakona_town",
-      "sequence": 11,
+      "sequence": 9,
       "up_time": "09:55",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
-      "stop_id": "stop_jayantipur",
-      "sequence": 12,
-      "up_time": "10:10",
-      "down_time": "15:20"
-    },
-    {
-      "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_kalikapur",
-      "sequence": 13,
+      "sequence": 10,
       "up_time": "10:20",
       "down_time": "15:10"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
-      "stop_id": "stop_banka",
-      "sequence": 14,
-      "up_time": "10:30",
-      "down_time": "15:00"
-    },
-    {
-      "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_khirpai",
-      "sequence": 15,
+      "sequence": 11,
       "up_time": "10:45",
       "down_time": "14:50"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_jara",
-      "sequence": 16,
+      "sequence": 12,
       "up_time": "10:55",
       "down_time": "14:40"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_srinagar",
-      "sequence": 17,
+      "sequence": 13,
       "up_time": "11:05",
       "down_time": "14:35"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_ramjibanpur",
-      "sequence": 18,
+      "sequence": 14,
       "up_time": "11:10",
       "down_time": "14:30"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_hajipur",
-      "sequence": 19,
+      "sequence": 15,
       "up_time": "11:15",
       "down_time": "14:25"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_kamarpukur",
-      "sequence": 20,
+      "sequence": 16,
       "up_time": "11:20",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_goghat",
-      "sequence": 21,
+      "sequence": 17,
       "up_time": "11:25",
       "down_time": "14:15"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_arambagh",
-      "sequence": 22,
+      "sequence": 18,
       "up_time": "11:30",
       "down_time": "14:00"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_mayapur",
-      "sequence": 23,
+      "sequence": 19,
       "up_time": "11:45",
       "down_time": "13:45"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
-      "stop_id": "stop_sodepur",
-      "sequence": 24,
-      "up_time": "11:55",
-      "down_time": "13:30"
-    },
-    {
-      "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
-      "stop_id": "stop_pursurah",
-      "sequence": 25,
-      "up_time": "12:10",
-      "down_time": "13:20"
-    },
-    {
-      "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_champadanga",
-      "sequence": 26,
+      "sequence": 20,
       "up_time": "12:25",
       "down_time": "13:10"
     },
     {
       "bus_id": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
       "stop_id": "stop_tarakeswar",
-      "sequence": 27,
+      "sequence": 21,
       "up_time": "12:45",
       "down_time": "12:55"
     },
@@ -12350,169 +11706,155 @@
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
-      "stop_id": "stop_para",
-      "sequence": 11,
-      "up_time": "08:45",
-      "down_time": "17:00"
-    },
-    {
-      "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_dubra",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "08:50",
       "down_time": "16:55"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_rukni_more",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "08:55",
       "down_time": "16:50"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_gobindapur",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "09:00",
       "down_time": "16:45"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_dandua",
-      "sequence": 15,
+      "sequence": 14,
       "up_time": "09:03",
       "down_time": "16:40"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_cheliyama",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": "09:05",
       "down_time": "16:35"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_trishuldanga",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": "09:15",
       "down_time": "16:25"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_moutarh",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": "09:25",
       "down_time": "16:15"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_gobaranda",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": "09:35",
       "down_time": "16:05"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_mangalda",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": "09:40",
       "down_time": "16:00"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_raghunathpur",
-      "sequence": 21,
+      "sequence": 20,
       "up_time": "09:50",
       "down_time": "15:50"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_bundala",
-      "sequence": 22,
+      "sequence": 21,
       "up_time": "10:00",
       "down_time": "15:40"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_jharukhamar",
-      "sequence": 23,
+      "sequence": 22,
       "up_time": "10:05",
       "down_time": "15:35"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_laksmanpur",
-      "sequence": 24,
+      "sequence": 23,
       "up_time": "10:10",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_gobag",
-      "sequence": 25,
+      "sequence": 24,
       "up_time": "10:15",
       "down_time": "15:25"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_subhas_more",
-      "sequence": 26,
+      "sequence": 25,
       "up_time": "10:20",
       "down_time": "15:20"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_inanpur",
-      "sequence": 27,
+      "sequence": 26,
       "up_time": "10:25",
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_digha_gram",
-      "sequence": 28,
+      "sequence": 27,
       "up_time": "10:30",
       "down_time": "15:10"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_bartoria",
-      "sequence": 29,
+      "sequence": 28,
       "up_time": "10:35",
       "down_time": "15:00"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_sarbari_more",
-      "sequence": 30,
+      "sequence": 29,
       "up_time": "10:40",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_nituria",
-      "sequence": 31,
+      "sequence": 30,
       "up_time": "10:55",
       "down_time": "14:30"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_parbelia",
-      "sequence": 32,
+      "sequence": 31,
       "up_time": "11:10",
       "down_time": "14:15"
     },
     {
       "bus_id": "bus_challenger_purulia_asansol",
-      "stop_id": "stop_neamatpur",
-      "sequence": 33,
-      "up_time": "11:25",
-      "down_time": "14:00"
-    },
-    {
-      "bus_id": "bus_challenger_purulia_asansol",
       "stop_id": "stop_asansol",
-      "sequence": 34,
+      "sequence": 32,
       "up_time": "11:40",
       "down_time": "13:10"
     },
@@ -12546,260 +11888,204 @@
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_sitarampur",
+      "stop_id": "stop_keshia",
       "sequence": 5,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_dangarpara_mor",
-      "sequence": 6,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_chingra",
-      "sequence": 7,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_asna_mor",
-      "sequence": 8,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_keshia",
-      "sequence": 9,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_sarenga",
-      "sequence": 10,
+      "sequence": 6,
       "up_time": "07:25",
       "down_time": "17:50"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_khayerpahari",
-      "sequence": 11,
+      "sequence": 7,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_patharpara",
-      "sequence": 12,
+      "sequence": 8,
       "up_time": "07:50",
       "down_time": "17:20"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_makli",
-      "sequence": 13,
+      "sequence": 9,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_teskona",
-      "sequence": 14,
+      "sequence": 10,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_amlashuli",
-      "sequence": 15,
-      "up_time": "08:30",
-      "down_time": "16:50"
-    },
-    {
-      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_agarbandh",
-      "sequence": 16,
+      "sequence": 11,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_humgarh",
-      "sequence": 17,
+      "sequence": 12,
       "up_time": "08:50",
       "down_time": "16:35"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_bogridihi",
-      "sequence": 18,
+      "sequence": 13,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_habla",
-      "sequence": 19,
+      "sequence": 14,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_fatesinghpur",
-      "sequence": 20,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_gatebazar",
-      "sequence": 21,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_radhanagar",
-      "sequence": 22,
+      "sequence": 15,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_amlagora",
-      "sequence": 23,
+      "sequence": 16,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_garbeta",
-      "sequence": 24,
+      "sequence": 17,
       "up_time": "09:40",
       "down_time": "16:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_moldanga",
-      "sequence": 25,
+      "sequence": 18,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_dhadika",
-      "sequence": 26,
+      "sequence": 19,
       "up_time": "10:00",
       "down_time": "15:40"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_bonkati",
-      "sequence": 27,
-      "up_time": "00:00",
-      "down_time": "00:00"
-    },
-    {
-      "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
-      "stop_id": "stop_shyamnagar",
-      "sequence": 28,
+      "sequence": 20,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_phulberia",
-      "sequence": 29,
+      "sequence": 21,
       "up_time": "10:20",
       "down_time": "15:20"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_bostom_mor",
-      "sequence": 30,
+      "sequence": 22,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_bhedua",
-      "sequence": 31,
+      "sequence": 23,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_master_mor",
-      "sequence": 32,
+      "sequence": 24,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_uttarbil",
-      "sequence": 33,
+      "sequence": 25,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_banshda",
-      "sequence": 34,
+      "sequence": 26,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_badambari",
-      "sequence": 35,
+      "sequence": 27,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_chamkaithala",
-      "sequence": 36,
+      "sequence": 28,
       "up_time": "10:50",
       "down_time": "14:50"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_sandhipur",
-      "sequence": 37,
+      "sequence": 29,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_bhagabantapur",
-      "sequence": 38,
+      "sequence": 30,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_krishnapur",
-      "sequence": 39,
+      "sequence": 31,
       "up_time": "00:00",
       "down_time": "00:00"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_srinagar",
-      "sequence": 40,
+      "sequence": 32,
       "up_time": "00:00",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_moniraj_ramgarh_ramjibanpur",
       "stop_id": "stop_ramjibanpur",
-      "sequence": 41,
+      "sequence": 33,
       "up_time": "00:00",
       "down_time": "13:50"
     },
@@ -12924,78 +12210,64 @@
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
-      "stop_id": "stop_moregram",
-      "sequence": 10,
-      "up_time": "23:20",
-      "down_time": "01:15"
-    },
-    {
-      "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
-      "stop_id": "stop_omarpur",
-      "sequence": 11,
-      "up_time": "23:50",
-      "down_time": "01:00"
-    },
-    {
-      "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_rampurhat",
-      "sequence": 12,
+      "sequence": 10,
       "up_time": "00:20",
       "down_time": "00:50"
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_dhuliyan",
-      "sequence": 13,
+      "sequence": 11,
       "up_time": "00:55",
       "down_time": "00:30"
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_farakka",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": "01:20",
       "down_time": "00:10"
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_kaliachak",
-      "sequence": 15,
+      "sequence": 13,
       "up_time": "01:55",
       "down_time": "23:59"
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_malda",
-      "sequence": 16,
+      "sequence": 14,
       "up_time": "02:30",
       "down_time": "23:45"
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_gazole",
-      "sequence": 17,
+      "sequence": 15,
       "up_time": "02:50",
       "down_time": "22:30"
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_raiganj",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": "04:00",
       "down_time": "21:20"
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_islampur",
-      "sequence": 19,
+      "sequence": 17,
       "up_time": "06:25",
       "down_time": "18:15"
     },
     {
       "bus_id": "bus_subarna_paribahan_ranibandh_siliguri",
       "stop_id": "stop_siliguri",
-      "sequence": 20,
+      "sequence": 18,
       "up_time": "07:35",
       "down_time": "17:45"
     },
@@ -13057,99 +12329,85 @@
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
-      "stop_id": "stop_badulia",
-      "sequence": 2,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
-      "stop_id": "stop_berugram",
-      "sequence": 3,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_khandaghosh",
-      "sequence": 4,
+      "sequence": 2,
       "up_time": "07:45",
       "down_time": "16:30"
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_rasulpur",
-      "sequence": 5,
+      "sequence": 3,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_dulalpur",
-      "sequence": 6,
+      "sequence": 4,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_dhansimla",
-      "sequence": 7,
+      "sequence": 5,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_patrasayer",
-      "sequence": 8,
+      "sequence": 6,
       "up_time": "08:30",
       "down_time": "15:40"
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_sonamukhi",
-      "sequence": 9,
+      "sequence": 7,
       "up_time": "09:15",
       "down_time": "15:10"
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_chhandar",
-      "sequence": 10,
+      "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_beliatore",
-      "sequence": 11,
+      "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_makurgram",
-      "sequence": 12,
+      "sequence": 10,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_hebir_more",
-      "sequence": 13,
+      "sequence": 11,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_bankura_bypass",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
       "stop_id": "stop_bankura_bus_stand",
-      "sequence": 15,
+      "sequence": 13,
       "up_time": "10:45",
       "down_time": "13:20"
     },
@@ -13162,85 +12420,78 @@
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
-      "stop_id": "stop_baidyanathpur",
-      "sequence": 2,
-      "up_time": "07:00",
-      "down_time": "17:45"
-    },
-    {
-      "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_arkama",
-      "sequence": 3,
+      "sequence": 2,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_khatra",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": "07:50",
       "down_time": "17:05"
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_supur",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_hatirampur",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_bangla",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "08:35",
       "down_time": "16:00"
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_puabagan",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_bankura_bypass",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "09:20",
       "down_time": "15:25"
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_beliatore",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "09:40",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_barjora",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_durgapur_station",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "10:25",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_soumen_travels_shambazar_durgapur_city_centre",
       "stop_id": "stop_durgapur_city_centre",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "10:40",
       "down_time": "13:30"
     },
@@ -13288,43 +12539,29 @@
     },
     {
       "bus_id": "bus_putul_travels_sonathali_saltora",
-      "stop_id": "stop_bankura_bus_stand",
-      "sequence": 7,
-      "up_time": "08:10",
-      "down_time": "14:25"
-    },
-    {
-      "bus_id": "bus_putul_travels_sonathali_saltora",
       "stop_id": "stop_lohagarh",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "09:15",
       "down_time": "14:50"
     },
     {
       "bus_id": "bus_putul_travels_sonathali_saltora",
-      "stop_id": "stop_jhatipahari",
-      "sequence": 9,
-      "up_time": "09:40",
-      "down_time": "15:10"
-    },
-    {
-      "bus_id": "bus_putul_travels_sonathali_saltora",
       "stop_id": "stop_jorhira",
-      "sequence": 10,
+      "sequence": 8,
       "up_time": "09:50",
       "down_time": "15:40"
     },
     {
       "bus_id": "bus_putul_travels_sonathali_saltora",
       "stop_id": "stop_dhaban",
-      "sequence": 11,
+      "sequence": 9,
       "up_time": "10:00",
       "down_time": "15:50"
     },
     {
       "bus_id": "bus_putul_travels_sonathali_saltora",
       "stop_id": "stop_saltora",
-      "sequence": 12,
+      "sequence": 10,
       "up_time": "10:20",
       "down_time": "16:30"
     },
@@ -13554,50 +12791,43 @@
     },
     {
       "bus_id": "bus_supa_howrah_station_supa_howrah_station",
-      "stop_id": "stop_dhulagarh",
-      "sequence": 23,
-      "up_time": "10:00",
-      "down_time": "14:10"
-    },
-    {
-      "bus_id": "bus_supa_howrah_station_supa_howrah_station",
       "stop_id": "stop_santragachi",
-      "sequence": 24,
+      "sequence": 23,
       "up_time": "10:10",
       "down_time": "14:00"
     },
     {
       "bus_id": "bus_supa_howrah_station_supa_howrah_station",
       "stop_id": "stop_belepol",
-      "sequence": 25,
+      "sequence": 24,
       "up_time": "10:15",
       "down_time": "13:57"
     },
     {
       "bus_id": "bus_supa_howrah_station_supa_howrah_station",
       "stop_id": "stop_tikiapara",
-      "sequence": 26,
+      "sequence": 25,
       "up_time": "10:18",
       "down_time": "13:55"
     },
     {
       "bus_id": "bus_supa_howrah_station_supa_howrah_station",
       "stop_id": "stop_howrah_bypass",
-      "sequence": 27,
+      "sequence": 26,
       "up_time": "10:20",
       "down_time": "13:53"
     },
     {
       "bus_id": "bus_supa_howrah_station_supa_howrah_station",
       "stop_id": "stop_howrah_maidan",
-      "sequence": 28,
+      "sequence": 27,
       "up_time": "10:22",
       "down_time": "13:51"
     },
     {
       "bus_id": "bus_supa_howrah_station_supa_howrah_station",
       "stop_id": "stop_howrah_station",
-      "sequence": 29,
+      "sequence": 28,
       "up_time": "10:25",
       "down_time": "13:50"
     },
@@ -13610,85 +12840,78 @@
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
-      "stop_id": "stop_panchmura",
-      "sequence": 2,
-      "up_time": "04:50",
-      "down_time": "16:55"
-    },
-    {
-      "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_sabrakone",
-      "sequence": 3,
+      "sequence": 2,
       "up_time": "05:15",
       "down_time": "16:40"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_bishnupur",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": "05:45",
       "down_time": "16:20"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_kotulpur",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "06:30",
       "down_time": "15:10"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_bengai",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "06:50",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_arambagh",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "07:15",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_mayapur",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "07:40",
       "down_time": "14:00"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_champadanga",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "08:00",
       "down_time": "13:40"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_dankuni",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "08:35",
       "down_time": "13:05"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_salap",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "08:50",
       "down_time": "12:45"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_santragachi",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "09:00",
       "down_time": "12:30"
     },
     {
       "bus_id": "bus_kolkata_taldangra_dharmatala",
       "stop_id": "stop_dharmatala_kolkata",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "09:15",
       "down_time": "12:15"
     },
@@ -13792,43 +13015,36 @@
     },
     {
       "bus_id": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
-      "stop_id": "stop_arambagh",
-      "sequence": 15,
-      "up_time": null,
-      "down_time": "11:25"
-    },
-    {
-      "bus_id": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
       "stop_id": "stop_bulchandrapur",
-      "sequence": 16,
+      "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
       "stop_id": "stop_uchalan",
-      "sequence": 17,
+      "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
       "stop_id": "stop_sehara_bazar",
-      "sequence": 18,
+      "sequence": 17,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
       "stop_id": "stop_bankura_mor",
-      "sequence": 19,
+      "sequence": 18,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
       "stop_id": "stop_alisha_bus_stand",
-      "sequence": 20,
+      "sequence": 19,
       "up_time": null,
       "down_time": "10:05"
     },
@@ -13841,232 +13057,211 @@
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
-      "stop_id": "stop_champadanga",
-      "sequence": 2,
-      "up_time": "06:50",
-      "down_time": "20:15"
-    },
-    {
-      "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_sodepur",
-      "sequence": 3,
+      "sequence": 2,
       "up_time": "07:10",
       "down_time": "20:05"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_mayapur",
-      "sequence": 4,
+      "sequence": 3,
       "up_time": "07:25",
       "down_time": "19:55"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_arambagh",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "07:35",
       "down_time": "19:55"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_kalipur",
-      "sequence": 6,
+      "sequence": 5,
       "up_time": "07:45",
       "down_time": "19:40"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_goghat",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "07:55",
       "down_time": "19:30"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_kamarpukur",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": "08:10",
       "down_time": "19:15"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_hajipur",
-      "sequence": 9,
+      "sequence": 8,
       "up_time": "08:20",
       "down_time": "19:05"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_ramjibanpur",
-      "sequence": 10,
+      "sequence": 9,
       "up_time": "08:30",
       "down_time": "18:55"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_srinagar",
-      "sequence": 11,
+      "sequence": 10,
       "up_time": "08:45",
       "down_time": "18:40"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_jara",
-      "sequence": 12,
+      "sequence": 11,
       "up_time": "08:55",
       "down_time": "18:30"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_khirpai",
-      "sequence": 13,
+      "sequence": 12,
       "up_time": "09:10",
       "down_time": "18:15"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_radhanagar",
-      "sequence": 14,
+      "sequence": 13,
       "up_time": "09:20",
       "down_time": "18:05"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
-      "stop_id": "stop_barada_chaukan",
-      "sequence": 15,
-      "up_time": "09:25",
-      "down_time": "17:55"
-    },
-    {
-      "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_ghatal",
-      "sequence": 16,
+      "sequence": 14,
       "up_time": "09:30",
       "down_time": "17:20"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_daspur",
-      "sequence": 17,
+      "sequence": 15,
       "up_time": "09:55",
       "down_time": "16:55"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
-      "stop_id": "stop_sultan_nagar",
-      "sequence": 18,
-      "up_time": "10:10",
-      "down_time": "16:40"
-    },
-    {
-      "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_gaura",
-      "sequence": 19,
+      "sequence": 16,
       "up_time": "10:15",
       "down_time": "16:35"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_sonamui",
-      "sequence": 20,
+      "sequence": 17,
       "up_time": "10:25",
       "down_time": "16:25"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_khukurdaha",
-      "sequence": 21,
+      "sequence": 18,
       "up_time": "10:35",
       "down_time": "16:15"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_keshapat",
-      "sequence": 22,
+      "sequence": 19,
       "up_time": "10:45",
       "down_time": "16:05"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_mechogram",
-      "sequence": 23,
+      "sequence": 20,
       "up_time": "10:50",
       "down_time": "16:00"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_siddha_bazar",
-      "sequence": 24,
+      "sequence": 21,
       "up_time": "10:52",
       "down_time": "15:58"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_deulia_bazar",
-      "sequence": 25,
+      "sequence": 22,
       "up_time": "10:55",
       "down_time": "15:57"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_mecheda_station",
-      "sequence": 26,
+      "sequence": 23,
       "up_time": "11:00",
       "down_time": "15:55"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_maniktala",
-      "sequence": 27,
+      "sequence": 24,
       "up_time": "11:15",
       "down_time": "15:40"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_tamluk",
-      "sequence": 28,
+      "sequence": 25,
       "up_time": "11:30",
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_nandakumar_bazar",
-      "sequence": 29,
+      "sequence": 26,
       "up_time": "11:45",
       "down_time": "15:00"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_mahishadal",
-      "sequence": 30,
+      "sequence": 27,
       "up_time": "12:00",
       "down_time": "14:45"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_chaitanyapur",
-      "sequence": 31,
+      "sequence": 28,
       "up_time": "12:15",
       "down_time": "14:30"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_manjushree_more",
-      "sequence": 32,
+      "sequence": 29,
       "up_time": "12:25",
       "down_time": "14:20"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_durgachak",
-      "sequence": 33,
+      "sequence": 30,
       "up_time": "12:35",
       "down_time": "14:05"
     },
     {
       "bus_id": "bus_akashbristi_tarakeshwar_haldia",
       "stop_id": "stop_haldia",
-      "sequence": 34,
+      "sequence": 31,
       "up_time": "12:45",
       "down_time": "13:55"
     },
@@ -14310,295 +13505,260 @@
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
-      "stop_id": "stop_gopinathpur",
-      "sequence": 2,
-      "up_time": "04:20",
-      "down_time": "21:40"
-    },
-    {
-      "bus_id": "bus_jashoda_telami_howrah_station",
-      "stop_id": "stop_kasbagola",
-      "sequence": 3,
-      "up_time": "04:30",
-      "down_time": "21:30"
-    },
-    {
-      "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_panchrol",
-      "sequence": 4,
+      "sequence": 2,
       "up_time": "04:38",
       "down_time": "21:22"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_alangiri",
-      "sequence": 5,
+      "sequence": 3,
       "up_time": "04:45",
       "down_time": "21:15"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_jerthan",
-      "sequence": 6,
+      "sequence": 4,
       "up_time": "04:48",
       "down_time": "21:10"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_kudi",
-      "sequence": 7,
+      "sequence": 5,
       "up_time": "04:52",
       "down_time": "21:05"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_dobadhi_more",
-      "sequence": 8,
+      "sequence": 6,
       "up_time": "04:56",
       "down_time": "21:00"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_egra_digha_more",
-      "sequence": 9,
+      "sequence": 7,
       "up_time": "05:00",
       "down_time": "20:50"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_dobadhi",
-      "sequence": 10,
+      "sequence": 8,
       "up_time": "05:05",
       "down_time": "20:40"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_balighai",
-      "sequence": 11,
+      "sequence": 9,
       "up_time": "05:10",
       "down_time": "20:35"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_tajpur",
-      "sequence": 12,
+      "sequence": 10,
       "up_time": "05:15",
       "down_time": "20:30"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_bhavanichak",
-      "sequence": 13,
+      "sequence": 11,
       "up_time": "05:18",
       "down_time": "20:25"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_satmile",
-      "sequence": 14,
+      "sequence": 12,
       "up_time": "05:22",
       "down_time": "20:20"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_rautara",
-      "sequence": 15,
+      "sequence": 13,
       "up_time": "05:27",
       "down_time": "20:15"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_keshurkunda",
-      "sequence": 16,
+      "sequence": 14,
       "up_time": "05:32",
       "down_time": "20:10"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_contai_kanthi",
-      "sequence": 17,
+      "sequence": 15,
       "up_time": "05:40",
       "down_time": "20:00"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_marishda",
-      "sequence": 18,
+      "sequence": 16,
       "up_time": "05:55",
       "down_time": "19:45"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_nachinda",
-      "sequence": 19,
+      "sequence": 17,
       "up_time": "06:10",
       "down_time": "19:30"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_kalinagar",
-      "sequence": 20,
+      "sequence": 18,
       "up_time": "06:20",
       "down_time": "19:20"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_heria",
-      "sequence": 21,
+      "sequence": 19,
       "up_time": "06:35",
       "down_time": "19:05"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_bajkul",
-      "sequence": 22,
+      "sequence": 20,
       "up_time": "06:50",
       "down_time": "18:50"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_chandipur",
-      "sequence": 23,
+      "sequence": 21,
       "up_time": "07:05",
       "down_time": "18:35"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_norghat",
-      "sequence": 24,
+      "sequence": 22,
       "up_time": "07:15",
       "down_time": "18:25"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_nandakumar",
-      "sequence": 25,
+      "sequence": 23,
       "up_time": "07:30",
       "down_time": "18:10"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_nimtouri",
-      "sequence": 26,
+      "sequence": 24,
       "up_time": "07:45",
       "down_time": "17:55"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_radhamoni",
-      "sequence": 27,
+      "sequence": 25,
       "up_time": "07:55",
       "down_time": "17:45"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_mecheda",
-      "sequence": 28,
+      "sequence": 26,
       "up_time": "08:10",
       "down_time": "17:30"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_kolaghat",
-      "sequence": 29,
+      "sequence": 27,
       "up_time": "08:20",
       "down_time": "17:20"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_bagnan",
-      "sequence": 30,
+      "sequence": 28,
       "up_time": "08:40",
       "down_time": "17:05"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_uluberia_nimdighi",
-      "sequence": 31,
+      "sequence": 29,
       "up_time": "09:00",
       "down_time": "16:50"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_ranihati",
-      "sequence": 32,
+      "sequence": 30,
       "up_time": "09:15",
       "down_time": "16:40"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_dhulagarh",
-      "sequence": 33,
+      "sequence": 31,
       "up_time": "09:25",
       "down_time": "16:35"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
-      "stop_id": "stop_alampur",
-      "sequence": 34,
-      "up_time": "09:35",
-      "down_time": "16:30"
-    },
-    {
-      "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_kona_expressway",
-      "sequence": 35,
+      "sequence": 32,
       "up_time": "09:45",
       "down_time": "16:25"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_santragachi",
-      "sequence": 36,
+      "sequence": 33,
       "up_time": "09:55",
       "down_time": "16:15"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_belepol",
-      "sequence": 37,
+      "sequence": 34,
       "up_time": "10:05",
       "down_time": "16:05"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
-      "stop_id": "stop_2nd_hooghly_bridge",
-      "sequence": 38,
-      "up_time": "10:15",
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jashoda_telami_howrah_station",
-      "stop_id": "stop_hastings",
-      "sequence": 39,
-      "up_time": "10:20",
-      "down_time": "15:05"
-    },
-    {
-      "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_mayo_road",
-      "sequence": 40,
+      "sequence": 35,
       "up_time": "10:25",
       "down_time": "14:55"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_babughat",
-      "sequence": 41,
+      "sequence": 36,
       "up_time": "10:30",
       "down_time": "15:15"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_burrabazar",
-      "sequence": 42,
+      "sequence": 37,
       "up_time": "10:35",
       "down_time": "15:30"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_howrah_station",
-      "sequence": 43,
+      "sequence": 38,
       "up_time": "10:45",
       "down_time": "15:50"
     },
