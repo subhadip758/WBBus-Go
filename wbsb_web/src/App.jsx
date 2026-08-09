@@ -990,7 +990,7 @@ function computeDelayMinutes(nearest, observedAt) {
   return actualMinutes - scheduledMinutes;
 }
 
-// Robust road-following router using OSRM through ALL consecutive bus stops
+// Exact road-following router using OSRM through ALL consecutive bus stops (like Google Maps)
 async function fetchRoadRoute(coordStops) {
   if (!coordStops || coordStops.length < 2) return [];
 
@@ -1009,49 +1009,50 @@ async function fetchRoadRoute(coordStops) {
 
   if (uniqueStops.length < 2) return [];
 
-  // Helper to query OSRM for a single leg (two waypoints) and return both the
-  // road geometry and the road distance, so we can sanity-check it below.
-  const queryOSRM = async (stops) => {
-    const coordsString = stops.map(s => `${s.longitude},${s.latitude}`).join(';');
-    const radiuses = stops.map(() => '300').join(';');
-    const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson&continue_straight=true&radiuses=${radiuses}`;
+  // 1. Try full multi-waypoint OSRM driving route first for a seamless real-world road path like Google Maps
+  try {
+    const coordsString = uniqueStops.map(s => `${s.longitude},${s.latitude}`).join(';');
+    const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson`;
+    const res = await fetch(url);
+    if (res.ok) {
+      const data = await res.json();
+      if (data.code === 'Ok' && data.routes && data.routes.length > 0) {
+        const roadCoords = data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]);
+        if (roadCoords && roadCoords.length > 0) {
+          return roadCoords;
+        }
+      }
+    }
+  } catch (err) {
+    console.warn("Full multi-waypoint OSRM query failed, falling back to leg-by-leg routing:", err);
+  }
+
+  // 2. Fallback: leg-by-leg OSRM routing between consecutive stop pairs
+  const queryOSRMLeg = async (s1, s2) => {
+    const url = `https://router.project-osrm.org/route/v1/driving/${s1.longitude},${s1.latitude};${s2.longitude},${s2.latitude}?overview=full&geometries=geojson`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`OSRM HTTP error ${res.status}`);
     const data = await res.json();
     if (data.code !== 'Ok' || !data.routes || data.routes.length === 0) {
       throw new Error(`OSRM routing failed with code ${data.code}`);
     }
-    return {
-      coords: data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]), // [lat, lng]
-      distanceKm: data.routes[0].distance / 1000
-    };
+    return data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]); // [lat, lng]
   };
 
-  // Strictly enforce main road corridor:
-  // If road distance > 1.35x straight line distance, it's taking an unnecessary bypass loop, so discard it!
-  const MAX_DETOUR_RATIO = 1.35;
   const allRoadPoints = [];
 
   for (let i = 0; i < uniqueStops.length - 1; i++) {
     const a = uniqueStops[i];
     const b = uniqueStops[i + 1];
-    const straightKm = haversineKm(a.latitude, a.longitude, b.latitude, b.longitude);
 
     let legPoints = null;
     try {
-      const { coords, distanceKm } = await queryOSRM([a, b]);
-      const isSuspiciousDetour = straightKm > 0.05 && distanceKm > straightKm * MAX_DETOUR_RATIO;
-      if (isSuspiciousDetour) {
-        console.warn(`Discarding bypass OSRM leg ${a.stopName} -> ${b.stopName}: road ${distanceKm.toFixed(1)}km vs straight ${straightKm.toFixed(1)}km`);
-      } else if (coords && coords.length > 0) {
-        legPoints = coords;
-      }
+      legPoints = await queryOSRMLeg(a, b);
     } catch (err) {
-      console.warn(`Leg routing ${a.stopName} -> ${b.stopName} failed, using straight main-road line:`, err);
+      console.warn(`Leg routing ${a.stopName || a.stop_name} -> ${b.stopName || b.stop_name} failed:`, err);
     }
 
-    if (!legPoints) {
-      // Fallback: direct main-road connection between consecutive bus stops
+    if (!legPoints || legPoints.length === 0) {
       legPoints = [[a.latitude, a.longitude], [b.latitude, b.longitude]];
     }
 

@@ -9,8 +9,8 @@
     {
       "stop_id": "stop_shyambazar",
       "stop_name": "Shyambazar",
-      "latitude": 22.574325,
-      "longitude": 88.36054
+      "latitude": 22.5979916,
+      "longitude": 88.3694857
     },
     {
       "stop_id": "stop_dunlop",
@@ -39,86 +39,86 @@
     {
       "stop_id": "stop_chanditala",
       "stop_name": "Chanditala",
-      "latitude": 22.6890228,
-      "longitude": 88.2629156
+      "latitude": 22.689,
+      "longitude": 88.2629
     },
     {
       "stop_id": "stop_mosat",
       "stop_name": "Mosat",
-      "latitude": 22.739012566666666,
-      "longitude": 88.16575436666666
+      "latitude": 22.739,
+      "longitude": 88.1658
     },
     {
       "stop_id": "stop_siakhala",
       "stop_name": "Siakhala",
-      "latitude": 22.789002333333332,
-      "longitude": 88.06859313333334
+      "latitude": 22.789,
+      "longitude": 88.0686
     },
     {
       "stop_id": "stop_champadanga",
       "stop_name": "Champadanga",
-      "latitude": 22.829592,
-      "longitude": 87.994641
+      "latitude": 22.839,
+      "longitude": 87.9714
     },
     {
       "stop_id": "stop_mayapur",
       "stop_name": "Mayapur",
-      "latitude": 22.831242,
-      "longitude": 87.860023
+      "latitude": 22.8436,
+      "longitude": 87.8663
     },
     {
       "stop_id": "stop_arambagh",
       "stop_name": "Arambagh",
-      "latitude": 22.906766,
-      "longitude": 87.785235
+      "latitude": 22.8804,
+      "longitude": 87.7816
     },
     {
       "stop_id": "stop_bengai",
       "stop_name": "Bengai",
-      "latitude": 22.909878,
-      "longitude": 87.706826
+      "latitude": 22.9264,
+      "longitude": 87.7153
     },
     {
       "stop_id": "stop_khatul",
       "stop_name": "Khatul",
-      "latitude": 22.946404,
-      "longitude": 87.635668
+      "latitude": 22.9725,
+      "longitude": 87.6491
     },
     {
       "stop_id": "stop_kotulpur",
       "stop_name": "Kotulpur",
-      "latitude": 23.039292,
-      "longitude": 87.606331
+      "latitude": 23.0112,
+      "longitude": 87.5961
     },
     {
       "stop_id": "stop_joypur",
       "stop_name": "Joypur",
-      "latitude": 23.039904,
-      "longitude": 87.453514
+      "latitude": 23.0435,
+      "longitude": 87.4553
     },
     {
       "stop_id": "stop_bishnupur",
       "stop_name": "Bishnupur",
-      "latitude": 23.103829,
-      "longitude": 87.311152
+      "latitude": 23.0757,
+      "longitude": 87.3146
     },
     {
       "stop_id": "stop_ramsagar",
       "stop_name": "Ramsagar",
-      "latitude": 23.134215,
-      "longitude": 87.26978
+      "latitude": 23.1092,
+      "longitude": 87.2569
     },
     {
       "stop_id": "stop_onda",
       "stop_name": "Onda",
-      "latitude": 23.181802,
-      "longitude": 87.216801
+      "latitude": 23.1426,
+      "longitude": 87.1992
     },
     {
       "stop_id": "stop_dhaldanga",
       "stop_name": "Dhaldanga",
-      "latitude": 23.234669,
-      "longitude": 87.076578
+      "latitude": 23.2048,
+      "longitude": 87.0697
     },
     {
       "stop_id": "stop_bankura",
@@ -135,8 +135,8 @@
     {
       "stop_id": "stop_kharbona",
       "stop_name": "Kharbona",
-      "latitude": 23.3077321,
-      "longitude": 86.9067344
+      "latitude": 23.3077,
+      "longitude": 86.9067
     },
     {
       "stop_id": "stop_kamalpur",
@@ -147,26 +147,26 @@
     {
       "stop_id": "stop_bishpuria",
       "stop_name": "Bishpuria",
-      "latitude": 23.278468,
-      "longitude": 86.749282
+      "latitude": 23.30267415,
+      "longitude": 86.752669
     },
     {
       "stop_id": "stop_hura",
       "stop_name": "Hura",
-      "latitude": 23.303321,
-      "longitude": 86.662512
+      "latitude": 23.3014,
+      "longitude": 86.6588
     },
     {
       "stop_id": "stop_lalpur",
       "stop_name": "Lalpur",
-      "latitude": 23.330269,
-      "longitude": 86.599768
+      "latitude": 23.3295,
+      "longitude": 86.5912
     },
     {
       "stop_id": "stop_ladhurka",
       "stop_name": "Ladhurka",
-      "latitude": 23.363454,
-      "longitude": 86.5225
+      "latitude": 23.3575,
+      "longitude": 86.5237
     },
     {
       "stop_id": "stop_purulia",
@@ -207,14 +207,14 @@
     {
       "stop_id": "stop_barjora",
       "stop_name": "Barjora",
-      "latitude": 23.450232,
-      "longitude": 87.255035
+      "latitude": 23.43,
+      "longitude": 87.28
     },
     {
       "stop_id": "stop_durgapur_station",
       "stop_name": "Durgapur (Station)",
-      "latitude": 23.50996,
-      "longitude": 87.302679
+      "latitude": 23.5204,
+      "longitude": 87.3119
     },
     {
       "stop_id": "stop_durgapur_city_center",
@@ -231,8 +231,8 @@
     {
       "stop_id": "stop_panagarh",
       "stop_name": "Panagarh",
-      "latitude": 23.434476,
-      "longitude": 87.460094
+      "latitude": 23.447,
+      "longitude": 87.466
     },
     {
       "stop_id": "stop_bardhaman",
@@ -249,38 +249,38 @@
     {
       "stop_id": "stop_salap",
       "stop_name": "Salap",
-      "latitude": 22.601756,
-      "longitude": 88.282122
+      "latitude": 22.62,
+      "longitude": 88.285
     },
     {
       "stop_id": "stop_kona_expressway_more",
       "stop_name": "Kona Express More",
-      "latitude": 22.595148,
-      "longitude": 88.279424
+      "latitude": 22.615505233333334,
+      "longitude": 88.28345526666666
     },
     {
       "stop_id": "stop_santragachi",
       "stop_name": "Santragachi",
-      "latitude": 22.574017,
-      "longitude": 88.359926
+      "latitude": 22.5747,
+      "longitude": 88.3585
     },
     {
       "stop_id": "stop_makurgram",
       "stop_name": "Makurgram",
-      "latitude": 23.28143,
-      "longitude": 87.118235
+      "latitude": 23.2809404,
+      "longitude": 87.1445952
     },
     {
       "stop_id": "stop_puabagan",
       "stop_name": "Puabagan",
-      "latitude": 23.223518,
-      "longitude": 87.047357
+      "latitude": 23.235,
+      "longitude": 87.045
     },
     {
       "stop_id": "stop_sindri",
       "stop_name": "Sindri",
-      "latitude": 23.065196,
-      "longitude": 86.492225
+      "latitude": 23.0440111,
+      "longitude": 86.4982663
     },
     {
       "stop_id": "stop_manbazar",
@@ -303,20 +303,20 @@
     {
       "stop_id": "stop_bangla",
       "stop_name": "Bangla",
-      "latitude": 23.139958,
-      "longitude": 86.897405
+      "latitude": 23.13258395,
+      "longitude": 86.91507485
     },
     {
       "stop_id": "stop_indpur",
       "stop_name": "Indpur",
-      "latitude": 23.157365,
-      "longitude": 86.926138
+      "latitude": 23.16,
+      "longitude": 86.92
     },
     {
       "stop_id": "stop_sunukpahari",
       "stop_name": "Sunukpahari",
-      "latitude": 23.204736,
-      "longitude": 86.981501
+      "latitude": 23.21,
+      "longitude": 86.98
     },
     {
       "stop_id": "stop_rudra",
@@ -333,32 +333,32 @@
     {
       "stop_id": "stop_mukutmanipur",
       "stop_name": "Mukutmanipur",
-      "latitude": 22.990573,
-      "longitude": 86.792691
+      "latitude": 22.962559,
+      "longitude": 86.7875222
     },
     {
       "stop_id": "stop_khatra",
       "stop_name": "Khatra",
-      "latitude": 22.986894,
-      "longitude": 86.83349
+      "latitude": 22.98,
+      "longitude": 86.85
     },
     {
       "stop_id": "stop_hatirampur",
       "stop_name": "Hatirampur",
-      "latitude": 23.069567,
-      "longitude": 86.888448
+      "latitude": 23.0619965,
+      "longitude": 86.878598
     },
     {
       "stop_id": "stop_budbud",
       "stop_name": "Budbud",
-      "latitude": 23.394737,
-      "longitude": 87.544358
+      "latitude": 23.4014,
+      "longitude": 87.5475
     },
     {
       "stop_id": "stop_galsi",
       "stop_name": "Galsi",
-      "latitude": 23.328102,
-      "longitude": 87.685655
+      "latitude": 23.3388,
+      "longitude": 87.6907
     },
     {
       "stop_id": "stop_haludkanali",
@@ -429,8 +429,8 @@
     {
       "stop_id": "stop_airport_gate_3",
       "stop_name": "Airport Gate 3",
-      "latitude": 22.650129,
-      "longitude": 88.421035
+      "latitude": 22.659640066666668,
+      "longitude": 88.410518
     },
     {
       "stop_id": "stop_akhuta_more",
@@ -465,8 +465,8 @@
     {
       "stop_id": "stop_alankarpur",
       "stop_name": "Alankarpur",
-      "latitude": 21.633581,
-      "longitude": 87.5268
+      "latitude": 21.631,
+      "longitude": 87.518
     },
     {
       "stop_id": "stop_alijhara",
@@ -495,14 +495,14 @@
     {
       "stop_id": "stop_alisha_bus_stand",
       "stop_name": "Alisha Bus Stand",
-      "latitude": 23.2182342,
-      "longitude": 87.8878966
+      "latitude": 23.2324,
+      "longitude": 87.863
     },
     {
       "stop_id": "stop_amanpur",
       "stop_name": "Amanpur",
-      "latitude": 22.6366,
-      "longitude": 87.941533
+      "latitude": 22.63018825625,
+      "longitude": 87.94056111875
     },
     {
       "stop_id": "stop_amarkanan",
@@ -537,8 +537,8 @@
     {
       "stop_id": "stop_amtala",
       "stop_name": "Amtala",
-      "latitude": 22.412024,
-      "longitude": 87.297191
+      "latitude": 22.400624999999998,
+      "longitude": 87.32655
     },
     {
       "stop_id": "stop_andal",
@@ -585,8 +585,8 @@
     {
       "stop_id": "stop_arkama",
       "stop_name": "Arkama",
-      "latitude": 22.977339,
-      "longitude": 86.883982
+      "latitude": 22.99511598,
+      "longitude": 86.88537409999999
     },
     {
       "stop_id": "stop_arra",
@@ -657,8 +657,8 @@
     {
       "stop_id": "stop_badulia",
       "stop_name": "Badulia",
-      "latitude": 23.214779,
-      "longitude": 87.15297
+      "latitude": 23.1972,
+      "longitude": 87.14881
     },
     {
       "stop_id": "stop_baghajatin",
@@ -693,8 +693,8 @@
     {
       "stop_id": "stop_baharasole",
       "stop_name": "Baharasole",
-      "latitude": 22.698903,
-      "longitude": 87.530359
+      "latitude": 22.6877765125,
+      "longitude": 87.5172222375
     },
     {
       "stop_id": "stop_baid",
@@ -729,14 +729,14 @@
     {
       "stop_id": "stop_bajkul",
       "stop_name": "Bajkul",
-      "latitude": 22.002445,
-      "longitude": 87.845813
+      "latitude": 22.0245,
+      "longitude": 87.8214
     },
     {
       "stop_id": "stop_bakhrabad",
       "stop_name": "Bakhrabad",
-      "latitude": 22.117097,
-      "longitude": 87.374432
+      "latitude": 22.11453295,
+      "longitude": 87.3649735
     },
     {
       "stop_id": "stop_bakkhali",
@@ -783,14 +783,14 @@
     {
       "stop_id": "stop_balisai_tajpur",
       "stop_name": "Balisai Tajpur",
-      "latitude": 21.6792,
-      "longitude": 87.595
+      "latitude": 22.357141866666666,
+      "longitude": 88.1709912
     },
     {
       "stop_id": "stop_bally_halt",
       "stop_name": "Bally Halt",
-      "latitude": 22.593956,
-      "longitude": 88.370234
+      "latitude": 22.58375824,
+      "longitude": 88.38150972
     },
     {
       "stop_id": "stop_ballygunge_phari",
@@ -825,8 +825,8 @@
     {
       "stop_id": "stop_bandar",
       "stop_name": "Bandar",
-      "latitude": 23.657842,
-      "longitude": 87.894356
+      "latitude": 23.6585975,
+      "longitude": 87.8841018
     },
     {
       "stop_id": "stop_bandher_par",
@@ -867,8 +867,8 @@
     {
       "stop_id": "stop_bankadaha",
       "stop_name": "Bankadaha",
-      "latitude": 23.005814,
-      "longitude": 87.340295
+      "latitude": 23.004428166666667,
+      "longitude": 87.32822836666666
     },
     {
       "stop_id": "stop_bankajete",
@@ -891,8 +891,8 @@
     {
       "stop_id": "stop_bankura_bypass",
       "stop_name": "Bankura Bypass",
-      "latitude": 23.233653,
-      "longitude": 87.073205
+      "latitude": 23.2324,
+      "longitude": 87.0785
     },
     {
       "stop_id": "stop_bankura_danga",
@@ -993,8 +993,8 @@
     {
       "stop_id": "stop_bardhaman_station_mor",
       "stop_name": "Bardhaman Station Mor",
-      "latitude": 23.236031,
-      "longitude": 87.867856
+      "latitude": 23.2324,
+      "longitude": 87.863
     },
     {
       "stop_id": "stop_barobendya",
@@ -1023,8 +1023,8 @@
     {
       "stop_id": "stop_basapara",
       "stop_name": "Basapara",
-      "latitude": 23.575744,
-      "longitude": 87.888305
+      "latitude": 23.57444821,
+      "longitude": 87.905892035
     },
     {
       "stop_id": "stop_beduasol",
@@ -1041,8 +1041,8 @@
     {
       "stop_id": "stop_beldi",
       "stop_name": "Beldi",
-      "latitude": 23.077767,
-      "longitude": 86.320079
+      "latitude": 23.050895966666666,
+      "longitude": 86.31512123333333
     },
     {
       "stop_id": "stop_beleghata",
@@ -1059,8 +1059,8 @@
     {
       "stop_id": "stop_belgharia_expressway",
       "stop_name": "Belgharia Expressway",
-      "latitude": 22.639901,
-      "longitude": 88.411786
+      "latitude": 22.656068233333333,
+      "longitude": 88.3939091
     },
     {
       "stop_id": "stop_beliatore_station",
@@ -1143,8 +1143,8 @@
     {
       "stop_id": "stop_bhairabsthan",
       "stop_name": "Bhairabsthan",
-      "latitude": 23.240104,
-      "longitude": 87.084743
+      "latitude": 23.23846755,
+      "longitude": 87.0867619
     },
     {
       "stop_id": "stop_bhangra",
@@ -1179,8 +1179,8 @@
     {
       "stop_id": "stop_bhiringi_more",
       "stop_name": "Bhiringi More",
-      "latitude": 23.52879,
-      "longitude": 87.260102
+      "latitude": 23.5497154,
+      "longitude": 87.2699703
     },
     {
       "stop_id": "stop_bhupatinagar",
@@ -1215,14 +1215,14 @@
     {
       "stop_id": "stop_binpur",
       "stop_name": "Binpur",
-      "latitude": 22.570775,
-      "longitude": 86.908323
+      "latitude": 22.5833357,
+      "longitude": 86.913825
     },
     {
       "stop_id": "stop_birati_more",
       "stop_name": "Birati More",
-      "latitude": 22.660356,
-      "longitude": 88.430285
+      "latitude": 22.6632119,
+      "longitude": 88.4271269
     },
     {
       "stop_id": "stop_birbhanpur",
@@ -1299,14 +1299,14 @@
     {
       "stop_id": "stop_bt_college",
       "stop_name": "BT College",
-      "latitude": 22.680256,
-      "longitude": 88.448282
+      "latitude": 22.681047,
+      "longitude": 88.44740709999999
     },
     {
       "stop_id": "stop_budhpur",
       "stop_name": "Budhpur",
-      "latitude": 23.111608,
-      "longitude": 86.654961
+      "latitude": 23.109182,
+      "longitude": 86.65565330000001
     },
     {
       "stop_id": "stop_bulanpur",
@@ -1317,8 +1317,8 @@
     {
       "stop_id": "stop_bulchand",
       "stop_name": "Bulchand",
-      "latitude": 22.972128,
-      "longitude": 87.618226
+      "latitude": 22.97426666666667,
+      "longitude": 87.59410666666666
     },
     {
       "stop_id": "stop_bulchandpur",
@@ -1359,14 +1359,14 @@
     {
       "stop_id": "stop_burdwan_bypass",
       "stop_name": "Burdwan Bypass",
-      "latitude": 23.242272,
-      "longitude": 87.867656
+      "latitude": 23.2324,
+      "longitude": 87.863
     },
     {
       "stop_id": "stop_burdwan_nababhat_bus_stand",
       "stop_name": "Burdwan Nababhat Bus Stand",
-      "latitude": 23.242272,
-      "longitude": 87.867656
+      "latitude": 23.2324,
+      "longitude": 87.863
     },
     {
       "stop_id": "stop_burdwan_raj_college",
@@ -1389,8 +1389,8 @@
     {
       "stop_id": "stop_chaitanyapur",
       "stop_name": "Chaitanyapur",
-      "latitude": 22.124291,
-      "longitude": 88.105679
+      "latitude": 22.1362864,
+      "longitude": 88.0848526
     },
     {
       "stop_id": "stop_chakdaha",
@@ -1413,14 +1413,14 @@
     {
       "stop_id": "stop_chandipur",
       "stop_name": "Chandipur",
-      "latitude": 22.073847,
-      "longitude": 87.910104
+      "latitude": 22.0968,
+      "longitude": 87.8847
     },
     {
       "stop_id": "stop_chandrakona_road",
       "stop_name": "Chandrakona Road",
-      "latitude": 22.737774,
-      "longitude": 87.371085
+      "latitude": 22.7340868,
+      "longitude": 87.3389856
     },
     {
       "stop_id": "stop_chandrakona_road_central_bus_stand",
@@ -1431,8 +1431,8 @@
     {
       "stop_id": "stop_chandrakona_town",
       "stop_name": "Chandrakona Town",
-      "latitude": 22.660613,
-      "longitude": 87.562789
+      "latitude": 22.67233975,
+      "longitude": 87.57663445
     },
     {
       "stop_id": "stop_chatra_more",
@@ -1449,8 +1449,8 @@
     {
       "stop_id": "stop_chaubeta_more",
       "stop_name": "Chaubeta More",
-      "latitude": 22.969855,
-      "longitude": 87.344426
+      "latitude": 22.9687755,
+      "longitude": 87.3350254
     },
     {
       "stop_id": "stop_chaugacha",
@@ -1467,8 +1467,8 @@
     {
       "stop_id": "stop_chaulkhola_mandarmani",
       "stop_name": "Chaulkhola Mandarmani",
-      "latitude": 21.7074,
-      "longitude": 87.6536
+      "latitude": 22.2639733,
+      "longitude": 88.1091416
     },
     {
       "stop_id": "stop_chaulkola",
@@ -1479,8 +1479,8 @@
     {
       "stop_id": "stop_chaurangee",
       "stop_name": "Chaurangee",
-      "latitude": 22.348012,
-      "longitude": 87.334347
+      "latitude": 22.3533,
+      "longitude": 87.3255
     },
     {
       "stop_id": "stop_checkpost",
@@ -1521,8 +1521,8 @@
     {
       "stop_id": "stop_choddomile_shankarpur",
       "stop_name": "Choddomile Shankarpur",
-      "latitude": 22.446588,
-      "longitude": 88.236957
+      "latitude": 22.450310433333335,
+      "longitude": 88.23284079999999
     },
     {
       "stop_id": "stop_chorpalia",
@@ -1539,8 +1539,8 @@
     {
       "stop_id": "stop_cit_road",
       "stop_name": "CIT Road",
-      "latitude": 22.561765,
-      "longitude": 88.35409
+      "latitude": 22.548596766666666,
+      "longitude": 88.36863403333334
     },
     {
       "stop_id": "stop_city_center",
@@ -1557,14 +1557,14 @@
     {
       "stop_id": "stop_city_hotel",
       "stop_name": "City Hotel",
-      "latitude": 22.909848,
-      "longitude": 88.111742
+      "latitude": 22.9295914,
+      "longitude": 88.1381479
     },
     {
       "stop_id": "stop_college_mor",
       "stop_name": "College Mor",
-      "latitude": 22.905138,
-      "longitude": 88.115263
+      "latitude": 22.924714299999998,
+      "longitude": 88.141445925
     },
     {
       "stop_id": "stop_contai",
@@ -1617,8 +1617,8 @@
     {
       "stop_id": "stop_dahijuri",
       "stop_name": "Dahijuri",
-      "latitude": 22.529314,
-      "longitude": 87.002973
+      "latitude": 22.5021795,
+      "longitude": 86.9910872
     },
     {
       "stop_id": "stop_dakbangla",
@@ -1635,8 +1635,8 @@
     {
       "stop_id": "stop_dakbunglow_more",
       "stop_name": "Dakbunglow More",
-      "latitude": 22.711778,
-      "longitude": 88.476789
+      "latitude": 22.711141050000002,
+      "longitude": 88.47749365
     },
     {
       "stop_id": "stop_dalkhola",
@@ -1659,8 +1659,8 @@
     {
       "stop_id": "stop_dangarampur",
       "stop_name": "Dangarampur",
-      "latitude": 23.109195,
-      "longitude": 86.90546
+      "latitude": 23.108352,
+      "longitude": 86.9074233
     },
     {
       "stop_id": "stop_dangarpara_mor",
@@ -1695,14 +1695,14 @@
     {
       "stop_id": "stop_daskalgram",
       "stop_name": "Daskalgram",
-      "latitude": 23.756083,
-      "longitude": 87.930907
+      "latitude": 23.7540599,
+      "longitude": 87.9310773
     },
     {
       "stop_id": "stop_daspur",
       "stop_name": "Daspur",
-      "latitude": 22.607202,
-      "longitude": 87.724552
+      "latitude": 22.6074,
+      "longitude": 87.7231
     },
     {
       "stop_id": "stop_daspur_bakultala",
@@ -1725,8 +1725,8 @@
     {
       "stop_id": "stop_debra",
       "stop_name": "Debra",
-      "latitude": 22.3955519,
-      "longitude": 87.5615995
+      "latitude": 22.385,
+      "longitude": 87.558
     },
     {
       "stop_id": "stop_depal",
@@ -1749,8 +1749,8 @@
     {
       "stop_id": "stop_deulia_bazar",
       "stop_name": "Deulia Bazar",
-      "latitude": 22.422852,
-      "longitude": 87.829901
+      "latitude": 22.412471595,
+      "longitude": 87.855530985
     },
     {
       "stop_id": "stop_dewandighi",
@@ -1773,8 +1773,8 @@
     {
       "stop_id": "stop_dhadika",
       "stop_name": "Dhadika",
-      "latitude": 22.925398,
-      "longitude": 87.338523
+      "latitude": 22.933122833333332,
+      "longitude": 87.34182243333333
     },
     {
       "stop_id": "stop_dhadki",
@@ -1815,8 +1815,8 @@
     {
       "stop_id": "stop_dharma",
       "stop_name": "Dharma",
-      "latitude": 22.477001,
-      "longitude": 87.411452
+      "latitude": 22.48727065,
+      "longitude": 87.39427155
     },
     {
       "stop_id": "stop_dharmatala_kolkata",
@@ -1833,8 +1833,8 @@
     {
       "stop_id": "stop_dhoni",
       "stop_name": "Dhoni",
-      "latitude": 23.286325,
-      "longitude": 87.122202
+      "latitude": 23.274872849999998,
+      "longitude": 87.1363333
     },
     {
       "stop_id": "stop_dhulagarh",
@@ -1857,8 +1857,8 @@
     {
       "stop_id": "stop_digha",
       "stop_name": "Digha",
-      "latitude": 21.634137,
-      "longitude": 87.514186
+      "latitude": 21.6244,
+      "longitude": 87.525
     },
     {
       "stop_id": "stop_digha_border",
@@ -1881,8 +1881,8 @@
     {
       "stop_id": "stop_digha_bypass",
       "stop_name": "Digha Bypass",
-      "latitude": 21.632581,
-      "longitude": 87.500787
+      "latitude": 21.6266,
+      "longitude": 87.5074
     },
     {
       "stop_id": "stop_digha_gram",
@@ -1893,8 +1893,8 @@
     {
       "stop_id": "stop_digha_more",
       "stop_name": "Digha More",
-      "latitude": 21.625617,
-      "longitude": 87.498838
+      "latitude": 21.6266,
+      "longitude": 87.5074
     },
     {
       "stop_id": "stop_dobadhi",
@@ -1983,8 +1983,8 @@
     {
       "stop_id": "stop_durgapur_city_centre",
       "stop_name": "Durgapur City Centre",
-      "latitude": 23.50728,
-      "longitude": 87.305713
+      "latitude": 23.5204,
+      "longitude": 87.3119
     },
     {
       "stop_id": "stop_durgapur_st",
@@ -2001,14 +2001,14 @@
     {
       "stop_id": "stop_durlabhpur",
       "stop_name": "Durlabhpur",
-      "latitude": 23.507978,
-      "longitude": 87.076646
+      "latitude": 23.494650800000002,
+      "longitude": 87.10769085
     },
     {
       "stop_id": "stop_dvc_more",
       "stop_name": "DVC More",
-      "latitude": 23.522864,
-      "longitude": 87.313261
+      "latitude": 23.51225985,
+      "longitude": 87.33245575
     },
     {
       "stop_id": "stop_dwarika",
@@ -2019,8 +2019,8 @@
     {
       "stop_id": "stop_egra",
       "stop_name": "Egra",
-      "latitude": 21.9004,
-      "longitude": 87.5379
+      "latitude": 21.9,
+      "longitude": 87.53
     },
     {
       "stop_id": "stop_egra_central_bus_stand",
@@ -2061,8 +2061,8 @@
     {
       "stop_id": "stop_fatepur",
       "stop_name": "Fatepur",
-      "latitude": 21.962436,
-      "longitude": 87.811463
+      "latitude": 21.970429625,
+      "longitude": 87.8026339
     },
     {
       "stop_id": "stop_fatesinghpur",
@@ -2073,8 +2073,8 @@
     {
       "stop_id": "stop_futisanko",
       "stop_name": "Futisanko",
-      "latitude": 23.757712,
-      "longitude": 87.950297
+      "latitude": 23.7434842,
+      "longitude": 87.95149194999999
     },
     {
       "stop_id": "stop_gangajalghati",
@@ -2103,8 +2103,8 @@
     {
       "stop_id": "stop_garhbeta",
       "stop_name": "Garhbeta",
-      "latitude": 22.879447,
-      "longitude": 87.377443
+      "latitude": 22.8618175,
+      "longitude": 87.3554165
     },
     {
       "stop_id": "stop_garhbeta_cbt",
@@ -2157,14 +2157,14 @@
     {
       "stop_id": "stop_ghatal",
       "stop_name": "Ghatal",
-      "latitude": 22.663564,
-      "longitude": 87.737033
+      "latitude": 22.6681,
+      "longitude": 87.7214
     },
     {
       "stop_id": "stop_ghatal_cbs",
       "stop_name": "Ghatal CBS",
-      "latitude": 22.668,
-      "longitude": 87.717
+      "latitude": 22.6681,
+      "longitude": 87.7214
     },
     {
       "stop_id": "stop_ghatal_central",
@@ -2181,8 +2181,8 @@
     {
       "stop_id": "stop_goaltore",
       "stop_name": "Goaltore",
-      "latitude": 22.694614,
-      "longitude": 87.173107
+      "latitude": 22.7098897,
+      "longitude": 87.1697767
     },
     {
       "stop_id": "stop_gobag",
@@ -2217,8 +2217,8 @@
     {
       "stop_id": "stop_goghat",
       "stop_name": "Goghat",
-      "latitude": 22.912808,
-      "longitude": 87.708078
+      "latitude": 22.8893089,
+      "longitude": 87.7062382
     },
     {
       "stop_id": "stop_gogra",
@@ -2229,8 +2229,8 @@
     {
       "stop_id": "stop_golapbag",
       "stop_name": "Golapbag",
-      "latitude": 23.247204,
-      "longitude": 87.859502
+      "latitude": 23.2519084,
+      "longitude": 87.8498079
     },
     {
       "stop_id": "stop_golkunda",
@@ -2379,20 +2379,20 @@
     {
       "stop_id": "stop_hebir_mor",
       "stop_name": "Hebir Mor",
-      "latitude": 23.281189,
-      "longitude": 87.11804
+      "latitude": 23.270827816666664,
+      "longitude": 87.13082536666667
     },
     {
       "stop_id": "stop_hebir_more",
       "stop_name": "Hebir More",
-      "latitude": 23.278622,
-      "longitude": 87.115959
+      "latitude": 23.268805299999997,
+      "longitude": 87.1280714
     },
     {
       "stop_id": "stop_heria",
       "stop_name": "Heria",
-      "latitude": 21.963798,
-      "longitude": 87.812671
+      "latitude": 21.968,
+      "longitude": 87.808
     },
     {
       "stop_id": "stop_hetia",
@@ -2421,8 +2421,8 @@
     {
       "stop_id": "stop_howrah_bypass",
       "stop_name": "Howrah Bypass",
-      "latitude": 22.5855,
-      "longitude": 88.3315
+      "latitude": 22.5851,
+      "longitude": 88.3413
     },
     {
       "stop_id": "stop_howrah_maidan",
@@ -2469,8 +2469,8 @@
     {
       "stop_id": "stop_inda_more",
       "stop_name": "Inda More",
-      "latitude": 22.339106,
-      "longitude": 87.329024
+      "latitude": 22.34175,
+      "longitude": 87.3246
     },
     {
       "stop_id": "stop_indas",
@@ -2487,8 +2487,8 @@
     {
       "stop_id": "stop_islampur",
       "stop_name": "Islampur",
-      "latitude": 26.267016,
-      "longitude": 88.203181
+      "latitude": 26.2667,
+      "longitude": 88.2
     },
     {
       "stop_id": "stop_itaberia",
@@ -2511,8 +2511,8 @@
     {
       "stop_id": "stop_jahalda",
       "stop_name": "Jahalda",
-      "latitude": 21.956482,
-      "longitude": 87.460832
+      "latitude": 21.9583584,
+      "longitude": 87.47716355
     },
     {
       "stop_id": "stop_jairambati",
@@ -2553,8 +2553,8 @@
     {
       "stop_id": "stop_jara",
       "stop_name": "Jara",
-      "latitude": 22.764338,
-      "longitude": 87.968211
+      "latitude": 22.7524,
+      "longitude": 87.68
     },
     {
       "stop_id": "stop_jayantipur",
@@ -2571,8 +2571,8 @@
     {
       "stop_id": "stop_jhakra",
       "stop_name": "Jhakra",
-      "latitude": 22.648737,
-      "longitude": 87.514109
+      "latitude": 22.6342736,
+      "longitude": 87.53830400000001
     },
     {
       "stop_id": "stop_jhapra_more",
@@ -2595,8 +2595,8 @@
     {
       "stop_id": "stop_jhatipahari",
       "stop_name": "Jhatipahari",
-      "latitude": 23.3778214,
-      "longitude": 86.91715626666667
+      "latitude": 23.305,
+      "longitude": 86.83
     },
     {
       "stop_id": "stop_jhilimili",
@@ -2643,8 +2643,8 @@
     {
       "stop_id": "stop_joyrambati",
       "stop_name": "Joyrambati",
-      "latitude": 22.910194,
-      "longitude": 87.741454
+      "latitude": 22.926905275000003,
+      "longitude": 87.732515275
     },
     {
       "stop_id": "stop_joyrampur",
@@ -2703,26 +2703,26 @@
     {
       "stop_id": "stop_kalikapur",
       "stop_name": "Kalikapur",
-      "latitude": 22.698216,
-      "longitude": 87.605827
+      "latitude": 22.691372825000002,
+      "longitude": 87.595799675
     },
     {
       "stop_id": "stop_kalinagar",
       "stop_name": "Kalinagar",
-      "latitude": 21.943653,
-      "longitude": 87.782114
+      "latitude": 21.932,
+      "longitude": 87.795
     },
     {
       "stop_id": "stop_kalipahari_more",
       "stop_name": "Kalipahari More",
-      "latitude": 23.635568,
-      "longitude": 87.033681
+      "latitude": 23.6425,
+      "longitude": 87.03694999999999
     },
     {
       "stop_id": "stop_kalipur",
       "stop_name": "Kalipur",
-      "latitude": 22.909848,
-      "longitude": 87.745876
+      "latitude": 22.88485445,
+      "longitude": 87.7439191
     },
     {
       "stop_id": "stop_kalyani_aiims",
@@ -2751,14 +2751,14 @@
     {
       "stop_id": "stop_kamarpukur",
       "stop_name": "Kamarpukur",
-      "latitude": 22.90766,
-      "longitude": 87.773815
+      "latitude": 22.8988,
+      "longitude": 87.778
     },
     {
       "stop_id": "stop_kamarpukur_chati",
       "stop_name": "Kamarpukur Chati",
-      "latitude": 22.894269,
-      "longitude": 87.803937
+      "latitude": 22.8988,
+      "longitude": 87.778
     },
     {
       "stop_id": "stop_kanali",
@@ -2781,8 +2781,8 @@
     {
       "stop_id": "stop_kandra",
       "stop_name": "Kandra",
-      "latitude": 23.75934,
-      "longitude": 87.969687
+      "latitude": 23.7329085,
+      "longitude": 87.9719066
     },
     {
       "stop_id": "stop_kankradara",
@@ -2793,8 +2793,8 @@
     {
       "stop_id": "stop_kankurgachi",
       "stop_name": "Kankurgachi",
-      "latitude": 22.589841,
-      "longitude": 88.37951
+      "latitude": 22.5799405,
+      "longitude": 88.3904444
     },
     {
       "stop_id": "stop_kanthi_central_bus_stand",
@@ -2817,8 +2817,8 @@
     {
       "stop_id": "stop_kashipur",
       "stop_name": "Kashipur",
-      "latitude": 23.4339229,
-      "longitude": 86.6668896
+      "latitude": 23.344,
+      "longitude": 86.672
     },
     {
       "stop_id": "stop_kashmuli",
@@ -2841,14 +2841,14 @@
     {
       "stop_id": "stop_katin",
       "stop_name": "Katin",
-      "latitude": 23.016271,
-      "longitude": 86.6534
+      "latitude": 23.017831885714287,
+      "longitude": 86.65368774285714
     },
     {
       "stop_id": "stop_keranichati",
       "stop_name": "Keranichati",
-      "latitude": 22.472542,
-      "longitude": 87.320688
+      "latitude": 22.4693478,
+      "longitude": 87.32891426666666
     },
     {
       "stop_id": "stop_keshabpur",
@@ -2859,8 +2859,8 @@
     {
       "stop_id": "stop_keshapat",
       "stop_name": "Keshapat",
-      "latitude": 22.454577,
-      "longitude": 87.842751
+      "latitude": 22.459791669999998,
+      "longitude": 87.8298770988889
     },
     {
       "stop_id": "stop_keshia",
@@ -2883,8 +2883,8 @@
     {
       "stop_id": "stop_keshpur",
       "stop_name": "Keshpur",
-      "latitude": 22.558885,
-      "longitude": 87.460399
+      "latitude": 22.5581413,
+      "longitude": 87.4616431
     },
     {
       "stop_id": "stop_keshurkunda",
@@ -2901,8 +2901,8 @@
     {
       "stop_id": "stop_khakurda",
       "stop_name": "Khakurda",
-      "latitude": 22.012611,
-      "longitude": 87.402757
+      "latitude": 22.0163168,
+      "longitude": 87.4164271
     },
     {
       "stop_id": "stop_khakurdah",
@@ -2925,14 +2925,14 @@
     {
       "stop_id": "stop_khanyan",
       "stop_name": "Khanyan",
-      "latitude": 23.026333,
-      "longitude": 88.32555
+      "latitude": 23.0316986,
+      "longitude": 88.3280808
     },
     {
       "stop_id": "stop_kharagpur",
       "stop_name": "Kharagpur",
-      "latitude": 22.351452,
-      "longitude": 87.370307
+      "latitude": 22.3302,
+      "longitude": 87.3237
     },
     {
       "stop_id": "stop_kharagpur_bus_stand",
@@ -2943,8 +2943,8 @@
     {
       "stop_id": "stop_kharagpur_chaurangee",
       "stop_name": "Kharagpur Chaurangee",
-      "latitude": 22.328423,
-      "longitude": 87.317144
+      "latitude": 22.3302,
+      "longitude": 87.3237
     },
     {
       "stop_id": "stop_kharagpur_chaurangi",
@@ -2955,8 +2955,8 @@
     {
       "stop_id": "stop_kharagpur_st",
       "stop_name": "Kharagpur St.",
-      "latitude": 22.328423,
-      "longitude": 87.317144
+      "latitude": 22.3302,
+      "longitude": 87.3237
     },
     {
       "stop_id": "stop_kharagpur_station",
@@ -2991,8 +2991,8 @@
     {
       "stop_id": "stop_khirpai",
       "stop_name": "Khirpai",
-      "latitude": 22.703048,
-      "longitude": 87.59437
+      "latitude": 22.7093,
+      "longitude": 87.6189
     },
     {
       "stop_id": "stop_khoshbag",
@@ -3003,8 +3003,8 @@
     {
       "stop_id": "stop_khujutipara",
       "stop_name": "Khujutipara",
-      "latitude": 23.610203,
-      "longitude": 87.890845
+      "latitude": 23.6098459,
+      "longitude": 87.8956889
     },
     {
       "stop_id": "stop_khukurdah",
@@ -3015,8 +3015,8 @@
     {
       "stop_id": "stop_khukurdaha",
       "stop_name": "Khukurdaha",
-      "latitude": 22.467268,
-      "longitude": 87.847891
+      "latitude": 22.4787197,
+      "longitude": 87.81961554444445
     },
     {
       "stop_id": "stop_khundanga",
@@ -3027,8 +3027,8 @@
     {
       "stop_id": "stop_kirnahar",
       "stop_name": "Kirnahar",
-      "latitude": 23.753606,
-      "longitude": 87.901414
+      "latitude": 23.73942175,
+      "longitude": 87.90260565
     },
     {
       "stop_id": "stop_kishanganj",
@@ -3039,8 +3039,8 @@
     {
       "stop_id": "stop_kiyaboni",
       "stop_name": "Kiyaboni",
-      "latitude": 22.799876,
-      "longitude": 87.363951
+      "latitude": 22.79795215,
+      "longitude": 87.34720105
     },
     {
       "stop_id": "stop_kiyamacha",
@@ -3075,8 +3075,8 @@
     {
       "stop_id": "stop_komarpur",
       "stop_name": "Komarpur",
-      "latitude": 23.761554,
-      "longitude": 87.996043
+      "latitude": 23.7404084,
+      "longitude": 87.99781868
     },
     {
       "stop_id": "stop_kona_expressway",
@@ -3165,8 +3165,8 @@
     {
       "stop_id": "stop_labhpur",
       "stop_name": "Labhpur",
-      "latitude": 23.8315,
-      "longitude": 87.814623
+      "latitude": 23.8152993,
+      "longitude": 87.8000825
     },
     {
       "stop_id": "stop_ladhuirka",
@@ -3195,14 +3195,14 @@
     {
       "stop_id": "stop_lakshya",
       "stop_name": "Lakshya",
-      "latitude": 23.263214,
-      "longitude": 87.103472
+      "latitude": 23.2566702,
+      "longitude": 87.1115476
     },
     {
       "stop_id": "stop_lakshyatoda_bridge",
       "stop_name": "Lakshyatoda Bridge",
-      "latitude": 23.26835,
-      "longitude": 87.107635
+      "latitude": 23.260715233333332,
+      "longitude": 87.11705553333333
     },
     {
       "stop_id": "stop_lakshyatora_bridge",
@@ -3225,8 +3225,8 @@
     {
       "stop_id": "stop_lalbazar",
       "stop_name": "Lalbazar",
-      "latitude": 23.231562,
-      "longitude": 87.077821
+      "latitude": 23.2301656,
+      "longitude": 87.0795447
     },
     {
       "stop_id": "stop_lalgarh",
@@ -3261,14 +3261,14 @@
     {
       "stop_id": "stop_lohagarh",
       "stop_name": "Lohagarh",
-      "latitude": 23.30961605,
-      "longitude": 86.93681720000001
+      "latitude": 23.3096,
+      "longitude": 86.9368
     },
     {
       "stop_id": "stop_machantala",
       "stop_name": "Machantala",
-      "latitude": 23.247807,
-      "longitude": 87.090986
+      "latitude": 23.2445351,
+      "longitude": 87.0950238
     },
     {
       "stop_id": "stop_madhakhali",
@@ -3279,8 +3279,8 @@
     {
       "stop_id": "stop_madhyamgram",
       "stop_name": "Madhyamgram",
-      "latitude": 22.700156,
-      "longitude": 88.466279
+      "latitude": 22.6988821,
+      "longitude": 88.4676873
     },
     {
       "stop_id": "stop_madpur",
@@ -3297,8 +3297,8 @@
     {
       "stop_id": "stop_mahishadal",
       "stop_name": "Mahishadal",
-      "latitude": 22.180453,
-      "longitude": 87.969473
+      "latitude": 22.1888242,
+      "longitude": 87.9833125
     },
     {
       "stop_id": "stop_majlispur",
@@ -3321,8 +3321,8 @@
     {
       "stop_id": "stop_makrampur",
       "stop_name": "Makrampur",
-      "latitude": 22.239722,
-      "longitude": 87.341189
+      "latitude": 22.24385965,
+      "longitude": 87.35645095000001
     },
     {
       "stop_id": "stop_malda",
@@ -3369,14 +3369,14 @@
     {
       "stop_id": "stop_maniktala",
       "stop_name": "Maniktala",
-      "latitude": 22.290858,
-      "longitude": 87.883826
+      "latitude": 22.304531185,
+      "longitude": 87.90386211333333
     },
     {
       "stop_id": "stop_manjushree_more",
       "stop_name": "Manjushree More",
-      "latitude": 22.111289,
-      "longitude": 88.09819
+      "latitude": 22.1037739,
+      "longitude": 88.11123755
     },
     {
       "stop_id": "stop_mankar",
@@ -3435,8 +3435,8 @@
     {
       "stop_id": "stop_mecheda_railway_station",
       "stop_name": "Mecheda Railway Station",
-      "latitude": 21.6266,
-      "longitude": 87.5074
+      "latitude": 22.3841,
+      "longitude": 87.8709
     },
     {
       "stop_id": "stop_mecheda_station",
@@ -3447,14 +3447,14 @@
     {
       "stop_id": "stop_mechogram",
       "stop_name": "Mechogram",
-      "latitude": 22.452648,
-      "longitude": 87.841969
+      "latitude": 22.44086364,
+      "longitude": 87.84013865333334
     },
     {
       "stop_id": "stop_medinipur",
       "stop_name": "Medinipur",
-      "latitude": 22.407913,
-      "longitude": 87.295595
+      "latitude": 22.4257,
+      "longitude": 87.3199
     },
     {
       "stop_id": "stop_medinipur_bus_stand",
@@ -3471,8 +3471,8 @@
     {
       "stop_id": "stop_mehedi_bagan",
       "stop_name": "Mehedi Bagan",
-      "latitude": 23.324262,
-      "longitude": 87.903935
+      "latitude": 23.33461684,
+      "longitude": 87.88069838999999
     },
     {
       "stop_id": "stop_mehedibagan",
@@ -3483,8 +3483,8 @@
     {
       "stop_id": "stop_mejia",
       "stop_name": "Mejia",
-      "latitude": 23.566282,
-      "longitude": 87.101674
+      "latitude": 23.567,
+      "longitude": 87.1
     },
     {
       "stop_id": "stop_memari",
@@ -3501,8 +3501,8 @@
     {
       "stop_id": "stop_midnapore_central_bus_stand",
       "stop_name": "Midnapore Central Bus Stand",
-      "latitude": 22.4164,
-      "longitude": 87.3269
+      "latitude": 22.4257,
+      "longitude": 87.3199
     },
     {
       "stop_id": "stop_mirepota",
@@ -3531,8 +3531,8 @@
     {
       "stop_id": "stop_mogra",
       "stop_name": "Mogra",
-      "latitude": 23.000996,
-      "longitude": 88.379276
+      "latitude": 22.9882573,
+      "longitude": 88.373269
     },
     {
       "stop_id": "stop_mohammad_bazar",
@@ -3543,8 +3543,8 @@
     {
       "stop_id": "stop_mohanpur",
       "stop_name": "Mohanpur",
-      "latitude": 22.371766,
-      "longitude": 87.35673
+      "latitude": 22.3733,
+      "longitude": 87.3253
     },
     {
       "stop_id": "stop_mokrampur",
@@ -3567,8 +3567,8 @@
     {
       "stop_id": "stop_molla_road",
       "stop_name": "Molla Road",
-      "latitude": 22.424506,
-      "longitude": 88.229817
+      "latitude": 22.4164946,
+      "longitude": 88.238664725
     },
     {
       "stop_id": "stop_moregram",
@@ -3585,14 +3585,14 @@
     {
       "stop_id": "stop_motgoda",
       "stop_name": "Motgoda",
-      "latitude": 22.573173,
-      "longitude": 88.363274
+      "latitude": 22.57055,
+      "longitude": 88.360875
     },
     {
       "stop_id": "stop_moulali",
       "stop_name": "Moulali",
-      "latitude": 22.567844,
-      "longitude": 88.359594
+      "latitude": 22.559308033333334,
+      "longitude": 88.36902206666666
     },
     {
       "stop_id": "stop_moutarh",
@@ -3603,14 +3603,14 @@
     {
       "stop_id": "stop_muchipara",
       "stop_name": "Muchipara",
-      "latitude": 23.547713,
-      "longitude": 87.326989
+      "latitude": 23.535,
+      "longitude": 87.35
     },
     {
       "stop_id": "stop_mugbasan",
       "stop_name": "Mugbasan",
-      "latitude": 22.603811,
-      "longitude": 87.487254
+      "latitude": 22.59620745,
+      "longitude": 87.49997355
     },
     {
       "stop_id": "stop_mujithan",
@@ -3621,8 +3621,8 @@
     {
       "stop_id": "stop_muratipur",
       "stop_name": "Muratipur",
-      "latitude": 23.489805,
-      "longitude": 87.881971
+      "latitude": 23.487942099999998,
+      "longitude": 87.907245975
     },
     {
       "stop_id": "stop_muratipur_mor",
@@ -3633,14 +3633,14 @@
     {
       "stop_id": "stop_nababhat_mor",
       "stop_name": "Nababhat Mor",
-      "latitude": 23.241618,
-      "longitude": 87.863679
+      "latitude": 23.2421542,
+      "longitude": 87.85640395
     },
     {
       "stop_id": "stop_nachinda",
       "stop_name": "Nachinda",
-      "latitude": 21.890346,
-      "longitude": 87.733905
+      "latitude": 21.8738,
+      "longitude": 87.7522
     },
     {
       "stop_id": "stop_nadighat",
@@ -3669,8 +3669,8 @@
     {
       "stop_id": "stop_nalhati",
       "stop_name": "Nalhati",
-      "latitude": 24.303869,
-      "longitude": 87.830094
+      "latitude": 24.2966075,
+      "longitude": 87.835306
     },
     {
       "stop_id": "stop_nandakumar",
@@ -3681,8 +3681,8 @@
     {
       "stop_id": "stop_nandakumar_bazar",
       "stop_name": "Nandakumar Bazar",
-      "latitude": 22.222772,
-      "longitude": 87.930291
+      "latitude": 22.2392613,
+      "longitude": 87.9544529
     },
     {
       "stop_id": "stop_nandakumar_highroad",
@@ -3693,14 +3693,14 @@
     {
       "stop_id": "stop_nanur",
       "stop_name": "Nanur",
-      "latitude": 23.74898,
-      "longitude": 87.901073
+      "latitude": 23.724783600000002,
+      "longitude": 87.874134
     },
     {
       "stop_id": "stop_narayangarh",
       "stop_name": "Narayangarh",
-      "latitude": 22.151022,
-      "longitude": 87.365235
+      "latitude": 22.1575193,
+      "longitude": 87.3892019
     },
     {
       "stop_id": "stop_narja_mor",
@@ -3747,14 +3747,14 @@
     {
       "stop_id": "stop_neradeul",
       "stop_name": "Neradeul",
-      "latitude": 22.648737,
-      "longitude": 87.514109
+      "latitude": 22.6342736,
+      "longitude": 87.53830400000001
     },
     {
       "stop_id": "stop_new_digha",
       "stop_name": "New Digha",
-      "latitude": 21.629611,
-      "longitude": 87.507875
+      "latitude": 21.621,
+      "longitude": 87.5022
     },
     {
       "stop_id": "stop_nimtouri",
@@ -3765,8 +3765,8 @@
     {
       "stop_id": "stop_nirol",
       "stop_name": "Nirol",
-      "latitude": 23.763767,
-      "longitude": 88.022399
+      "latitude": 23.7479083,
+      "longitude": 88.02373075999999
     },
     {
       "stop_id": "stop_nischintapur",
@@ -3789,8 +3789,8 @@
     {
       "stop_id": "stop_nutanhat",
       "stop_name": "Nutanhat",
-      "latitude": 23.532775,
-      "longitude": 87.885138
+      "latitude": 23.531195155,
+      "longitude": 87.906569005
     },
     {
       "stop_id": "stop_oanda",
@@ -3801,8 +3801,8 @@
     {
       "stop_id": "stop_old_digha",
       "stop_name": "Old Digha",
-      "latitude": 21.62847,
-      "longitude": 87.507695
+      "latitude": 21.6244,
+      "longitude": 87.525
     },
     {
       "stop_id": "stop_omarpur",
@@ -3819,14 +3819,14 @@
     {
       "stop_id": "stop_pachakhali",
       "stop_name": "Pachakhali",
-      "latitude": 22.910044,
-      "longitude": 87.743371
+      "latitude": 22.89405445,
+      "longitude": 87.7421191
     },
     {
       "stop_id": "stop_pachundi",
       "stop_name": "Pachundi",
-      "latitude": 23.765981,
-      "longitude": 88.048755
+      "latitude": 23.7554082,
+      "longitude": 88.04964284
     },
     {
       "stop_id": "stop_padmashree",
@@ -3885,8 +3885,8 @@
     {
       "stop_id": "stop_panagarh_bypass",
       "stop_name": "Panagarh Bypass",
-      "latitude": 23.58650985,
-      "longitude": 87.51650575
+      "latitude": 23.447,
+      "longitude": 87.466
     },
     {
       "stop_id": "stop_panchla",
@@ -3915,8 +3915,8 @@
     {
       "stop_id": "stop_pandua",
       "stop_name": "Pandua",
-      "latitude": 23.05167,
-      "longitude": 88.271824
+      "latitude": 23.0751399,
+      "longitude": 88.2828926
     },
     {
       "stop_id": "stop_paniparul",
@@ -3927,8 +3927,8 @@
     {
       "stop_id": "stop_panjabi_more",
       "stop_name": "Panjabi More",
-      "latitude": 23.547355,
-      "longitude": 87.220736
+      "latitude": 23.56200865,
+      "longitude": 87.22764695000001
     },
     {
       "stop_id": "stop_panskura",
@@ -3963,8 +3963,8 @@
     {
       "stop_id": "stop_park_circus",
       "stop_name": "Park Circus",
-      "latitude": 22.555686,
-      "longitude": 88.348586
+      "latitude": 22.5378855,
+      "longitude": 88.368246
     },
     {
       "stop_id": "stop_parui",
@@ -4017,14 +4017,14 @@
     {
       "stop_id": "stop_phoolbagan",
       "stop_name": "Phoolbagan",
-      "latitude": 22.584859,
-      "longitude": 88.375
+      "latitude": 22.5718846,
+      "longitude": 88.3893303
     },
     {
       "stop_id": "stop_phulberia",
       "stop_name": "Phulberia",
-      "latitude": 23.397528,
-      "longitude": 87.212323
+      "latitude": 23.37752005,
+      "longitude": 87.23701175000001
     },
     {
       "stop_id": "stop_phulia",
@@ -4095,8 +4095,8 @@
     {
       "stop_id": "stop_pursurah",
       "stop_name": "Pursurah",
-      "latitude": 22.755217,
-      "longitude": 88.16423
+      "latitude": 22.7680837,
+      "longitude": 88.1759973
     },
     {
       "stop_id": "stop_purulia_bus_stand",
@@ -4137,14 +4137,14 @@
     {
       "stop_id": "stop_raipur",
       "stop_name": "Raipur",
-      "latitude": 22.572601,
-      "longitude": 88.363908
+      "latitude": 22.5685,
+      "longitude": 88.35785
     },
     {
       "stop_id": "stop_rajatpur",
       "stop_name": "Rajatpur",
-      "latitude": 23.611398,
-      "longitude": 87.674902
+      "latitude": 23.609054933333333,
+      "longitude": 87.70132986666667
     },
     {
       "stop_id": "stop_rajbandh",
@@ -4155,14 +4155,14 @@
     {
       "stop_id": "stop_rajgram",
       "stop_name": "Rajgram",
-      "latitude": 23.22382,
-      "longitude": 87.048417
+      "latitude": 23.2192652,
+      "longitude": 87.049716
     },
     {
       "stop_id": "stop_rajra",
       "stop_name": "Rajra",
-      "latitude": 23.095411,
-      "longitude": 87.515395
+      "latitude": 23.09541145,
+      "longitude": 87.5153948
     },
     {
       "stop_id": "stop_ramakrishnapur",
@@ -4191,20 +4191,20 @@
     {
       "stop_id": "stop_ramjibanpur",
       "stop_name": "Ramjibanpur",
-      "latitude": 22.805102,
-      "longitude": 87.693317
+      "latitude": 22.7661,
+      "longitude": 87.6601
     },
     {
       "stop_id": "stop_ramjibanpur_central_bus_stand",
       "stop_name": "Ramjibanpur Central Bus Stand",
-      "latitude": 22.5726,
-      "longitude": 88.3639
+      "latitude": 22.7661,
+      "longitude": 87.6601
     },
     {
       "stop_id": "stop_ramnagar",
       "stop_name": "Ramnagar",
-      "latitude": 21.688424,
-      "longitude": 87.517153
+      "latitude": 21.6769,
+      "longitude": 87.5539
     },
     {
       "stop_id": "stop_rampurhat",
@@ -4227,8 +4227,8 @@
     {
       "stop_id": "stop_rangamati",
       "stop_name": "Rangamati",
-      "latitude": 22.926156,
-      "longitude": 87.939647
+      "latitude": 22.926155725,
+      "longitude": 87.9396474
     },
     {
       "stop_id": "stop_ranibandh",
@@ -4239,14 +4239,14 @@
     {
       "stop_id": "stop_ranichak",
       "stop_name": "Ranichak",
-      "latitude": 22.03433,
-      "longitude": 88.058893
+      "latitude": 22.0529655,
+      "longitude": 88.0861992
     },
     {
       "stop_id": "stop_raniganj",
       "stop_name": "Raniganj",
-      "latitude": 23.597237,
-      "longitude": 87.114962
+      "latitude": 23.6111,
+      "longitude": 87.1215
     },
     {
       "stop_id": "stop_raniganj_bus_stand",
@@ -4269,8 +4269,8 @@
     {
       "stop_id": "stop_ranihati",
       "stop_name": "Ranihati",
-      "latitude": 22.462312,
-      "longitude": 88.251178
+      "latitude": 22.46353,
+      "longitude": 88.24983153333334
     },
     {
       "stop_id": "stop_rasulpur",
@@ -4395,8 +4395,8 @@
     {
       "stop_id": "stop_satighat",
       "stop_name": "Satighat",
-      "latitude": 23.255511,
-      "longitude": 87.097229
+      "latitude": 23.250602649999998,
+      "longitude": 87.1032857
     },
     {
       "stop_id": "stop_satmile",
@@ -4413,14 +4413,14 @@
     {
       "stop_id": "stop_sauri",
       "stop_name": "Sauri",
-      "latitude": 21.988527,
-      "longitude": 87.457151
+      "latitude": 21.9873376,
+      "longitude": 87.44679532500001
     },
     {
       "stop_id": "stop_sealdah",
       "stop_name": "Sealdah",
-      "latitude": 22.573923,
-      "longitude": 88.365098
+      "latitude": 22.5700193,
+      "longitude": 88.3694101
     },
     {
       "stop_id": "stop_sehara_bazar",
@@ -4449,14 +4449,14 @@
     {
       "stop_id": "stop_shaktigarh",
       "stop_name": "Shaktigarh",
-      "latitude": 23.200775,
-      "longitude": 87.95565
+      "latitude": 23.21,
+      "longitude": 87.96
     },
     {
       "stop_id": "stop_shalbani",
       "stop_name": "Shalbani",
-      "latitude": 23.08699,
-      "longitude": 86.270085
+      "latitude": 23.073554733333335,
+      "longitude": 86.26760676666667
     },
     {
       "stop_id": "stop_shaldiha",
@@ -4527,8 +4527,8 @@
     {
       "stop_id": "stop_siddha",
       "stop_name": "Siddha",
-      "latitude": 22.43237,
-      "longitude": 87.833756
+      "latitude": 22.4266676175,
+      "longitude": 87.84783481916668
     },
     {
       "stop_id": "stop_siddha_bazar",
@@ -4545,8 +4545,8 @@
     {
       "stop_id": "stop_silda",
       "stop_name": "Silda",
-      "latitude": 22.612116,
-      "longitude": 86.813946
+      "latitude": 22.6167605,
+      "longitude": 86.8159803
     },
     {
       "stop_id": "stop_siliguri",
@@ -4563,8 +4563,8 @@
     {
       "stop_id": "stop_simlagarh",
       "stop_name": "Simlagarh",
-      "latitude": 23.081845,
-      "longitude": 88.207839
+      "latitude": 23.109336366666668,
+      "longitude": 88.22080336666666
     },
     {
       "stop_id": "stop_simlapal",
@@ -4611,8 +4611,8 @@
     {
       "stop_id": "stop_sonarundi",
       "stop_name": "Sonarundi",
-      "latitude": 23.768194,
-      "longitude": 88.075111
+      "latitude": 23.7629081,
+      "longitude": 88.07555492
     },
     {
       "stop_id": "stop_sonathali",
@@ -4623,8 +4623,8 @@
     {
       "stop_id": "stop_srinagar",
       "stop_name": "Srinagar",
-      "latitude": 22.764704,
-      "longitude": 87.711443
+      "latitude": 22.757504425,
+      "longitude": 87.655723675
     },
     {
       "stop_id": "stop_sriniketan",
@@ -4671,8 +4671,8 @@
     {
       "stop_id": "stop_supur",
       "stop_name": "Supur",
-      "latitude": 23.018147,
-      "longitude": 86.866375
+      "latitude": 23.0213399,
+      "longitude": 86.8589374
     },
     {
       "stop_id": "stop_suri",
@@ -4701,8 +4701,8 @@
     {
       "stop_id": "stop_talajuri",
       "stop_name": "Talajuri",
-      "latitude": 23.264667,
-      "longitude": 87.091142
+      "latitude": 23.264667175,
+      "longitude": 87.09114220000001
     },
     {
       "stop_id": "stop_taldangra",
@@ -4755,8 +4755,8 @@
     {
       "stop_id": "stop_telipukur",
       "stop_name": "Telipukur",
-      "latitude": 23.121062,
-      "longitude": 87.837727
+      "latitude": 23.115066666666667,
+      "longitude": 87.83586666666666
     },
     {
       "stop_id": "stop_telur",
@@ -4785,8 +4785,8 @@
     {
       "stop_id": "stop_thakurchak",
       "stop_name": "Thakurchak",
-      "latitude": 22.047891,
-      "longitude": 87.393193
+      "latitude": 22.0439317,
+      "longitude": 87.3785861
     },
     {
       "stop_id": "stop_thikra",
@@ -4797,8 +4797,8 @@
     {
       "stop_id": "stop_thikra_more",
       "stop_name": "Thikra More",
-      "latitude": 21.630774,
-      "longitude": 87.52625
+      "latitude": 21.6385,
+      "longitude": 87.5255
     },
     {
       "stop_id": "stop_tikiapara",
@@ -4809,14 +4809,14 @@
     {
       "stop_id": "stop_toll_plaza",
       "stop_name": "Toll Plaza",
-      "latitude": 23.486486,
-      "longitude": 87.284415
+      "latitude": 23.4731467,
+      "longitude": 87.30087449999999
     },
     {
       "stop_id": "stop_tora_bridge",
       "stop_name": "Tora Bridge",
-      "latitude": 23.270918,
-      "longitude": 87.109716
+      "latitude": 23.26273775,
+      "longitude": 87.1198095
     },
     {
       "stop_id": "stop_township",
@@ -4875,8 +4875,8 @@
     {
       "stop_id": "stop_umarpur",
       "stop_name": "Umarpur",
-      "latitude": 24.452194,
-      "longitude": 88.036745
+      "latitude": 24.4511824,
+      "longitude": 88.0374717
     },
     {
       "stop_id": "stop_uttarbil",
@@ -5649,14 +5649,14 @@
     {
       "stop_id": "stop_midnapore",
       "stop_name": "Midnapore",
-      "latitude": 22.4164,
-      "longitude": 87.3269
+      "latitude": 22.4257,
+      "longitude": 87.3199
     },
     {
       "stop_id": "stop_p_mor",
       "stop_name": "P Mor",
-      "latitude": 22.570636,
-      "longitude": 88.350861
+      "latitude": 22.5644,
+      "longitude": 88.3518
     },
     {
       "stop_id": "stop_shilda",
