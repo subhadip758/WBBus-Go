@@ -1422,8 +1422,9 @@ function App() {
     
     if (!selectedBus) return;
     
-    // Filter stops on route that have coordinates
-    const coordStops = tripStops.filter(s => s.latitude !== null && s.longitude !== null);
+    // Always use full route stops for map drawing so line never ends at random intermediate stops
+    const fullRouteStops = (selectedBus.routeStops || []).filter(s => s.latitude !== null && s.longitude !== null);
+    const coordStops = fullRouteStops.length >= 2 ? fullRouteStops : tripStops.filter(s => s.latitude !== null && s.longitude !== null);
     
     if (coordStops.length > 0) {
       const latlngs = coordStops.map(s => [s.latitude, s.longitude]);
@@ -1448,7 +1449,7 @@ function App() {
             data: geojson
           });
 
-          // Single solid deep violet road line (Google Maps deep violet style)
+          // Single solid deep violet road line (Google Maps deep violet style from screenshot)
           nativeMap.addLayer({
             id: 'wbsb-route-line-main',
             type: 'line',
@@ -1458,7 +1459,7 @@ function App() {
               'line-cap': 'round'
             },
             paint: {
-              'line-color': '#2563eb', // Deep vibrant royal violet / indigo
+              'line-color': '#3730a3', // Deep vibrant royal violet / indigo matching Google Maps
               'line-width': 6.5,
               'line-opacity': 1.0
             }
@@ -1466,108 +1467,59 @@ function App() {
         }
       };
 
-      // WebGL native renderer for stop circle markers
-      const renderWebGLStops = (currentPolyline) => {
+      // Clean renderer for Origin Pin and Destination Pin ONLY (like Google Maps)
+      const renderTerminalMarkers = (currentPolyline) => {
         Object.values(mapMarkers.current).forEach(m => m.remove());
         mapMarkers.current = {};
 
-        const features = coordStops.map((stop, index) => {
-          const snapped = snapPointToPolyline(stop.latitude, stop.longitude, currentPolyline);
-          const letterLabel = String.fromCharCode(65 + (index % 26)) + (index >= 26 ? Math.floor(index / 26) : '');
-          
-          const labelDiv = document.createElement('div');
-          labelDiv.className = 'custom-stop-label-badge';
-          labelDiv.style.display = 'inline-flex';
-          labelDiv.style.alignItems = 'center';
-          labelDiv.style.gap = '4px';
-          labelDiv.style.background = 'rgba(15, 23, 42, 0.9)';
-          labelDiv.style.color = '#ffffff';
-          labelDiv.style.padding = '2px 6px';
-          labelDiv.style.borderRadius = '6px';
-          labelDiv.style.fontSize = '11px';
-          labelDiv.style.fontWeight = '600';
-          labelDiv.style.fontFamily = 'Inter, system-ui, sans-serif';
-          labelDiv.style.whiteSpace = 'nowrap';
-          labelDiv.style.boxShadow = '0 2px 6px rgba(0,0,0,0.3)';
-          labelDiv.style.border = '1px solid rgba(255,255,255,0.2)';
-          labelDiv.style.pointerEvents = 'auto';
+        if (coordStops.length < 2) return;
 
-          labelDiv.innerHTML = `<span style="background: #f59e0b; color: #0f172a; padding: 0 4px; border-radius: 3px; font-weight: 800; font-size: 10px;">${letterLabel}</span> <span>${stop.stopName}</span>`;
+        const originStop = coordStops[0];
+        const destStop = coordStops[coordStops.length - 1];
 
-          const labelIcon = L.divIcon({
-            className: 'custom-stop-label-wrapper',
-            html: labelDiv,
-            iconSize: [0, 0],
-            iconAnchor: [-10, 8]
-          });
+        const originSnapped = snapPointToPolyline(originStop.latitude, originStop.longitude, currentPolyline);
+        const destSnapped = snapPointToPolyline(destStop.latitude, destStop.longitude, currentPolyline);
 
-          const marker = L.marker(snapped, { icon: labelIcon })
-            .addTo(mapInstance.current)
-            .bindPopup(`<strong>Stop ${letterLabel}: ${stop.stopName}</strong><br/>Sequence: ${stop.sequence}${stop.upTime ? `<br/>Scheduled: ${stop.upTime}` : ''}`);
+        // Origin (Start) Pin - Green Badge
+        const originDiv = document.createElement('div');
+        originDiv.style.background = '#10b981';
+        originDiv.style.color = '#ffffff';
+        originDiv.style.padding = '4px 8px';
+        originDiv.style.borderRadius = '6px';
+        originDiv.style.fontSize = '12px';
+        originDiv.style.fontWeight = '700';
+        originDiv.style.fontFamily = 'Inter, system-ui, sans-serif';
+        originDiv.style.boxShadow = '0 2px 8px rgba(0,0,0,0.4)';
+        originDiv.innerHTML = `START: ${originStop.stopName}`;
 
-          mapMarkers.current[`stop_${stop.stopId}`] = marker;
+        const originMarker = L.marker(originSnapped, { icon: L.divIcon({ html: originDiv, iconSize: [0, 0], iconAnchor: [-10, 10] }) })
+          .addTo(mapInstance.current);
+        mapMarkers.current['start_pin'] = originMarker;
 
-          return {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [snapped[1], snapped[0]]
-            },
-            properties: {
-              stopId: stop.stopId,
-              stopName: stop.stopName,
-              label: letterLabel,
-              sequence: stop.sequence,
-              upTime: stop.upTime || ''
-            }
-          };
-        });
+        // Destination (End) Pin - Red Badge
+        const destDiv = document.createElement('div');
+        destDiv.style.background = '#ef4444';
+        destDiv.style.color = '#ffffff';
+        destDiv.style.padding = '4px 8px';
+        destDiv.style.borderRadius = '6px';
+        destDiv.style.fontSize = '12px';
+        destDiv.style.fontWeight = '700';
+        destDiv.style.fontFamily = 'Inter, system-ui, sans-serif';
+        destDiv.style.boxShadow = '0 2px 8px rgba(0,0,0,0.4)';
+        destDiv.innerHTML = `DESTINATION: ${destStop.stopName}`;
 
-        const geojson = {
-          type: 'FeatureCollection',
-          features: features
-        };
-
-        const source = nativeMap.getSource('wbsb-stops-source');
-        if (source) {
-          source.setData(geojson);
-        } else {
-          nativeMap.addSource('wbsb-stops-source', {
-            type: 'geojson',
-            data: geojson
-          });
-
-          nativeMap.addLayer({
-            id: 'wbsb-stops-outer',
-            type: 'circle',
-            source: 'wbsb-stops-source',
-            paint: {
-              'circle-radius': 7,
-              'circle-color': '#ffffff',
-              'circle-stroke-color': '#0f172a',
-              'circle-stroke-width': 2.5
-            }
-          });
-
-          nativeMap.addLayer({
-            id: 'wbsb-stops-inner',
-            type: 'circle',
-            source: 'wbsb-stops-source',
-            paint: {
-              'circle-radius': 2.5,
-              'circle-color': '#0f172a'
-            }
-          });
-        }
+        const destMarker = L.marker(destSnapped, { icon: L.divIcon({ html: destDiv, iconSize: [0, 0], iconAnchor: [-10, 10] }) })
+          .addTo(mapInstance.current);
+        mapMarkers.current['dest_pin'] = destMarker;
       };
 
-      // Draw initial single route line and stop circles
+      // Draw initial single route line and terminal pins
       drawSingleRouteLine(latlngs);
-      renderWebGLStops(latlngs);
+      renderTerminalMarkers(latlngs);
 
       roadRoutePointsRef.current = [];
 
-      // Fetch exact road geometry from OSRM and update single route line & stop circles
+      // Fetch exact road geometry from OSRM and update single route line & pins
       fetchRoadRoute(coordStops)
         .then(roadLatLngs => {
           if (!isCurrent) return;
@@ -1575,7 +1527,7 @@ function App() {
           if (roadLatLngs && roadLatLngs.length > 0) {
             roadRoutePointsRef.current = roadLatLngs;
             drawSingleRouteLine(roadLatLngs);
-            renderWebGLStops(roadLatLngs);
+            renderTerminalMarkers(roadLatLngs);
           }
         })
         .catch(err => {
