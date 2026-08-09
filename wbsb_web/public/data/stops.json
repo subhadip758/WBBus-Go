@@ -321,20 +321,20 @@
     {
       "stop_id": "stop_rudra",
       "stop_name": "Rudra",
-      "latitude": 22.3509781,
-      "longitude": 88.481718
+      "latitude": 22.99,
+      "longitude": 86.88
     },
     {
       "stop_id": "stop_ambika_nagar",
       "stop_name": "Ambika Nagar",
-      "latitude": 22.1293562,
-      "longitude": 88.599536
+      "latitude": 22.97,
+      "longitude": 86.91
     },
     {
       "stop_id": "stop_mukutmanipur",
       "stop_name": "Mukutmanipur",
-      "latitude": 22.962559,
-      "longitude": 86.7875222
+      "latitude": 22.955,
+      "longitude": 86.935
     },
     {
       "stop_id": "stop_khatra",
@@ -369,8 +369,8 @@
     {
       "stop_id": "stop_jamtoria",
       "stop_name": "Jamtoria",
-      "latitude": 22.5726,
-      "longitude": 88.3639
+      "latitude": 22.98,
+      "longitude": 86.85
     },
     {
       "stop_id": "stop_barabazar",
@@ -501,8 +501,8 @@
     {
       "stop_id": "stop_amanpur",
       "stop_name": "Amanpur",
-      "latitude": 22.63018825625,
-      "longitude": 87.94056111875
+      "latitude": 22.675,
+      "longitude": 87.56
     },
     {
       "stop_id": "stop_amarkanan",
@@ -693,8 +693,8 @@
     {
       "stop_id": "stop_baharasole",
       "stop_name": "Baharasole",
-      "latitude": 22.6877765125,
-      "longitude": 87.5172222375
+      "latitude": 22.67,
+      "longitude": 87.57
     },
     {
       "stop_id": "stop_baid",
@@ -2985,8 +2985,8 @@
     {
       "stop_id": "stop_khetua",
       "stop_name": "Khetua",
-      "latitude": 22.5726,
-      "longitude": 88.3639
+      "latitude": 22.68,
+      "longitude": 87.55
     },
     {
       "stop_id": "stop_khirpai",
@@ -3723,8 +3723,8 @@
     {
       "stop_id": "stop_nawpara",
       "stop_name": "Nawpara",
-      "latitude": 22.5726,
-      "longitude": 88.3639
+      "latitude": 23.06,
+      "longitude": 87.28
     },
     {
       "stop_id": "stop_nayabasat",
@@ -4107,8 +4107,8 @@
     {
       "stop_id": "stop_puyabagan",
       "stop_name": "Puyabagan",
-      "latitude": 23.235,
-      "longitude": 87.045
+      "latitude": 23.22,
+      "longitude": 87.06
     },
     {
       "stop_id": "stop_radhamoni",
@@ -4749,8 +4749,8 @@
     {
       "stop_id": "stop_telami",
       "stop_name": "Telami",
-      "latitude": 22.5726,
-      "longitude": 88.3639
+      "latitude": 22.58,
+      "longitude": 88.27
     },
     {
       "stop_id": "stop_telipukur",

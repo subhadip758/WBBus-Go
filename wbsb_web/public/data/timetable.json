@@ -436,176 +436,71 @@
     },
     {
       "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_rudra",
-      "sequence": 2,
-      "up_time": "04:00",
-      "down_time": "21:30"
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_ambika_nagar",
-      "sequence": 3,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_mukutmanipur",
-      "sequence": 4,
-      "up_time": "04:25",
-      "down_time": "20:45"
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
       "stop_id": "stop_khatra",
-      "sequence": 5,
+      "sequence": 2,
       "up_time": "04:50",
       "down_time": "20:00"
     },
     {
       "bus_id": "bus_putul_jamtoria_kol",
       "stop_id": "stop_hatirampur",
-      "sequence": 6,
+      "sequence": 3,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_bangla",
+      "stop_id": "stop_rudra",
+      "sequence": 4,
+      "up_time": "04:00",
+      "down_time": "21:30"
+    },
+    {
+      "bus_id": "bus_putul_jamtoria_kol",
+      "stop_id": "stop_ambika_nagar",
+      "sequence": 5,
+      "up_time": null,
+      "down_time": null
+    },
+    {
+      "bus_id": "bus_putul_jamtoria_kol",
+      "stop_id": "stop_mukutmanipur",
+      "sequence": 6,
+      "up_time": "04:25",
+      "down_time": "20:45"
+    },
+    {
+      "bus_id": "bus_putul_jamtoria_kol",
+      "stop_id": "stop_dankuni",
       "sequence": 7,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_indpur",
+      "stop_id": "stop_kona_expressway_more",
       "sequence": 8,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_sunukpahari",
+      "stop_id": "stop_salap",
       "sequence": 9,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_puabagan",
+      "stop_id": "stop_santragachi",
       "sequence": 10,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_dhaldanga",
-      "sequence": 11,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_bankura",
-      "sequence": 12,
-      "up_time": "05:50",
-      "down_time": "19:00"
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_makurgram",
-      "sequence": 13,
-      "up_time": "06:05",
-      "down_time": "18:45"
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_beliatore",
-      "sequence": 14,
-      "up_time": "06:20",
-      "down_time": "18:30"
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_barjora",
-      "sequence": 15,
-      "up_time": "06:35",
-      "down_time": "18:15"
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_durgapur_station",
-      "sequence": 16,
-      "up_time": "06:50",
-      "down_time": "18:00"
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_panagarh",
-      "sequence": 17,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_budbud",
-      "sequence": 18,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_galsi",
-      "sequence": 19,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_bardhaman",
-      "sequence": 20,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_saktigarh",
-      "sequence": 21,
-      "up_time": "08:10",
-      "down_time": "16:30"
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_dankuni",
-      "sequence": 22,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_salap",
-      "sequence": 23,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_kona_expressway_more",
-      "sequence": 24,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
-      "stop_id": "stop_santragachi",
-      "sequence": 25,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_putul_jamtoria_kol",
       "stop_id": "stop_kolkata_esplanade",
-      "sequence": 26,
+      "sequence": 11,
       "up_time": "10:20",
       "down_time": "14:30"
     },
@@ -1073,15 +968,8 @@
     },
     {
       "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
-      "stop_id": "stop_mukutmanipur",
-      "sequence": 6,
-      "up_time": "09:50",
-      "down_time": "13:00"
-    },
-    {
-      "bus_id": "bus_joy_bharat_mata_balarampur_khatra",
       "stop_id": "stop_khatra",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": "10:20",
       "down_time": "12:20"
     },
@@ -2074,162 +1962,78 @@
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_bankura_more",
-      "sequence": 2,
-      "up_time": "09:35",
-      "down_time": "18:05"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
       "stop_id": "stop_telipukur",
-      "sequence": 3,
+      "sequence": 2,
       "up_time": "09:25",
       "down_time": "18:15"
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_kamarpukur",
-      "sequence": 4,
-      "up_time": "11:25",
-      "down_time": "16:15"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_pallisree",
-      "sequence": 5,
-      "up_time": "10:55",
-      "down_time": "16:45"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_hajipur",
-      "sequence": 6,
-      "up_time": "11:35",
-      "down_time": "16:05"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_arambagh",
-      "sequence": 7,
-      "up_time": "10:45",
-      "down_time": "16:55"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_kalipur",
-      "sequence": 8,
-      "up_time": "11:05",
-      "down_time": "16:35"
+      "stop_id": "stop_uchalan",
+      "sequence": 3,
+      "up_time": null,
+      "down_time": null
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
       "stop_id": "stop_bulchandrapur",
-      "sequence": 9,
+      "sequence": 4,
       "up_time": "10:30",
       "down_time": "17:10"
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_goghat",
-      "sequence": 10,
-      "up_time": "11:15",
-      "down_time": "16:25"
+      "stop_id": "stop_arambagh",
+      "sequence": 5,
+      "up_time": "10:45",
+      "down_time": "16:55"
+    },
+    {
+      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
+      "stop_id": "stop_kamarpukur",
+      "sequence": 6,
+      "up_time": "11:25",
+      "down_time": "16:15"
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
       "stop_id": "stop_ramjibanpur",
-      "sequence": 11,
+      "sequence": 7,
       "up_time": "11:45",
       "down_time": "15:55"
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_jara",
-      "sequence": 12,
-      "up_time": "12:05",
-      "down_time": "15:35"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_srinagar",
-      "sequence": 13,
-      "up_time": "11:55",
-      "down_time": "15:45"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
       "stop_id": "stop_khirpai",
-      "sequence": 14,
+      "sequence": 8,
       "up_time": "12:15",
       "down_time": "15:25"
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
       "stop_id": "stop_chandrakona_town",
-      "sequence": 15,
+      "sequence": 9,
       "up_time": "12:30",
       "down_time": "15:10"
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_neradeul",
-      "sequence": 16,
-      "up_time": "12:45",
-      "down_time": "14:55"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_mugbasan",
-      "sequence": 17,
-      "up_time": "13:00",
-      "down_time": "14:40"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
       "stop_id": "stop_keshpur",
-      "sequence": 18,
+      "sequence": 10,
       "up_time": "13:15",
       "down_time": "14:25"
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_dharma",
-      "sequence": 19,
-      "up_time": "13:30",
-      "down_time": "14:10"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
       "stop_id": "stop_medinipur",
-      "sequence": 20,
+      "sequence": 11,
       "up_time": "13:45",
       "down_time": "15:00"
     },
     {
       "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_mohanpur",
-      "sequence": 21,
-      "up_time": "14:00",
-      "down_time": "14:45"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_chaurangee",
-      "sequence": 22,
-      "up_time": "14:10",
-      "down_time": "14:35"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
-      "stop_id": "stop_inda_more",
-      "sequence": 23,
-      "up_time": "14:20",
-      "down_time": "14:25"
-    },
-    {
-      "bus_id": "bus_ishika_traders_bardhaman_alisha_kharagpur",
       "stop_id": "stop_kharagpur",
-      "sequence": 24,
+      "sequence": 12,
       "up_time": "14:30",
       "down_time": "14:20"
     },
@@ -2536,24 +2340,24 @@
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
-      "stop_id": "stop_baharasole",
-      "sequence": 6,
-      "up_time": "08:55",
-      "down_time": "19:05"
-    },
-    {
-      "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_khirpai",
-      "sequence": 7,
+      "sequence": 6,
       "up_time": null,
       "down_time": "18:00"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
       "stop_id": "stop_kalikapur",
-      "sequence": 8,
+      "sequence": 7,
       "up_time": null,
       "down_time": "18:15"
+    },
+    {
+      "bus_id": "bus_rof_rof_bishnupur_township",
+      "stop_id": "stop_baharasole",
+      "sequence": 8,
+      "up_time": "08:55",
+      "down_time": "19:05"
     },
     {
       "bus_id": "bus_rof_rof_bishnupur_township",
@@ -5574,71 +5378,36 @@
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_gaura",
+      "stop_id": "stop_dakshineswar",
       "sequence": 13,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_khukurdaha",
+      "stop_id": "stop_sinthir_more",
       "sequence": 14,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_mechogram",
+      "stop_id": "stop_dunlop",
       "sequence": 15,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_haldia_more",
+      "stop_id": "stop_bally_halt",
       "sequence": 16,
       "up_time": null,
       "down_time": null
     },
     {
       "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_kona_expressway",
-      "sequence": 17,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_bally_halt",
-      "sequence": 18,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_dakshineswar",
-      "sequence": 19,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_dunlop",
-      "sequence": 20,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jupiter_express_khetua_kolkata_station",
-      "stop_id": "stop_sinthir_more",
-      "sequence": 21,
-      "up_time": null,
-      "down_time": null
-    },
-    {
-      "bus_id": "bus_jupiter_express_khetua_kolkata_station",
       "stop_id": "stop_kolkata_station",
-      "sequence": 22,
+      "sequence": 17,
       "up_time": null,
       "down_time": null
     },
@@ -7359,10 +7128,10 @@
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
-      "stop_id": "stop_santragachi",
+      "stop_id": "stop_burrabazar",
       "sequence": 2,
-      "up_time": "09:55",
-      "down_time": "16:15"
+      "up_time": "10:35",
+      "down_time": "15:30"
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
@@ -7373,15 +7142,8 @@
     },
     {
       "bus_id": "bus_jashoda_telami_howrah_station",
-      "stop_id": "stop_burrabazar",
-      "sequence": 4,
-      "up_time": "10:35",
-      "down_time": "15:30"
-    },
-    {
-      "bus_id": "bus_jashoda_telami_howrah_station",
       "stop_id": "stop_howrah_station",
-      "sequence": 5,
+      "sequence": 4,
       "up_time": "10:45",
       "down_time": "15:50"
     },
