@@ -10,7 +10,6 @@
       "stop_sequence": [
         "stop_kolkata_esplanade",
         "stop_shyambazar",
-        "stop_bally",
         "stop_purulia"
       ],
       "data_quality_notes": []
@@ -24,7 +23,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_baghmundi",
-        "stop_balarampur",
         "stop_kona_expressway_more",
         "stop_salap",
         "stop_santragachi",
@@ -41,8 +39,8 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_purulia",
-        "stop_salap",
         "stop_kona_expressway_more",
+        "stop_salap",
         "stop_santragachi",
         "stop_kolkata_esplanade"
       ],
@@ -57,8 +55,8 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_purulia",
-        "stop_salap",
         "stop_kona_expressway_more",
+        "stop_salap",
         "stop_kolkata_esplanade"
       ],
       "data_quality_notes": []
@@ -77,17 +75,9 @@
         "stop_ramsagar",
         "stop_bishnupur",
         "stop_joypur",
-        "stop_kotulpur",
         "stop_khatul",
         "stop_bengai",
         "stop_mayapur",
-        "stop_champadanga",
-        "stop_siakhala",
-        "stop_mosat",
-        "stop_chanditala",
-        "stop_dankuni",
-        "stop_bally",
-        "stop_dakshineswar",
         "stop_shyambazar",
         "stop_kolkata_esplanade"
       ],
@@ -120,7 +110,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_barabazar",
-        "stop_sindri",
         "stop_kona_expressway_more",
         "stop_salap",
         "stop_santragachi",
@@ -168,11 +157,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_asansol",
-        "stop_kalipahari_more",
-        "stop_bolpur",
-        "stop_sian_hospital",
-        "stop_beluti",
-        "stop_saota",
         "stop_nanur",
         "stop_kirnahar",
         "stop_daskalgram",
@@ -197,20 +181,14 @@
         "stop_asansol",
         "stop_bankura_bypass",
         "stop_dhaldanga",
-        "stop_bhadutala",
         "stop_medinipur",
         "stop_kharagpur_chaurangee",
         "stop_kharagpur_st",
         "stop_makrampur",
         "stop_narayangarh",
         "stop_bakhrabad",
-        "stop_belda",
         "stop_thakurchak",
         "stop_khakurda",
-        "stop_sauri",
-        "stop_jahalda",
-        "stop_ramnagar",
-        "stop_choddomail",
         "stop_thikra_more",
         "stop_new_digha",
         "stop_old_digha",
@@ -229,7 +207,6 @@
         "stop_balarampur",
         "stop_shalbani",
         "stop_beldi",
-        "stop_barabazar",
         "stop_katin",
         "stop_mukutmanipur",
         "stop_khatra"
@@ -258,7 +235,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bandwan",
-        "stop_manbazar",
         "stop_islampur",
         "stop_siliguri"
       ],
@@ -273,7 +249,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bandwan",
-        "stop_bangla",
         "stop_puabagan",
         "stop_dhaldanga",
         "stop_bankura_bus_stand"
@@ -328,9 +303,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bankura",
-        "stop_govindadham",
-        "stop_amarkanan",
-        "stop_kalipahari_more",
         "stop_asansol"
       ],
       "data_quality_notes": []
@@ -352,7 +324,6 @@
         "stop_hebir_more",
         "stop_makurgram",
         "stop_dhoni",
-        "stop_beliatore",
         "stop_phulberia",
         "stop_barjora",
         "stop_durgapur_bus_stand"
@@ -386,7 +357,6 @@
         "stop_lakshyatoda_bridge",
         "stop_hebir_mor",
         "stop_makurgram",
-        "stop_beliatore",
         "stop_barjora",
         "stop_toll_plaza",
         "stop_durgapur_barrage",
@@ -444,10 +414,7 @@
       "stop_sequence": [
         "stop_barabazar",
         "stop_sindri",
-        "stop_manbazar",
         "stop_budhpur",
-        "stop_puncha",
-        "stop_bangla",
         "stop_sunukpahari",
         "stop_puabagan",
         "stop_rajgram",
@@ -464,7 +431,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_barakar",
-        "stop_asansol_bus_stand",
         "stop_arambagh"
       ],
       "data_quality_notes": []
@@ -484,8 +450,6 @@
         "stop_birati_more",
         "stop_airport_gate_3",
         "stop_belgharia_expressway",
-        "stop_dunlop",
-        "stop_dakshineswar",
         "stop_bally_halt",
         "stop_ranihati",
         "stop_choddomile_shankarpur",
@@ -494,17 +458,12 @@
         "stop_heria",
         "stop_kalinagar",
         "stop_nachinda",
-        "stop_marishda",
-        "stop_ghatua",
-        "stop_pichaboni",
-        "stop_chaulkhola_mandarmani",
-        "stop_balisai_tajpur",
         "stop_ramnagar",
-        "stop_thikra_more",
         "stop_alankarpur",
-        "stop_old_digha",
+        "stop_thikra_more",
         "stop_digha_bypass",
         "stop_new_digha",
+        "stop_old_digha",
         "stop_digha_border_udaipur"
       ],
       "data_quality_notes": []
@@ -518,7 +477,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bardhaman",
-        "stop_goura",
         "stop_mechogram",
         "stop_mecheda"
       ],
@@ -534,8 +492,6 @@
       "stop_sequence": [
         "stop_bardhaman",
         "stop_mehedi_bagan",
-        "stop_badshahi_road",
-        "stop_natunhat",
         "stop_berhampore"
       ],
       "data_quality_notes": []
@@ -549,7 +505,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bardhaman",
-        "stop_mehedi_bagan",
         "stop_suri"
       ],
       "data_quality_notes": []
@@ -563,18 +518,10 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bardhaman_alisha",
-        "stop_telipukur",
-        "stop_bulchandrapur",
-        "stop_kalipur",
-        "stop_goghat",
-        "stop_srinagar",
-        "stop_khirpai",
-        "stop_chandrakona_town",
         "stop_neradeul",
         "stop_mugbasan",
         "stop_keshpur",
         "stop_dharma",
-        "stop_medinipur",
         "stop_mohanpur",
         "stop_chaurangee",
         "stop_inda_more",
@@ -636,16 +583,8 @@
         "stop_garhbeta",
         "stop_kiyaboni",
         "stop_chandrakona_road",
-        "stop_salboni",
-        "stop_godapiyasal",
-        "stop_bhadutala",
-        "stop_keranichati",
-        "stop_khakurda",
         "stop_sauri",
         "stop_jahalda",
-        "stop_lalat",
-        "stop_egra",
-        "stop_ramnagar",
         "stop_alankarpur",
         "stop_digha_more",
         "stop_old_digha"
@@ -674,7 +613,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bishnupur",
-        "stop_barjora",
         "stop_durgapur_station"
       ],
       "data_quality_notes": []
@@ -688,22 +626,9 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bishnupur",
-        "stop_bankadaha",
-        "stop_dhadika",
-        "stop_baharasole",
         "stop_khirpai",
         "stop_kalikapur",
-        "stop_chandrakona_town",
-        "stop_radhanagar",
-        "stop_daspur",
-        "stop_bakultala",
-        "stop_gaura",
-        "stop_khukurdah",
-        "stop_keshapat",
-        "stop_mechogram",
-        "stop_mecheda_station",
         "stop_maniktala",
-        "stop_tamluk",
         "stop_nandakumar_bazar",
         "stop_mahishadal",
         "stop_ranichak",
@@ -720,10 +645,7 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bishnupur",
-        "stop_bankadaha",
-        "stop_taldangra",
         "stop_hatirampur",
-        "stop_supur",
         "stop_manbazar"
       ],
       "data_quality_notes": []
@@ -738,13 +660,8 @@
       "stop_sequence": [
         "stop_bolpur",
         "stop_rajatpur",
-        "stop_bhedia",
         "stop_bulchand",
-        "stop_naisharai",
         "stop_khirpai",
-        "stop_radhanagar",
-        "stop_ramnagar",
-        "stop_choddomail",
         "stop_alankarpur",
         "stop_old_digha",
         "stop_new_digha"
@@ -760,7 +677,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_bolpur",
-        "stop_sian_hospital",
         "stop_panchthupi"
       ],
       "data_quality_notes": []
@@ -776,7 +692,6 @@
         "stop_burdwan",
         "stop_telipukur",
         "stop_arambagh",
-        "stop_radhanagar",
         "stop_ghatal",
         "stop_daspur",
         "stop_itaberia"
@@ -794,8 +709,6 @@
         "stop_burdwan_alisha",
         "stop_kamarpukur_chati",
         "stop_arambagh",
-        "stop_ghatal_cbs",
-        "stop_gaura",
         "stop_panskura"
       ],
       "data_quality_notes": []
@@ -810,11 +723,6 @@
       "stop_sequence": [
         "stop_burdwan_alisha",
         "stop_telipukur",
-        "stop_seherabazar",
-        "stop_gaura",
-        "stop_sonamui",
-        "stop_khukurdah",
-        "stop_keshpat",
         "stop_mechogram",
         "stop_mecheda_station"
       ],
@@ -844,7 +752,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_chandrakona_road",
-        "stop_barjora",
         "stop_durgapur_station"
       ],
       "data_quality_notes": []
@@ -885,11 +792,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_contai_central",
-        "stop_contai_kharagpur_bypass",
-        "stop_satmile",
-        "stop_mokrampur",
-        "stop_kharagpur_station",
-        "stop_kharagpur_chaurangi",
         "stop_mohanpur",
         "stop_medinipur_central"
       ],
@@ -1017,8 +919,8 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_digha",
-        "stop_alankarpur",
         "stop_thikra_more",
+        "stop_alankarpur",
         "stop_ramnagar",
         "stop_mirzapur"
       ],
@@ -1046,16 +948,11 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_digha_border",
-        "stop_new_digha",
         "stop_old_digha",
+        "stop_new_digha",
         "stop_ramnagar",
-        "stop_barda_chowkan",
-        "stop_daspur",
-        "stop_ghatal",
-        "stop_khirpai",
         "stop_srinagar",
         "stop_ramjibanpur",
-        "stop_kamarpukur",
         "stop_jairambati"
       ],
       "data_quality_notes": []
@@ -1105,9 +1002,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_durgapur_st",
-        "stop_kotulpur",
-        "stop_koalpara",
-        "stop_deshra",
         "stop_joyrambati",
         "stop_kamarpukur",
         "stop_arambagh"
@@ -1170,7 +1064,6 @@
         "stop_chandipur",
         "stop_bajkul",
         "stop_heria",
-        "stop_contai",
         "stop_digha",
         "stop_digha_border"
       ],
@@ -1211,9 +1104,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_haldia",
-        "stop_durgachak",
-        "stop_nandakumar",
-        "stop_kharagpur_station",
         "stop_dahijuri",
         "stop_binpur",
         "stop_silda",
@@ -1230,24 +1120,11 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_haldia",
-        "stop_durgachak",
-        "stop_sutahata",
-        "stop_chaitanyapur",
         "stop_mahishadal",
-        "stop_tamluk",
-        "stop_mecheda_station",
-        "stop_mechogram",
-        "stop_keshapat",
         "stop_chandrakona_town",
-        "stop_kalikapur",
-        "stop_khirpai",
         "stop_baharasole",
-        "stop_adhar_nayan",
         "stop_garhbeta",
         "stop_dhadika",
-        "stop_bankadaha",
-        "stop_ramsagar",
-        "stop_onda",
         "stop_dhaldanga",
         "stop_bankura"
       ],
@@ -1276,7 +1153,6 @@
       "stop_sequence": [
         "stop_hetiya",
         "stop_molla_road",
-        "stop_nischintapur",
         "stop_fatepur",
         "stop_alisa_bus_stand"
       ],
@@ -1291,17 +1167,11 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_itaberia",
-        "stop_udbadal",
-        "stop_bhupatinagar",
-        "stop_radhamoni",
-        "stop_mecheda_station",
         "stop_deulia_bazar",
         "stop_siddha",
         "stop_mechogram",
         "stop_keshapat",
         "stop_khukurdaha",
-        "stop_sonamui",
-        "stop_gaura",
         "stop_jara",
         "stop_champadanga",
         "stop_tarakeswar"
@@ -1317,9 +1187,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_jajigram",
-        "stop_gangulidanga",
-        "stop_palishgram",
-        "stop_raniganj",
         "stop_asansol"
       ],
       "data_quality_notes": []
@@ -1352,15 +1219,12 @@
         "stop_khanyan",
         "stop_pandua",
         "stop_simlagarh",
-        "stop_boinchi",
-        "stop_memari",
         "stop_shaktigarh",
         "stop_burdwan_bypass",
         "stop_burdwan_nababhat_bus_stand",
         "stop_galsi",
         "stop_budbud",
         "stop_panagarh",
-        "stop_muchipara",
         "stop_durgapur_city_centre",
         "stop_bhiringi_more",
         "stop_panjabi_more",
@@ -1395,11 +1259,8 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_kharagpur",
-        "stop_medinipur",
         "stop_keshpur",
         "stop_jhakra",
-        "stop_khirpai",
-        "stop_seharabazar",
         "stop_burdwan"
       ],
       "data_quality_notes": []
@@ -1413,7 +1274,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_kharagpur_bus_stand",
-        "stop_medinipur_bus_stand",
         "stop_burdwan_alisha_bus_stand"
       ],
       "data_quality_notes": []
@@ -1432,7 +1292,6 @@
         "stop_dangarampur",
         "stop_bangla",
         "stop_indpur",
-        "stop_amarkanan",
         "stop_durlabhpur",
         "stop_mejia",
         "stop_raniganj"
@@ -1463,10 +1322,6 @@
       "stop_sequence": [
         "stop_khatra",
         "stop_arkama",
-        "stop_keshiapa",
-        "stop_paksara",
-        "stop_taldangra",
-        "stop_piardoba",
         "stop_goghat",
         "stop_joyrambati",
         "stop_pachakhali",
@@ -1558,7 +1413,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_kolkata_station",
-        "stop_sinthi_more",
         "stop_kolaghat"
       ],
       "data_quality_notes": []
@@ -1585,7 +1439,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_lalgarh",
-        "stop_champadanga",
         "stop_tarakeswar"
       ],
       "data_quality_notes": []
@@ -1599,7 +1452,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_langalhata",
-        "stop_kurannahar",
         "stop_college_mor",
         "stop_city_hotel",
         "stop_bardhaman_station_mor",
@@ -1617,9 +1469,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_manbazar",
-        "stop_khatra",
-        "stop_sarenga",
-        "stop_keranichati",
         "stop_medinipur"
       ],
       "data_quality_notes": []
@@ -1634,7 +1483,6 @@
       "stop_sequence": [
         "stop_mangrol",
         "stop_heria",
-        "stop_contai",
         "stop_digha"
       ],
       "data_quality_notes": []
@@ -1661,8 +1509,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_medinipur",
-        "stop_kharagpur_chaurangee",
-        "stop_mohanpur",
         "stop_amtala",
         "stop_keranichati",
         "stop_mirzapur"
@@ -1720,7 +1566,6 @@
       "stop_sequence": [
         "stop_midnapore_central_bus_stand",
         "stop_kharagpur",
-        "stop_belda",
         "stop_digha"
       ],
       "data_quality_notes": []
@@ -1767,23 +1612,12 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_padmashree",
-        "stop_bangur",
-        "stop_lake_town",
-        "stop_ultadanga",
         "stop_kankurgachi",
-        "stop_beleghata",
         "stop_phoolbagan",
         "stop_sealdah",
         "stop_moulali",
         "stop_cit_road",
         "stop_park_circus",
-        "stop_ballygunge_phari",
-        "stop_gariahat",
-        "stop_golpark",
-        "stop_dhakuria",
-        "stop_jadavpur",
-        "stop_baghajatin",
-        "stop_ganguly_bagan",
         "stop_airport_1_no"
       ],
       "data_quality_notes": []
@@ -1810,7 +1644,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_phulberia",
-        "stop_bankura_bypass",
         "stop_lalbazar",
         "stop_bankura_bus_stand"
       ],
@@ -1828,7 +1661,6 @@
         "stop_motgoda",
         "stop_raipur",
         "stop_pursurah",
-        "stop_champadanga",
         "stop_tarakeswar"
       ],
       "data_quality_notes": []
@@ -1886,9 +1718,6 @@
         "stop_lalpur",
         "stop_hura",
         "stop_bishpuria",
-        "stop_kamalpur",
-        "stop_kharbona",
-        "stop_chhatna",
         "stop_bankura"
       ],
       "data_quality_notes": []
@@ -1902,8 +1731,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_purulia",
-        "stop_sarbari_more",
-        "stop_nituria",
         "stop_asansol"
       ],
       "data_quality_notes": []
@@ -1917,8 +1744,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_ramgarh",
-        "stop_makli",
-        "stop_radhanagar",
         "stop_srinagar",
         "stop_ramjibanpur"
       ],
@@ -1976,7 +1801,6 @@
       "stop_sequence": [
         "stop_sabrakone",
         "stop_bishnupur",
-        "stop_barjora",
         "stop_durgapur_station"
       ],
       "data_quality_notes": []
@@ -1990,10 +1814,7 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_seharabazar",
-        "stop_berugram",
         "stop_badulia",
-        "stop_hebir_more",
-        "stop_makurgram",
         "stop_bankura_bypass",
         "stop_bankura_bus_stand"
       ],
@@ -2022,8 +1843,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_sonathali",
-        "stop_dhaban",
-        "stop_alijhara",
         "stop_saltora"
       ],
       "data_quality_notes": []
@@ -2081,7 +1900,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_tamluk",
-        "stop_mecheda_station",
         "stop_alisha_bus_stand"
       ],
       "data_quality_notes": []
@@ -2097,7 +1915,6 @@
         "stop_tarakeshwar",
         "stop_chaitanyapur",
         "stop_manjushree_more",
-        "stop_durgachak",
         "stop_haldia"
       ],
       "data_quality_notes": []
@@ -2111,9 +1928,7 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_tarakeswar",
-        "stop_champadanga",
         "stop_kotulpur",
-        "stop_bishnupur",
         "stop_onda",
         "stop_bankura"
       ],
@@ -2183,7 +1998,6 @@
       "estimated_travel_time_min": null,
       "stop_sequence": [
         "stop_telami",
-        "stop_kasbagola",
         "stop_egra_digha_more"
       ],
       "data_quality_notes": []
