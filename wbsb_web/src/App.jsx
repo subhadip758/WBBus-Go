@@ -1009,27 +1009,8 @@ async function fetchRoadRoute(coordStops) {
 
   if (uniqueStops.length < 2) return [];
 
-  // 1. Try full multi-waypoint OSRM driving route first for a seamless real-world road path like Google Maps
-  try {
-    const coordsString = uniqueStops.map(s => `${s.longitude},${s.latitude}`).join(';');
-    const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson`;
-    const res = await fetch(url);
-    if (res.ok) {
-      const data = await res.json();
-      if (data.code === 'Ok' && data.routes && data.routes.length > 0) {
-        const roadCoords = data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]);
-        if (roadCoords && roadCoords.length > 0) {
-          return roadCoords;
-        }
-      }
-    }
-  } catch (err) {
-    console.warn("Full multi-waypoint OSRM query failed, falling back to leg-by-leg routing:", err);
-  }
-
-  // 2. Fallback: leg-by-leg OSRM routing between consecutive stop pairs
   const queryOSRMLeg = async (s1, s2) => {
-    const url = `https://router.project-osrm.org/route/v1/driving/${s1.longitude},${s1.latitude};${s2.longitude},${s2.latitude}?overview=full&geometries=geojson`;
+    const url = `https://router.project-osrm.org/route/v1/driving/${s1.longitude},${s1.latitude};${s2.longitude},${s2.latitude}?overview=full&geometries=geojson&continue_straight=true`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`OSRM HTTP error ${res.status}`);
     const data = await res.json();

@@ -921,8 +921,8 @@
     {
       "stop_id": "stop_bankuramore",
       "stop_name": "Bankuramore",
-      "latitude": 23.068133333333336,
-      "longitude": 87.66811333333334
+      "latitude": 23.2324,
+      "longitude": 87.85
     },
     {
       "stop_id": "stop_banshda",
@@ -1317,8 +1317,8 @@
     {
       "stop_id": "stop_bulchand",
       "stop_name": "Bulchand",
-      "latitude": 22.97426666666667,
-      "longitude": 87.59410666666666
+      "latitude": 22.9742,
+      "longitude": 87.5941
     },
     {
       "stop_id": "stop_bulchandpur",
@@ -1329,8 +1329,8 @@
     {
       "stop_id": "stop_bulchandrapur",
       "stop_name": "Bulchandrapur",
-      "latitude": 22.9508,
-      "longitude": 87.64098
+      "latitude": 22.9742,
+      "longitude": 87.5941
     },
     {
       "stop_id": "stop_bundala",
@@ -2217,8 +2217,8 @@
     {
       "stop_id": "stop_goghat",
       "stop_name": "Goghat",
-      "latitude": 22.8893089,
-      "longitude": 87.7062382
+      "latitude": 22.8893,
+      "longitude": 87.7062
     },
     {
       "stop_id": "stop_gogra",
@@ -2397,8 +2397,8 @@
     {
       "stop_id": "stop_hetia",
       "stop_name": "Hetia",
-      "latitude": 22.5726,
-      "longitude": 88.3639
+      "latitude": 22.98,
+      "longitude": 87.58
     },
     {
       "stop_id": "stop_hetiya",
@@ -3447,8 +3447,8 @@
     {
       "stop_id": "stop_mechogram",
       "stop_name": "Mechogram",
-      "latitude": 22.44086364,
-      "longitude": 87.84013865333334
+      "latitude": 22.4408,
+      "longitude": 87.8401
     },
     {
       "stop_id": "stop_medinipur",
@@ -3508,7 +3508,7 @@
       "stop_id": "stop_mirepota",
       "stop_name": "Mirepota",
       "latitude": 23.0564,
-      "longitude": 87.43005
+      "longitude": 87.43
     },
     {
       "stop_id": "stop_mirzapur",
@@ -3657,8 +3657,8 @@
     {
       "stop_id": "stop_naisharai",
       "stop_name": "Naisharai",
-      "latitude": 22.927333333333333,
-      "longitude": 87.68785333333334
+      "latitude": 22.9273,
+      "longitude": 87.6878
     },
     {
       "stop_id": "stop_naldanga",
@@ -3933,14 +3933,14 @@
     {
       "stop_id": "stop_panskura",
       "stop_name": "Panskura",
-      "latitude": 22.3994709,
-      "longitude": 87.7175073
+      "latitude": 22.3995,
+      "longitude": 87.7175
     },
     {
       "stop_id": "stop_panskura_station",
       "stop_name": "Panskura Station",
-      "latitude": 22.5726,
-      "longitude": 88.3639
+      "latitude": 22.3995,
+      "longitude": 87.7175
     },
     {
       "stop_id": "stop_para",
@@ -4119,8 +4119,8 @@
     {
       "stop_id": "stop_radhanagar",
       "stop_name": "Radhanagar",
-      "latitude": 22.689202950000002,
-      "longitude": 87.66598245
+      "latitude": 22.6892,
+      "longitude": 87.6659
     },
     {
       "stop_id": "stop_raghunathpur",
@@ -4437,8 +4437,8 @@
     {
       "stop_id": "stop_seherabazar",
       "stop_name": "Seherabazar",
-      "latitude": 22.997733333333333,
-      "longitude": 87.80873333333334
+      "latitude": 23.0564,
+      "longitude": 87.8223
     },
     {
       "stop_id": "stop_shakra",
@@ -4755,8 +4755,8 @@
     {
       "stop_id": "stop_telipukur",
       "stop_name": "Telipukur",
-      "latitude": 23.115066666666667,
-      "longitude": 87.83586666666666
+      "latitude": 23.115,
+      "longitude": 87.8358
     },
     {
       "stop_id": "stop_telur",
@@ -4846,7 +4846,7 @@
       "stop_id": "stop_uchalan",
       "stop_name": "Uchalan",
       "latitude": 23.0212,
-      "longitude": 87.50036
+      "longitude": 87.5003
     },
     {
       "stop_id": "stop_udbadal",
