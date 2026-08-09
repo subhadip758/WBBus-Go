@@ -366,28 +366,45 @@ const L = {
       },
       center: [88.3529, 22.5626], // [longitude, latitude]
       zoom: 8,
+      bearing: 0,
+      pitch: 0,
+      maxPitch: 0,
+      minPitch: 0,
+      dragRotate: false,
+      pitchWithRotate: false,
+      touchPitch: false,
       attributionControl: false
     });
     
+    // Disable rotation completely so scrolling and dragging ONLY pan and zoom the map
+    if (map.touchZoomRotate) {
+      map.touchZoomRotate.disableRotation();
+    }
+    if (map.dragRotate) {
+      map.dragRotate.disable();
+    }
+    
     // Add Google Maps style navigation controls
-    map.addControl(new window.maplibregl.NavigationControl(), 'top-right');
+    map.addControl(new window.maplibregl.NavigationControl({ showCompass: false }), 'top-right');
     
     const mapWrapper = {
       _nativeMap: map,
       setView: function(latlng, zoom) {
         this._nativeMap.jumpTo({
           center: [latlng[1], latlng[0]],
-          zoom: zoom
+          zoom: zoom,
+          bearing: 0,
+          pitch: 0
         });
         return this;
       },
       panTo: function(latlng) {
-        this._nativeMap.panTo([latlng[1], latlng[0]]);
+        this._nativeMap.panTo([latlng[1], latlng[0]], { bearing: 0, pitch: 0 });
         return this;
       },
       fitBounds: function(bounds, options) {
         const paddingVal = options && options.padding ? (Array.isArray(options.padding) ? options.padding[0] : options.padding) : 50;
-        this._nativeMap.fitBounds(bounds, { padding: paddingVal, duration: 1200 });
+        this._nativeMap.fitBounds(bounds, { padding: paddingVal, duration: 1200, bearing: 0, pitch: 0 });
         return this;
       },
       on: function(event, callback) {
@@ -996,7 +1013,8 @@ async function fetchRoadRoute(coordStops) {
   // road geometry and the road distance, so we can sanity-check it below.
   const queryOSRM = async (stops) => {
     const coordsString = stops.map(s => `${s.longitude},${s.latitude}`).join(';');
-    const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson`;
+    const radiuses = stops.map(() => '300').join(';');
+    const url = `https://router.project-osrm.org/route/v1/driving/${coordsString}?overview=full&geometries=geojson&continue_straight=true&radiuses=${radiuses}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`OSRM HTTP error ${res.status}`);
     const data = await res.json();
@@ -1009,12 +1027,9 @@ async function fetchRoadRoute(coordStops) {
     };
   };
 
-  // In rural/sparse-OSM areas, OSRM's public demo server occasionally returns a
-  // road path that loops far out of the way instead of the direct route (e.g. a
-  // mistagged one-way road). Route leg-by-leg (one stop pair at a time) so a bad
-  // leg can be detected and swapped for a straight line, instead of corrupting
-  // the whole multi-stop route the way batched routing would.
-  const MAX_DETOUR_RATIO = 2.5; // road distance > 2.5x straight-line distance = treat as a bad/looping result
+  // Strictly enforce main road corridor:
+  // If road distance > 1.35x straight line distance, it's taking an unnecessary bypass loop, so discard it!
+  const MAX_DETOUR_RATIO = 1.35;
   const allRoadPoints = [];
 
   for (let i = 0; i < uniqueStops.length - 1; i++) {
@@ -1027,17 +1042,16 @@ async function fetchRoadRoute(coordStops) {
       const { coords, distanceKm } = await queryOSRM([a, b]);
       const isSuspiciousDetour = straightKm > 0.05 && distanceKm > straightKm * MAX_DETOUR_RATIO;
       if (isSuspiciousDetour) {
-        console.warn(`Discarding looping OSRM leg ${a.stopName} -> ${b.stopName}: road ${distanceKm.toFixed(1)}km vs straight-line ${straightKm.toFixed(1)}km`);
+        console.warn(`Discarding bypass OSRM leg ${a.stopName} -> ${b.stopName}: road ${distanceKm.toFixed(1)}km vs straight ${straightKm.toFixed(1)}km`);
       } else if (coords && coords.length > 0) {
         legPoints = coords;
       }
     } catch (err) {
-      console.warn(`Leg routing ${a.stopName} -> ${b.stopName} failed, using straight line fallback:`, err);
+      console.warn(`Leg routing ${a.stopName} -> ${b.stopName} failed, using straight main-road line:`, err);
     }
 
     if (!legPoints) {
-      // Fallback: a plain straight line between the two stops. Not as pretty as a
-      // road-snapped line, but it never produces a wild loop.
+      // Fallback: direct main-road connection between consecutive bus stops
       legPoints = [[a.latitude, a.longitude], [b.latitude, b.longitude]];
     }
 
