@@ -692,6 +692,13 @@ function App() {
   const [remoteContributions, setRemoteContributions] = useState([]);
   const [userCoords, setUserCoords] = useState(null);
   
+  // Leaflet OpenStreetMap refs
+  const mapRef = useRef(null);
+  const mapInstance = useRef(null);
+  const mapMarkers = useRef({});
+  const routePolyline = useRef(null);
+  const roadRoutePointsRef = useRef([]);
+
   // Startup Geolocation Permission Request
   const requestStartupLocation = () => {
     if (navigator.geolocation) {
@@ -712,6 +719,25 @@ function App() {
   useEffect(() => {
     requestStartupLocation();
   }, []);
+
+  // OpenStreetMap Leaflet Map Initialization
+  useEffect(() => {
+    if (!loading && mapRef.current && !mapInstance.current && window.L) {
+      const L = window.L;
+      const map = L.map(mapRef.current, {
+        zoomControl: true,
+        attributionControl: true
+      }).setView([22.5626, 88.3529], 8);
+
+      // OpenStreetMap standard tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      mapInstance.current = map;
+    }
+  }, [loading]);
 
   // Fetch initial datasets
   useEffect(() => {
@@ -786,7 +812,7 @@ function App() {
     loadDatasets();
   }, []);
   
-  // Reset tracking states when selected bus changes
+  // Handle Bus Selection Change - update OpenStreetMap viewport, route polyline and terminal pins
   useEffect(() => {
     setIsTracking(false);
     setMyLocationIndex(0);
@@ -804,13 +830,178 @@ function App() {
         const savedHistory = localStorage.getItem(`wbsb_history_${selectedBus.bus_id}`);
         setHasHistoryData(!!savedHistory);
       } catch (err) {
-        console.error("Error reading history from localStorage:", err);
         setHasHistoryData(false);
       }
     } else {
       setHasHistoryData(false);
     }
-  }, [selectedBus]);
+
+    if (!mapInstance.current || !window.L) return;
+    const L = window.L;
+    const map = mapInstance.current;
+
+    // Clear old map markers & polylines
+    Object.values(mapMarkers.current).forEach(m => {
+      try { m.remove(); } catch (e) {}
+    });
+    mapMarkers.current = {};
+
+    if (routePolyline.current) {
+      try { routePolyline.current.remove(); } catch (e) {}
+      routePolyline.current = null;
+    }
+
+    if (!selectedBus) return;
+
+    const fullRouteStops = (selectedBus.routeStops || []).filter(s => s.latitude !== null && s.longitude !== null);
+    const coordStops = fullRouteStops.length >= 2 ? fullRouteStops : tripStops.filter(s => s.latitude !== null && s.longitude !== null);
+
+    if (coordStops.length > 0) {
+      const latlngs = coordStops.map(s => [s.latitude, s.longitude]);
+
+      const drawSingleRouteLine = (currentPolyline) => {
+        if (routePolyline.current) {
+          try { routePolyline.current.remove(); } catch (e) {}
+        }
+
+        routePolyline.current = L.polyline(currentPolyline, {
+          color: '#3730a3', // Deep royal violet line matching OpenStreetMap directions
+          weight: 6,
+          opacity: 0.95,
+          lineJoin: 'round',
+          lineCap: 'round'
+        }).addTo(map);
+      };
+
+      const renderTerminalMarkers = (currentPolyline) => {
+        if (coordStops.length < 2) return;
+
+        const originStop = coordStops[0];
+        const destStop = coordStops[coordStops.length - 1];
+
+        const originSnapped = snapPointToPolyline(originStop.latitude, originStop.longitude, currentPolyline);
+        const destSnapped = snapPointToPolyline(destStop.latitude, destStop.longitude, currentPolyline);
+
+        const originIcon = L.divIcon({
+          className: 'custom-start-badge',
+          html: `<div style="background:#10b981; color:#fff; padding:4px 8px; border-radius:6px; font-size:12px; font-weight:700; box-shadow:0 2px 8px rgba(0,0,0,0.4); font-family:sans-serif; white-space:nowrap;">START: ${originStop.stopName}</div>`,
+          iconSize: [0, 0],
+          iconAnchor: [-10, 10]
+        });
+
+        const originMarker = L.marker(originSnapped, { icon: originIcon }).addTo(map);
+        mapMarkers.current['start_pin'] = originMarker;
+
+        const destIcon = L.divIcon({
+          className: 'custom-dest-badge',
+          html: `<div style="background:#ef4444; color:#fff; padding:4px 8px; border-radius:6px; font-size:12px; font-weight:700; box-shadow:0 2px 8px rgba(0,0,0,0.4); font-family:sans-serif; white-space:nowrap;">DESTINATION: ${destStop.stopName}</div>`,
+          iconSize: [0, 0],
+          iconAnchor: [-10, 10]
+        });
+
+        const destMarker = L.marker(destSnapped, { icon: destIcon }).addTo(map);
+        mapMarkers.current['dest_pin'] = destMarker;
+      };
+
+      drawSingleRouteLine(latlngs);
+      renderTerminalMarkers(latlngs);
+
+      roadRoutePointsRef.current = [];
+
+      fetchRoadRoute(coordStops)
+        .then(roadLatLngs => {
+          if (roadLatLngs && roadLatLngs.length > 0) {
+            roadRoutePointsRef.current = roadLatLngs;
+            drawSingleRouteLine(roadLatLngs);
+            renderTerminalMarkers(roadLatLngs);
+          }
+        })
+        .catch(err => {
+          console.warn("OpenStreetMap OSRM routing service failed:", err);
+        });
+
+      const bounds = L.latLngBounds(latlngs);
+      map.fitBounds(bounds, { padding: [50, 50] });
+    }
+  }, [selectedBus, tripStops]);
+
+  // Dynamic OpenStreetMap Marker Updates for User GPS & Live Bus Location
+  useEffect(() => {
+    if (!mapInstance.current || !selectedBus || !window.L) return;
+    const L = window.L;
+    const map = mapInstance.current;
+
+    if (isTracking && userCoords) {
+      const lat = userCoords.latitude;
+      const lng = userCoords.longitude;
+
+      if (mapMarkers.current['user_accuracy']) {
+        mapMarkers.current['user_accuracy'].setLatLng([lat, lng]);
+        mapMarkers.current['user_accuracy'].setRadius(userCoords.accuracyMeters || 20);
+      } else {
+        mapMarkers.current['user_accuracy'] = L.circle([lat, lng], {
+          radius: userCoords.accuracyMeters || 20,
+          fillColor: '#3b82f6',
+          fillOpacity: 0.15,
+          color: '#3b82f6',
+          weight: 1.5,
+          dashArray: '4, 4'
+        }).addTo(map);
+      }
+
+      if (mapMarkers.current['user_pin']) {
+        mapMarkers.current['user_pin'].setLatLng([lat, lng]);
+      } else {
+        const userIcon = L.divIcon({
+          className: 'custom-user-pin',
+          html: '<div style="width:16px; height:16px; border-radius:50%; background:#2563eb; border:3px solid #ffffff; box-shadow:0 0 8px rgba(37,99,235,0.6);"></div>',
+          iconSize: [16, 16],
+          iconAnchor: [8, 8]
+        });
+        mapMarkers.current['user_pin'] = L.marker([lat, lng], { icon: userIcon }).addTo(map).bindPopup("<b>Your Live Device GPS</b>");
+      }
+    } else {
+      ['user_accuracy', 'user_pin'].forEach(k => {
+        if (mapMarkers.current[k]) {
+          mapMarkers.current[k].remove();
+          delete mapMarkers.current[k];
+        }
+      });
+    }
+
+    if (resolvedLoc) {
+      const targetLat = resolvedLoc.latitude;
+      const targetLng = resolvedLoc.longitude;
+      const targetHead = resolvedLoc.headingDegrees || 0;
+
+      const busIconHtml = `<svg viewBox="0 0 24 24" width="32" height="32" style="transform: rotate(${targetHead}deg); filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.35));"><path d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z" fill="${resolvedLoc.isStale ? '#ef4444' : '#22c55e'}" stroke="#ffffff" stroke-width="1.5"/></svg>`;
+
+      const busIcon = L.divIcon({
+        className: 'custom-bus-chevron',
+        html: busIconHtml,
+        iconSize: [32, 32],
+        iconAnchor: [16, 16]
+      });
+
+      if (mapMarkers.current['resolved_bus']) {
+        mapMarkers.current['resolved_bus'].setLatLng([targetLat, targetLng]);
+        mapMarkers.current['resolved_bus'].setIcon(busIcon);
+      } else {
+        mapMarkers.current['resolved_bus'] = L.marker([targetLat, targetLng], { icon: busIcon })
+          .addTo(map)
+          .bindPopup(`<b>Resolved Bus Location</b><br/>Confidence: ${Math.round(resolvedLoc.confidenceScore * 100)}%`);
+      }
+
+      if (isTracking) {
+        map.panTo([targetLat, targetLng]);
+      }
+    } else {
+      if (mapMarkers.current['resolved_bus']) {
+        mapMarkers.current['resolved_bus'].remove();
+        delete mapMarkers.current['resolved_bus'];
+      }
+    }
+  }, [resolvedLoc, isTracking, userCoords, selectedBus]);
   
   // Real GPS Device Watcher Effect
   useEffect(() => {
@@ -2170,6 +2361,97 @@ function App() {
           )}
         </div>
         
+        {/* Right Main OpenStreetMap Container */}
+        <div className="map-panel">
+          <div id="map" ref={mapRef} style={{ width: '100%', height: '100%' }} />
+          
+          {/* Active stats panel overlay */}
+          {resolvedLoc && progress && (
+            <div className="map-overlay-stats">
+              <div style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.4rem', marginBottom: '0.4rem', fontWeight: 700, fontSize: '0.95rem', fontFamily: 'var(--font-heading)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Clock size={16} className="text-accent" />
+                <span>Resolved Live Statistics</span>
+              </div>
+              
+              <div className="stat-row">
+                <span className="stat-label">Confidence Score</span>
+                {loseGpsSignal ? (
+                  <span className="confidence-indicator confidence-med" style={{ backgroundColor: 'rgba(217, 119, 6, 0.15)', color: 'var(--accent)' }}>
+                    <span className="confidence-dot" style={{ backgroundColor: 'var(--accent)' }} />
+                    Historical Estimate
+                  </span>
+                ) : (
+                  <span className={`confidence-indicator confidence-${getConfidenceLevel(resolvedLoc.confidenceScore)}`}>
+                    <span className={`confidence-dot confidence-${getConfidenceLevel(resolvedLoc.confidenceScore)}-dot`} />
+                    {Math.round(resolvedLoc.confidenceScore * 100)}%
+                  </span>
+                )}
+              </div>
+              
+              <div className="stat-row">
+                <span className="stat-label">Active Contributors</span>
+                <span className="stat-value">
+                  {loseGpsSignal ? 'None (Offline Fallback)' : `${resolvedLoc.clusteredContributorCount} in cluster (${resolvedLoc.contributorCount} total)`}
+                </span>
+              </div>
+              
+              <div className="stat-row">
+                <span className="stat-label">Nearest Stop</span>
+                <span className="stat-value" style={{ maxWidth: '160px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                  {progress.currentStopName || 'Loading...'}
+                </span>
+              </div>
+              
+              <div className="stat-row">
+                <span className="stat-label">Next Stop</span>
+                <span className="stat-value" style={{ color: 'var(--accent-light)', maxWidth: '160px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                  {progress.nextStopName || 'Terminus'}
+                </span>
+              </div>
+              
+              <div className="stat-row">
+                <span className="stat-label">Estimated Delay</span>
+                <span className="stat-value" style={{ color: progress.delayMinutes > 0 ? '#ef4444' : '#22c55e' }}>
+                  {loseGpsSignal ? 'N/A' : (progress.delayMinutes === null ? 'Unknown' : 
+                   progress.delayMinutes > 0 ? `+${progress.delayMinutes} mins` : 
+                   `${progress.delayMinutes} mins`)}
+                </span>
+              </div>
+              
+              <div className="stat-row">
+                <span className="stat-label">Remaining Distance</span>
+                <span className="stat-value">{progress.remainingDistanceKm?.toFixed(2)} km</span>
+              </div>
+              
+              {progress.tripCompleted ? (
+                <div style={{
+                  backgroundColor: 'var(--success-bg)',
+                  border: '1px solid var(--success)',
+                  color: 'var(--success)',
+                  padding: '0.5rem',
+                  borderRadius: 'var(--radius-sm)',
+                  textAlign: 'center',
+                  fontWeight: 700,
+                  fontSize: '0.85rem',
+                  marginTop: '0.5rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.4rem',
+                  width: '100%'
+                }}>
+                  <CheckCircle size={14} />
+                  <span>Reached Destination</span>
+                </div>
+              ) : (
+                <div className="stat-row">
+                  <span className="stat-label">ETA to Terminus</span>
+                  <span className="stat-value" style={{ color: '#eab308' }}>{progress.etaMinutes} mins</span>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
       </main>
     </div>
   );
