@@ -665,19 +665,12 @@ function App() {
   const [stopArrivalTimes, setStopArrivalTimes] = useState({}); // { sequence: elapsedSeconds }
   const [tripElapsedSeconds, setTripElapsedSeconds] = useState(0);
   const [loseGpsSignal, setLoseGpsSignal] = useState(false);
-  const [simulateGpsOutage, setSimulateGpsOutage] = useState(false);
   const [hasHistoryData, setHasHistoryData] = useState(false);
   
-  // Crowdsourcing simulated states
+  // Real Crowdsourcing Live Device GPS States
   const [isTracking, setIsTracking] = useState(false);
-  const [useSimulation, setUseSimulation] = useState(false); // only live data, no simulation
   const [realCoords, setRealCoords] = useState(null); // holds real device GPS coordinates
   const [myLocationIndex, setMyLocationIndex] = useState(0); // Index along the coordinates array of route stops
-  const [myLocationOffset, setMyLocationOffset] = useState(0); // Interpolation factor (0 to 1) between current and next stop
-  const [simSpeedMultiplier, setSimSpeedMultiplier] = useState(1); // 1x, 2x, 5x, 10x
-  const [myAccuracy, setMyAccuracy] = useState(25); // 10m to 100m
-  const [addRiders, setAddRiders] = useState(false); // disable simulated virtual riders by default
-  const [ridersAccuracy, setRidersAccuracy] = useState(40); // virtual riders error
   
   // Resolved dynamic values
   const [contributions, setContributions] = useState([]);
@@ -1003,41 +996,36 @@ function App() {
     }
   }, [resolvedLoc, isTracking, userCoords, selectedBus]);
   
-  // Real GPS Device Watcher Effect
+  // Real Device GPS Watcher Effect (No Simulation)
   useEffect(() => {
-    if (!isTracking || useSimulation) {
+    if (!isTracking) {
       setRealCoords(null);
+      setUserCoords(null);
       return;
     }
 
     if (!navigator.geolocation) {
-      alert("Geolocation is not supported by your browser. Falling back to Simulation Mode.");
-      setUseSimulation(true);
+      alert("Geolocation is not supported by your browser device.");
+      setIsTracking(false);
       return;
     }
 
     const handleSuccess = (position) => {
       const { latitude, longitude, accuracy, speed, heading } = position.coords;
-      setRealCoords({
+      const coords = {
         latitude,
         longitude,
         accuracyMeters: accuracy || 10,
-        speedKmh: speed ? speed * 3.6 : 0, // convert m/s to km/h
+        speedKmh: speed ? speed * 3.6 : 0,
         headingDegrees: heading || 0,
         updatedAt: new Date(position.timestamp)
-      });
-      // Automatically recover GPS signal if fresh data arrives
-      if (!simulateGpsOutage) {
-        setLoseGpsSignal(false);
-      }
+      };
+      setRealCoords(coords);
+      setUserCoords(coords);
     };
 
     const handleError = (error) => {
       console.warn("Geolocation watch error:", error.message);
-      if (hasHistoryData) {
-        console.warn("Auto switching to history fallback due to GPS error:", error.message);
-        setLoseGpsSignal(true);
-      }
     };
 
     const watchId = navigator.geolocation.watchPosition(handleSuccess, handleError, {
@@ -1047,281 +1035,7 @@ function App() {
     });
 
     return () => navigator.geolocation.clearWatch(watchId);
-  }, [isTracking, useSimulation]);
-
-  // Handle simulation mode signal loss mapping
-  useEffect(() => {
-    if (useSimulation) {
-      setLoseGpsSignal(simulateGpsOutage);
-    }
-  }, [useSimulation, simulateGpsOutage]);
-
-  // Monitor Real GPS signal health & automatically trigger fallback on loss
-  useEffect(() => {
-    if (!isTracking || useSimulation) return;
-    if (!hasHistoryData) return;
-
-    const interval = setInterval(() => {
-      if (simulateGpsOutage) {
-        setLoseGpsSignal(true);
-        return;
-      }
-
-      const now = Date.now();
-      const lastUpdate = realCoords ? new Date(realCoords.updatedAt).getTime() : 0;
-      
-      if (!realCoords) {
-        // If tracking is active but we got no coordinate update for 6 seconds on startup
-        if (tripElapsedSeconds > 6) {
-          console.warn("GPS signal not received on startup. Auto switching to history fallback.");
-          setLoseGpsSignal(true);
-        }
-      } else if (now - lastUpdate > 8000) {
-        // Stale coordinates: no update within 8 seconds
-        console.warn("GPS signal lost (stale). Auto switching to history fallback.");
-        setLoseGpsSignal(true);
-      }
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [isTracking, useSimulation, realCoords, tripElapsedSeconds, hasHistoryData, simulateGpsOutage]);
-
-  // Simulation & Time Loop Effect: Updates user position and increments elapsed time
-  useEffect(() => {
-    if (!selectedBus || !isTracking || !isPlaying) return;
-    
-    const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
-    if (coordStops.length < 2) return;
-    
-    const intervalTime = 1000; // tick every 1 second
-    
-    const timer = setInterval(() => {
-      // Increment elapsed trip time based on simulation speed
-      setTripElapsedSeconds(prev => prev + 1 * simSpeedMultiplier);
-      
-      if (useSimulation && !loseGpsSignal) {
-        setMyLocationOffset(offset => {
-          let nextOffset = offset + (0.05 * simSpeedMultiplier);
-          if (nextOffset >= 1.0) {
-            // Move to next leg
-            let finished = false;
-            setMyLocationIndex(idx => {
-              const nextIdx = idx + 1;
-              if (nextIdx >= coordStops.length - 1) {
-                finished = true;
-                return coordStops.length - 1;
-              }
-              return nextIdx;
-            });
-            if (finished) {
-              setIsPlaying(false);
-              return 0;
-            }
-            return 0;
-          }
-          return nextOffset;
-        });
-      }
-    }, intervalTime);
-    
-    return () => clearInterval(timer);
-  }, [selectedBus, isTracking, simSpeedMultiplier, isPlaying, useSimulation, loseGpsSignal]);
-  
-  // 1. Compute user position and update local state
-  useEffect(() => {
-    if (!selectedBus || !isTracking) {
-      setUserCoords(null);
-      return;
-    }
-    
-    const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
-    if (coordStops.length < 2) return;
-    
-    // GPS Signal Lost Fallback Logic
-    if (loseGpsSignal) {
-      try {
-        const savedHistory = localStorage.getItem(`wbsb_history_${selectedBus.bus_id}`);
-        let historyData = null;
-        if (savedHistory) {
-          historyData = JSON.parse(savedHistory);
-        } else {
-          // Generate default mock history so fallback works for all buses even if no prior run
-          let cumulativeDistanceKm = 0;
-          historyData = coordStops.map((s, idx) => {
-            if (idx > 0) {
-              cumulativeDistanceKm += haversineKm(
-                coordStops[idx - 1].latitude,
-                coordStops[idx - 1].longitude,
-                s.latitude,
-                s.longitude
-              );
-            }
-            return {
-              sequence: s.sequence,
-              stopId: s.stopId,
-              stopName: s.stopName,
-              latitude: s.latitude,
-              longitude: s.longitude,
-              cumulativeDistanceKm,
-              elapsedSeconds: idx * 25 // 25 seconds per stop in simulation
-            };
-          });
-        }
-        
-        if (historyData) {
-          const est = estimatePositionFromHistory(historyData, tripElapsedSeconds, coordStops, selectedBus);
-          if (est) {
-            setUserCoords({
-              latitude: est.latitude,
-              longitude: est.longitude,
-              accuracyMeters: 50,
-              speedKmh: est.speedKmh,
-              headingDegrees: est.headingDegrees,
-              updatedAt: new Date(),
-              isEstimated: true,
-              tripCompleted: est.tripCompleted,
-              currentStopName: est.currentStopName,
-              nextStopName: est.nextStopName,
-              remainingDistanceKm: est.remainingDistanceKm,
-              etaMinutes: est.etaMinutes,
-              nextSequence: est.nextSequence
-            });
-            
-            // Sync simulation state for accurate timeline and map visualization
-            const startStopIdx = coordStops.findIndex(s => s.stopName === est.currentStopName);
-            if (startStopIdx !== -1) {
-              setMyLocationIndex(startStopIdx);
-              
-              const segStart = historyData.find(h => h.stopName === est.currentStopName);
-              const segEnd = historyData.find(h => h.stopName === est.nextStopName);
-              if (segStart && segEnd) {
-                const segmentDuration = segEnd.elapsedSeconds - segStart.elapsedSeconds;
-                const elapsed = tripElapsedSeconds - segStart.elapsedSeconds;
-                const offset = segmentDuration > 0 ? elapsed / segmentDuration : 0;
-                setMyLocationOffset(Math.max(0, Math.min(1, offset)));
-              } else {
-                setMyLocationOffset(0);
-              }
-            }
-            
-            // Auto pause if reached terminus via historical fallback
-            if (est.tripCompleted) {
-              setIsPlaying(false);
-            }
-            return;
-          }
-        }
-      } catch (err) {
-        console.error("Error calculating position from history:", err);
-      }
-      
-      // Fallback if estimation fails completely
-      setUserCoords(null);
-      return;
-    }
-    
-    // Standard GPS Mode (simulation or real device navigator.geolocation)
-    let userLat = 0;
-    let userLng = 0;
-    let userAccuracy = myAccuracy;
-    let userSpeed = 35;
-    let userHeading = 0;
-    let timestamp = new Date();
-
-    const currentStop = coordStops[myLocationIndex];
-    const nextStop = coordStops[Math.min(myLocationIndex + 1, coordStops.length - 1)];
-    const dLon = degToRad(nextStop.longitude - currentStop.longitude);
-    const y = Math.sin(dLon) * Math.cos(degToRad(nextStop.latitude));
-    const x = Math.cos(degToRad(currentStop.latitude)) * Math.sin(degToRad(nextStop.latitude)) -
-              Math.sin(degToRad(currentStop.latitude)) * Math.cos(degToRad(nextStop.latitude)) * Math.cos(dLon);
-    const defaultHeading = ((Math.atan2(y, x) * 180 / Math.PI) + 360) % 360;
-
-    if (useSimulation) {
-      // Find road points for this leg if roadRoutePointsRef.current is populated
-      const roadPoints = roadRoutePointsRef.current;
-      if (roadPoints && roadPoints.length > 0) {
-        // Find indices in roadPoints closest to currentStop and nextStop
-        const findClosestIndex = (stop) => {
-          let minD = Infinity;
-          let idx = 0;
-          for (let i = 0; i < roadPoints.length; i++) {
-            const dy = roadPoints[i][0] - stop.latitude;
-            const dx = roadPoints[i][1] - stop.longitude;
-            const d = dy * dy + dx * dx;
-            if (d < minD) {
-              minD = d;
-              idx = i;
-            }
-          }
-          return idx;
-        };
-
-        const idxA = findClosestIndex(currentStop);
-        const idxB = findClosestIndex(nextStop);
-
-        if (idxA !== idxB) {
-          // Calculate overall offset along the road subset
-          const totalPointsInLeg = Math.abs(idxB - idxA);
-          const rawOffset = totalPointsInLeg * myLocationOffset;
-          const pointOffset = Math.floor(rawOffset);
-          const remainder = rawOffset - pointOffset;
-
-          const step = idxA < idxB ? 1 : -1;
-          const currentPointIdx = idxA + pointOffset * step;
-          const nextPointIdx = Math.max(0, Math.min(roadPoints.length - 1, currentPointIdx + step));
-
-          const ptA = roadPoints[currentPointIdx];
-          const ptB = roadPoints[nextPointIdx];
-
-          userLat = ptA[0] + (ptB[0] - ptA[0]) * remainder;
-          userLng = ptA[1] + (ptB[1] - ptA[1]) * remainder;
-
-          // Heading along road curve
-          const dL = degToRad(ptB[1] - ptA[1]);
-          const yH = Math.sin(dL) * Math.cos(degToRad(ptB[0]));
-          const xH = Math.cos(degToRad(ptA[0])) * Math.sin(degToRad(ptB[0])) -
-                    Math.sin(degToRad(ptA[0])) * Math.cos(degToRad(ptB[0])) * Math.cos(dL);
-          userHeading = ((Math.atan2(yH, xH) * 180 / Math.PI) + 360) % 360;
-        } else {
-          userLat = currentStop.latitude + (nextStop.latitude - currentStop.latitude) * myLocationOffset;
-          userLng = currentStop.longitude + (nextStop.longitude - currentStop.longitude) * myLocationOffset;
-          userHeading = defaultHeading;
-        }
-      } else {
-        userLat = currentStop.latitude + (nextStop.latitude - currentStop.latitude) * myLocationOffset;
-        userLng = currentStop.longitude + (nextStop.longitude - currentStop.longitude) * myLocationOffset;
-        userHeading = defaultHeading;
-      }
-      userAccuracy = myAccuracy;
-      userSpeed = 35;
-    } else {
-      if (realCoords) {
-        userLat = realCoords.latitude;
-        userLng = realCoords.longitude;
-        userAccuracy = realCoords.accuracyMeters;
-        userSpeed = realCoords.speedKmh;
-        userHeading = realCoords.headingDegrees;
-        timestamp = realCoords.updatedAt;
-      } else {
-        // Fallback to the first stop's coordinates while real GPS is initializing
-        userLat = coordStops[0].latitude;
-        userLng = coordStops[0].longitude;
-        userAccuracy = 15;
-        userSpeed = 0;
-        userHeading = 0;
-      }
-    }
-    
-    setUserCoords({
-      latitude: userLat,
-      longitude: userLng,
-      accuracyMeters: userAccuracy,
-      speedKmh: userSpeed,
-      headingDegrees: userHeading,
-      updatedAt: timestamp,
-      isEstimated: false
-    });
-  }, [selectedBus, isTracking, useSimulation, realCoords, myLocationIndex, myLocationOffset, myAccuracy, loseGpsSignal, tripElapsedSeconds]);
+  }, [isTracking]);
 
   // 2. Push our location updates to Firebase Firestore in real-time
   useEffect(() => {
@@ -2087,19 +1801,6 @@ function App() {
                       className="tracking-button btn-start-tracking"
                       onClick={() => {
                         setIsTracking(true);
-                        setUseSimulation(false);
-                        setMyLocationIndex(0);
-                        setMyLocationOffset(0);
-                        setIsPlaying(false);
-                        setTripElapsedSeconds(0);
-                        setLoseGpsSignal(false);
-                        
-                        const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
-                        if (coordStops.length > 0) {
-                          setStopArrivalTimes({ [coordStops[0].sequence]: 0 });
-                        } else {
-                          setStopArrivalTimes({});
-                        }
                       }}
                       style={{
                         backgroundColor: 'var(--accent)',
