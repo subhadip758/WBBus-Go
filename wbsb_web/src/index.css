@@ -137,19 +137,16 @@ body {
   flex: 1;
   overflow: hidden;
   position: relative;
+  justify-content: center;
+  background-color: var(--bg-app);
 }
 
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-    overflow-y: auto;
-  }
-}
-
-/* Sidebar Styling */
+/* Sidebar / Main Content Panel Styling */
 .sidebar {
-  width: 420px;
+  width: 100%;
+  max-width: 960px;
   background-color: var(--bg-card);
+  border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
@@ -158,16 +155,6 @@ body {
   z-index: 10;
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    max-height: 60vh;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
 }
 
 /* Search Box Container */
