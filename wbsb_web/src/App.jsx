@@ -16,6 +16,7 @@ import {
   SlidersHorizontal,
   Bus
 } from 'lucide-react';
+import { loadCachedRouteGeometry, fetchRoadRouteDynamic } from './services/routeProcessor';
 
 // --- GEOGRAPHIC UTILITIES ---
 const EARTH_RADIUS_KM = 6371.0;
@@ -554,63 +555,7 @@ function computeDelayMinutes(nearest, observedAt) {
   return actualMinutes - scheduledMinutes;
 }
 
-// Exact road-following router using OSRM through ALL consecutive bus stops (like Google Maps)
-async function fetchRoadRoute(coordStops) {
-  if (!coordStops || coordStops.length < 2) return [];
 
-  // Deduplicate nearby coordinates (rounding to 5 decimal places is ~1.1 meters)
-  const uniqueStops = [];
-  const seenCoords = new Set();
-  coordStops.forEach(stop => {
-    const latKey = parseFloat(stop.latitude).toFixed(5);
-    const lngKey = parseFloat(stop.longitude).toFixed(5);
-    const key = `${latKey},${lngKey}`;
-    if (!seenCoords.has(key)) {
-      seenCoords.add(key);
-      uniqueStops.push(stop);
-    }
-  });
-
-  if (uniqueStops.length < 2) return [];
-
-  const queryOSRMLeg = async (s1, s2) => {
-    const url = `https://router.project-osrm.org/route/v1/driving/${s1.longitude},${s1.latitude};${s2.longitude},${s2.latitude}?overview=full&geometries=geojson&continue_straight=true`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`OSRM HTTP error ${res.status}`);
-    const data = await res.json();
-    if (data.code !== 'Ok' || !data.routes || data.routes.length === 0) {
-      throw new Error(`OSRM routing failed with code ${data.code}`);
-    }
-    return data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]); // [lat, lng]
-  };
-
-  const allRoadPoints = [];
-
-  for (let i = 0; i < uniqueStops.length - 1; i++) {
-    const a = uniqueStops[i];
-    const b = uniqueStops[i + 1];
-
-    let legPoints = null;
-    try {
-      legPoints = await queryOSRMLeg(a, b);
-    } catch (err) {
-      console.warn(`Leg routing ${a.stopName || a.stop_name} -> ${b.stopName || b.stop_name} failed:`, err);
-    }
-
-    if (!legPoints || legPoints.length === 0) {
-      legPoints = [[a.latitude, a.longitude], [b.latitude, b.longitude]];
-    }
-
-    if (allRoadPoints.length > 0 &&
-        legPoints[0][0] === allRoadPoints[allRoadPoints.length - 1][0] &&
-        legPoints[0][1] === allRoadPoints[allRoadPoints.length - 1][1]) {
-      legPoints = legPoints.slice(1);
-    }
-    allRoadPoints.push(...legPoints);
-  }
-
-  return allRoadPoints.length > 0 ? allRoadPoints : uniqueStops.map(s => [s.latitude, s.longitude]);
-}
 
 // --- MAIN REACT COMPONENT ---
 function App() {
@@ -620,6 +565,7 @@ function App() {
   const [timetableData, setTimetableData] = useState({});
   const [operatorsData, setOperatorsData] = useState([]);
   const [agenciesData, setAgenciesData] = useState([]);
+  const [routesGeometry, setRoutesGeometry] = useState(null);
   
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
@@ -738,13 +684,14 @@ function App() {
     async function loadDatasets() {
       try {
         const v = Date.now();
-        const [busesRes, routesRes, stopsRes, timetableRes, operatorsRes, agenciesRes] = await Promise.all([
+        const [busesRes, routesRes, stopsRes, timetableRes, operatorsRes, agenciesRes, geomRes] = await Promise.all([
           fetch(`/data/buses.json?v=${v}`).then(r => r.json()),
           fetch(`/data/routes.json?v=${v}`).then(r => r.json()),
           fetch(`/data/stops.json?v=${v}`).then(r => r.json()),
           fetch(`/data/timetable.json?v=${v}`).then(r => r.json()),
           fetch(`/data/operators.json?v=${v}`).then(r => r.json()),
-          fetch(`/data/agencies.json?v=${v}`).then(r => r.json())
+          fetch(`/data/agencies.json?v=${v}`).then(r => r.json()),
+          fetch(`/data/routes_geometry.json?v=${v}`).then(r => r.json()).catch(() => null)
         ]);
         
         // Parse into mapping dictionaries
@@ -797,6 +744,7 @@ function App() {
         setTimetableData(timetableMap);
         setOperatorsData(operatorsRes.operators);
         setAgenciesData(agenciesRes.agencies);
+        if (geomRes) setRoutesGeometry(geomRes);
         
         setLoading(false);
       } catch (err) {
@@ -849,7 +797,7 @@ function App() {
     const coordStops = fullRouteStops.length >= 2 ? fullRouteStops : tripStops.filter(s => s.latitude !== null && s.longitude !== null);
 
     if (coordStops.length > 0) {
-      const latlngs = coordStops.map(s => [s.latitude, s.longitude]);
+      const fallbackLatLngs = coordStops.map(s => [s.latitude, s.longitude]);
 
       const drawSingleRouteLine = (currentPolyline) => {
         if (routePolyline.current) {
@@ -895,27 +843,37 @@ function App() {
         mapMarkers.current['dest_pin'] = destMarker;
       };
 
-      drawSingleRouteLine(latlngs);
-      renderTerminalMarkers(latlngs);
+      // 1. Try loading backend-processed cached road geometry
+      const cached = loadCachedRouteGeometry(routesGeometry, selectedBus.bus_id, 'UP');
+      if (cached && cached.leafletLatLngs && cached.leafletLatLngs.length > 0) {
+        roadRoutePointsRef.current = cached.leafletLatLngs;
+        drawSingleRouteLine(cached.leafletLatLngs);
+        renderTerminalMarkers(cached.leafletLatLngs);
+        const bounds = L.latLngBounds(cached.leafletLatLngs);
+        map.fitBounds(bounds, { padding: [50, 50] });
+      } else {
+        // 2. Dynamic OSRM fallback if cached geometry is unavailable
+        drawSingleRouteLine(fallbackLatLngs);
+        renderTerminalMarkers(fallbackLatLngs);
+        fetchRoadRouteDynamic(coordStops)
+          .then(roadLatLngs => {
+            if (roadLatLngs && roadLatLngs.length > 0) {
+              roadRoutePointsRef.current = roadLatLngs;
+              drawSingleRouteLine(roadLatLngs);
+              renderTerminalMarkers(roadLatLngs);
+              const bounds = L.latLngBounds(roadLatLngs);
+              map.fitBounds(bounds, { padding: [50, 50] });
+            }
+          })
+          .catch(err => {
+            console.warn("Dynamic OSRM route service failed:", err);
+          });
 
-      roadRoutePointsRef.current = [];
-
-      fetchRoadRoute(coordStops)
-        .then(roadLatLngs => {
-          if (roadLatLngs && roadLatLngs.length > 0) {
-            roadRoutePointsRef.current = roadLatLngs;
-            drawSingleRouteLine(roadLatLngs);
-            renderTerminalMarkers(roadLatLngs);
-          }
-        })
-        .catch(err => {
-          console.warn("OpenStreetMap OSRM routing service failed:", err);
-        });
-
-      const bounds = L.latLngBounds(latlngs);
-      map.fitBounds(bounds, { padding: [50, 50] });
+        const bounds = L.latLngBounds(fallbackLatLngs);
+        map.fitBounds(bounds, { padding: [50, 50] });
+      }
     }
-  }, [selectedBus, tripStops]);
+  }, [selectedBus, tripStops, routesGeometry]);
 
   // Dynamic OpenStreetMap Marker Updates for User GPS & Live Bus Location
   useEffect(() => {
