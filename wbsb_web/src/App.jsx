@@ -472,6 +472,12 @@ function calculateConfidenceScore(clusterSize, accuracyMeters) {
   return Math.max(0, Math.min(1, accuracyScore + agreementBoost));
 }
 
+function getConfidenceLevel(score) {
+  if (score >= 0.7) return 'high';
+  if (score >= 0.4) return 'med';
+  return 'low';
+}
+
 // Compute trip progress along stops path
 function calculateTripProgress(bus, location) {
   const stopsWithCoords = bus.routeStops
