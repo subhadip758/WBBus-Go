@@ -1,0 +1,5725 @@
+{
+  "metadata": {
+    "totalDirectionalRoutes": 248,
+    "passCount": 154,
+    "warningCount": 80,
+    "failCount": 14,
+    "dataErrorCount": 14,
+    "routingLimitationCount": 16,
+    "generatedAt": "2026-09-14T05:46:45Z"
+  },
+  "routes": [
+    {
+      "busId": "bus_banerjee_kol_purulia",
+      "routeId": "route_kolkata_purulia_banerjee",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Purulia",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 290.06,
+        "directDistanceKm": 221.38,
+        "routeDirectRatio": 1.31,
+        "stopCount": 18,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 140,
+        "repeatedRoadSegments": 140,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Ladhurka' is 0.51km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_banerjee_kol_purulia",
+      "routeId": "route_kolkata_purulia_banerjee",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Purulia",
+      "destination": "Kolkata (Esplanade)",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 290.38,
+        "directDistanceKm": 221.38,
+        "routeDirectRatio": 1.31,
+        "stopCount": 18,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 155,
+        "repeatedRoadSegments": 155,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Ladhurka' is 0.51km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_sbstc_baghmundi_kol",
+      "routeId": "route_baghmundi_kolkata_sbstc",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Baghmundi",
+      "destination": "Kolkata (Esplanade)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 341.19,
+        "directDistanceKm": 246.07,
+        "routeDirectRatio": 1.39,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.09,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 32,
+        "repeatedRoadSegments": 32,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_sbstc_baghmundi_kol",
+      "routeId": "route_baghmundi_kolkata_sbstc",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Baghmundi",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 345.54,
+        "directDistanceKm": 246.07,
+        "routeDirectRatio": 1.4,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.09,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 42,
+        "repeatedRoadSegments": 42,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_sbstc_purulia_kol_vadu",
+      "routeId": "route_purulia_kolkata_sbstc_vadu",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Purulia",
+      "destination": "Kolkata (Esplanade)",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 284.9,
+        "directDistanceKm": 221.38,
+        "routeDirectRatio": 1.29,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 19,
+        "repeatedRoadSegments": 19,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Ladhurka' is 0.51km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_sbstc_purulia_kol_vadu",
+      "routeId": "route_purulia_kolkata_sbstc_vadu",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Purulia",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 290.63,
+        "directDistanceKm": 221.38,
+        "routeDirectRatio": 1.31,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 33,
+        "repeatedRoadSegments": 33,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Ladhurka' is 0.51km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_sbstc_purulia_kol_jhumur",
+      "routeId": "route_purulia_kolkata_sbstc_jhumur",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Purulia",
+      "destination": "Kolkata (Esplanade)",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 284.76,
+        "directDistanceKm": 221.38,
+        "routeDirectRatio": 1.29,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 19,
+        "repeatedRoadSegments": 19,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Ladhurka' is 0.51km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_sbstc_purulia_kol_jhumur",
+      "routeId": "route_purulia_kolkata_sbstc_jhumur",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Purulia",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 288.9,
+        "directDistanceKm": 221.38,
+        "routeDirectRatio": 1.3,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 33,
+        "repeatedRoadSegments": 33,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Ladhurka' is 0.51km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_rajdhani_bankura_kol",
+      "routeId": "route_bankura_kolkata_rajdhani",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Kolkata (Esplanade)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 190.58,
+        "directDistanceKm": 150.71,
+        "routeDirectRatio": 1.26,
+        "stopCount": 20,
+        "maxStopToRouteDistKm": 0.1,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 167,
+        "repeatedRoadSegments": 167,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_rajdhani_bankura_kol",
+      "routeId": "route_bankura_kolkata_rajdhani",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Bankura",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 188.66,
+        "directDistanceKm": 150.71,
+        "routeDirectRatio": 1.25,
+        "stopCount": 20,
+        "maxStopToRouteDistKm": 0.1,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 136,
+        "repeatedRoadSegments": 136,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_putul_jamtoria_kol",
+      "routeId": "route_jamtoria_kolkata_putul",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Jamtoria",
+      "destination": "Kolkata (Esplanade)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 200.91,
+        "directDistanceKm": 161.68,
+        "routeDirectRatio": 1.24,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 14,
+        "repeatedRoadSegments": 14,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_putul_jamtoria_kol",
+      "routeId": "route_jamtoria_kolkata_putul",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Jamtoria",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 209.84,
+        "directDistanceKm": 161.68,
+        "routeDirectRatio": 1.3,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 20,
+        "repeatedRoadSegments": 20,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_monalisha_barabazar_kol",
+      "routeId": "route_barabazar_kolkata_monalisha",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Barabazar",
+      "destination": "Kolkata (Esplanade)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 260.61,
+        "directDistanceKm": 211.31,
+        "routeDirectRatio": 1.23,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.07,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 24,
+        "repeatedRoadSegments": 24,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_monalisha_barabazar_kol",
+      "routeId": "route_barabazar_kolkata_monalisha",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Barabazar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 264.9,
+        "directDistanceKm": 211.31,
+        "routeDirectRatio": 1.25,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.07,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 31,
+        "repeatedRoadSegments": 31,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_asr_haludkanali_kol",
+      "routeId": "route_haludkanali_kolkata_asr",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Haludkanali",
+      "destination": "Kolkata (Esplanade)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 210.2,
+        "directDistanceKm": 150.98,
+        "routeDirectRatio": 1.39,
+        "stopCount": 6,
+        "maxStopToRouteDistKm": 0.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 30,
+        "repeatedRoadSegments": 30,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_asr_haludkanali_kol",
+      "routeId": "route_haludkanali_kolkata_asr",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Haludkanali",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 212.2,
+        "directDistanceKm": 150.98,
+        "routeDirectRatio": 1.41,
+        "stopCount": 6,
+        "maxStopToRouteDistKm": 0.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 37,
+        "repeatedRoadSegments": 37,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_joy_baba_khetrapal_amlashuli_bankura_bus_stand",
+      "routeId": "route_amlashuli_bankura_bus_stand_joy_baba_khetrapal",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Amlashuli",
+      "destination": "Bankura Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 170.04,
+        "directDistanceKm": 150.71,
+        "routeDirectRatio": 1.13,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 8,
+        "repeatedRoadSegments": 8,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_joy_baba_khetrapal_amlashuli_bankura_bus_stand",
+      "routeId": "route_amlashuli_bankura_bus_stand_joy_baba_khetrapal",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura Bus Stand",
+      "destination": "Amlashuli",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 169.26,
+        "directDistanceKm": 150.71,
+        "routeDirectRatio": 1.12,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_asansolsalar_express_asansol_salar",
+      "routeId": "route_asansol_salar_asansolsalar_express",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Asansol",
+      "destination": "Salar",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 177.56,
+        "directDistanceKm": 117.45,
+        "routeDirectRatio": 1.51,
+        "stopCount": 18,
+        "maxStopToRouteDistKm": 0.63,
+        "suspiciousUTurns": 4,
+        "suspiciousCycles": 410,
+        "repeatedRoadSegments": 410,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Nanur' is 0.63km from main road corridor.",
+        "C. Side-of-carriageway / OSRM limitation: 4 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_asansolsalar_express_asansol_salar",
+      "routeId": "route_asansol_salar_asansolsalar_express",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Salar",
+      "destination": "Asansol",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 178.38,
+        "directDistanceKm": 117.45,
+        "routeDirectRatio": 1.52,
+        "stopCount": 18,
+        "maxStopToRouteDistKm": 0.63,
+        "suspiciousUTurns": 3,
+        "suspiciousCycles": 377,
+        "repeatedRoadSegments": 377,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Nanur' is 0.63km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_jinia_asansol_digha_border",
+      "routeId": "route_asansol_digha_border_jinia",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Asansol",
+      "destination": "Digha Border",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 304.49,
+        "directDistanceKm": 234.71,
+        "routeDirectRatio": 1.3,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 0.35,
+        "suspiciousUTurns": 6,
+        "suspiciousCycles": 123,
+        "repeatedRoadSegments": 123,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "C. Side-of-carriageway / OSRM limitation: 6 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_jinia_asansol_digha_border",
+      "routeId": "route_asansol_digha_border_jinia",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha Border",
+      "destination": "Asansol",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 300.76,
+        "directDistanceKm": 234.71,
+        "routeDirectRatio": 1.28,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 0.35,
+        "suspiciousUTurns": 6,
+        "suspiciousCycles": 123,
+        "repeatedRoadSegments": 123,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "C. Side-of-carriageway / OSRM limitation: 6 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_joy_bharat_mata_balarampur_khatra",
+      "routeId": "route_balarampur_khatra_joy_bharat_mata",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Balarampur",
+      "destination": "Khatra",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 105.09,
+        "directDistanceKm": 65.81,
+        "routeDirectRatio": 1.6,
+        "stopCount": 6,
+        "maxStopToRouteDistKm": 1.04,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Katin' is 1.04km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_joy_bharat_mata_balarampur_khatra",
+      "routeId": "route_balarampur_khatra_joy_bharat_mata",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Khatra",
+      "destination": "Balarampur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 105.09,
+        "directDistanceKm": 65.81,
+        "routeDirectRatio": 1.6,
+        "stopCount": 6,
+        "maxStopToRouteDistKm": 1.04,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Katin' is 1.04km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_esplanade_bandar_kolkata",
+      "routeId": "route_bandar_kolkata_esplanade",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bandar",
+      "destination": "Kolkata (Esplanade)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 154.58,
+        "directDistanceKm": 130.3,
+        "routeDirectRatio": 1.19,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 10,
+        "repeatedRoadSegments": 10,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_esplanade_bandar_kolkata",
+      "routeId": "route_bandar_kolkata_esplanade",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata (Esplanade)",
+      "destination": "Bandar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 155.43,
+        "directDistanceKm": 130.3,
+        "routeDirectRatio": 1.19,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 11,
+        "repeatedRoadSegments": 11,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_jai_maa_durga_bandwan_siliguri",
+      "routeId": "route_bandwan_siliguri_jai_maa_durga",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bandwan",
+      "destination": "Siliguri",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 591.13,
+        "directDistanceKm": 433.63,
+        "routeDirectRatio": 1.36,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.44,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 18,
+        "repeatedRoadSegments": 18,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_jai_maa_durga_bandwan_siliguri",
+      "routeId": "route_bandwan_siliguri_jai_maa_durga",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Siliguri",
+      "destination": "Bandwan",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 590.69,
+        "directDistanceKm": 433.63,
+        "routeDirectRatio": 1.36,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.44,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 21,
+        "repeatedRoadSegments": 21,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_debi_kamakhya_tara_ma_travels_trip_1_bandwan_bankura_bus_stand",
+      "routeId": "route_bandwan_bankura_bus_stand_debi_kamakhya_tara_ma_travels_trip_1",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bandwan",
+      "destination": "Bankura Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 69.4,
+        "directDistanceKm": 44.26,
+        "routeDirectRatio": 1.57,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.44,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 54,
+        "repeatedRoadSegments": 54,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_debi_kamakhya_tara_ma_travels_trip_1_bandwan_bankura_bus_stand",
+      "routeId": "route_bandwan_bankura_bus_stand_debi_kamakhya_tara_ma_travels_trip_1",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura Bus Stand",
+      "destination": "Bandwan",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 69.43,
+        "directDistanceKm": 44.26,
+        "routeDirectRatio": 1.57,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.44,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 56,
+        "repeatedRoadSegments": 56,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_aayan_bankura_ramchandrapur",
+      "routeId": "route_bankura_ramchandrapur_aayan",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Ramchandrapur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 216.12,
+        "directDistanceKm": 179.98,
+        "routeDirectRatio": 1.2,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.01,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 9,
+        "repeatedRoadSegments": 9,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_aayan_bankura_ramchandrapur",
+      "routeId": "route_bankura_ramchandrapur_aayan",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Ramchandrapur",
+      "destination": "Bankura",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 220.44,
+        "directDistanceKm": 179.98,
+        "routeDirectRatio": 1.22,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.01,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 15,
+        "repeatedRoadSegments": 15,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_tulsi_bankura_bhutshahar",
+      "routeId": "route_bankura_bhutshahar_maa_tulsi",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Bhutshahar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 252.74,
+        "directDistanceKm": 183.97,
+        "routeDirectRatio": 1.37,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 9,
+        "repeatedRoadSegments": 9,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_tulsi_bankura_bhutshahar",
+      "routeId": "route_bankura_bhutshahar_maa_tulsi",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bhutshahar",
+      "destination": "Bankura",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 251.36,
+        "directDistanceKm": 183.97,
+        "routeDirectRatio": 1.37,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 14,
+        "repeatedRoadSegments": 14,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shubhasree_travels_ma_parbati_bankura_kashipur",
+      "routeId": "route_bankura_kashipur_shubhasree_travels_ma_parbati",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Kashipur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 79.38,
+        "directDistanceKm": 43.21,
+        "routeDirectRatio": 1.84,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.97,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 228,
+        "repeatedRoadSegments": 228,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Kashipur' is 0.97km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_shubhasree_travels_ma_parbati_bankura_kashipur",
+      "routeId": "route_bankura_kashipur_shubhasree_travels_ma_parbati",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kashipur",
+      "destination": "Bankura",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 79.36,
+        "directDistanceKm": 43.21,
+        "routeDirectRatio": 1.84,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.97,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 225,
+        "repeatedRoadSegments": 225,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Kashipur' is 0.97km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_tirumala_bibek_bankura_asansol",
+      "routeId": "route_bankura_asansol_tirumala_bibek",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Asansol",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 83.89,
+        "directDistanceKm": 50.74,
+        "routeDirectRatio": 1.65,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.1,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 101,
+        "repeatedRoadSegments": 101,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tirumala_bibek_bankura_asansol",
+      "routeId": "route_bankura_asansol_tirumala_bibek",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Asansol",
+      "destination": "Bankura",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 87.04,
+        "directDistanceKm": 50.74,
+        "routeDirectRatio": 1.72,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.1,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 236,
+        "repeatedRoadSegments": 236,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_madan_mohan_trip_1_bankura_bus_stand_durgapur_bus_stand",
+      "routeId": "route_bankura_bus_stand_durgapur_bus_stand_madan_mohan_trip_1",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura Bus Stand",
+      "destination": "Durgapur Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 58.61,
+        "directDistanceKm": 39.89,
+        "routeDirectRatio": 1.47,
+        "stopCount": 13,
+        "maxStopToRouteDistKm": 0.43,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 143,
+        "repeatedRoadSegments": 143,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_madan_mohan_trip_1_bankura_bus_stand_durgapur_bus_stand",
+      "routeId": "route_bankura_bus_stand_durgapur_bus_stand_madan_mohan_trip_1",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Durgapur Bus Stand",
+      "destination": "Bankura Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 58.59,
+        "directDistanceKm": 39.89,
+        "routeDirectRatio": 1.47,
+        "stopCount": 13,
+        "maxStopToRouteDistKm": 0.43,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 147,
+        "repeatedRoadSegments": 147,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tirupati_bankura_bus_stand_dhaldanga",
+      "routeId": "route_bankura_bus_stand_dhaldanga_tirupati",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura Bus Stand",
+      "destination": "Dhaldanga",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 6.62,
+        "directDistanceKm": 3.2,
+        "routeDirectRatio": 2.07,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.02,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 1,
+        "repeatedRoadSegments": 1,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tirupati_bankura_bus_stand_dhaldanga",
+      "routeId": "route_bankura_bus_stand_dhaldanga_tirupati",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Dhaldanga",
+      "destination": "Bankura Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 6.42,
+        "directDistanceKm": 3.2,
+        "routeDirectRatio": 2.01,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.02,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 1,
+        "repeatedRoadSegments": 1,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_lalparul_bankura_bus_stand_durgapur",
+      "routeId": "route_bankura_bus_stand_durgapur_lalparul",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura Bus Stand",
+      "destination": "Durgapur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 54.74,
+        "directDistanceKm": 39.89,
+        "routeDirectRatio": 1.37,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 0.36,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 142,
+        "repeatedRoadSegments": 142,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_lalparul_bankura_bus_stand_durgapur",
+      "routeId": "route_bankura_bus_stand_durgapur_lalparul",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Durgapur",
+      "destination": "Bankura Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 54.73,
+        "directDistanceKm": 39.89,
+        "routeDirectRatio": 1.37,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 0.36,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 146,
+        "repeatedRoadSegments": 146,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tirupati_bankura_bus_stand_barakar",
+      "routeId": "route_bankura_bus_stand_barakar_tirupati",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bankura Bus Stand",
+      "destination": "Barakar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 89.72,
+        "directDistanceKm": 61.83,
+        "routeDirectRatio": 1.45,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.01,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 3,
+        "repeatedRoadSegments": 3,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tirupati_bankura_bus_stand_barakar",
+      "routeId": "route_bankura_bus_stand_barakar_tirupati",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Barakar",
+      "destination": "Bankura Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 89.49,
+        "directDistanceKm": 61.83,
+        "routeDirectRatio": 1.45,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.01,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 3,
+        "repeatedRoadSegments": 3,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_vinayak_barabazar_durgapur_station",
+      "routeId": "route_barabazar_durgapur_station_vinayak",
+      "direction": "UP",
+      "variant": "main",
+      "source": "\u09ac\u09b0\u09be\u09ac\u09be\u099c\u09be\u09b0",
+      "destination": "\u09a6\u09c1\u09b0\u09cd\u0997\u09be\u09aa\u09c1\u09b0 \u09b8\u09cd\u099f\u09c7\u09b6\u09a8",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 15,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_vinayak_barabazar_durgapur_station",
+      "routeId": "route_barabazar_durgapur_station_vinayak",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "\u09ac\u09b0\u09be\u09ac\u09be\u099c\u09be\u09b0",
+      "destination": "\u09a6\u09c1\u09b0\u09cd\u0997\u09be\u09aa\u09c1\u09b0 \u09b8\u09cd\u099f\u09c7\u09b6\u09a8",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 15,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_bhagyalaxmi_barabazar_bankura",
+      "routeId": "route_barabazar_bankura_bhagyalaxmi",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Barabazar",
+      "destination": "Bankura",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 120.39,
+        "directDistanceKm": 76.61,
+        "routeDirectRatio": 1.57,
+        "stopCount": 10,
+        "maxStopToRouteDistKm": 0.29,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 243,
+        "repeatedRoadSegments": 243,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_bhagyalaxmi_barabazar_bankura",
+      "routeId": "route_barabazar_bankura_bhagyalaxmi",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Barabazar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 122.33,
+        "directDistanceKm": 76.61,
+        "routeDirectRatio": 1.6,
+        "stopCount": 10,
+        "maxStopToRouteDistKm": 0.29,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 306,
+        "repeatedRoadSegments": 306,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_debibala_travels_barakar_arambagh",
+      "routeId": "route_barakar_arambagh_debibala_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Barakar",
+      "destination": "Arambagh",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 172.2,
+        "directDistanceKm": 136.7,
+        "routeDirectRatio": 1.26,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_debibala_travels_barakar_arambagh",
+      "routeId": "route_barakar_arambagh_debibala_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Arambagh",
+      "destination": "Barakar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 180.46,
+        "directDistanceKm": 136.7,
+        "routeDirectRatio": 1.32,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_sarkar_travels_barasat_digha_border_udaipur",
+      "routeId": "route_barasat_digha_border_udaipur_sarkar_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Barasat",
+      "destination": "Digha Border Udaipur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 295.85,
+        "directDistanceKm": 160.01,
+        "routeDirectRatio": 1.85,
+        "stopCount": 15,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 5,
+        "suspiciousCycles": 699,
+        "repeatedRoadSegments": 699,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "C. Side-of-carriageway / OSRM limitation: 5 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_sarkar_travels_barasat_digha_border_udaipur",
+      "routeId": "route_barasat_digha_border_udaipur_sarkar_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha Border Udaipur",
+      "destination": "Barasat",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 278.89,
+        "directDistanceKm": 160.01,
+        "routeDirectRatio": 1.74,
+        "stopCount": 15,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 4,
+        "suspiciousCycles": 632,
+        "repeatedRoadSegments": 632,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "C. Side-of-carriageway / OSRM limitation: 4 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_shika_traders_ishika_bardhaman_mecheda",
+      "routeId": "route_bardhaman_mecheda_shika_traders_ishika",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bardhaman",
+      "destination": "Mecheda",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 174.93,
+        "directDistanceKm": 93.89,
+        "routeDirectRatio": 1.86,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 52,
+        "repeatedRoadSegments": 52,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Goura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_shika_traders_ishika_bardhaman_mecheda",
+      "routeId": "route_bardhaman_mecheda_shika_traders_ishika",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Mecheda",
+      "destination": "Bardhaman",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 170.32,
+        "directDistanceKm": 93.89,
+        "routeDirectRatio": 1.81,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 35,
+        "repeatedRoadSegments": 35,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Goura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_new_nabarupa_bardhaman_berhampore",
+      "routeId": "route_bardhaman_berhampore_new_nabarupa",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bardhaman",
+      "destination": "Berhampore",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 124.9,
+        "directDistanceKm": 104.24,
+        "routeDirectRatio": 1.2,
+        "stopCount": 6,
+        "maxStopToRouteDistKm": 0.42,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 78,
+        "repeatedRoadSegments": 78,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_new_nabarupa_bardhaman_berhampore",
+      "routeId": "route_bardhaman_berhampore_new_nabarupa",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Berhampore",
+      "destination": "Bardhaman",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 125.87,
+        "directDistanceKm": 104.24,
+        "routeDirectRatio": 1.21,
+        "stopCount": 6,
+        "maxStopToRouteDistKm": 0.42,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 78,
+        "repeatedRoadSegments": 78,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_nabaraj_mail_bardhaman_suri",
+      "routeId": "route_bardhaman_suri_nabaraj_mail",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bardhaman",
+      "destination": "Suri",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 99.13,
+        "directDistanceKm": 82.4,
+        "routeDirectRatio": 1.2,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 3,
+        "repeatedRoadSegments": 3,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_nabaraj_mail_bardhaman_suri",
+      "routeId": "route_bardhaman_suri_nabaraj_mail",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Suri",
+      "destination": "Bardhaman",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 99.14,
+        "directDistanceKm": 82.4,
+        "routeDirectRatio": 1.2,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ishika_traders_bardhaman_alisha_kharagpur",
+      "routeId": "route_bardhaman_alisha_kharagpur_ishika_traders",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bardhaman Alisha",
+      "destination": "Kharagpur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 256.55,
+        "directDistanceKm": 114.52,
+        "routeDirectRatio": 2.24,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 2.32,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 469,
+        "repeatedRoadSegments": 469,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Chandrakona Town' is 2.32km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ishika_traders_bardhaman_alisha_kharagpur",
+      "routeId": "route_bardhaman_alisha_kharagpur_ishika_traders",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kharagpur",
+      "destination": "Bardhaman Alisha",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 254.43,
+        "directDistanceKm": 114.52,
+        "routeDirectRatio": 2.22,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 2.32,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 555,
+        "repeatedRoadSegments": 555,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Chandrakona Town' is 2.32km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_rbn_travels_berada_badanganj",
+      "routeId": "route_berada_badanganj_rbn_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Berada",
+      "destination": "Dadhika",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 180.71,
+        "directDistanceKm": 137.45,
+        "routeDirectRatio": 1.31,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 13,
+        "repeatedRoadSegments": 13,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_rbn_travels_berada_badanganj",
+      "routeId": "route_berada_badanganj_rbn_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Dadhika",
+      "destination": "Berada",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 182.66,
+        "directDistanceKm": 137.45,
+        "routeDirectRatio": 1.33,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 7,
+        "repeatedRoadSegments": 7,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_devi_durga_bishnupur_taldangra",
+      "routeId": "route_bishnupur_taldangra_devi_durga",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bishnupur",
+      "destination": "Taldangra",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 28.83,
+        "directDistanceKm": 21.66,
+        "routeDirectRatio": 1.33,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_devi_durga_bishnupur_taldangra",
+      "routeId": "route_bishnupur_taldangra_devi_durga",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Taldangra",
+      "destination": "Bishnupur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 31.71,
+        "directDistanceKm": 21.66,
+        "routeDirectRatio": 1.46,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_mahamaya_bishnupur_asansol",
+      "routeId": "route_bishnupur_asansol_mahamaya",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bishnupur",
+      "destination": "Asansol",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 106.74,
+        "directDistanceKm": 76.09,
+        "routeDirectRatio": 1.4,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.02,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_mahamaya_bishnupur_asansol",
+      "routeId": "route_bishnupur_asansol_mahamaya",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Asansol",
+      "destination": "Bishnupur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 106.3,
+        "directDistanceKm": 76.09,
+        "routeDirectRatio": 1.4,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.02,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_dakshayaniria_super_bishnupur_old_digha",
+      "routeId": "route_bishnupur_old_digha_dakshayaniria_super",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bishnupur",
+      "destination": "Old Digha",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 241.44,
+        "directDistanceKm": 162.85,
+        "routeDirectRatio": 1.48,
+        "stopCount": 11,
+        "maxStopToRouteDistKm": 1.06,
+        "suspiciousUTurns": 4,
+        "suspiciousCycles": 318,
+        "repeatedRoadSegments": 318,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Bankadaha' is 1.06km from main road corridor.",
+        "C. Side-of-carriageway / OSRM limitation: 4 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_dakshayaniria_super_bishnupur_old_digha",
+      "routeId": "route_bishnupur_old_digha_dakshayaniria_super",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Old Digha",
+      "destination": "Bishnupur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 237.61,
+        "directDistanceKm": 162.85,
+        "routeDirectRatio": 1.46,
+        "stopCount": 11,
+        "maxStopToRouteDistKm": 1.06,
+        "suspiciousUTurns": 5,
+        "suspiciousCycles": 316,
+        "repeatedRoadSegments": 316,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Bankadaha' is 1.06km from main road corridor.",
+        "C. Side-of-carriageway / OSRM limitation: 5 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_maa_tara_alaka_travels_bishnupur_digha_border",
+      "routeId": "route_bishnupur_digha_border_maa_tara_alaka_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bishnupur",
+      "destination": "Digha Border",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 199.56,
+        "directDistanceKm": 162.42,
+        "routeDirectRatio": 1.23,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 9,
+        "repeatedRoadSegments": 9,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_tara_alaka_travels_bishnupur_digha_border",
+      "routeId": "route_bishnupur_digha_border_maa_tara_alaka_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha Border",
+      "destination": "Bishnupur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 194.29,
+        "directDistanceKm": 162.42,
+        "routeDirectRatio": 1.2,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 13,
+        "repeatedRoadSegments": 13,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ishika_trip_2_bishnupur_durgapur_station",
+      "routeId": "route_bishnupur_durgapur_station_ishika_trip_2",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bishnupur",
+      "destination": "Durgapur (Station)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 81.19,
+        "directDistanceKm": 49.45,
+        "routeDirectRatio": 1.64,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.36,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 42,
+        "repeatedRoadSegments": 42,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ishika_trip_2_bishnupur_durgapur_station",
+      "routeId": "route_bishnupur_durgapur_station_ishika_trip_2",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Durgapur (Station)",
+      "destination": "Bishnupur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 81.15,
+        "directDistanceKm": 49.45,
+        "routeDirectRatio": 1.64,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.36,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 47,
+        "repeatedRoadSegments": 47,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_rof_rof_bishnupur_township",
+      "routeId": "route_bishnupur_township_rof_rof",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bishnupur",
+      "destination": "Township",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 231.14,
+        "directDistanceKm": 139.57,
+        "routeDirectRatio": 1.66,
+        "stopCount": 14,
+        "maxStopToRouteDistKm": 1.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 306,
+        "repeatedRoadSegments": 306,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Bankadaha' is 1.06km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_rof_rof_bishnupur_township",
+      "routeId": "route_bishnupur_township_rof_rof",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Township",
+      "destination": "Bishnupur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 235.52,
+        "directDistanceKm": 139.57,
+        "routeDirectRatio": 1.69,
+        "stopCount": 14,
+        "maxStopToRouteDistKm": 1.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 313,
+        "repeatedRoadSegments": 313,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Bankadaha' is 1.06km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_devi_durga_bishnupur_manbazar",
+      "routeId": "route_bishnupur_manbazar_devi_durga",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bishnupur",
+      "destination": "Manbazar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 98.41,
+        "directDistanceKm": 66.93,
+        "routeDirectRatio": 1.47,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 208,
+        "repeatedRoadSegments": 208,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_devi_durga_bishnupur_manbazar",
+      "routeId": "route_bishnupur_manbazar_devi_durga",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Manbazar",
+      "destination": "Bishnupur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 101.29,
+        "directDistanceKm": 66.93,
+        "routeDirectRatio": 1.51,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 208,
+        "repeatedRoadSegments": 208,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_sbstc_bolpurdigha_bolpur_new_digha",
+      "routeId": "route_bolpur_new_digha_sbstc_bolpurdigha",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bolpur",
+      "destination": "New Digha",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 358.33,
+        "directDistanceKm": 228.45,
+        "routeDirectRatio": 1.57,
+        "stopCount": 14,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 5,
+        "suspiciousCycles": 355,
+        "repeatedRoadSegments": 355,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Radhanagar' is 0.9km from main road corridor.",
+        "C. Side-of-carriageway / OSRM limitation: 5 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_sbstc_bolpurdigha_bolpur_new_digha",
+      "routeId": "route_bolpur_new_digha_sbstc_bolpurdigha",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "New Digha",
+      "destination": "Bolpur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 357.85,
+        "directDistanceKm": 228.45,
+        "routeDirectRatio": 1.57,
+        "stopCount": 14,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 3,
+        "suspiciousCycles": 352,
+        "repeatedRoadSegments": 352,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Radhanagar' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
+      "routeId": "route_bolpur_panchthupi_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Bolpur",
+      "destination": "Panchthupi",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 316.33,
+        "directDistanceKm": 227.87,
+        "routeDirectRatio": 1.39,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 136,
+        "repeatedRoadSegments": 136,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5_bolpur_panchthupi",
+      "routeId": "route_bolpur_panchthupi_\u099c\u09af_\u09ac\u09ac_\u09b2\u0995\u09a8\u09a5",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Panchthupi",
+      "destination": "Bolpur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 315.17,
+        "directDistanceKm": 227.87,
+        "routeDirectRatio": 1.38,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 148,
+        "repeatedRoadSegments": 148,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ambika_burdwan_itaberia",
+      "routeId": "route_burdwan_itaberia_ambika",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Burdwan",
+      "destination": "Itaberia",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 263.53,
+        "directDistanceKm": 182.35,
+        "routeDirectRatio": 1.45,
+        "stopCount": 9,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 301,
+        "repeatedRoadSegments": 301,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Radhanagar' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ambika_burdwan_itaberia",
+      "routeId": "route_burdwan_itaberia_ambika",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Itaberia",
+      "destination": "Burdwan",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 262.95,
+        "directDistanceKm": 182.35,
+        "routeDirectRatio": 1.44,
+        "stopCount": 9,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 324,
+        "repeatedRoadSegments": 324,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Radhanagar' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_gitanjali_travels_burdwan_alisha_panskura",
+      "routeId": "route_burdwan_alisha_panskura_gitanjali_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Burdwan Alisha",
+      "destination": "Panskura",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 149.61,
+        "directDistanceKm": 93.67,
+        "routeDirectRatio": 1.6,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_gitanjali_travels_burdwan_alisha_panskura",
+      "routeId": "route_burdwan_alisha_panskura_gitanjali_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Panskura",
+      "destination": "Burdwan Alisha",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 149.29,
+        "directDistanceKm": 93.67,
+        "routeDirectRatio": 1.59,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ishika_burdwan_alisha_mecheda_station",
+      "routeId": "route_burdwan_alisha_mecheda_station_ishika",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Burdwan Alisha",
+      "destination": "Mecheda Station",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 201.34,
+        "directDistanceKm": 93.89,
+        "routeDirectRatio": 2.14,
+        "stopCount": 14,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 501,
+        "repeatedRoadSegments": 501,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ishika_burdwan_alisha_mecheda_station",
+      "routeId": "route_burdwan_alisha_mecheda_station_ishika",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Mecheda Station",
+      "destination": "Burdwan Alisha",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 212.67,
+        "directDistanceKm": 93.89,
+        "routeDirectRatio": 2.27,
+        "stopCount": 14,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 511,
+        "repeatedRoadSegments": 511,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ishika_traders_burdwan_raj_college_old_digha",
+      "routeId": "route_burdwan_raj_college_old_digha_ishika_traders",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Burdwan Raj College",
+      "destination": "Old Digha",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 256.67,
+        "directDistanceKm": 182.18,
+        "routeDirectRatio": 1.41,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.87,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 287,
+        "repeatedRoadSegments": 287,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Telipukur' is 0.87km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ishika_traders_burdwan_raj_college_old_digha",
+      "routeId": "route_burdwan_raj_college_old_digha_ishika_traders",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Old Digha",
+      "destination": "Burdwan Raj College",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 255.13,
+        "directDistanceKm": 182.18,
+        "routeDirectRatio": 1.4,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.87,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 300,
+        "repeatedRoadSegments": 300,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Telipukur' is 0.87km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_tirupati_chandrakona_road_durgapur_station",
+      "routeId": "route_chandrakona_road_durgapur_station_tirupati",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Chandrakona Road",
+      "destination": "Durgapur (Station)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 119.53,
+        "directDistanceKm": 87.49,
+        "routeDirectRatio": 1.37,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.36,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 43,
+        "repeatedRoadSegments": 43,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tirupati_chandrakona_road_durgapur_station",
+      "routeId": "route_chandrakona_road_durgapur_station_tirupati",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Durgapur (Station)",
+      "destination": "Chandrakona Road",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 123.59,
+        "directDistanceKm": 87.49,
+        "routeDirectRatio": 1.41,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.36,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 59,
+        "repeatedRoadSegments": 59,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_laxmi_narayan_chandrakona_road_silda",
+      "routeId": "route_chandrakona_road_silda_laxmi_narayan",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Chandrakona Road",
+      "destination": "Silda",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 83.53,
+        "directDistanceKm": 55.15,
+        "routeDirectRatio": 1.51,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.23,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_laxmi_narayan_chandrakona_road_silda",
+      "routeId": "route_chandrakona_road_silda_laxmi_narayan",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Silda",
+      "destination": "Chandrakona Road",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 83.5,
+        "directDistanceKm": 55.15,
+        "routeDirectRatio": 1.51,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.23,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 2,
+        "repeatedRoadSegments": 2,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shreedhar_chandrakona_road_central_bus_stand_howrah",
+      "routeId": "route_chandrakona_road_central_bus_stand_howrah_shreedhar",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Chandrakona Road Central Bus Stand",
+      "destination": "Howrah",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 3.6,
+        "directDistanceKm": 2.7,
+        "routeDirectRatio": 1.33,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 3,
+        "repeatedRoadSegments": 3,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shreedhar_chandrakona_road_central_bus_stand_howrah",
+      "routeId": "route_chandrakona_road_central_bus_stand_howrah_shreedhar",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Howrah",
+      "destination": "Chandrakona Road Central Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 4.03,
+        "directDistanceKm": 2.7,
+        "routeDirectRatio": 1.49,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_bagala_contai_central_medinipur_central",
+      "routeId": "route_contai_central_medinipur_central_maa_bagala",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Contai Central",
+      "destination": "Medinipur Central",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 119.14,
+        "directDistanceKm": 83.47,
+        "routeDirectRatio": 1.43,
+        "stopCount": 9,
+        "maxStopToRouteDistKm": 0.2,
+        "suspiciousUTurns": 4,
+        "suspiciousCycles": 182,
+        "repeatedRoadSegments": 182,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "C. Side-of-carriageway / OSRM limitation: 4 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_maa_bagala_contai_central_medinipur_central",
+      "routeId": "route_contai_central_medinipur_central_maa_bagala",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Medinipur Central",
+      "destination": "Contai Central",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 120.44,
+        "directDistanceKm": 83.47,
+        "routeDirectRatio": 1.44,
+        "stopCount": 9,
+        "maxStopToRouteDistKm": 0.2,
+        "suspiciousUTurns": 3,
+        "suspiciousCycles": 194,
+        "repeatedRoadSegments": 194,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_nbstc_coochbehar_depot_coochbehar_bus_stand_dharmatala_government_bus",
+      "routeId": "route_coochbehar_bus_stand_dharmatala_government_bus_nbstc_coochbehar_depot",
+      "direction": "UP",
+      "variant": "main",
+      "source": "\u0995\u09cb\u099a\u09ac\u09bf\u09b9\u09be\u09b0 \u09ac\u09be\u09b8\u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1",
+      "destination": "\u09a7\u09b0\u09cd\u09ae\u09a4\u09b2\u09be \u09b8\u09b0\u0995\u09be\u09b0\u09bf \u09ac\u09be\u09b8\u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 39,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_nbstc_coochbehar_depot_coochbehar_bus_stand_dharmatala_government_bus",
+      "routeId": "route_coochbehar_bus_stand_dharmatala_government_bus_nbstc_coochbehar_depot",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "\u0995\u09cb\u099a\u09ac\u09bf\u09b9\u09be\u09b0 \u09ac\u09be\u09b8\u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1",
+      "destination": "\u09a7\u09b0\u09cd\u09ae\u09a4\u09b2\u09be \u09b8\u09b0\u0995\u09be\u09b0\u09bf \u09ac\u09be\u09b8\u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 39,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_kolkata_dantan_dharmatala",
+      "routeId": "route_dantan_dharmatala_kolkata",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Dantan",
+      "destination": "Dharmatala (Kolkata)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 213.89,
+        "directDistanceKm": 131.93,
+        "routeDirectRatio": 1.62,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.49,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 178,
+        "repeatedRoadSegments": 178,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_kolkata_dantan_dharmatala",
+      "routeId": "route_dantan_dharmatala_kolkata",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Dharmatala (Kolkata)",
+      "destination": "Dantan",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 233.35,
+        "directDistanceKm": 131.93,
+        "routeDirectRatio": 1.77,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.49,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 300,
+        "repeatedRoadSegments": 300,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_sahil_travels_dhuliyan_nababhat_bus_stand",
+      "routeId": "route_dhuliyan_nababhat_bus_stand_sahil_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "\u09a7\u09c1\u09b2\u09bf\u09af\u09bc\u09be\u09a8",
+      "destination": "\u09a8\u09ac\u09be\u09ac\u09b9\u09be\u099f \u09ac\u09be\u09b8 \u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1(\u09ac\u09b0\u09cd\u09a7\u09ae\u09be\u09a8)",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 38,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_sahil_travels_dhuliyan_nababhat_bus_stand",
+      "routeId": "route_dhuliyan_nababhat_bus_stand_sahil_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "\u09a7\u09c1\u09b2\u09bf\u09af\u09bc\u09be\u09a8",
+      "destination": "\u09a8\u09ac\u09be\u09ac\u09b9\u09be\u099f \u09ac\u09be\u09b8 \u09b8\u09cd\u099f\u09cd\u09af\u09be\u09a8\u09cd\u09a1(\u09ac\u09b0\u09cd\u09a7\u09ae\u09be\u09a8)",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 38,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_nilachal_digha_medinipur",
+      "routeId": "route_digha_medinipur_nilachal",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Digha",
+      "destination": "Medinipur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 138.69,
+        "directDistanceKm": 91.6,
+        "routeDirectRatio": 1.51,
+        "stopCount": 17,
+        "maxStopToRouteDistKm": 0.61,
+        "suspiciousUTurns": 10,
+        "suspiciousCycles": 523,
+        "repeatedRoadSegments": 523,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Lalat' is 0.61km from main road corridor.",
+        "C. Side-of-carriageway / OSRM limitation: 10 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_nilachal_digha_medinipur",
+      "routeId": "route_digha_medinipur_nilachal",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Medinipur",
+      "destination": "Digha",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 153.33,
+        "directDistanceKm": 91.6,
+        "routeDirectRatio": 1.67,
+        "stopCount": 17,
+        "maxStopToRouteDistKm": 0.61,
+        "suspiciousUTurns": 10,
+        "suspiciousCycles": 583,
+        "repeatedRoadSegments": 583,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Lalat' is 0.61km from main road corridor.",
+        "C. Side-of-carriageway / OSRM limitation: 10 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_shree_ram_digha_border_kukrahati_ferry_ghat",
+      "routeId": "route_digha_border_kukrahati_ferry_ghat_shree_ram",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Digha Border",
+      "destination": "Kukrahati Ferry Ghat",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_shree_ram_digha_border_kukrahati_ferry_ghat",
+      "routeId": "route_digha_border_kukrahati_ferry_ghat_shree_ram",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha Border",
+      "destination": "Kukrahati Ferry Ghat",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_sri_ram_digha_border_jairambati",
+      "routeId": "route_digha_border_jairambati_sri_ram",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Digha Border",
+      "destination": "Jairambati",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 223.14,
+        "directDistanceKm": 145.85,
+        "routeDirectRatio": 1.53,
+        "stopCount": 10,
+        "maxStopToRouteDistKm": 0.27,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 78,
+        "repeatedRoadSegments": 78,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_sri_ram_digha_border_jairambati",
+      "routeId": "route_digha_border_jairambati_sri_ram",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Jairambati",
+      "destination": "Digha Border",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 223.66,
+        "directDistanceKm": 145.85,
+        "routeDirectRatio": 1.53,
+        "stopCount": 10,
+        "maxStopToRouteDistKm": 0.27,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 81,
+        "repeatedRoadSegments": 81,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_monikanchan_digha_border_amp_bus_stand_midnapore_central_bus_stand",
+      "routeId": "route_digha_border_amp_bus_stand_midnapore_central_bus_stand_monikanchan",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Digha Border &amp; Bus Stand",
+      "destination": "Midnapore Central Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 121.68,
+        "directDistanceKm": 91.0,
+        "routeDirectRatio": 1.34,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 12,
+        "repeatedRoadSegments": 12,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_monikanchan_digha_border_amp_bus_stand_midnapore_central_bus_stand",
+      "routeId": "route_digha_border_amp_bus_stand_midnapore_central_bus_stand_monikanchan",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Digha Border &amp; Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 122.7,
+        "directDistanceKm": 91.0,
+        "routeDirectRatio": 1.35,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 5,
+        "repeatedRoadSegments": 5,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_bura_baba_durgapur_dishergarh",
+      "routeId": "route_durgapur_dishergarh_bura_baba",
+      "direction": "UP",
+      "variant": "main",
+      "source": "\u09a6\u09c2\u09b0\u09cd\u0997\u09be\u09aa\u09c1\u09b0",
+      "destination": "\u09a1\u09bf\u09b8\u09c7\u09b0\u0997\u09a1\u09bc",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_bura_baba_durgapur_dishergarh",
+      "routeId": "route_durgapur_dishergarh_bura_baba",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "\u09a6\u09c2\u09b0\u09cd\u0997\u09be\u09aa\u09c1\u09b0",
+      "destination": "\u09a1\u09bf\u09b8\u09c7\u09b0\u0997\u09a1\u09bc",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_ratul_babu_durgapur_st_arambagh",
+      "routeId": "route_durgapur_st_arambagh_ratul_babu",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Durgapur St.",
+      "destination": "Arambagh",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 153.14,
+        "directDistanceKm": 85.82,
+        "routeDirectRatio": 1.78,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.96,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 192,
+        "repeatedRoadSegments": 192,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Deshra' is 0.96km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ratul_babu_durgapur_st_arambagh",
+      "routeId": "route_durgapur_st_arambagh_ratul_babu",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Arambagh",
+      "destination": "Durgapur St.",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 153.11,
+        "directDistanceKm": 85.82,
+        "routeDirectRatio": 1.78,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.96,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 190,
+        "repeatedRoadSegments": 190,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Deshra' is 0.96km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_shyamali_durgapur_station_suri",
+      "routeId": "route_durgapur_station_suri_shyamali",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Durgapur (Station)",
+      "destination": "Suri",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 67.16,
+        "directDistanceKm": 48.01,
+        "routeDirectRatio": 1.4,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 7,
+        "repeatedRoadSegments": 7,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shyamali_durgapur_station_suri",
+      "routeId": "route_durgapur_station_suri_shyamali",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Suri",
+      "destination": "Durgapur (Station)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 67.22,
+        "directDistanceKm": 48.01,
+        "routeDirectRatio": 1.4,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_wasif_super_fast_durgapur_station_purulia",
+      "routeId": "route_durgapur_station_purulia_wasif_super_fast",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Durgapur (Station)",
+      "destination": "Purulia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 139.81,
+        "directDistanceKm": 98.77,
+        "routeDirectRatio": 1.42,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.19,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 185,
+        "repeatedRoadSegments": 185,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_wasif_super_fast_durgapur_station_purulia",
+      "routeId": "route_durgapur_station_purulia_wasif_super_fast",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Purulia",
+      "destination": "Durgapur (Station)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 139.8,
+        "directDistanceKm": 98.77,
+        "routeDirectRatio": 1.42,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.19,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 177,
+        "repeatedRoadSegments": 177,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_bakkhalihowrah_express_esplanade_howrah_station",
+      "routeId": "route_esplanade_howrah_station_bakkhalihowrah_express",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Esplanade",
+      "destination": "Howrah Station",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 4.24,
+        "directDistanceKm": 2.54,
+        "routeDirectRatio": 1.67,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 2,
+        "repeatedRoadSegments": 2,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_bakkhalihowrah_express_esplanade_howrah_station",
+      "routeId": "route_esplanade_howrah_station_bakkhalihowrah_express",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Howrah Station",
+      "destination": "Esplanade",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 4.31,
+        "directDistanceKm": 2.54,
+        "routeDirectRatio": 1.69,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_atithiparibahan_ac_esplanade_digha_border",
+      "routeId": "route_esplanade_digha_border_atithiparibahan_ac",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Esplanade",
+      "destination": "Digha Border",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 216.68,
+        "directDistanceKm": 135.92,
+        "routeDirectRatio": 1.59,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 206,
+        "repeatedRoadSegments": 206,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_atithiparibahan_ac_esplanade_digha_border",
+      "routeId": "route_esplanade_digha_border_atithiparibahan_ac",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha Border",
+      "destination": "Esplanade",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 199.15,
+        "directDistanceKm": 135.92,
+        "routeDirectRatio": 1.47,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 79,
+        "repeatedRoadSegments": 79,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_lokenath_bus_service_esplanade_kolkata_siliguri_junction",
+      "routeId": "route_esplanade_kolkata_siliguri_junction_lokenath_bus_service",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Esplanade (Kolkata)",
+      "destination": "Siliguri Junction",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 577.03,
+        "directDistanceKm": 461.92,
+        "routeDirectRatio": 1.25,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_lokenath_bus_service_esplanade_kolkata_siliguri_junction",
+      "routeId": "route_esplanade_kolkata_siliguri_junction_lokenath_bus_service",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Siliguri Junction",
+      "destination": "Esplanade (Kolkata)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 570.69,
+        "directDistanceKm": 461.92,
+        "routeDirectRatio": 1.24,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 5,
+        "repeatedRoadSegments": 5,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_p_travels_haldia_tarakeswar",
+      "routeId": "route_haldia_tarakeswar_p_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Haldia",
+      "destination": "Tarakeswar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 132.15,
+        "directDistanceKm": 92.01,
+        "routeDirectRatio": 1.44,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_p_travels_haldia_tarakeswar",
+      "routeId": "route_haldia_tarakeswar_p_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Tarakeswar",
+      "destination": "Haldia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 130.54,
+        "directDistanceKm": 92.01,
+        "routeDirectRatio": 1.42,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 7,
+        "repeatedRoadSegments": 7,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ananya_haldia_belpahari",
+      "routeId": "route_haldia_belpahari_ananya",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Haldia",
+      "destination": "Belpahari",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 228.0,
+        "directDistanceKm": 149.08,
+        "routeDirectRatio": 1.53,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 97,
+        "repeatedRoadSegments": 97,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ananya_haldia_belpahari",
+      "routeId": "route_haldia_belpahari_ananya",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Belpahari",
+      "destination": "Haldia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 247.83,
+        "directDistanceKm": 149.08,
+        "routeDirectRatio": 1.66,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 191,
+        "repeatedRoadSegments": 191,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_darshan_haldia_bankura",
+      "routeId": "route_haldia_bankura_darshan",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Haldia",
+      "destination": "Bankura",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 248.27,
+        "directDistanceKm": 165.12,
+        "routeDirectRatio": 1.5,
+        "stopCount": 15,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 178,
+        "repeatedRoadSegments": 178,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_darshan_haldia_bankura",
+      "routeId": "route_haldia_bankura_darshan",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Haldia",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 240.84,
+        "directDistanceKm": 165.12,
+        "routeDirectRatio": 1.46,
+        "stopCount": 15,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 158,
+        "repeatedRoadSegments": 158,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_rahul_travels_hetia_burdwan",
+      "routeId": "route_hetia_burdwan_rahul_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Hetia",
+      "destination": "Burdwan",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 64.75,
+        "directDistanceKm": 40.17,
+        "routeDirectRatio": 1.61,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.45,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 1,
+        "repeatedRoadSegments": 1,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_rahul_travels_hetia_burdwan",
+      "routeId": "route_hetia_burdwan_rahul_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Burdwan",
+      "destination": "Hetia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 64.76,
+        "directDistanceKm": 40.17,
+        "routeDirectRatio": 1.61,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.45,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 1,
+        "repeatedRoadSegments": 1,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
+      "routeId": "route_hetiya_alisa_bus_stand_hetiya_kotulpur_burdwan",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Hetiya",
+      "destination": "Alisa Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 263.73,
+        "directDistanceKm": 137.45,
+        "routeDirectRatio": 1.92,
+        "stopCount": 6,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 59,
+        "repeatedRoadSegments": 59,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_hetiya_kotulpur_burdwan_hetiya_alisa_bus_stand",
+      "routeId": "route_hetiya_alisa_bus_stand_hetiya_kotulpur_burdwan",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Alisa Bus Stand",
+      "destination": "Hetiya",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 266.11,
+        "directDistanceKm": 137.45,
+        "routeDirectRatio": 1.94,
+        "stopCount": 6,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 3,
+        "suspiciousCycles": 54,
+        "repeatedRoadSegments": 54,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_suparna_itaberia_tarakeswar",
+      "routeId": "route_itaberia_tarakeswar_suparna",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Itaberia",
+      "destination": "Tarakeswar",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 324.43,
+        "directDistanceKm": 149.97,
+        "routeDirectRatio": 2.16,
+        "stopCount": 16,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 429,
+        "repeatedRoadSegments": 429,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_suparna_itaberia_tarakeswar",
+      "routeId": "route_itaberia_tarakeswar_suparna",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Tarakeswar",
+      "destination": "Itaberia",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 350.59,
+        "directDistanceKm": 149.97,
+        "routeDirectRatio": 2.34,
+        "stopCount": 16,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 636,
+        "repeatedRoadSegments": 636,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_abha_jajigram_asansol",
+      "routeId": "route_jajigram_asansol_abha",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Jajigram",
+      "destination": "Asansol",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 164.09,
+        "directDistanceKm": 117.36,
+        "routeDirectRatio": 1.4,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.42,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 276,
+        "repeatedRoadSegments": 276,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_abha_jajigram_asansol",
+      "routeId": "route_jajigram_asansol_abha",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Asansol",
+      "destination": "Jajigram",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 159.31,
+        "directDistanceKm": 117.36,
+        "routeDirectRatio": 1.36,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.42,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 161,
+        "repeatedRoadSegments": 161,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_azad_jangipur_asansol_bus_stand",
+      "routeId": "route_jangipur_asansol_bus_stand_azad",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Jangipur",
+      "destination": "Asansol Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 185.21,
+        "directDistanceKm": 143.51,
+        "routeDirectRatio": 1.29,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.1,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 28,
+        "repeatedRoadSegments": 28,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_azad_jangipur_asansol_bus_stand",
+      "routeId": "route_jangipur_asansol_bus_stand_azad",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Asansol Bus Stand",
+      "destination": "Jangipur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 189.84,
+        "directDistanceKm": 143.51,
+        "routeDirectRatio": 1.32,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.1,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 44,
+        "repeatedRoadSegments": 44,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
+      "routeId": "route_kalyani_ishwargupta_setu_asansol_shahin_super",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kalyani (Ishwargupta Setu)",
+      "destination": "Asansol",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 221.86,
+        "directDistanceKm": 170.04,
+        "routeDirectRatio": 1.3,
+        "stopCount": 19,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 4,
+        "suspiciousCycles": 388,
+        "repeatedRoadSegments": 388,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Panjabi More' is 0.51km from main road corridor.",
+        "C. Side-of-carriageway / OSRM limitation: 4 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_shahin_super_kalyani_ishwargupta_setu_asansol",
+      "routeId": "route_kalyani_ishwargupta_setu_asansol_shahin_super",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Asansol",
+      "destination": "Kalyani (Ishwargupta Setu)",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 244.95,
+        "directDistanceKm": 170.04,
+        "routeDirectRatio": 1.44,
+        "stopCount": 19,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 8,
+        "suspiciousCycles": 519,
+        "repeatedRoadSegments": 519,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Panjabi More' is 0.51km from main road corridor.",
+        "C. Side-of-carriageway / OSRM limitation: 8 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_shubhasree_travels_ma_parbati_kashipur_bankura",
+      "routeId": "route_kashipur_bankura_shubhasree_travels_ma_parbati",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kashipur",
+      "destination": "Bankura",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 79.36,
+        "directDistanceKm": 43.21,
+        "routeDirectRatio": 1.84,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.97,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 225,
+        "repeatedRoadSegments": 225,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Kashipur' is 0.97km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_shubhasree_travels_ma_parbati_kashipur_bankura",
+      "routeId": "route_kashipur_bankura_shubhasree_travels_ma_parbati",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Kashipur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 79.38,
+        "directDistanceKm": 43.21,
+        "routeDirectRatio": 1.84,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.97,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 228,
+        "repeatedRoadSegments": 228,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Kashipur' is 0.97km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_maa_bhabani_kharagpur_burdwan",
+      "routeId": "route_kharagpur_burdwan_maa_bhabani",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kharagpur",
+      "destination": "Burdwan",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 173.09,
+        "directDistanceKm": 114.52,
+        "routeDirectRatio": 1.51,
+        "stopCount": 9,
+        "maxStopToRouteDistKm": 0.26,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 343,
+        "repeatedRoadSegments": 343,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_bhabani_kharagpur_burdwan",
+      "routeId": "route_kharagpur_burdwan_maa_bhabani",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Burdwan",
+      "destination": "Kharagpur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 173.28,
+        "directDistanceKm": 114.52,
+        "routeDirectRatio": 1.51,
+        "stopCount": 9,
+        "maxStopToRouteDistKm": 0.26,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 349,
+        "repeatedRoadSegments": 349,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_786_nosib_kharagpur_bus_stand_burdwan_alisha_bus_stand",
+      "routeId": "route_kharagpur_bus_stand_burdwan_alisha_bus_stand_786_nosib",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kharagpur Bus Stand",
+      "destination": "Burdwan Alisha Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 141.31,
+        "directDistanceKm": 114.52,
+        "routeDirectRatio": 1.23,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.26,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 15,
+        "repeatedRoadSegments": 15,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_786_nosib_kharagpur_bus_stand_burdwan_alisha_bus_stand",
+      "routeId": "route_kharagpur_bus_stand_burdwan_alisha_bus_stand_786_nosib",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Burdwan Alisha Bus Stand",
+      "destination": "Kharagpur Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 141.53,
+        "directDistanceKm": 114.52,
+        "routeDirectRatio": 1.24,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.26,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 18,
+        "repeatedRoadSegments": 18,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_mousumi_disha_travels_khatra_raniganj",
+      "routeId": "route_khatra_raniganj_mousumi_disha_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Khatra",
+      "destination": "Raniganj",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 103.02,
+        "directDistanceKm": 75.45,
+        "routeDirectRatio": 1.37,
+        "stopCount": 13,
+        "maxStopToRouteDistKm": 0.14,
+        "suspiciousUTurns": 3,
+        "suspiciousCycles": 177,
+        "repeatedRoadSegments": 177,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_mousumi_disha_travels_khatra_raniganj",
+      "routeId": "route_khatra_raniganj_mousumi_disha_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Raniganj",
+      "destination": "Khatra",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 103.05,
+        "directDistanceKm": 75.45,
+        "routeDirectRatio": 1.37,
+        "stopCount": 13,
+        "maxStopToRouteDistKm": 0.14,
+        "suspiciousUTurns": 4,
+        "suspiciousCycles": 179,
+        "repeatedRoadSegments": 179,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "C. Side-of-carriageway / OSRM limitation: 4 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_maa_tulsi_khatra_tarakeswar",
+      "routeId": "route_khatra_tarakeswar_maa_tulsi",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Khatra",
+      "destination": "Tarakeswar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 148.72,
+        "directDistanceKm": 120.09,
+        "routeDirectRatio": 1.24,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 2,
+        "repeatedRoadSegments": 2,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_tulsi_khatra_tarakeswar",
+      "routeId": "route_khatra_tarakeswar_maa_tulsi",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Tarakeswar",
+      "destination": "Khatra",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 155.33,
+        "directDistanceKm": 120.09,
+        "routeDirectRatio": 1.29,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tara_maa_khatra_arambagh",
+      "routeId": "route_khatra_arambagh_tara_maa",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Khatra",
+      "destination": "Arambagh",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 154.48,
+        "directDistanceKm": 96.08,
+        "routeDirectRatio": 1.61,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 1.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 174,
+        "repeatedRoadSegments": 174,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Bankadaha' is 1.06km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_tara_maa_khatra_arambagh",
+      "routeId": "route_khatra_arambagh_tara_maa",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Arambagh",
+      "destination": "Khatra",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 153.98,
+        "directDistanceKm": 96.08,
+        "routeDirectRatio": 1.6,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 1.06,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 178,
+        "repeatedRoadSegments": 178,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Bankadaha' is 1.06km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_jupiter_express_khetua_kolkata_station",
+      "routeId": "route_khetua_kolkata_station_jupiter_express",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Khetua",
+      "destination": "Kolkata Station",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 200.36,
+        "directDistanceKm": 84.54,
+        "routeDirectRatio": 2.37,
+        "stopCount": 15,
+        "maxStopToRouteDistKm": 2.32,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 282,
+        "repeatedRoadSegments": 282,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Chandrakona Town' is 2.32km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_jupiter_express_khetua_kolkata_station",
+      "routeId": "route_khetua_kolkata_station_jupiter_express",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata Station",
+      "destination": "Khetua",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 200.32,
+        "directDistanceKm": 84.54,
+        "routeDirectRatio": 2.37,
+        "stopCount": 15,
+        "maxStopToRouteDistKm": 2.32,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 295,
+        "repeatedRoadSegments": 295,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Chandrakona Town' is 2.32km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_tanushree_kirnahar_binodia",
+      "routeId": "route_kirnahar_binodia_tanushree",
+      "direction": "UP",
+      "variant": "main",
+      "source": "\u0995\u09c0\u09b0\u09cd\u09a3\u09be\u09b9\u09be\u09b0",
+      "destination": "\u09ac\u09bf\u09a8\u09cb\u09a6\u09bf\u09af\u09bc\u09be",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_tanushree_kirnahar_binodia",
+      "routeId": "route_kirnahar_binodia_tanushree",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "\u0995\u09c0\u09b0\u09cd\u09a3\u09be\u09b9\u09be\u09b0",
+      "destination": "\u09ac\u09bf\u09a8\u09cb\u09a6\u09bf\u09af\u09bc\u09be",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 12,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_mayer_ashirwad_dadabhai_travels_kirnahar_bardhaman",
+      "routeId": "route_kirnahar_bardhaman_mayer_ashirwad_dadabhai_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kirnahar",
+      "destination": "Bardhaman",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 73.47,
+        "directDistanceKm": 56.52,
+        "routeDirectRatio": 1.3,
+        "stopCount": 11,
+        "maxStopToRouteDistKm": 0.63,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 71,
+        "repeatedRoadSegments": 71,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Nanur' is 0.63km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_mayer_ashirwad_dadabhai_travels_kirnahar_bardhaman",
+      "routeId": "route_kirnahar_bardhaman_mayer_ashirwad_dadabhai_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bardhaman",
+      "destination": "Kirnahar",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 73.09,
+        "directDistanceKm": 56.52,
+        "routeDirectRatio": 1.29,
+        "stopCount": 11,
+        "maxStopToRouteDistKm": 0.63,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 66,
+        "repeatedRoadSegments": 66,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Nanur' is 0.63km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ma_babar_ashirbad_kirnahar_sainthia",
+      "routeId": "route_kirnahar_sainthia_ma_babar_ashirbad",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kirnahar",
+      "destination": "Sainthia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 42.19,
+        "directDistanceKm": 32.36,
+        "routeDirectRatio": 1.3,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.02,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 38,
+        "repeatedRoadSegments": 38,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ma_babar_ashirbad_kirnahar_sainthia",
+      "routeId": "route_kirnahar_sainthia_ma_babar_ashirbad",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Sainthia",
+      "destination": "Kirnahar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 42.19,
+        "directDistanceKm": 32.36,
+        "routeDirectRatio": 1.3,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.02,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 38,
+        "repeatedRoadSegments": 38,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_saradamoyi_kolkata_station_kolaghat",
+      "routeId": "route_kolkata_station_kolaghat_maa_saradamoyi",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kolkata Station",
+      "destination": "Kolaghat",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 64.5,
+        "directDistanceKm": 52.41,
+        "routeDirectRatio": 1.23,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 5,
+        "repeatedRoadSegments": 5,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_saradamoyi_kolkata_station_kolaghat",
+      "routeId": "route_kolkata_station_kolaghat_maa_saradamoyi",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolaghat",
+      "destination": "Kolkata Station",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 65.4,
+        "directDistanceKm": 52.41,
+        "routeDirectRatio": 1.25,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 1,
+        "repeatedRoadSegments": 1,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_prashanna_kukrahati_bardhaman",
+      "routeId": "route_kukrahati_bardhaman_prashanna",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Kukrahati",
+      "destination": "Bardhaman",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 199.97,
+        "directDistanceKm": 119.14,
+        "routeDirectRatio": 1.68,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.21,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 158,
+        "repeatedRoadSegments": 158,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_prashanna_kukrahati_bardhaman",
+      "routeId": "route_kukrahati_bardhaman_prashanna",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bardhaman",
+      "destination": "Kukrahati",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 200.37,
+        "directDistanceKm": 119.14,
+        "routeDirectRatio": 1.68,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.21,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 161,
+        "repeatedRoadSegments": 161,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_lalgarhtarakeswar_service_lalgarh_tarakeswar",
+      "routeId": "route_lalgarh_tarakeswar_lalgarhtarakeswar_service",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Lalgarh",
+      "destination": "Tarakeswar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 65.88,
+        "directDistanceKm": 49.88,
+        "routeDirectRatio": 1.32,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 10,
+        "repeatedRoadSegments": 10,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_lalgarhtarakeswar_service_lalgarh_tarakeswar",
+      "routeId": "route_lalgarh_tarakeswar_lalgarhtarakeswar_service",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Tarakeswar",
+      "destination": "Lalgarh",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 64.48,
+        "directDistanceKm": 49.88,
+        "routeDirectRatio": 1.29,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 8,
+        "repeatedRoadSegments": 8,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shaktiman_travels_langalhata_nababhat_mor",
+      "routeId": "route_langalhata_nababhat_mor_shaktiman_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Langalhata",
+      "destination": "Nababhat Mor",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 128.56,
+        "directDistanceKm": 90.8,
+        "routeDirectRatio": 1.42,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.31,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 213,
+        "repeatedRoadSegments": 213,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shaktiman_travels_langalhata_nababhat_mor",
+      "routeId": "route_langalhata_nababhat_mor_shaktiman_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Nababhat Mor",
+      "destination": "Langalhata",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 117.63,
+        "directDistanceKm": 90.8,
+        "routeDirectRatio": 1.3,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.31,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 176,
+        "repeatedRoadSegments": 176,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_sonali_ma_durga_manbazar_medinipur",
+      "routeId": "route_manbazar_medinipur_sonali_ma_durga",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Manbazar",
+      "destination": "Medinipur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 168.45,
+        "directDistanceKm": 97.68,
+        "routeDirectRatio": 1.72,
+        "stopCount": 11,
+        "maxStopToRouteDistKm": 0.58,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 589,
+        "repeatedRoadSegments": 589,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Patharkumkumi' is 0.58km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_sonali_ma_durga_manbazar_medinipur",
+      "routeId": "route_manbazar_medinipur_sonali_ma_durga",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Medinipur",
+      "destination": "Manbazar",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 168.54,
+        "directDistanceKm": 97.68,
+        "routeDirectRatio": 1.73,
+        "stopCount": 11,
+        "maxStopToRouteDistKm": 0.58,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 590,
+        "repeatedRoadSegments": 590,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Patharkumkumi' is 0.58km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_mangroldigha_service_mangrol_digha",
+      "routeId": "route_mangrol_digha_mangroldigha_service",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Mangrol",
+      "destination": "Digha",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 201.18,
+        "directDistanceKm": 136.43,
+        "routeDirectRatio": 1.47,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 162,
+        "repeatedRoadSegments": 162,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_mangroldigha_service_mangrol_digha",
+      "routeId": "route_mangrol_digha_mangroldigha_service",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha",
+      "destination": "Mangrol",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 183.32,
+        "directDistanceKm": 136.43,
+        "routeDirectRatio": 1.34,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 36,
+        "repeatedRoadSegments": 36,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_barnali_medinipur_garhbeta",
+      "routeId": "route_medinipur_garhbeta_barnali",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Medinipur",
+      "destination": "Garhbeta",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 49.64,
+        "directDistanceKm": 48.62,
+        "routeDirectRatio": 1.02,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.01,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 8,
+        "repeatedRoadSegments": 8,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_barnali_medinipur_garhbeta",
+      "routeId": "route_medinipur_garhbeta_barnali",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Garhbeta",
+      "destination": "Medinipur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 53.67,
+        "directDistanceKm": 48.62,
+        "routeDirectRatio": 1.1,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.01,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 12,
+        "repeatedRoadSegments": 12,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_gobinda_majestic_medinipur_digha",
+      "routeId": "route_medinipur_digha_gobinda_majestic",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Medinipur",
+      "destination": "Digha",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 118.63,
+        "directDistanceKm": 91.6,
+        "routeDirectRatio": 1.3,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.13,
+        "suspiciousUTurns": 5,
+        "suspiciousCycles": 108,
+        "repeatedRoadSegments": 108,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "C. Side-of-carriageway / OSRM limitation: 5 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_gobinda_majestic_medinipur_digha",
+      "routeId": "route_medinipur_digha_gobinda_majestic",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha",
+      "destination": "Medinipur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 118.81,
+        "directDistanceKm": 91.6,
+        "routeDirectRatio": 1.3,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.13,
+        "suspiciousUTurns": 5,
+        "suspiciousCycles": 117,
+        "repeatedRoadSegments": 117,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "C. Side-of-carriageway / OSRM limitation: 5 U-turn ramps on divided highways."
+      ]
+    },
+    {
+      "busId": "bus_rbn_travels_medinipur_tatanagar",
+      "routeId": "route_medinipur_tatanagar_rbn_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Medinipur",
+      "destination": "Tatanagar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 122.51,
+        "directDistanceKm": 91.0,
+        "routeDirectRatio": 1.35,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 17,
+        "repeatedRoadSegments": 17,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_rbn_travels_medinipur_tatanagar",
+      "routeId": "route_medinipur_tatanagar_rbn_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Tatanagar",
+      "destination": "Medinipur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 122.79,
+        "directDistanceKm": 91.0,
+        "routeDirectRatio": 1.35,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 19,
+        "repeatedRoadSegments": 19,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
+      "routeId": "route_medinipur_mayapur_iskcon_ma_tara_ma_rudrayani_ac",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Medinipur",
+      "destination": "Mayapur ISKCON",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 122.51,
+        "directDistanceKm": 91.0,
+        "routeDirectRatio": 1.35,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 17,
+        "repeatedRoadSegments": 17,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ma_tara_ma_rudrayani_ac_medinipur_mayapur_iskcon",
+      "routeId": "route_medinipur_mayapur_iskcon_ma_tara_ma_rudrayani_ac",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Mayapur ISKCON",
+      "destination": "Medinipur",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 122.79,
+        "directDistanceKm": 91.0,
+        "routeDirectRatio": 1.35,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 19,
+        "repeatedRoadSegments": 19,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_kamala_nandan_travels_midnapore_central_bus_stand_durgachak_central_bus_stand",
+      "routeId": "route_midnapore_central_bus_stand_durgachak_central_bus_stand_maa_kamala_nandan_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Durgachak Central Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 122.7,
+        "directDistanceKm": 91.0,
+        "routeDirectRatio": 1.35,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 5,
+        "repeatedRoadSegments": 5,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_maa_kamala_nandan_travels_midnapore_central_bus_stand_durgachak_central_bus_stand",
+      "routeId": "route_midnapore_central_bus_stand_durgachak_central_bus_stand_maa_kamala_nandan_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Durgachak Central Bus Stand",
+      "destination": "Midnapore Central Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 121.68,
+        "directDistanceKm": 91.0,
+        "routeDirectRatio": 1.34,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 12,
+        "repeatedRoadSegments": 12,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tarakripa_midnapore_central_bus_stand_digha",
+      "routeId": "route_midnapore_central_bus_stand_digha_tarakripa",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Digha",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 116.18,
+        "directDistanceKm": 91.6,
+        "routeDirectRatio": 1.27,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.07,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 34,
+        "repeatedRoadSegments": 34,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tarakripa_midnapore_central_bus_stand_digha",
+      "routeId": "route_midnapore_central_bus_stand_digha_tarakripa",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha",
+      "destination": "Midnapore Central Bus Stand",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 116.75,
+        "directDistanceKm": 91.6,
+        "routeDirectRatio": 1.27,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.07,
+        "suspiciousUTurns": 3,
+        "suspiciousCycles": 37,
+        "repeatedRoadSegments": 37,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_gobinda_midnapore_central_bus_stand_kanthi_central_bus_stand",
+      "routeId": "route_midnapore_central_bus_stand_kanthi_central_bus_stand_gobinda",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Midnapore Central Bus Stand",
+      "destination": "Kanthi Central Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 105.51,
+        "directDistanceKm": 84.73,
+        "routeDirectRatio": 1.25,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 19,
+        "repeatedRoadSegments": 19,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_gobinda_midnapore_central_bus_stand_kanthi_central_bus_stand",
+      "routeId": "route_midnapore_central_bus_stand_kanthi_central_bus_stand_gobinda",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kanthi Central Bus Stand",
+      "destination": "Midnapore Central Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 105.72,
+        "directDistanceKm": 84.73,
+        "routeDirectRatio": 1.25,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 15,
+        "repeatedRoadSegments": 15,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_charubala_nawpara_kolkata",
+      "routeId": "route_nawpara_kolkata_charubala",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Nawpara",
+      "destination": "Kolkata",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 146.07,
+        "directDistanceKm": 124.09,
+        "routeDirectRatio": 1.18,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 21,
+        "repeatedRoadSegments": 21,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_charubala_nawpara_kolkata",
+      "routeId": "route_nawpara_kolkata_charubala",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Kolkata",
+      "destination": "Nawpara",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 146.08,
+        "directDistanceKm": 124.09,
+        "routeDirectRatio": 1.18,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.48,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 23,
+        "repeatedRoadSegments": 23,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_palki_route_45_padmashree_airport_1_no",
+      "routeId": "route_padmashree_airport_1_no_palki_route_45",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Padmashree",
+      "destination": "Airport 1 No",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 230.06,
+        "directDistanceKm": 137.45,
+        "routeDirectRatio": 1.67,
+        "stopCount": 14,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 108,
+        "repeatedRoadSegments": 108,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_palki_route_45_padmashree_airport_1_no",
+      "routeId": "route_padmashree_airport_1_no_palki_route_45",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Airport 1 No",
+      "destination": "Padmashree",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 227.45,
+        "directDistanceKm": 137.45,
+        "routeDirectRatio": 1.65,
+        "stopCount": 14,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 121,
+        "repeatedRoadSegments": 121,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ramkrishna_panskura_station_burdwan",
+      "routeId": "route_panskura_station_burdwan_ramkrishna",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Panskura Station",
+      "destination": "Burdwan",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 131.48,
+        "directDistanceKm": 93.67,
+        "routeDirectRatio": 1.4,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.14,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ramkrishna_panskura_station_burdwan",
+      "routeId": "route_panskura_station_burdwan_ramkrishna",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Burdwan",
+      "destination": "Panskura Station",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 131.81,
+        "directDistanceKm": 93.67,
+        "routeDirectRatio": 1.41,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.14,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shefali_phulberia_bankura_bus_stand",
+      "routeId": "route_phulberia_bankura_bus_stand_shefali",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Phulberia",
+      "destination": "Bankura Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 28.28,
+        "directDistanceKm": 22.88,
+        "routeDirectRatio": 1.24,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.14,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 5,
+        "repeatedRoadSegments": 5,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shefali_phulberia_bankura_bus_stand",
+      "routeId": "route_phulberia_bankura_bus_stand_shefali",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura Bus Stand",
+      "destination": "Phulberia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 28.28,
+        "directDistanceKm": 22.88,
+        "routeDirectRatio": 1.24,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.14,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 5,
+        "repeatedRoadSegments": 5,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
+      "routeId": "route_phulkusma_tarakeswar_parthsarathi_dutta_motors",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Phulkusma",
+      "destination": "Tarakeswar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 68.8,
+        "directDistanceKm": 49.88,
+        "routeDirectRatio": 1.38,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 26,
+        "repeatedRoadSegments": 26,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_parthsarathi_dutta_motors_phulkusma_tarakeswar",
+      "routeId": "route_phulkusma_tarakeswar_parthsarathi_dutta_motors",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Tarakeswar",
+      "destination": "Phulkusma",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 65.95,
+        "directDistanceKm": 49.88,
+        "routeDirectRatio": 1.32,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 8,
+        "repeatedRoadSegments": 8,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_arya_travels_phulkusma_mecheda_railway_station",
+      "routeId": "route_phulkusma_mecheda_railway_station_arya_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Phulkusma",
+      "destination": "Mecheda Railway Station",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 72.56,
+        "directDistanceKm": 53.95,
+        "routeDirectRatio": 1.34,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Mecheda Railway Station' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_arya_travels_phulkusma_mecheda_railway_station",
+      "routeId": "route_phulkusma_mecheda_railway_station_arya_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Mecheda Railway Station",
+      "destination": "Phulkusma",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 73.96,
+        "directDistanceKm": 53.95,
+        "routeDirectRatio": 1.37,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 1,
+        "repeatedRoadSegments": 1,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Mecheda Railway Station' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_phulkusmamecheda_express_phulkusma_mecheda",
+      "routeId": "route_phulkusma_mecheda_phulkusmamecheda_express",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Phulkusma",
+      "destination": "Mecheda",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 72.56,
+        "directDistanceKm": 53.95,
+        "routeDirectRatio": 1.34,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Mecheda' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_phulkusmamecheda_express_phulkusma_mecheda",
+      "routeId": "route_phulkusma_mecheda_phulkusmamecheda_express",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Mecheda",
+      "destination": "Phulkusma",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 73.96,
+        "directDistanceKm": 53.95,
+        "routeDirectRatio": 1.37,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 1,
+        "repeatedRoadSegments": 1,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Mecheda' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_bullet_purulia_chandrakona_road",
+      "routeId": "route_purulia_chandrakona_road_bullet",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Purulia",
+      "destination": "Chandrakona Road",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 163.08,
+        "directDistanceKm": 119.8,
+        "routeDirectRatio": 1.36,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.01,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 12,
+        "repeatedRoadSegments": 12,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_bullet_purulia_chandrakona_road",
+      "routeId": "route_purulia_chandrakona_road_bullet",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Chandrakona Road",
+      "destination": "Purulia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 159.03,
+        "directDistanceKm": 119.8,
+        "routeDirectRatio": 1.33,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.01,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_pushpashree_purulia_bankura",
+      "routeId": "route_purulia_bankura_pushpashree",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Purulia",
+      "destination": "Bankura",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 101.77,
+        "directDistanceKm": 73.69,
+        "routeDirectRatio": 1.38,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.19,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 258,
+        "repeatedRoadSegments": 258,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_pushpashree_purulia_bankura",
+      "routeId": "route_purulia_bankura_pushpashree",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Purulia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 101.79,
+        "directDistanceKm": 73.69,
+        "routeDirectRatio": 1.38,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.19,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 261,
+        "repeatedRoadSegments": 261,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_challenger_purulia_asansol",
+      "routeId": "route_purulia_asansol_challenger",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Purulia",
+      "destination": "Asansol",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 86.41,
+        "directDistanceKm": 70.91,
+        "routeDirectRatio": 1.22,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.04,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 13,
+        "repeatedRoadSegments": 13,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_challenger_purulia_asansol",
+      "routeId": "route_purulia_asansol_challenger",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Asansol",
+      "destination": "Purulia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 86.39,
+        "directDistanceKm": 70.91,
+        "routeDirectRatio": 1.22,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.04,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 13,
+        "repeatedRoadSegments": 13,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_moniraj_ramgarh_ramjibanpur",
+      "routeId": "route_ramgarh_ramjibanpur_moniraj",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Ramgarh",
+      "destination": "Ramjibanpur",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 30.03,
+        "directDistanceKm": 17.75,
+        "routeDirectRatio": 1.69,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 1.17,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Srinagar' is 1.17km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_moniraj_ramgarh_ramjibanpur",
+      "routeId": "route_ramgarh_ramjibanpur_moniraj",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Ramjibanpur",
+      "destination": "Ramgarh",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 29.95,
+        "directDistanceKm": 17.75,
+        "routeDirectRatio": 1.69,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 1.17,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Srinagar' is 1.17km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_shreedhar_ramjibanpur_central_bus_stand_howrah",
+      "routeId": "route_ramjibanpur_central_bus_stand_howrah_shreedhar",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Ramjibanpur Central Bus Stand",
+      "destination": "Howrah",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 124.91,
+        "directDistanceKm": 72.73,
+        "routeDirectRatio": 1.72,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.14,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 1,
+        "repeatedRoadSegments": 1,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shreedhar_ramjibanpur_central_bus_stand_howrah",
+      "routeId": "route_ramjibanpur_central_bus_stand_howrah_shreedhar",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Howrah",
+      "destination": "Ramjibanpur Central Bus Stand",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 123.07,
+        "directDistanceKm": 72.73,
+        "routeDirectRatio": 1.69,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.14,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 2,
+        "repeatedRoadSegments": 2,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_moonlight_rampurhat_salar",
+      "routeId": "route_rampurhat_salar_moonlight",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Rampurhat",
+      "destination": "Salar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 75.24,
+        "directDistanceKm": 55.37,
+        "routeDirectRatio": 1.36,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.02,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_moonlight_rampurhat_salar",
+      "routeId": "route_rampurhat_salar_moonlight",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Salar",
+      "destination": "Rampurhat",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 75.24,
+        "directDistanceKm": 55.37,
+        "routeDirectRatio": 1.36,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.02,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_subarna_paribahan_ranibandh_siliguri",
+      "routeId": "route_ranibandh_siliguri_subarna_paribahan",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Ranibandh",
+      "destination": "Siliguri",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 600.1,
+        "directDistanceKm": 459.06,
+        "routeDirectRatio": 1.31,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.09,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 55,
+        "repeatedRoadSegments": 55,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_subarna_paribahan_ranibandh_siliguri",
+      "routeId": "route_ranibandh_siliguri_subarna_paribahan",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Siliguri",
+      "destination": "Ranibandh",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 599.68,
+        "directDistanceKm": 459.06,
+        "routeDirectRatio": 1.31,
+        "stopCount": 5,
+        "maxStopToRouteDistKm": 0.09,
+        "suspiciousUTurns": 2,
+        "suspiciousCycles": 59,
+        "repeatedRoadSegments": 59,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ishika_sabrakone_durgapur_station",
+      "routeId": "route_sabrakone_durgapur_station_ishika",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Sabrakone",
+      "destination": "Durgapur (Station)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 88.97,
+        "directDistanceKm": 52.31,
+        "routeDirectRatio": 1.7,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.36,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 32,
+        "repeatedRoadSegments": 32,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ishika_sabrakone_durgapur_station",
+      "routeId": "route_sabrakone_durgapur_station_ishika",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Durgapur (Station)",
+      "destination": "Sabrakone",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 88.94,
+        "directDistanceKm": 52.31,
+        "routeDirectRatio": 1.7,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.36,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 37,
+        "repeatedRoadSegments": 37,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
+      "routeId": "route_seharabazar_bankura_bus_stand_dharmaraj_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Seharabazar",
+      "destination": "Bankura Bus Stand",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 117.77,
+        "directDistanceKm": 78.44,
+        "routeDirectRatio": 1.5,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.88,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 117,
+        "repeatedRoadSegments": 117,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Dhansimla' is 0.88km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_dharmaraj_travels_seharabazar_bankura_bus_stand",
+      "routeId": "route_seharabazar_bankura_bus_stand_dharmaraj_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura Bus Stand",
+      "destination": "Seharabazar",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 117.77,
+        "directDistanceKm": 78.44,
+        "routeDirectRatio": 1.5,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 0.88,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 117,
+        "repeatedRoadSegments": 117,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Dhansimla' is 0.88km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_soumen_travels_shambazar_durgapur_city_centre",
+      "routeId": "route_shambazar_durgapur_city_centre_soumen_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Shambazar",
+      "destination": "Durgapur City Centre",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 213.36,
+        "directDistanceKm": 150.67,
+        "routeDirectRatio": 1.42,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 206,
+        "repeatedRoadSegments": 206,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_soumen_travels_shambazar_durgapur_city_centre",
+      "routeId": "route_shambazar_durgapur_city_centre_soumen_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Durgapur City Centre",
+      "destination": "Shambazar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 190.15,
+        "directDistanceKm": 150.67,
+        "routeDirectRatio": 1.26,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.05,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 200,
+        "repeatedRoadSegments": 200,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_putul_travels_sonathali_saltora",
+      "routeId": "route_sonathali_saltora_putul_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Sonathali",
+      "destination": "Saltora",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 225.91,
+        "directDistanceKm": 179.85,
+        "routeDirectRatio": 1.26,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.59,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 28,
+        "repeatedRoadSegments": 28,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Dhaban' is 0.59km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_putul_travels_sonathali_saltora",
+      "routeId": "route_sonathali_saltora_putul_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Saltora",
+      "destination": "Sonathali",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 225.14,
+        "directDistanceKm": 179.85,
+        "routeDirectRatio": 1.25,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.59,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 21,
+        "repeatedRoadSegments": 21,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Dhaban' is 0.59km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_garib_nawaz_royal_sonathali_ladhurka",
+      "routeId": "route_sonathali_ladhurka_garib_nawaz_royal",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Sonathali",
+      "destination": "Ladhurka",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 238.8,
+        "directDistanceKm": 208.13,
+        "routeDirectRatio": 1.15,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 11,
+        "repeatedRoadSegments": 11,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Ladhurka' is 0.51km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_garib_nawaz_royal_sonathali_ladhurka",
+      "routeId": "route_sonathali_ladhurka_garib_nawaz_royal",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Ladhurka",
+      "destination": "Sonathali",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 238.01,
+        "directDistanceKm": 208.13,
+        "routeDirectRatio": 1.14,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.51,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Ladhurka' is 0.51km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_supa_howrah_station_supa_howrah_station",
+      "routeId": "route_supa_howrah_station_supa_howrah_station",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Supa",
+      "destination": "Howrah Station",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 5.34,
+        "directDistanceKm": 2.7,
+        "routeDirectRatio": 1.98,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 3,
+        "repeatedRoadSegments": 3,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_supa_howrah_station_supa_howrah_station",
+      "routeId": "route_supa_howrah_station_supa_howrah_station",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Howrah Station",
+      "destination": "Supa",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 4.16,
+        "directDistanceKm": 2.7,
+        "routeDirectRatio": 1.54,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_kolkata_taldangra_dharmatala",
+      "routeId": "route_taldangra_dharmatala_kolkata",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Taldangra",
+      "destination": "Dharmatala (Kolkata)",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 172.23,
+        "directDistanceKm": 137.6,
+        "routeDirectRatio": 1.25,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 18,
+        "repeatedRoadSegments": 18,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_kolkata_taldangra_dharmatala",
+      "routeId": "route_taldangra_dharmatala_kolkata",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Dharmatala (Kolkata)",
+      "destination": "Taldangra",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 172.58,
+        "directDistanceKm": 137.6,
+        "routeDirectRatio": 1.25,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 22,
+        "repeatedRoadSegments": 22,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
+      "routeId": "route_tamluk_alisha_bus_stand_ramkrishna_ashirwad",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Tamluk",
+      "destination": "Alisha Bus Stand",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 156.4,
+        "directDistanceKm": 104.41,
+        "routeDirectRatio": 1.5,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 15,
+        "repeatedRoadSegments": 15,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_ramkrishna_ashirwad_tamluk_alisha_bus_stand",
+      "routeId": "route_tamluk_alisha_bus_stand_ramkrishna_ashirwad",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Alisha Bus Stand",
+      "destination": "Tamluk",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 156.76,
+        "directDistanceKm": 104.41,
+        "routeDirectRatio": 1.5,
+        "stopCount": 8,
+        "maxStopToRouteDistKm": 1.5,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 15,
+        "repeatedRoadSegments": 15,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Gaura' is 1.5km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_akashbristi_tarakeshwar_haldia",
+      "routeId": "route_tarakeshwar_haldia_akashbristi",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Tarakeshwar",
+      "destination": "Haldia",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 128.98,
+        "directDistanceKm": 64.33,
+        "routeDirectRatio": 2.01,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 87,
+        "repeatedRoadSegments": 87,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_akashbristi_tarakeshwar_haldia",
+      "routeId": "route_tarakeshwar_haldia_akashbristi",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Haldia",
+      "destination": "Tarakeshwar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 131.21,
+        "directDistanceKm": 64.33,
+        "routeDirectRatio": 2.04,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.06,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 85,
+        "repeatedRoadSegments": 85,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_santoshi_mata_tarakeswar_bankura",
+      "routeId": "route_tarakeswar_bankura_santoshi_mata",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Tarakeswar",
+      "destination": "Bankura",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 121.02,
+        "directDistanceKm": 103.49,
+        "routeDirectRatio": 1.17,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 5,
+        "repeatedRoadSegments": 5,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_santoshi_mata_tarakeswar_bankura",
+      "routeId": "route_tarakeswar_bankura_santoshi_mata",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Bankura",
+      "destination": "Tarakeswar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 122.03,
+        "directDistanceKm": 103.49,
+        "routeDirectRatio": 1.18,
+        "stopCount": 7,
+        "maxStopToRouteDistKm": 0.12,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_datababa_sakil_travels_tarakeswar_mecheda_station",
+      "routeId": "route_tarakeswar_mecheda_station_datababa_sakil_travels",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Tarakeswar",
+      "destination": "Mecheda Station",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 85.74,
+        "directDistanceKm": 57.48,
+        "routeDirectRatio": 1.49,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 8,
+        "repeatedRoadSegments": 8,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Mecheda Station' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_datababa_sakil_travels_tarakeswar_mecheda_station",
+      "routeId": "route_tarakeswar_mecheda_station_datababa_sakil_travels",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Mecheda Station",
+      "destination": "Tarakeswar",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 87.31,
+        "directDistanceKm": 57.48,
+        "routeDirectRatio": 1.52,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.9,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "B. Intermediate stop offset: Stop 'Mecheda Station' is 0.9km from main road corridor."
+      ]
+    },
+    {
+      "busId": "bus_tara_ma_ac_tarakeswar_digha",
+      "routeId": "route_tarakeswar_digha_tara_ma_ac",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Tarakeswar",
+      "destination": "Digha",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 194.13,
+        "directDistanceKm": 149.52,
+        "routeDirectRatio": 1.3,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.07,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 16,
+        "repeatedRoadSegments": 16,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_tara_ma_ac_tarakeswar_digha",
+      "routeId": "route_tarakeswar_digha_tara_ma_ac",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Digha",
+      "destination": "Tarakeswar",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 195.49,
+        "directDistanceKm": 149.52,
+        "routeDirectRatio": 1.31,
+        "stopCount": 2,
+        "maxStopToRouteDistKm": 0.07,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 12,
+        "repeatedRoadSegments": 12,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_shankar_parwati_tatanagar_dharmatala",
+      "routeId": "route_tatanagar_dharmatala_shankar_parwati",
+      "direction": "UP",
+      "variant": "main",
+      "source": "\u099f\u09be\u099f\u09be\u09a8\u0997\u09b0",
+      "destination": "\u09a7\u09b0\u09cd\u09ae\u09a4\u09b2\u09be",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 18,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_shankar_parwati_tatanagar_dharmatala",
+      "routeId": "route_tatanagar_dharmatala_shankar_parwati",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "\u099f\u09be\u099f\u09be\u09a8\u0997\u09b0",
+      "destination": "\u09a7\u09b0\u09cd\u09ae\u09a4\u09b2\u09be",
+      "status": "DATA_ERROR",
+      "metrics": {
+        "routeDistanceKm": 0,
+        "directDistanceKm": 0,
+        "routeDirectRatio": 0,
+        "stopCount": 18,
+        "maxStopToRouteDistKm": 0,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 0,
+        "repeatedRoadSegments": 0,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "DATA_ERROR: Stop coordinates in dataset are identical or invalid dummy coordinates (22.5726, 88.3639)."
+      ]
+    },
+    {
+      "busId": "bus_jashoda_telami_howrah_station",
+      "routeId": "route_telami_howrah_station_jashoda",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Telami",
+      "destination": "Howrah Station",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 18.8,
+        "directDistanceKm": 7.42,
+        "routeDirectRatio": 2.53,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.09,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 4,
+        "repeatedRoadSegments": 4,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "A. Legitimate road geometry: Winding ratio (2.5x) due to regional highway topography."
+      ]
+    },
+    {
+      "busId": "bus_jashoda_telami_howrah_station",
+      "routeId": "route_telami_howrah_station_jashoda",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Howrah Station",
+      "destination": "Telami",
+      "status": "WARNING",
+      "metrics": {
+        "routeDistanceKm": 17.84,
+        "directDistanceKm": 7.42,
+        "routeDirectRatio": 2.4,
+        "stopCount": 3,
+        "maxStopToRouteDistKm": 0.09,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 6,
+        "repeatedRoadSegments": 6,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_lalkamal_silda_medinipur",
+      "routeId": "route_silda_medinipur_lalkamal",
+      "direction": "UP",
+      "variant": "main",
+      "source": "Shilda",
+      "destination": "Midnapore",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 129.13,
+        "directDistanceKm": 108.5,
+        "routeDirectRatio": 1.19,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 1,
+        "suspiciousCycles": 12,
+        "repeatedRoadSegments": 12,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    },
+    {
+      "busId": "bus_lalkamal_silda_medinipur",
+      "routeId": "route_silda_medinipur_lalkamal",
+      "direction": "DOWN",
+      "variant": "main",
+      "source": "Midnapore",
+      "destination": "Shilda",
+      "status": "PASS",
+      "metrics": {
+        "routeDistanceKm": 129.87,
+        "directDistanceKm": 108.5,
+        "routeDirectRatio": 1.2,
+        "stopCount": 4,
+        "maxStopToRouteDistKm": 0.03,
+        "suspiciousUTurns": 0,
+        "suspiciousCycles": 13,
+        "repeatedRoadSegments": 13,
+        "maxBackwardProgressKm": 0
+      },
+      "diagnostics": [
+        "Route conforms to OpenStreetMap road geometry standards."
+      ]
+    }
+  ]
+}
