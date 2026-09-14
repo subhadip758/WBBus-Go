@@ -1,23 +1,18 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { db, auth, isFirebaseConfigured } from './firebase';
-import { signInAnonymously } from 'firebase/auth';
-import { collection, doc, onSnapshot, setDoc, deleteDoc, serverTimestamp } from 'firebase/firestore';
+import { db, isFirebaseConfigured } from './firebase';
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { 
   Search, 
   MapPin, 
   Navigation, 
   Clock, 
-  Users, 
   CheckCircle, 
   AlertTriangle, 
   ArrowRightLeft, 
   ChevronLeft, 
   Play, 
   Pause, 
-  UserPlus, 
-  Info,
   Compass,
-  FileText,
   SlidersHorizontal,
   Bus
 } from 'lucide-react';
@@ -815,14 +810,12 @@ function App() {
   useEffect(() => {
     setIsTracking(false);
     setMyLocationIndex(0);
-    setMyLocationOffset(0);
     setContributions([]);
     setResolvedLoc(null);
     setProgress(null);
     setStopArrivalTimes({});
     setTripElapsedSeconds(0);
     setLoseGpsSignal(false);
-    setSimulateGpsOutage(false);
     
     if (selectedBus) {
       try {
@@ -1106,47 +1099,6 @@ function App() {
       activeRiders = [...activeRiders, ...filteredRemote];
     }
     
-    // Simulate other riders if option selected
-    if (addRiders) {
-      const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
-      if (coordStops.length >= 2) {
-        const currentStop = coordStops[myLocationIndex] || coordStops[0];
-        
-        // Rider 2: close cluster with stable offset
-        activeRiders.push({
-          sessionId: 'rider_session_2',
-          latitude: userCoords.latitude + 0.0003, 
-          longitude: userCoords.longitude + 0.0003,
-          accuracyMeters: ridersAccuracy,
-          speedKmh: userCoords.speedKmh > 5 ? userCoords.speedKmh * 0.98 : 34,
-          headingDegrees: (userCoords.headingDegrees + 2) % 360,
-          updatedAt: new Date(userCoords.updatedAt.getTime() - 2000)
-        });
-        
-        // Rider 3: close cluster with stable offset
-        activeRiders.push({
-          sessionId: 'rider_session_3',
-          latitude: userCoords.latitude - 0.0004, 
-          longitude: userCoords.longitude - 0.0002,
-          accuracyMeters: ridersAccuracy + 15,
-          speedKmh: userCoords.speedKmh > 5 ? userCoords.speedKmh * 1.01 : 33,
-          headingDegrees: (userCoords.headingDegrees - 3 + 360) % 360,
-          updatedAt: new Date(userCoords.updatedAt.getTime() - 5000)
-        });
-        
-        // Rider 4: bad outlier (stable, e.g. someone walking at previous stop or fake spoof)
-        activeRiders.push({
-          sessionId: 'rider_session_4',
-          latitude: currentStop.latitude - 0.004, 
-          longitude: currentStop.longitude - 0.004,
-          accuracyMeters: 90,
-          speedKmh: 5,
-          headingDegrees: 180,
-          updatedAt: new Date(userCoords.updatedAt.getTime() - 25000)
-        });
-      }
-    }
-    
     setContributions(activeRiders);
     
     // Resolve Live Location using inverse-variance algorithm!
@@ -1158,7 +1110,7 @@ function App() {
       const prog = calculateTripProgress(selectedBus, resolved);
       setProgress(prog);
     }
-  }, [selectedBus, isTracking, userCoords, addRiders, ridersAccuracy, firebaseSync, mySessionId, remoteContributions, myLocationIndex]);
+  }, [selectedBus, isTracking, userCoords, firebaseSync, mySessionId, remoteContributions, myLocationIndex]);
   
   // Track stop arrival times (in elapsed seconds) for historical analysis
   useEffect(() => {
@@ -1218,19 +1170,12 @@ function App() {
     }
   }, [stopArrivalTimes, selectedBus, isTracking]);
 
-  // Failsafe: Auto-pause simulation and lock index when trip is completed
+  // Failsafe: Auto-pause tracking when trip is completed
   useEffect(() => {
     if (progress && progress.tripCompleted && isTracking && isPlaying) {
       setIsPlaying(false);
-      if (useSimulation && !loseGpsSignal && selectedBus) {
-        const coordStops = selectedBus.routeStops.filter(s => s.latitude !== null && s.longitude !== null);
-        if (coordStops.length > 0) {
-          setMyLocationIndex(coordStops.length - 1);
-          setMyLocationOffset(0);
-        }
-      }
     }
-  }, [progress, isTracking, isPlaying, useSimulation, loseGpsSignal, selectedBus]);
+  }, [progress, isTracking, isPlaying]);
   
   const popularSearches = [
     { label: "Kolkata ↔ Digha", source: "Kolkata", dest: "Digha" },
